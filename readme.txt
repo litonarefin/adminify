@@ -2,9 +2,9 @@
 Contributors: jwthemeltd, litonice13, masteraddons, stalukder03
 Tags: custom dashboard, dashboard, Admin panel, WordPress dashboard, WordPress admin, Dashboard widget, customize dashboard,  Login Customizer, folder, WP Admin, disable comments, admin notice, dashboard menu editor, Hide Admin Bar, notification bar, Dashboard CSS, activity logs, admin pages, menu duplicator, admin column, Ultimate Dash, dashboard widget
 Requires at least: 4.0
-Tested up to: 6.1
+Tested up to: 6.0.3
 Requires PHP: 5.3
-Stable tag: 3.0.4
+Stable tag: 3.0.5
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
