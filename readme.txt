@@ -325,6 +325,7 @@ Rate us on [WordPress Forum](https://wordpress.org/support/plugin/adminify/revie
 
 
 == Support ==
+[Github Source COde](https://github.com/litonarefin/adminify)
 [Support Forum](https://wpadminify.com/support/)
 [Pre-Sale Questions](https://wpadminify.com/contact/)
 
