@@ -1,0 +1,22 @@
+.wp-adminify {
+    &.adminify-dark-mode {
+        #wpbody-content {
+            #cpt_info_box {
+                background-color: #1d1d1d;
+                box-shadow: none;
+            }
+            #order-post-type #sortable li {
+                background-color: #1d1d1d;
+                border-bottom-color: #2b2b2b;
+            }
+            #order-post-type {
+                border: 1px solid #2b2b2b;
+                margin-top: 1rem;
+            }
+            #order-post-type #sortable li:nth-child(2n+1) {
+                background-color: #111 !important;
+                border-bottom-color: #111;
+            }
+        }
+    }
+}

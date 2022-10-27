@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.wp-adminify {
+    &.toplevel_page_gf_edit_forms{
+        .gforms_edit_form:not(.gforms_form_settings_wrap) {
+            top: 64px;
+        }
+        #gform-form-toolbar {
+            transition: .6s;
+            width: calc(100% - 236px);
+        };
+        .editor-sidebar {
+            top: calc(91px - 31px + 64px);
+        }
+        &.adminify-scrollto-sticky {
+            #form_editor_fields_container,
+            #gform-form-toolbar {
+                top: 0;
+            }
+            .editor-sidebar {
+                top: 65px;
+            }
+        }
+        .sidebar__panel.ui-tabs-panel {
+            height: calc(100vh - 130px);
+        }
+    }
+}

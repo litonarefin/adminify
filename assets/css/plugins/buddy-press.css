@@ -1,0 +1,13 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+#postcustomstuff #newmetaleft a {
+  color: var(--adminify-btn-bg);
+}
+
+/*# sourceMappingURL=buddy-press.css.map*/

@@ -1,0 +1,80 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+.wp-adminify #wpbody-content a.swift-btn.swift-btn-green,
+.wp-adminify #wpbody-content .swift-btn-black,
+.wp-adminify #wpbody-content .swift-btn-black:focus,
+.wp-adminify #wpbody-content .luv-framework-button,
+.wp-adminify #wpbody-content .luv-framework-button:focus,
+.wp-adminify #wpbody-content .swift-btn-blue,
+.wp-adminify #wpbody-content .swift-btn-brand,
+.wp-adminify #wpbody-content .swift-btn-brand:focus,
+.wp-adminify #wpbody-content .luv-framework-button.luv-framework-reset-all,
+.wp-adminify #wpbody-content .luv-framework-button.luv-framework-reset-all:focus {
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-performance-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content #swift-performance-wrapper,
+.wp-adminify.adminify-dark-mode #wpbody-content #swift-performance-wrapper-inner,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-menu li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-list-table-filter .swift-input,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .left .luv-framework-section-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-section-body,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item > ul ul:nth-child(even) {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-clear-cache-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-lite-reloaded-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-menu li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-performance-reloaded-col,
+.wp-adminify.adminify-dark-mode #wpbody-content small,
+.wp-adminify.adminify-dark-mode #wpbody-content #swift-cache-status-box li,
+.wp-adminify.adminify-dark-mode #wpbody-content #swift-images-stat-container li,
+.wp-adminify.adminify-dark-mode #wpbody-content #swift-cache-status-box i,
+.wp-adminify.adminify-dark-mode #wpbody-content #swift-images-stat-container i,
+.wp-adminify.adminify-dark-mode #wpbody-content a.swift-btn.swift-btn-green,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-btn-black,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-btn-black:focus,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-button:focus,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-btn-blue,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-btn-brand,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-btn-brand:focus,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-button.luv-framework-reset-all,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-button.luv-framework-reset-all:focus,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-section-header li.active.has-child > a,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-field-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item > ul ul > li {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-menu li.active a,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-box,
+.wp-adminify.adminify-dark-mode #wpbody-content .select2-container--default .select2-selection--single,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-field-inner.swift-error {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item > ul > li,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-box,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-menu li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-outer,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-section-header li,
+.wp-adminify.adminify-dark-mode #wpbody-content .left .luv-framework-section-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .luv-framework-field-container,
+.wp-adminify.adminify-dark-mode #wpbody-content .select2-container--default .select2-selection--single,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-message,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-dashboard-item > ul ul > li,
+.wp-adminify.adminify-dark-mode #wpbody-content .swift-cache-actions {
+  border-color: #2b2b2b;
+}
+
+/*# sourceMappingURL=swift-performance-lite.css.map*/

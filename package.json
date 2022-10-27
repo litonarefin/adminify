@@ -1,0 +1,49 @@
+{
+  "name": "adminify",
+  "version": "3.0.3",
+  "description": "WP Adminify",
+  "main": "index.js",
+  "scripts": {
+    "start": "mix watch",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production",
+    "prod": "mix --production"
+  },
+  "browserslist": [
+    "defaults",
+    "last 50 versions",
+    "last 4 major versions",
+    "maintained node versions"
+  ],
+  "author": "wpadminify",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^23.5.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "laravel-mix": "^6.0.49",
+    "postcss": "^8.3",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.1.0",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "wp-pot": "^1.9.9"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bulma": "^0.9.3",
+    "js-cookie": "^3.0.0",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-icons": "^4.4.0",
+    "react-select": "^5.4.0",
+    "react-uuid": "^1.0.2",
+    "vue": "^2.6.14",
+    "vue-bulma-tabs": "^1.1.3",
+    "vue-range-slider": "^0.6.0",
+    "vue-router": "^3.5.2",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
+  }
+}

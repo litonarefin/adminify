@@ -1,0 +1,82 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.wp-adminify {
+    #hmw_wrap {
+        .btn-success {
+            color: #fff;
+        }
+        .modal.fade.show {
+            opacity: 1;
+        }
+    }
+    &.adminify-dark-mode {
+        &.hmw_settings #wpcontent,
+        .bg-light,
+        .card.col-sm-12.p-0 {
+            background-color: $dark-mode-bg !important;
+        }
+        .bg-white,
+        #hmw_wrap .hmw_nav .hmw_nav_item.active, 
+        #hmw_wrap .hmw_nav .hmw_nav_item:hover,
+        #hmw_wrap .card-body .form-control,
+        .nav-tabs .nav-item.show .nav-link, 
+        .nav-tabs .nav-link.active {
+            background-color: $dark-mode-black-1 !important;
+        }
+        #hmw_wrap {
+            color: $dark-mode-white;
+            .btn-success {
+                color: $dark-mode-white;
+            }
+        }
+        .border-bottom,
+        #hmw_wrap .hmw_nav .hmw_nav_item,
+        .nav-tabs,
+        #hmw_wrap .table_securitycheck th {
+            border-bottom-color: $dark-mode-border-color-1 !important;
+        }
+        h1,h2,h3,h4,h5,h6,
+        #hmw_wrap .hmw_nav .hmw_nav_item.active, 
+        #hmw_wrap .hmw_nav .hmw_nav_item:hover,
+        #hmw_wrap .hmw_nav .hmw_nav_item:before,
+        .text-black-50,
+        .dropdown-menu a.active,
+        #hmw_wrap .text-info,
+        .close {
+            color: $dark-mode-white !important;
+        }
+        .card,
+        #hmw_wrap .box,
+        .border-right, 
+        .border-left,
+        .border-top,
+        .nav-tabs .nav-item.show .nav-link, 
+        .nav-tabs .nav-link.active,
+        .nav-tabs .nav-item .nav-link:hover {
+            border-color: $dark-mode-border-color-1 !important;
+        }
+        button.btn.rounded-0.btn-light.save.py-0,
+        button.btn.btn-light,
+        button.btn.btn-light.hmw_resetexclude,
+        #hmw_wrap .btn-info, 
+        #hmw_wrap .btn-outline-info:hover {
+            background-color: $dark-primary;
+            border-color: $dark-primary;
+            color: $dark-mode-white;
+        }
+        #hmw_wrap .table_securitycheck {
+            td, 
+            th {
+                border-top-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+        }
+        .modal.fade.show { 
+            background-color: rgba($color: #000000, $alpha: 0.75);
+            .modal-content {
+                background-color: $dark-mode-bg;
+            }
+        }
+    }
+}

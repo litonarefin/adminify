@@ -1,0 +1,178 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+body.aioseo-has-bar .aioseo-app .aioseo-main>.aioseo-container {
+    margin-top: 30px;
+}
+.wp-adminify {
+    #wpbody-content {
+        .aioseo-header {
+            position: static;
+        }
+        .getting-started-wrapper {
+            h2 {
+                color: $whitecolor;
+            }
+        }
+    }
+    &.adminify-dark-mode {
+        #wpcontent,
+        .aioseo-general-settings .license-cta-box,
+        .aioseo-breadcrumbs .copy-box>div {
+            background-color: $dark-mode-bg;
+        }
+        #wpbody-content {
+            min-height: auto;
+            padding-bottom: 30px;
+            .aioseo-app {
+                background-color: $dark-mode-bg;
+            }
+            .aioseo-header {
+                background-color: $dark-mode-black-1;
+                a {
+                    svg path {
+                        stroke: $dark-primary;
+                    }
+                }
+                span {
+                    color: $dark-mode-white;
+                    &.round {
+                        background-color: $dark-mode-bg;
+                        color: $dark-mode-white;
+                    }
+                }
+            }
+            .aioseo-button.gray {
+                color: #141b38 !important;
+            }
+            .aioseo-button,
+            .text-white {
+                color: $dark-mode-white !important;
+            }
+            .aioseo-card,
+            .aioseo-feature-card,
+            .aioseo-cta,
+            .aioseo-copy-block .message,
+            .aioseo-separators .aioseo-col .separator.active {
+                background-color: $dark-mode-black-1;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .aioseo-card {
+                .header {
+                    border-color: $dark-mode-border-color-1;
+                }
+            }
+            .aioseo-site-score-dashboard .aioseo-seo-site-score-recommendations>div:not(.links),
+            .aioseo-score-amount-wrapper,
+            .aioseo-dashboard .dashboard-notifications .no-dashboard-notifications,
+            .aioseo-dashboard .aioseo-quicklinks-title,
+            .aioseo-feature-card .feature-card-body .feature-card-description,
+            .aioseo-cta .type-3 .sub-header,
+            .aioseo-cta .feature-list,
+            .aioseo-settings-row .settings-name,
+            .aioseo-section-description,
+            .aioseo-description,
+            .aioseo-separators .aioseo-col .separator,
+            .aioseo-add-template-tag,
+            .aioseo-cta .header-text,
+            .aioseo-cta .description,
+            .aioseo-alert.blue,
+            .aioseo-google-search-preview .domain,
+            .aioseo-google-search-preview .meta-description,
+            .multiselect__tags,
+            .aioseo-search-appearance-global .aioseo-settings-row.local-seo .local-seo-text,
+            .multiselect__input, .multiselect__single,
+            .md-tabs.md-theme-default .md-tabs-navigation .md-button,
+            .aioseo-radio-toggle input:checked+label,
+            .aioseo-facebook-preview .facebook-post .facebook-header .poster .poster-name,
+            .aioseo-facebook-preview .facebook-post .facebook-content .facebook-site-description,
+            .aioseo-facebook-preview .facebook-post .facebook-content .facebook-site-description .site-title,
+            .max-recommended-count,
+            .aioseo-site-score-analyze .aioseo-seo-site-score-description>div,
+            .aioseo-seo-site-analysis-result .result-body .result-message,
+            .aioseo-editor .ql-disabled,
+            .aioseo-tools-database-tools .reset-settings,
+            .aioseo-about-us .aioseo-about-us-welcome,
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-footer, 
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-main, 
+            .aioseo-about-us .aioseo-about-us-welcome,
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-main .main-name,
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-footer .footer-status .footer-status-not-installed,
+            .aioseo-getting-started .aioseo-getting-started-documentation,
+            .aioseo-lite-vs-pro .aioseo-lite-vs-pro-header,
+            .aioseo-lite-vs-pro {
+                color: $dark-mode-white;
+            }
+            .aioseo-app .aioseo-tabs,
+            .aioseo-settings-row,
+            .aioseo-webmaster-tools .webmaster-tools-spacer .aioseo-col div,
+            .aioseo-breadcrumbs .preview-box,
+            .aioseo-seo-site-analysis-result,
+            .aioseo-seo-site-analysis-result .result-header .result-toggle,
+            .aioseo-tools-robots-editor .robots-table,
+            .aioseo-tools-robots-editor .robots-table .robots-header,
+            .aioseo-tools-system-status-info .system-status-table,
+            .aioseo-feature-manager .aioseo-feature-manager-header,
+            .aioseo-about-us .aioseo-about-us-welcome,
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-footer, 
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-main, 
+            .aioseo-about-us .aioseo-about-us-welcome,
+            .aioseo-getting-started .aioseo-getting-started-documentation,
+            .aioseo-cta .type-2 .featured-image,
+            .aioseo-lite-vs-pro {
+                border-color: $dark-mode-border-color-1;
+            }
+            .aioseo-webmaster-tools .tool-toggle>div,
+            .aioseo-editor .ql-editor {
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .aioseo-box-toggle input+label,
+            .aioseo-display-info .copy-box, 
+            .aioseo-display-info .extra-box,
+            .aioseo-separators .aioseo-col .separator,
+            .aioseo-input input.medium,
+            .aioseo-add-template-tag,
+            .ql-editor.ql-blank,
+            .aioseo-alert.blue,
+            .aioseo-google-search-preview,
+            .multiselect__tags,
+            .aioseo-search-appearance-global .aioseo-settings-row.local-seo,
+            .multiselect__input, .multiselect__single,
+            .aioseo-social-profiles .same-username .use-same,
+            .aioseo-facebook-preview,
+            .aioseo-facebook-preview .facebook-post .facebook-content .facebook-site-description,
+            .aioseo-twitter-preview,
+            .analyze-input input[type="text"],
+            .aioseo-seo-site-analysis-result .result-body pre,
+            .aioseo-editor .ql-disabled,
+            .aioseo-tools-system-status-info .system-status-table .aioseo-table-row.even,
+            .aioseo-lite-vs-pro .aioseo-lite-vs-pro-header {
+                background-color: $dark-mode-bg;
+                border-color: $dark-mode-border-color-1;
+            }
+            .aioseo-box-toggle input+label svg {
+                fill: $dark-mode-white;
+            }
+            .aioseo-radio-toggle label {
+                color: #141b38;
+            }
+            .aioseo-google-search-preview .site-title {
+                color: $dark-primary;
+            }
+            .aioseo-facebook-preview .facebook-post,
+            .aioseo-tools-robots-editor .robots-table .robots-rows .robots-row.even,
+            .aioseo-feature-manager .aioseo-feature-manager-header,
+            .aioseo-about-us .aioseo-about-us-welcome,
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-footer, 
+            .aioseo-about-us .aioseo-about-us-plugins .plugin .plugin-main, 
+            .aioseo-about-us .aioseo-about-us-welcome,
+            .aioseo-getting-started .aioseo-getting-started-documentation,
+            .aioseo-lite-vs-pro,
+            .aioseo-lite-vs-pro-cta {
+                background-color: $dark-mode-black-1;
+            }
+        }
+    }
+}

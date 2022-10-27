@@ -1,0 +1,18 @@
+.wp-adminify {
+    #wpbody-content {
+        .wpforms-btn-orange {
+            color: #fff;
+        }
+        input[type=checkbox],
+        input[type=radio] {
+            background: inherit;
+        }
+        .wp-mail-smtp-btn.wp-mail-smtp-btn-md {
+            line-height: 35px;
+            padding: 0 15px;
+        }
+        .subsubsub {
+            font-size: 0;
+        }
+    }
+}

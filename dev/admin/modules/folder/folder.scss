@@ -1,0 +1,696 @@
+@import './assets/scss/variables';
+@import './assets/scss/mixins';
+$primarycolor : #0347FF;
+$text_black_color : #434343;
+
+.wp-adminify--folder-widget {
+
+    position: absolute;
+    top: 100px;
+    left: 15rem;;
+    bottom: 0;
+    width: 332px;
+
+    .wp-adminify--folder-app {
+        padding: 30px;
+    }
+
+    .wp-adminify--folder-app--inner {
+        @include postboxreset;
+    }
+
+    .folder--header {
+        border-bottom: 1px solid $whitegray;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 1.828rem 16px;
+
+        span {
+            color: $black;
+            font-size: $fontsize + 4px;
+            font-weight: $weight700;
+            line-height: $lineheight20;
+        }
+
+        a {
+            border: 1px solid $primarycolor;
+            border-radius: $radius6p;
+            color: $primarycolor;
+            font-size: $fontsize;
+            line-height: $lineheight16;
+            padding: 6px 16px;
+
+            &:hover {
+                background-color: $primarycolor;
+                color: $whitecolor;
+            }
+        }
+    }
+
+    .folder--actions {
+        input[type="checkbox"] {
+            border: 1px solid $blackplaceholder;
+            box-shadow: none;
+        }
+
+        a {
+            background-color: transparent;
+            border: 1px solid $blackmuted;
+            border-radius: $radius6p;
+            color: $blackmuted;
+            display: inline-block;
+            @include font14_700;
+            line-height: $lineheight20 + 8px;
+            min-height: 30px;
+            padding: 0 8px;
+            text-decoration: none;
+        }
+
+        .folder-sort--list {
+            a {
+                background-color: $blackplaceholder;
+                border: 0;
+                color: $whitecolor;
+                line-height: $lineheight20 + 10px;
+
+                .dashicons {
+                    line-height: $lineheight20 + 10px;
+                    position: relative;
+                    top: 5px;
+
+                    &:before {
+                        content: '';
+                        border-radius: $radius6p;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        position: absolute;
+                    }
+
+                    &.dashicons-sort:before {
+                        background: url(../../../assets/images/settings.svg) center no-repeat;
+                    }
+
+                    &.dashicons-arrow-down-alt2:before {
+                        background: url(../../../assets/images/chevron_down.svg) center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .has--sub-menu {
+        position: relative;
+
+        .adminify--sub-menu {
+            background-color: $whitecolor;
+            border-radius: $radius6p;
+            box-shadow: $grayshadow;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            min-width: 120px;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+
+            li {
+                list-style: none;
+                width: 100%;
+                margin: 0;
+                &:before,&:after {
+                    display: none;
+                }
+
+                a {
+                    color: $blackmuted;
+                    display: block;
+                    @include font14_400;
+                    padding: 5px 15px;
+                    background-color: transparent;
+                    border-radius: 0px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &.sub-menu--open {
+            z-index: 3;
+
+            >.adminify--sub-menu {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .folder--header,
+    .folder--actions,
+    .folder--search,
+    .folder--stats,
+    .folder--lists {
+        border-bottom: 1px solid $whitegray;
+        padding: 13.5px 14px;
+    }
+
+    .folder--search {
+        input {
+            @include search_input;
+            padding: 8px 16px;
+            width: 100%;
+        }
+    }
+
+    .folder--stats {
+        margin: 0;
+
+        li {
+            margin: 0 0 8px;
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                background-color: $whitecolor;
+                border-radius: $radius6p;
+                color: $titlecolor;
+                @include font14_700;
+                padding: 8px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+                outline: none;
+                box-shadow: none;
+                transition: all 0.25s ease;
+
+                &:hover {
+                    background: #e5ecff;
+                    color: $primarycolor;
+                }
+            }
+
+            &.active {
+                > a {
+                    background: #e5ecff;
+                    color: $primarycolor;
+                }
+            }
+        }
+    }
+
+    .folder--lists {
+        margin: 0 0 15px;
+
+        li {
+            margin-bottom: 0;
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                left: 0;
+                position: absolute;
+            }
+
+            &:before {
+                border-left: 1px dashed $black;
+                height: 100%;
+                width: 1px;
+                top: 0;
+                margin-top: 1px;
+            }
+
+            &:after {
+                border-bottom: 1px dashed $black;
+                height: 1px;
+                width: 100%;
+                top: 17px;
+            }
+
+            &:last-child {
+                &:before {
+                    top: -18px;
+                }
+            }
+            &:first-child {
+                &:before {
+                    height: 50%;
+                    top: 0;
+                }
+            }
+
+            a {
+                background-color: $whitecolor;
+                color: $primarycolor;
+                display: block;
+                @include font14_400;
+                line-height: $lineheight20;
+                border-radius: $radius6p;
+                margin-left: 1.5rem;
+                padding: 8px 1rem 8px .5rem;
+                position: relative;
+                z-index: 1;
+                .wp-adminify--name {
+                    color: $blackcolor;
+                }
+
+                .wp-adminify--icon-control {
+                    float: left;
+                    margin: -1px 5px 0 0;
+                    width: 24px;
+                }
+
+                .wp-adminify--count {
+                    float: right;
+                }
+
+                &:focus {
+                    border: 0;
+                    box-shadow: none;
+                    outline: 0;
+                }
+            }
+            &.folder--single-root.has--sub-menu + .folder--single-root.has--sub-menu:before {
+                top: -50%;
+            }
+
+            .folder--sub-lists {
+                li {
+                    a {
+                        margin-left: 2rem;
+                    }
+                    .folder--sub-lists {
+                        a {
+                            margin-left: 2.5rem;
+                        }
+                        .folder--sub-lists {
+                            a {
+                                margin-left: 3.5rem;
+                            }
+                            .folder--sub-lists {
+                                a {
+                                    margin-left: 4.5rem;
+                                }
+                                .folder--sub-lists {
+                                    a {
+                                        margin-left: 5.5rem;
+                                    }
+                                    .folder--sub-lists {
+                                        a {
+                                            margin-left: 6.5rem;
+                                        }
+                                        .folder--sub-lists {
+                                            a {
+                                                margin-left: 7.5rem;
+                                            }
+                                            .folder--sub-lists {
+                                                a {
+                                                    margin-left: 8.5rem;
+                                                }
+                                                .folder--sub-lists {
+                                                    a {
+                                                        margin-left: 9.5rem;
+                                                    }
+                                                    .folder--sub-lists {
+                                                        a {
+                                                            margin-left: 10.5rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                > a {
+                    background: #e5ecff;
+                    color: $primarycolor;
+                }
+            }
+        }
+        .adminify--sub-menu {
+            top: 0;
+
+            li {
+                &:before,&:after {
+                    display: none;
+                }
+                a {
+                    background-color: #fff;
+                    color: #444;
+
+                    &:hover {
+                        color: $primarycolor;
+                    }
+                    &:before,&:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .folder--stats,
+    .folder--lists,
+    .adminify--sub-menu {
+        li a.adminify-drop-hover {
+            background: $primarycolor !important;
+            color: #fff !important;
+            span {
+                color: #fff !important;
+            }
+        }
+    }
+
+    .folder-sort--list {
+        display: inline-block;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            vertical-align: middle;
+            >a {
+                display: block;
+            }
+        }
+
+        a {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+}
+
+.wp-adminify {
+    &.has-folder-options {
+        #wpbody-content {
+            padding-left: 18.875rem;
+        }
+        #wpbody-content {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        &.folded {
+            #wpbody-content {
+                padding-left: 18.5rem;
+            }
+            .wp-adminify--folder-widget {
+                left: 56px;
+            }
+        }
+    }
+}
+
+.column-adminify_move {
+    width: 20px;
+}
+
+.adminify-move-file,
+.adminify-move-multiple {
+    &:not(.ui-draggable-dragging) {
+        .adminify-move-file--title {
+            display: none;
+        }
+    }
+
+    .adminify-move-file--title {
+        font-weight: normal;
+        margin-left: 6px;
+    }
+
+    &.ui-draggable-handle {
+        cursor: all-scroll;
+    }
+
+    &.ui-draggable-dragging {
+        background: #ddd;
+        border-radius: 3px;
+        padding: 6px 12px;
+        max-width: 200px;
+        z-index: 999999;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+}
+
+.wp-adminify--popup-area {
+    background-color: $blackpopover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 9999;
+    transition: all .2s ease-in-out;
+}
+
+body.wp-adminify--popup-show {
+    .wp-adminify--popup-area {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.wp-adminify--popup-container {
+    width: 32.8125rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wp-adminify--popup-container_inner {
+    @include postboxreset;
+    padding: 35px;
+    position: relative;
+    width: 100%;
+
+    .wp-adminify--popup-close {
+        color: $reddark;
+        font-size: $fontsize + 6px;
+        top: 1rem;
+        right: 1rem;
+        position: absolute;
+        opacity: 1;
+
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+        }
+    }
+
+    h3 {
+        color: $black;
+        display: inline-block;
+        font-size: $fontsize + 4px;
+        font-weight: $weight700;
+        line-height: $lineheight20;
+    }
+
+    .popup--new-folder__name,
+    .popup--new-folder__color {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+
+        div:first-child {
+            color: $titlecolor;
+            display: inline-block;
+            @include font14_600;
+            line-height: $lineheight20;
+            min-width: 6.5rem;
+        }
+
+        div:last-child {
+            min-width: 265px;
+        }
+    }
+    .popup--new-folder__color + .button {
+        margin-top: 1.5rem;
+        &:hover,
+        &:focus {
+            background-color: $whitecolor;
+            border-color: $primarycolor;
+            color: $primarycolor;
+        }
+    }
+
+    .popup--new-folder__name {
+        input {
+            @include search_input;
+            font-weight: $weight400;
+            width: 100%;
+
+            &:focus {
+                border: 0;
+                box-shadow: none;
+                outline: 0;
+            }
+        }
+    }
+
+    .wp-adminify--colors {
+        list-style: none;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 8px 0 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                @include radiusround;
+                display: block;
+                width: 26px;
+                height: 26px;
+                outline: none;
+                position: relative;
+                text-decoration: none;
+            }
+            &.active {
+                a {
+                    box-shadow: 0 0 10px rgba($color: $black, $alpha: 0.35) !important;
+                    &:before {
+                        content: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%233582c4%27%2F%3E%3C%2Fsvg%3E");
+                        filter: brightness(9);
+                    }
+                }
+            }
+        }
+    }
+
+    .popup--delete-folder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        .button {
+            @include submitfill;
+            margin: 0 5px;
+            &:hover {
+                @include submitfillHover;
+            }
+            &.button-primary {
+                background-color: $reddark !important;
+                border-color: $reddark !important;
+                margin: 0 5px;
+                &:hover {
+                    background-color: transparent !important;
+                    border-color: $reddark !important;
+                    color: $reddark !important;
+                }
+            }
+        }
+        h3 {
+            color: $blackcolor;
+            font-size: $fontsize + 4px;
+            font-weight: $weight600;
+            margin: 0 0 10px;
+        }
+
+        p {
+            color: $blackcolor;
+            @include font14_400;
+            line-height: $lineheight20;
+            margin: 0 0 1.5rem;
+        }
+    }
+
+    .popup--move-to-folder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        .button {
+            @include submitfill;
+            margin: 0 5px;
+            &:hover {
+                @include submitfillHover;
+            }
+            &.button-primary {
+                background-color: $reddark !important;
+                border-color: $reddark !important;
+                margin: 0 5px;
+                &:hover {
+                    background-color: transparent !important;
+                    border-color: $reddark !important;
+                    color: $reddark !important;
+                }
+            }
+        }
+        h3 {
+            color: $blackcolor;
+            font-size: $fontsize + 4px;
+            font-weight: $weight600;
+            margin: 0 0 10px;
+        }
+
+        p {
+            color: $blackcolor;
+            @include font14_400;
+            line-height: $lineheight20;
+            margin: 0 0 1.5rem;
+        }
+    }
+}
+
+.popup--new-folder-error {
+    margin-top: 20px;
+    color: red;
+    padding: 10px 16px;
+    background-color: rgba(red, 0.07);
+    border-radius: 3px;
+}
+
+
+.adminify--items-dragging {
+
+    .media-frame,
+    .media-frame-content,
+    .attachments-browser {
+        overflow: initial;
+    }
+}
+
+.wp-adminify {
+    .nosubsub {
+        #col-container {
+            .form-wrap {
+                @include postboxreset;
+                padding: 15px;
+                .form-field {
+                    input,textarea,select {
+                        @include search_input;
+                        width: 100%;
+                    }
+                    p {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

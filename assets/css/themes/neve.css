@@ -1,0 +1,17 @@
+.wp-adminify #wpbody-content .neve-meta-button-group .components-button-group .components-button {
+  padding: 0 10px !important;
+}
+.wp-adminify #wpbody-content .neve-meta-button-group .components-button-group .components-button[class*=nv-align] {
+  padding: 6px 10px !important;
+}
+.wp-adminify #wpbody-content .neve-meta-button-group .components-button-group .components-button[class*=nv-align] svg {
+  fill: #fff;
+}
+.wp-adminify #wpbody-content .neve-meta-button-group .components-button-group .components-button[class*=nv-align]:hover svg {
+  fill: #0347ff;
+}
+.wp-adminify #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body input[type=checkbox] {
+  width: 100%;
+}
+
+/*# sourceMappingURL=neve.css.map*/

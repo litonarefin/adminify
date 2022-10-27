@@ -1,0 +1,45 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wp-adminify {
+    #wpbody-content {
+        .itemButton a {
+            color: $whitecolor;
+        }
+    }
+    &.adminify-dark-mode {
+        .itemDetail,
+        #ao_settings_form,
+        .ao_settings_div {
+            background-color: $dark-mode-black-1;
+            border-color: $dark-mode-border-color-1;
+        }
+        #autoptimize_main input[type="text"] {
+            background-color: $dark-mode-bg !important;
+        }
+        #autoptimize_admin_feed {
+            background-color: $dark-mode-black-1;
+            padding: 20px 0;
+            li {
+                color: $dark-mode-white;
+            }
+        }
+        #ao_settings_form {
+            color: $dark-mode-white;
+            table {
+                label input[type="text"] {
+                    background-color: $dark-mode-bg;
+                }
+            }
+        }
+        .itemDetail {
+            .collapsible>div,
+            #autoptimize_ccss_key {
+                background-color: $dark-mode-bg !important;
+            }
+        }
+        .itemDescription {
+            color: $dark-mode-white;
+        }
+    }
+}

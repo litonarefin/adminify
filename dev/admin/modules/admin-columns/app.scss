@@ -1,0 +1,99 @@
+.admin-column-name .comment-grey-bubble {
+    &:before {
+        content: '\f101';
+        font: normal 20px/.5 'dashicons';
+        speak: none;
+        display: inline-block;
+        padding: 0;
+        top: 8px;
+        left: 0;
+        position: relative;
+        vertical-align: top;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-decoration: none !important;
+    }
+}
+
+// .admin-column-accordion--open {
+
+//     .accordion-body {
+//         display: block !important;
+//     }
+
+// }
+
+.wp-adminify #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion {
+
+    .accordion-body {
+        
+        .range-slider-wrapper {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .range-slider {
+            background: transparent;
+            height: 24px;
+            margin: 0;
+        }
+    
+    }
+
+    .range-slider-fill {
+        background: #6079ff;
+        cursor: pointer;
+    }
+
+    &.admin-column-accordion-force--open {
+        .accordion-body {
+            display: block;
+        }
+    }
+
+}
+
+
+.wp-adminify--popup-container {
+    width: 32.8125rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wp-adminify--popup-container_inner h3 {
+    color: #000;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.wp-adminify--popup-container_inner .popup-content {
+    margin-bottom: 18px;
+}
+
+#wpadminify-admin-columns .tab-pane {
+    position: relative;
+}
+
+.admin-column--pro-guard {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .75);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminify-dark-mode {
+    .admin-column--pro-guard {
+        background: rgba(0, 0, 0, .75);
+    }
+}

@@ -1,0 +1,32 @@
+.wp-adminify {
+    #wpbody-content {
+        p.wp-ui-highlight {
+            color: #fff;
+        }
+    }
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .email-octopus-form-wrapper,
+            .changelog.about-integrations {
+                background-color: #1d1d1d;
+            }
+            .email-octopus-form-row input,
+            table.form-table.cptui-table input,
+            table.form-table.cptui-table textarea {
+                background-color: #111;
+                color: #cfcfcf;
+            }
+            .postbox-header {
+                border-color: #2b2b2b;
+            }
+            table#support {
+                color: #cfcfcf;
+            }
+        }
+        &.cpt-ui_page_cptui_tools {
+            table.form-table.cptui-table {
+                background-color: #1d1d1d;
+            }
+        }
+    }
+}

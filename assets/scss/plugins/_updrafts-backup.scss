@@ -1,0 +1,16 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#updraft-wrap {
+    .dashicons {
+        color: inherit;
+    }
+}
+
+.settings_page_updraftplus {
+    #updraft-wrap {
+        select {
+            @include selectone;
+        }
+    }
+}

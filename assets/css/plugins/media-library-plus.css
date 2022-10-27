@@ -1,0 +1,80 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+.wp-adminify #wpbody-content .gray-blue-link, .wp-adminify #wpbody-content .gray-blue-link:active {
+  color: #2ea2cc;
+}
+.wp-adminify #wpbody-content .gray-blue-link:hover,
+.wp-adminify #wpbody-content .big-pluspro-btn,
+.wp-adminify #wpbody-content .big-pluspro-btn:hover,
+.wp-adminify #wpbody-content .features h2 {
+  color: var(--adminify-text-color);
+}
+.wp-adminify #wpbody-content #new-gallery-box, .wp-adminify #wpbody-content #rename-box, .wp-adminify #wpbody-content #new-folder-box {
+  height: auto;
+}
+.wp-adminify.adminify-dark-mode #wpwrap,
+.wp-adminify.adminify-dark-mode input#mgmlp-media-search-input:hover {
+  background-color: #111 !important;
+}
+.wp-adminify.adminify-dark-mode div#wp-media-grid.wrap div.media-plus-toolbar,
+.wp-adminify.adminify-dark-mode .media-plus-toolbar,
+.wp-adminify.adminify-dark-mode .utp-body,
+.wp-adminify.adminify-dark-mode .options-section .option {
+  background-color: #1d1d1d !important;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .gray-blue-link,
+.wp-adminify.adminify-dark-mode #wpbody-content .gray-blue-link:active {
+  color: #2ea2cc;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .gray-blue-link {
+  background-color: #111;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .gray-blue-link:hover, .wp-adminify.adminify-dark-mode #wpbody-content .gray-blue-link:active {
+  background-color: #2ea2cc;
+  border-color: #2ea2cc;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #pro-btn,
+.wp-adminify.adminify-dark-mode #wpbody-content #dragandrophandler,
+.wp-adminify.adminify-dark-mode #wpbody-content h1,
+.wp-adminify.adminify-dark-mode #wpbody-content .top-section strong,
+.wp-adminify.adminify-dark-mode #wpbody-content .big-pluspro-btn,
+.wp-adminify.adminify-dark-mode #wpbody-content h4 {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #mgmlp-outer-container,
+.wp-adminify.adminify-dark-mode #wpbody-content #new-top-promo,
+.wp-adminify.adminify-dark-mode #wpbody-content #dragandrophandler,
+.wp-adminify.adminify-dark-mode #wpbody-content .vakata-context,
+.wp-adminify.adminify-dark-mode #wpbody-content .vakata-context ul,
+.wp-adminify.adminify-dark-mode #wpbody-content #new-folder-box,
+.wp-adminify.adminify-dark-mode #wpbody-content #rename-box,
+.wp-adminify.adminify-dark-mode #wpbody-content .tabbed-content ul.tabs li a {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #mgmlp-breadcrumbs,
+.wp-adminify.adminify-dark-mode #wpbody-content .vakata-context,
+.wp-adminify.adminify-dark-mode #wpbody-content .vakata-context ul,
+.wp-adminify.adminify-dark-mode #wpbody-content #mlf-info,
+.wp-adminify.adminify-dark-mode #wpbody-content .tabbed-content ul.tabs li a {
+  background-color: #111;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .attachment-name {
+  background-color: #1d1d1d;
+}
+
+/*# sourceMappingURL=media-library-plus.css.map*/

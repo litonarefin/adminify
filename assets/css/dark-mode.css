@@ -1,0 +1,1962 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+@font-face {
+  font-family: no-parens;
+  src: url("data:application/x-font-woff;base64,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");
+  unicode-range: U+0028, U+0029;
+}
+.wp-adminify.adminify-dark-mode {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode a {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search input::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search input::-moz-placeholder, .wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name input::-moz-placeholder {
+  color: #fff !important;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search input:-ms-input-placeholder, .wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name input:-ms-input-placeholder {
+  color: #fff !important;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search input::-ms-input-placeholder, .wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name input::-ms-input-placeholder {
+  color: #fff !important;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--copyright a,
+.wp-adminify.adminify-dark-mode #wpbody-content .welcome-panel-header h2,
+.wp-adminify.adminify-dark-mode #wpbody-content .welcome-panel-header a,
+.wp-adminify.adminify-dark-mode #wpbody-content a.welcome-panel-close,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search input::placeholder,
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name input::placeholder {
+  color: #fff !important;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--lists li.active a {
+  background-color: #111 !important;
+}
+.wp-adminify.adminify-dark-mode .about__container .has-subtle-background-color,
+.wp-adminify.adminify-dark-mode .welcome-panel .welcome-panel-column-container {
+  background-color: #1d1d1d !important;
+}
+.wp-adminify.adminify-dark-mode input[type=checkbox] {
+  border: 1px solid rgba(78, 75, 102, 0.54);
+}
+.wp-adminify.adminify-dark-mode input:not([type=checkbox], [type=radio], [type=hidden], [type=submit], [type=button], [type=number]),
+.wp-adminify.adminify-dark-mode [type=text],
+.wp-adminify.adminify-dark-mode textarea,
+.wp-adminify.adminify-dark-mode .block-editor-block-contextual-toolbar {
+  border: 1px solid #cfcfcf;
+  background: #111;
+}
+.wp-adminify.adminify-dark-mode input:not([type=checkbox], [type=radio], [type=hidden], [type=submit], [type=button], [type=number]) .block-editor-block-toolbar .components-toolbar-group,
+.wp-adminify.adminify-dark-mode [type=text] .block-editor-block-toolbar .components-toolbar-group,
+.wp-adminify.adminify-dark-mode textarea .block-editor-block-toolbar .components-toolbar-group,
+.wp-adminify.adminify-dark-mode .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.wp-adminify.adminify-dark-mode .editor-post-publish-panel__prepublish .components-panel__body {
+  background: #111;
+}
+.wp-adminify.adminify-dark-mode .editor-post-publish-panel__prepublish .components-panel__body .components-panel__body-title button {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .editor-post-publish-panel__prepublish .components-panel__body .components-panel__body-title:hover {
+  background: #333;
+}
+.wp-adminify.adminify-dark-mode .editor-post-visibility__dialog-fieldset .editor-post-visibility__dialog-radio[type=radio]:checked::before {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+.wp-adminify.adminify-dark-mode .block-library-classic__toolbar:empty {
+  background-color: #020407 !important;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name input {
+  color: var(--adminify-text-color) !important;
+}
+.wp-adminify.adminify-dark-mode .interface-pinned-items .components-button svg {
+  margin: 5px;
+}
+.wp-adminify.adminify-dark-mode.plugins-php .wp-list-table.plugins tbody#the-list .row-actions .network_only, .wp-adminify.adminify-dark-mode.plugins-php .wp-list-table.plugins tbody#the-list .row-actions .network_active {
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode #dashboard_activity #activity-widget #latest-comments .subsubsub li a span[class*=-count] {
+  color: #1d1d1d !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content a:not(.post-publish-panel__postpublish-buttons .components-button, .page-title-action) {
+  color: #205BFF !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content h1,
+.wp-adminify.adminify-dark-mode #wpbody-content h2,
+.wp-adminify.adminify-dark-mode #wpbody-content h3,
+.wp-adminify.adminify-dark-mode #wpbody-content h4,
+.wp-adminify.adminify-dark-mode #wpbody-content h5,
+.wp-adminify.adminify-dark-mode #wpbody-content h6 {
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav.top {
+  margin: 2px 0;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .subsubsub {
+  padding: 10px 0 10px;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .block-editor-inserter__content .components-tab-panel__tabs-item {
+  background: #020407;
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .block-editor-inserter__tabs .block-editor-inserter__panel-header h2 {
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body select {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header--search--form input::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text]::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url]::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text]::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search]::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url]::-webkit-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text]::-webkit-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header--search--form input::-moz-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text]::-moz-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url]::-moz-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text]::-moz-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search]::-moz-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url]::-moz-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text]::-moz-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header--search--form input:-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text]:-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url]:-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text]:-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search]:-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url]:-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text]:-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header--search--form input::-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text]::-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url]::-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text]::-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search]::-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url]::-ms-input-placeholder, .wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text]::-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header--search--form input::placeholder,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text]::placeholder,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url]::placeholder,
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text]::placeholder,
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search]::placeholder,
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url]::placeholder,
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text]::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+.wp-adminify.adminify-dark-mode #posts-filter .search-box {
+  padding-bottom: 20px;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content a {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wrap h1,
+.wp-adminify.adminify-dark-mode #wpbody-content h2,
+.wp-adminify.adminify-dark-mode #wpbody-content h2.wp-current-version,
+.wp-adminify.adminify-dark-mode #wpbody-content .update-core-php h2,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat tfoot tr td,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat tfoot tr th,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat thead tr td,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat thead tr th {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content select {
+  background-color: #cfcfcf;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .wp-die-message,
+.wp-adminify.adminify-dark-mode p:not(.edit-post-visual-editor p) {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .wp-die-message a,
+.wp-adminify.adminify-dark-mode p:not(.edit-post-visual-editor p) a {
+  color: #205BFF;
+}
+.wp-adminify.adminify-dark-mode input,
+.wp-adminify.adminify-dark-mode textarea {
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode ::-webkit-input-placeholder,
+.wp-adminify.adminify-dark-mode ::-moz-placeholder,
+.wp-adminify.adminify-dark-mode :-ms-input-placeholder,
+.wp-adminify.adminify-dark-mode :-moz-placeholder {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-image,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top:hover > a.menu-top .wp-adminify-icon-image {
+  -webkit-filter: brightness(1) contrast(1);
+          filter: brightness(1) contrast(1);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .card,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default li:hover,
+.wp-adminify.adminify-dark-mode #wpadminbar .ab-top-menu > li.menupop.hover > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+.wp-adminify.adminify-dark-mode #wpadminbar.nojs .ab-top-menu > li.menupop:hover > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus,
+.wp-adminify.adminify-dark-mode .wp-adminify_page_adminify-custom-css-js .adminify-field.adminify-field-group,
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header-search-results,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion, .wp-adminify.adminify-dark-mode.adminify-options.adminify-container,
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .adminify-field + .adminify-field,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .chosen-drop, .wp-adminify.adminify-dark-mode.modal-open #wp-link-wrap, .wp-adminify.adminify-dark-mode.appearance_page_custom-background .form-table #custom-background-image, .wp-adminify.adminify-dark-mode.nav-menus-php #menu-locations-wrap table.widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #post-status-info,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table,
+.wp-adminify.adminify-dark-mode .options-general-php .wrap form,
+.wp-adminify.adminify-dark-mode .options-writing-php .wrap form,
+.wp-adminify.adminify-dark-mode .options-reading-php .wrap form,
+.wp-adminify.adminify-dark-mode .options-discussion-php .wrap form,
+.wp-adminify.adminify-dark-mode .options-media-php .wrap form,
+.wp-adminify.adminify-dark-mode .options-permalink-php .wrap form,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-accordion-heading,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-accordion-panel,
+.wp-adminify.adminify-dark-mode .media-modal .media-modal-content,
+.wp-adminify.adminify-dark-mode #wpbody-content .image-editor .imgedit-group,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion,
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner,
+.wp-adminify.adminify-dark-mode .wp-adminify-page-speed-wrapper .tab-content,
+.wp-adminify.adminify-dark-mode #adminmenu .wp-submenu,
+.wp-adminify.adminify-dark-mode .theme-install-php #wpbody-content .upload-theme .wp-upload-form,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter .filter-drawer .filter-group, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-wrap, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .screenshot,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-accordion .health-check-accordion-heading,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-accordion .health-check-accordion-panel,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat td.colspanchange,
+.wp-adminify.adminify-dark-mode .table,
+.wp-adminify.adminify-dark-mode #wpbody-content .card,
+.wp-adminify.adminify-dark-mode .wp-adminify_page_adminify-custom-css-js .adminify-field.adminify-field-group,
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form .top-header-search-results,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion,
+.wp-adminify.adminify-dark-mode .adminify-options .adminify-container,
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .adminify-field + .adminify-field,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .chosen-drop, .wp-adminify.adminify-dark-mode.modal-open #wp-link-wrap, .wp-adminify.adminify-dark-mode.appearance_page_custom-background .form-table #custom-background-image, .wp-adminify.adminify-dark-mode.nav-menus-php #menu-locations-wrap table.widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #post-status-info,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table, .wp-adminify.adminify-dark-mode.options-general-php .wrap form, .wp-adminify.adminify-dark-mode.options-writing-php .wrap form, .wp-adminify.adminify-dark-mode.options-reading-php .wrap form, .wp-adminify.adminify-dark-mode.options-discussion-php .wrap form, .wp-adminify.adminify-dark-mode.options-media-php .wrap form, .wp-adminify.adminify-dark-mode.options-permalink-php .wrap form,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-accordion-heading,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-accordion-panel,
+.wp-adminify.adminify-dark-mode .media-modal .media-modal-content,
+.wp-adminify.adminify-dark-mode #wpbody-content .image-editor .imgedit-group, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor .selector-popup-wrap.icons-selector .selector-popup,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion,
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner,
+.wp-adminify.adminify-dark-mode .wp-adminify-page-speed-wrapper .tab-content,
+.wp-adminify.adminify-dark-mode #adminmenu .wp-submenu,
+.wp-adminify.adminify-dark-mode .theme-install-php #wpbody-content .upload-theme .wp-upload-form,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter .filter-drawer .filter-group, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-wrap, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .screenshot,
+.wp-adminify.adminify-dark-mode .editwidget .widget-inside,
+.wp-adminify.adminify-dark-mode .editwidget table.widefat,
+.wp-adminify.adminify-dark-mode .adminify-server-info .adminify-tabbed-contents,
+.wp-adminify.adminify-dark-mode #PHPinfo table.widefat,
+.wp-adminify.adminify-dark-mode #MYSQLinfo table.widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.updates-table,
+.wp-adminify.adminify-dark-mode #adminify-pto-media,
+.wp-adminify.adminify-dark-mode .upload-plugin .wp-upload-form,
+.wp-adminify.adminify-dark-mode .upload-theme .wp-upload-form, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #poststuff .stuffbox,
+.wp-adminify.adminify-dark-mode #createuser,
+.wp-adminify.adminify-dark-mode #your-profile,
+.wp-adminify.adminify-dark-mode .mwp-notice td,
+.wp-adminify.adminify-dark-mode .plugins tr,
+.wp-adminify.adminify-dark-mode .wp-adminify--page--title--actions .dropdown-menu {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode input,
+.wp-adminify.adminify-dark-mode textarea,
+.wp-adminify.adminify-dark-mode select,
+.wp-adminify.adminify-dark-mode #wpbody-content input,
+.wp-adminify.adminify-dark-mode #wpbody-content textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content select,
+.wp-adminify.adminify-dark-mode .wp-adminify-top-header--search--form input, .wp-adminify.adminify-dark-mode.modal-open input[type=text], .wp-adminify.adminify-dark-mode.modal-open input[type=search],
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .chosen-choices,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-content .adminify--result,
+.wp-adminify.adminify-dark-mode #nav-menus-frame .tabs-panel input[type=search],
+.wp-adminify.adminify-dark-mode #nav-menu-header input[type=text],
+.wp-adminify.adminify-dark-mode #posts-filter .wp-filter .search-form input,
+.wp-adminify.adminify-dark-mode .postbox-container #comments-form .search-box input,
+.wp-adminify.adminify-dark-mode .postbox-container #post_tag input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .permalink-structure .available-structure-tags button,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content input[type=search],
+.wp-adminify.adminify-dark-mode .media-frame-content .media-sidebar .compat-item input[type=text],
+.wp-adminify.adminify-dark-mode .media-frame-content .settings input,
+.wp-adminify.adminify-dark-mode .media-frame-content .settings textarea,
+.wp-adminify.adminify-dark-mode .media-frame-content .setting input,
+.wp-adminify.adminify-dark-mode .media-frame-content .setting textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .form-table input,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .block-editor-inserter__search-input,
+.wp-adminify.adminify-dark-mode .components-accessible-toolbar .components-toolbar-group .components-button,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row ul.cat-checklist,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links .button.disabled,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links input.disabled,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content .wp-editor-container textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content .wp-editor-container input.button,
+.wp-adminify.adminify-dark-mode #wpbody-content .imgedit-wrap .imgedit-group input,
+.wp-adminify.adminify-dark-mode .form-table .select2-container .select2-selection {
+  background-color: #111;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode select,
+.wp-adminify.adminify-dark-mode #wpbody-content select,
+.wp-adminify.adminify-dark-mode .form-table .select2-container .select2-selection {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .button-primary,
+.wp-adminify.adminify-dark-mode #wpbody-content .button-secondary,
+.wp-adminify.adminify-dark-mode #wpbody-content .page-title-action,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=submit], .wp-adminify.adminify-dark-mode.adminify-options .adminify-reset-section,
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .adminify-field button,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .adminify-fieldset button:not(.wp-switch-editor),
+.wp-adminify.adminify-dark-mode .adminify-data-wrapper .adminify-cloneable-content button,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-picker-input-wrap .button.wp-picker-default, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .sidebar-title a, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .wp-adminify--popup-container_inner form .button.button-primary,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .columns.is-desktop button, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .form-table #choose-from-library-link, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .wp-picker-container .wp-picker-input-wrap .button, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-edit .button, .wp-adminify.adminify-dark-mode.nav-menus-php .appearance_page_custom-background .wp-upload-form button,
+.wp-adminify.adminify-dark-mode #widgets-left .widgets-chooser .widgets-chooser-sidebars button,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions .-edit-columns,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container #post_tag input.button,
+.wp-adminify.adminify-dark-mode #post-body-content .postarea button:not(.wp-switch-editor, .ed_button, .mce-widget button),
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings .editor-post-switch-to-draft,
+.wp-adminify.adminify-dark-mode #posts-filter .wp-list-table.widefat .inline-edit-row.inline-edit-save button,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside .button,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside input[type=submit],
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside .button:not(.wp-editor-wrap .button),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside input[type=submit],
+.wp-adminify.adminify-dark-mode #major-publishing-actions input[type=submit],
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-toolbar .media-toolbar button,
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor button:not(.imgedit-help-toggle),
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor input[type=button],
+.wp-adminify.adminify-dark-mode .wp-adminify-page-speed-wrapper .wp-adminify-analyze-button,
+.wp-adminify.adminify-dark-mode #wpbody-content #documentation #docs-lookup,
+.wp-adminify.adminify-dark-mode .wp-list-table.widefat.comments .inline-edit-row .comment-reply .reply-submit-buttons button, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme .theme-actions .button, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-actions .button, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme .theme-actions .button, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-install-overlay .wp-full-overlay-header .button, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .filter-drawer .buttons .button,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-view-passed,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-copy-buttons button,
+.wp-adminify.adminify-dark-mode .privacy-settings-accordion-actions button,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-generate-pw,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-hide-pw,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-generate-pw,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-hide-pw,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--header a,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar button.components-button.components-color-palette__clear,
+.wp-adminify.adminify-dark-mode .narrow form button,
+.wp-adminify.adminify-dark-mode #copy_billing {
+  background-color: #020407 !important;
+  border-color: #020407 !important;
+  color: var(--adminify-text-color) !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .button-primary:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .button-secondary:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .page-title-action:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=submit]:hover, .wp-adminify.adminify-dark-mode.adminify-options .adminify-reset-section:hover,
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .adminify-field button:hover,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .adminify-fieldset button:not(.wp-switch-editor):hover,
+.wp-adminify.adminify-dark-mode .adminify-data-wrapper .adminify-cloneable-content button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-picker-input-wrap .button.wp-picker-default:hover, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .sidebar-title a:hover, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .wp-adminify--popup-container_inner form .button.button-primary:hover,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .columns.is-desktop button:hover, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .form-table #choose-from-library-link:hover, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .wp-picker-container .wp-picker-input-wrap .button:hover, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-edit .button:hover, .wp-adminify.adminify-dark-mode.nav-menus-php .appearance_page_custom-background .wp-upload-form button:hover,
+.wp-adminify.adminify-dark-mode #widgets-left .widgets-chooser .widgets-chooser-sidebars button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions .-edit-columns:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container #post_tag input.button:hover,
+.wp-adminify.adminify-dark-mode #post-body-content .postarea button:not(.wp-switch-editor, .ed_button, .mce-widget button):hover,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings .editor-post-switch-to-draft:hover,
+.wp-adminify.adminify-dark-mode #posts-filter .wp-list-table.widefat .inline-edit-row.inline-edit-save button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button):hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside .button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button):hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside .button:not(.wp-editor-wrap .button):hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode #major-publishing-actions input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-toolbar .media-toolbar button:hover,
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor button:not(.imgedit-help-toggle):hover,
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor input[type=button]:hover,
+.wp-adminify.adminify-dark-mode .wp-adminify-page-speed-wrapper .wp-adminify-analyze-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #documentation #docs-lookup:hover,
+.wp-adminify.adminify-dark-mode .wp-list-table.widefat.comments .inline-edit-row .comment-reply .reply-submit-buttons button:hover, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme .theme-actions .button:hover, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-actions .button:hover, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme .theme-actions .button:hover, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-install-overlay .wp-full-overlay-header .button:hover, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .filter-drawer .buttons .button:hover,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-view-passed:hover,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-copy-buttons button:hover,
+.wp-adminify.adminify-dark-mode .privacy-settings-accordion-actions button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-generate-pw:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-hide-pw:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-generate-pw:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-hide-pw:hover,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--header a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar button.components-button.components-color-palette__clear:hover,
+.wp-adminify.adminify-dark-mode .narrow form button:hover,
+.wp-adminify.adminify-dark-mode #copy_billing:hover {
+  background-color: var(--adminify-text-color) !important;
+  color: #020407 !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .subsubsub li a.current {
+  border-color: #020407;
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .subsubsub li a.current .count {
+  background-color: #020407;
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=submit]:hover {
+  background-color: #020407;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-item .logo-light {
+  display: none;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-item .logo-dark {
+  display: block;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-item .wp-adminify-site-name {
+  color: #b1b1b1;
+  font-size: 1.8em;
+  text-align: center;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand a.navbar-item:focus,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand a.navbar-item:focus-within,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand a.navbar-item:hover,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand a.navbar-item.is-active,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-link:focus,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-link:focus-within,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-link:hover,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-link.is-active {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-burger {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .ab-empty-item,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar a.ab-item,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar > #wp-toolbar span.ab-label,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar > #wp-toolbar span.ab-icon,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar > #wp-toolbar span.ab-icon:before,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar > #wp-toolbar span.noticon {
+  color: var(--adminify-text-color) !important;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .menupop .ab-sub-wrapper .ab-submenu,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .shortlink-input .ab-submenu,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .menupop .ab-sub-wrapper,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .shortlink-input,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .menupop .ab-sub-wrapper .ab-item,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .shortlink-input .ab-item {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .menupop .ab-sub-wrapper .ab-item:hover,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar .shortlink-input .ab-item:hover {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wp-admin-bar-new-content .ab-item .ab-icon:before {
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar #wp-admin-bar-top-secondary li .ab-item,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar #wpadminbar #wp-admin-bar-root-default li .ab-item {
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-adminify-top-header--search--form .top-header-search-results table tbody td {
+  border-top-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.adminify-default-v-menu #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu a, .wp-adminify.adminify-dark-mode.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu a, .wp-adminify.adminify-dark-mode.adminify-default-v-menu.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu a, .wp-adminify.adminify-dark-mode.adminify-rounded-v-menu.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu a,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-adminify-top-header--search--form .top-header-search-results p,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-adminify-top-header--search--form .top-header-search-results table thead th,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-adminify-top-header--search--form .top-header-search-results table tbody td a,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox h2.hndle,
+.wp-adminify.adminify-dark-mode #tab-panel-overview p,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .edit-post-sidebar__panel-tabs button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .edit-widgets-sidebar__panel-tabs button,
+.wp-adminify.adminify-dark-mode .interface-complementary-area,
+.wp-adminify.adminify-dark-mode .block-editor-block-breadcrumb__button.components-button,
+.wp-adminify.adminify-dark-mode .block-editor-block-breadcrumb__current, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content p,
+.wp-adminify.adminify-dark-mode #wpbody-content table.widefat.striped.action-scheduler td,
+.wp-adminify.adminify-dark-mode .menu-editor-form .dashicons,
+.wp-adminify.adminify-dark-mode .narrow form td,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-heading-inline,
+.wp-adminify.adminify-dark-mode #wpbody-content .edit-widgets-welcome-guide__heading,
+.wp-adminify.adminify-dark-mode #wpbody-content .edit-widgets-welcome-guide__text,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .components-menu-item__info {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-admnify--mode--switcher, .wp-adminify.adminify-dark-mode.nav-menus-php .menu-edit #post-body #menu-to-edit .menu-item-settings {
+  border-right-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-end .wp-adminify--top--comment .topbar-icon svg path,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header svg path,
+.wp-adminify.adminify-dark-mode .block-editor-block-icon svg path,
+.wp-adminify.adminify-dark-mode .css-1einvap-DownArrowWrapper svg path {
+  fill: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #screen-meta {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #screen-meta #contextual-help-back,
+.wp-adminify.adminify-dark-mode #screen-meta .contextual-help-tabs a {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button:before {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  background: #020407;
+}
+.wp-adminify.adminify-dark-mode #screen-meta-links button {
+  background-color: #020407;
+  border-color: #020407;
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #screen-meta-links button:hover {
+  background-color: var(--adminify-text-color);
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode label,
+.wp-adminify.adminify-dark-mode #wpbody-content p:not(.edit-post-visual-editor p),
+.wp-adminify.adminify-dark-mode .wp-filter,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .displaying-num,
+.wp-adminify.adminify-dark-mode .tablenav-paging-text,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu .wp-menu-arrow,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu .wp-menu-arrow div,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.current a.menu-top,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.wp-has-current-submenu a.wp-has-current-submenu,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button:before, .wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu .wp-adminify-active:hover, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu .wp-adminify-active:hover,
+.wp-adminify.adminify-dark-mode #screen-options-wrap legend,
+.wp-adminify.adminify-dark-mode #screen-options-wrap label,
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .navbar-end i,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-author-name a,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-post-category a,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-post-comments a,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-author-name,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-post-category,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-post-comments,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table td p,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table th p,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices h3,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices .wp-adminify-notice-container p,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices .wp-adminify-notice-container .notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices .wp-adminify-notice-container .fs-notice .fs-plugin-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices .wp-adminify-notice-container .fs-notice .fs-notice-body,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--header span,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--lists li a .wp-adminify--name,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--stats li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat tr th .comment-grey-bubble:before,
+.wp-adminify.adminify-dark-mode .edit-post-header button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .editor-styles-wrapper .editor-post-title__block textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .editor-styles-wrapper .block-editor-block-list__layout .wp-block.block-editor-default-block-appender .block-editor-default-block-appender__content,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__search,
+.wp-adminify.adminify-dark-mode .components-button.block-editor-block-types-list__item,
+.wp-adminify.adminify-dark-mode #dashboard_site_health p,
+.wp-adminify.adminify-dark-mode .handle-actions button span,
+.wp-adminify.adminify-dark-mode #dashboard_activity #activity-widget .activity-block h3,
+.wp-adminify.adminify-dark-mode #dashboard_primary .inside .activity-block p,
+.wp-adminify.adminify-dark-mode #dashboard_activity #activity-widget #latest-comments ul li .comment-meta,
+.wp-adminify.adminify-dark-mode #dashboard_activity #activity-widget #latest-comments ul li blockquote p,
+.wp-adminify.adminify-dark-mode #dashboard_right_now ul li a .counter,
+.wp-adminify.adminify-dark-mode #dashboard_right_now #wp-version,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .edit-post-sidebar__panel-tabs button,
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner h3,
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__name div:first-child,
+.wp-adminify.adminify-dark-mode .wp-adminify--popup-container_inner .popup--new-folder__color div:first-child,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .edit-post-post-visibility span,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .edit-post-post-schedule span,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__row label,
+.wp-adminify.adminify-dark-mode .interface-complementary-area h2,
+.wp-adminify.adminify-dark-mode .interface-complementary-area h3,
+.wp-adminify.adminify-dark-mode .components-dropdown-menu__menu .components-menu-item__button,
+.wp-adminify.adminify-dark-mode .components-dropdown-menu__menu .components-menu-item__button.components-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .components-menu-item__item,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_server_uptime .adminify-uptime-chart .adminify-chart-status,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities table tr,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs table tr,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table tr,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table th,
+.wp-adminify.adminify-dark-mode #wpbody-content input,
+.wp-adminify.adminify-dark-mode #wpbody-content textarea,
+.wp-adminify.adminify-dark-mode .form-table th,
+.wp-adminify.adminify-dark-mode .form-wrap label,
+.wp-adminify.adminify-dark-mode .row-actions,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table th,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td .description,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row .inline-edit-legend,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row .title,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat th,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat td,
+.wp-adminify.adminify-dark-mode .widefat ol,
+.wp-adminify.adminify-dark-mode .widefat p,
+.wp-adminify.adminify-dark-mode .widefat ul,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row .inline-edit-col label.alignleft .checkbox-title,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #edit-slug-box,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content label,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .misc-pub-section,
+.wp-adminify.adminify-dark-mode #misc-publishing-actions #timestamp,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .category-tabs li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .tabs-panel label,
+.wp-adminify.adminify-dark-mode .imgedit-settings fieldset,
+.wp-adminify.adminify-dark-mode .imgedit-settings p,
+.wp-adminify.adminify-dark-mode .imgedit-separator,
+.wp-adminify.adminify-dark-mode .imgedit-thumbnail-preview-caption,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-server-info tr strong,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-server-info tr strong,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .handle-actions button span,
+.wp-adminify.adminify-dark-mode #wpfooter,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-post-time,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_memory_usage .halfspace span,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_memory_usage div.halfspace .spacedark,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities .wp-adminify-user-time-tracker time,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_primary .inside .activity-block p,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_site_health p,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_site_health p strong,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_activity #activity-widget .activity-block h3,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_activity #activity-widget .activity-block ul li span,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_right_now ul li a .counter,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_right_now #wp-version,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities .wp-adminify-user-name,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs .wp-adminify-user-name,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs table .wp-adminify-user-details span,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_activity #activity-widget #latest-comments ul li .comment-meta,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_activity #activity-widget #latest-comments ul li blockquote p, .wp-adminify.adminify-dark-mode.edit-tags-php #wpbody-content .form-wrap p, .wp-adminify.adminify-dark-mode.edit-tags-php #wpbody-content .form-wrap label, .wp-adminify.adminify-dark-mode.term-php #wpbody-content .form-table label,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body button.is-destructive, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .dropdown-menu .dropdown-item,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form label,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container li.placeholder,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container li.token span,
+.wp-adminify.adminify-dark-mode .tokenize-dropdown > .dropdown-menu li a,
+.wp-adminify.adminify-dark-mode .aim-modal--header-logo-title,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item i,
+.wp-adminify.adminify-dark-mode .aim-modal--icon-search input,
+.wp-adminify.adminify-dark-mode .aim-icon-item-inner i,
+.wp-adminify.adminify-dark-mode .aim-icon-item__icon,
+.wp-adminify.adminify-dark-mode .aim-icon-item-name,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat.media #the-list td.date,
+.wp-adminify.adminify-dark-mode .media-frame-title h1,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info label,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info .details,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info p,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info .filename,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .imgedit-wrap .imgedit-settings .imgedit-group h2,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .imgedit-wrap .imgedit-settings .imgedit-group p,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .imgedit-wrap .imgedit-settings .imgedit-group legend,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .imgedit-wrap .imgedit-settings .imgedit-group label,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info .alignleft,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat.comments .inline-edit-row .comment-reply legend,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat.comments .inline-edit-row .comment-reply input.button, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #post-body-content #comment-link-box, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #submitdiv .misc-pub-section:before, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #submitdiv h2, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #submitdiv .misc-pub-section,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat #the-comment-list .submitted-on a,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat .row-actions .submitted-on a,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat .table-view-list .submitted-on a,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat .comments .submitted-on a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-header .adminify-header-inner h1 small,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-title h4,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-subtitle-text,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify--label,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-drop li,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .wp-color-result .wp-color-result-text,
+.wp-adminify.adminify-dark-mode .adminify-field-typography .adminify--unit,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify--button-group .adminify--button,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-router .media-router .media-menu-item,
+.wp-adminify.adminify-dark-mode .media-attachments-filter-heading,
+.wp-adminify.adminify-dark-mode .uploader-inline h2,
+.wp-adminify.adminify-dark-mode .attachments-browser .media-sidebar .setting label,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-sidebar .description,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame .media-frame-menu .media-menu button,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame .media-frame-menu-heading,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .collection-settings select,
+.wp-adminify.adminify-dark-mode .adminify-after-text,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-field-tabbed .adminify-tabbed-nav a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-single.chosen-default,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .search-choice,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-subtitle-text,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify--label,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] label,
+.wp-adminify.adminify-dark-mode .wp-adminify-error-logs li,
+.wp-adminify.adminify-dark-mode .wp-adminify-speed-analyze-history .history-table tr,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .tabs li .nav-link,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .menu-editor-title,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered .nav-link,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .nav-tabs .nav-link,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-title,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-type-title .accordion-type,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body .column label,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body .range-value,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body .unit-labels label, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-activity-logs #wpbody-content .wp-list-table.widefat.wp-adminify_page_adminify-activity-logs #the-list td,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-metabox li a,
+.wp-adminify.adminify-dark-mode .adminify-field .adminify-title h4,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content .postarea #post-status-info td,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .postbox .inside select, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-id-container .theme-name, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-id-container .theme-name, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .left, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .right, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-name, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-name .theme-version, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay p,
+.wp-adminify.adminify-dark-mode .theme-overlay .theme-tags span, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .wp-filter .filter-links a,
+.wp-adminify.adminify-dark-mode .filter-group .filter-group-feature label, .wp-adminify.adminify-dark-mode.nav-menus-php #wpbody-content .manage-menus, .wp-adminify.adminify-dark-mode.nav-menus-php #wpbody-content .nav-tab-wrapper .nav-tab,
+.wp-adminify.adminify-dark-mode #wpbody-content .nav-tab-wrapper .nav-tab, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .outer-border .accordion-section-title, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .accordion-section-content ul.add-menu-item-tabs li a, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame label, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame p, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame legend, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .outer-border .accordion-section-title:after,
+.wp-adminify.adminify-dark-mode .menu-edit #post-body-content h3, .wp-adminify.adminify-dark-mode.nav-menus-php .menu-edit #post-body #menu-to-edit .menu-item-bar .menu-item-handle,
+.wp-adminify.adminify-dark-mode .nav-menus-php .item-edit:before, .wp-adminify.adminify-dark-mode.widgets-php #widgets-left .widgets-holder-wrap .handlediv .toggle-indicator:before, .wp-adminify.adminify-dark-mode.widgets-php #widgets-right .widgets-holder-wrap .handlediv .toggle-indicator:before,
+.wp-adminify.adminify-dark-mode #available-widgets .widget .widget-top .widget-title h3,
+.wp-adminify.adminify-dark-mode #widgets-right .widget .widget-top .widget-title h3,
+.wp-adminify.adminify-dark-mode .widget-holder.inactive .widget .widget-top .widget-title h3,
+.wp-adminify.adminify-dark-mode #widgets-left .sidebar-name h2,
+.wp-adminify.adminify-dark-mode #widgets-left .widget-holder .widget-description,
+.wp-adminify.adminify-dark-mode #widgets-right .widgets-holder-wrap .widgets-sortables .sidebar-name h2,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td label,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table form,
+.wp-adminify.adminify-dark-mode #wpbody-content .fileedit-sub label,
+.wp-adminify.adminify-dark-mode #wpbody-content #documentation label,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .wp-filter .filter-links a,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .wp-filter .filter-links a,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .wp-filter .filter-links a,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .wp-filter .filter-links a,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .wp-filter .filter-links a, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .wp-filter + p, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .action-links .plugin-action-buttons .button, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .action-links .plugin-action-buttons .button.activate-now, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .desc p,
+.wp-adminify.adminify-dark-mode #plugin-information-content,
+.wp-adminify.adminify-dark-mode #plugin-information-content h4,
+.wp-adminify.adminify-dark-mode #plugin-information-content p,
+.wp-adminify.adminify-dark-mode #plugin-information-footer a.button.button-primary,
+.wp-adminify.adminify-dark-mode #plugin-information-content .fyi strong,
+.wp-adminify.adminify-dark-mode #wpbody-content #profile-page #your-profile h2,
+.wp-adminify.adminify-dark-mode #wpbody-content #profile-page .form-table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #profile-page .form-table label,
+.wp-adminify.adminify-dark-mode #wpbody-content #profile-page .form-table .description, .wp-adminify.adminify-dark-mode.tools-php #wpbody-content .card .title, .wp-adminify.adminify-dark-mode.tools-php #wpbody-content .card p,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.importers .importer-item .importer-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.importers .importer-item .importer-desc,
+.wp-adminify.adminify-dark-mode #wpbody-content #export-filters p.description,
+.wp-adminify.adminify-dark-mode #wpbody-content #export-filters .export-filters .label-responsive,
+.wp-adminify.adminify-dark-mode .health-check-body h3,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-body .health-check-accordion .health-check-accordion-heading button .title,
+.wp-adminify.adminify-dark-mode .health-check-header h1,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-header .health-check-tabs-wrapper .health-check-tab,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-body .health-check-accordion .health-check-table td,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-body .health-check-accordion .health-check-table th, .wp-adminify.adminify-dark-mode.options-general-php #wpbody-content form table #utc-time, .wp-adminify.adminify-dark-mode.options-writing-php #wpbody-content form table #utc-time, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content form table #utc-time, .wp-adminify.adminify-dark-mode.options-discussion-php #wpbody-content form table #utc-time, .wp-adminify.adminify-dark-mode.options-media-php #wpbody-content form table #utc-time, .wp-adminify.adminify-dark-mode.options-permalink-php #wpbody-content form table #utc-time, .wp-adminify.adminify-dark-mode.options-general-php #wpbody-content form table p strong, .wp-adminify.adminify-dark-mode.options-writing-php #wpbody-content form table p strong, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content form table p strong, .wp-adminify.adminify-dark-mode.options-discussion-php #wpbody-content form table p strong, .wp-adminify.adminify-dark-mode.options-media-php #wpbody-content form table p strong, .wp-adminify.adminify-dark-mode.options-permalink-php #wpbody-content form table p strong,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td p .example, .wp-adminify.adminify-dark-mode.options-general-php #wpbody-content form p, .wp-adminify.adminify-dark-mode.options-writing-php #wpbody-content form p, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content form p, .wp-adminify.adminify-dark-mode.options-discussion-php #wpbody-content form p, .wp-adminify.adminify-dark-mode.options-media-php #wpbody-content form p, .wp-adminify.adminify-dark-mode.options-permalink-php #wpbody-content form p, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content tr,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table.permalink-structure td code,
+.wp-adminify.adminify-dark-mode .privacy-settings-header h1,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-header .privacy-settings-tab,
+.wp-adminify.adminify-dark-mode .privacy-settings-body h2,
+.wp-adminify.adminify-dark-mode .privacy-settings-body h3,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-body .privacy-settings-accordion .privacy-settings-accordion-panel p,
+.wp-adminify.adminify-dark-mode .edit-widgets-header__title,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .editor-styles-wrapper .rich-text,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .components-panel .components-panel__body-title button.components-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .components-panel .components-panel__body-title button.components-button, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .notice p, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .notice p,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .wp-block-widget-area .components-panel__body .components-panel__body-title button.components-panel__body-toggle,
+.wp-adminify.adminify-dark-mode .welcome-panel h3,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox#dashboard_quick_press label,
+.wp-adminify.adminify-dark-mode #dashboard_quick_press .drafts li time,
+.wp-adminify.adminify-dark-mode .community-events li,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content .wp_attachment_details.edit-form-section p,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .components-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice .fs-plugin-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-notice,
+.wp-adminify.adminify-dark-mode .adminify-update-head {
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top, .wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top:hover, .wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top:hover, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open,
+.wp-adminify.adminify-dark-mode #adminmenu,
+.wp-adminify.adminify-dark-mode #adminmenuback,
+.wp-adminify.adminify-dark-mode #adminmenuwrap, .wp-adminify.adminify-dark-mode.block-editor-page.auto-fold #adminmenu, .wp-adminify.adminify-dark-mode.block-editor-page.auto-fold #adminmenuwrap,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices .wp-adminify-notice-container .notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-notices .wp-adminify-notice-container .fs-notice,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .wp-adminify--folder-app--inner,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--lists li a,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__search,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav .actions select,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__secondary-sidebar,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__sidebar,
+.wp-adminify.adminify-dark-mode .block-editor-block-inspector__no-blocks,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-editor-container .quicktags-toolbar,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container #major-publishing-actions,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .category-tabs li.tabs a,
+.wp-adminify.adminify-dark-mode .categorydiv div.tabs-panel,
+.wp-adminify.adminify-dark-mode .customlinkdiv div.tabs-panel,
+.wp-adminify.adminify-dark-mode .posttypediv div.tabs-panel,
+.wp-adminify.adminify-dark-mode .taxonomydiv div.tabs-panel,
+.wp-adminify.adminify-dark-mode .wp-tab-panel,
+.wp-adminify.adminify-dark-mode .wp-tab-active,
+.wp-adminify.adminify-dark-mode ul.add-menu-item-tabs li.tabs,
+.wp-adminify.adminify-dark-mode ul.category-tabs li.tabs,
+.wp-adminify.adminify-dark-mode .comment-ays,
+.wp-adminify.adminify-dark-mode .feature-filter,
+.wp-adminify.adminify-dark-mode .imgedit-group,
+.wp-adminify.adminify-dark-mode .popular-tags,
+.wp-adminify.adminify-dark-mode .stuffbox,
+.wp-adminify.adminify-dark-mode .widgets-holder-wrap,
+.wp-adminify.adminify-dark-mode .wp-editor-container,
+.wp-adminify.adminify-dark-mode p.popular-tags,
+.wp-adminify.adminify-dark-mode table.widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.updates-table,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.updates-table tr,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice .fs-plugin-title,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=checkbox],
+.wp-adminify.adminify-dark-mode #wpbody-content #blog_public, .wp-adminify.adminify-dark-mode.edit-tags-php #wpbody-content .form-wrap input:not(.button), .wp-adminify.adminify-dark-mode.edit-tags-php #wpbody-content .form-wrap textarea, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .dropdown-trigger button,
+.wp-adminify.adminify-dark-mode .dropdown-content,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container li.token span, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .wp-adminify--menu--editor--settings .accordion .adminify_sub_menu_item .menu-editor-form input[type=text], .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .wp-adminify--menu--editor--settings .accordion .adminify_sub_menu_item .menu-editor-form input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .adminify_sub_menu_item .panel .menu-editor-form .tokens-container,
+.wp-adminify.adminify-dark-mode .tokenize-dropdown > .dropdown-menu li a:hover,
+.wp-adminify.adminify-dark-mode .aim-modal .aim-modal--content,
+.wp-adminify.adminify-dark-mode .aim-modal .aim-modal--header,
+.wp-adminify.adminify-dark-mode .aim-modal--body,
+.wp-adminify.adminify-dark-mode .aim-modal .aim-modal--footer,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item,
+.wp-adminify.adminify-dark-mode .aim-modal--icon-search input,
+.wp-adminify.adminify-dark-mode .aim-icon-item,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .imgedit-wrap .imgedit-settings,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-header .adminify-header-inner,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-background,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-footer,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-toolbar-secondary select,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-sidebar,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-toolbar-primary input#media-search-input,
+.wp-adminify.adminify-dark-mode #wpbody-content .wrap .wp-filter .search-form input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-choices,
+.wp-adminify.adminify-dark-mode .adminify-field-slider .ui-slider-handle:hover,
+.wp-adminify.adminify-dark-mode .adminify-field-slider .ui-state-active,
+.wp-adminify.adminify-dark-mode .adminify-field.adminify-field-group,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-content .adminify-fieldset div[data-depend-id] input[data-depend-id],
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered .nav-link, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme), .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme), .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-id-container .theme-name, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-id-container .theme-name, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-actions, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .wp-filter,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter .filter-drawer, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-edit, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame #nav-menu-header, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame #nav-menu-footer, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .accordion-section-content, .wp-adminify.adminify-dark-mode.nav-menus-php .menu-edit #post-body #menu-to-edit .menu-item-bar .menu-item-handle,
+.wp-adminify.adminify-dark-mode #available-widgets .widget .widget-top,
+.wp-adminify.adminify-dark-mode .widget-holder.inactive .widget .widget-top,
+.wp-adminify.adminify-dark-mode #widgets-right .widgets-holder-wrap,
+.wp-adminify.adminify-dark-mode .wp-filter,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .plugin-card-top,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .plugin-card-top,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .plugin-card-top,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .plugin-card-top,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .plugin-card-top,
+.wp-adminify.adminify-dark-mode #plugin-information-tabs,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.importers .importer-item,
+.wp-adminify.adminify-dark-mode #wpbody-content #export-filters,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .wp-block-widget-area .wp-block-widget-area__panel-body-content .block-editor-block-list__layout, .wp-adminify.adminify-dark-mode.adminify-round-open-menu #adminmenu .wp_adminify_admin-menu li.wp-adminify-active > a.menu-top::before,
+.wp-adminify.adminify-dark-mode #wpbody-content table.widefat.striped.action-scheduler td code,
+.wp-adminify.adminify-dark-mode #wpbody-content table.widefat.striped.action-scheduler td kbd,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside p,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-field input {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .menupop .ab-sub-wrapper,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper .ab-submenu,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .menupop .ab-sub-wrapper .ab-submenu,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .shortlink-input .ab-submenu,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .shortlink-input .ab-submenu,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper ul li > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .menupop .ab-sub-wrapper ul li > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .shortlink-input ul li > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .shortlink-input ul li > .ab-item {
+  background-color: #1d1d1d !important;
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu .wp-submenu-head,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu a.menu-top,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open .wp-submenu li a,
+.wp-adminify.adminify-dark-mode #adminmenu .wp-submenu li a {
+  color: #b1b1b1;
+}
+.wp-adminify.adminify-dark-mode #adminmenu .wp-submenu li a:hover,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top:hover {
+  color: #205BFF;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat a {
+  color: var(--adminify-btn-bg) !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-server-info tr a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-server-info tr a,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=submit],
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat a,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .block-editor-block-types-list__item:hover .block-editor-block-types-list__item-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .block-editor-block-types-list__item:hover .block-editor-block-types-list__item-title #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body a,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body button,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #edit-slug-box a,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .taxonomy-add-new,
+.wp-adminify.adminify-dark-mode .icon-picker-wrap ul li,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item:hover,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item:hover i,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item.aesthetic-active,
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item.aesthetic-active i,
+.wp-adminify.adminify-dark-mode .aim-icon-item:hover .aim-icon-item-inner i,
+.wp-adminify.adminify-dark-mode .aim-icon-item:hover .aim-icon-item__icon,
+.wp-adminify.adminify-dark-mode .aim-icon-item:hover .aim-icon-item-name,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info a,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-filter .view-switch a.current:before,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top.current,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top.current .wp-adminify-icon-button:before, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #post-body-content #comment-link-box a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li a.adminify-active,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li a:hover,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-sidebar a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-subtitle-text a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify--label a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] label a,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-helper .adminify-cloneable-sort,
+.wp-adminify.adminify-dark-mode .wp-adminify-speed-analyze-history .history-table tr th:first-child,
+.wp-adminify.adminify-dark-mode .wp-adminify-speed-analyze-history .history-table .progress-chart.desktop .progress-percentagte,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .tabs li .nav-link.active,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-helper .accordion-toggler, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-actions .button.activate, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-actions .button.activate, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .wp-filter .filter-links a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter button.button.drawer-toggle,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter button.button.drawer-toggle:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter button.button.drawer-toggle:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter button.button.drawer-toggle:focus, .wp-adminify.adminify-dark-mode.nav-menus-php #menu-locations-wrap table.widefat td a, .wp-adminify.adminify-dark-mode.nav-menus-php #menu-locations-wrap table.widefat th a, .wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widget-control-actions button.widget-control-close, .wp-adminify.adminify-dark-mode.users-php #wpbody-content .wp-list-table.widefat .row-actions span a,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.importers .importer-item .importer-action a,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .edit-post-sidebar__panel-tabs button.is-active,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .edit-widgets-sidebar__panel-tabs button.is-active,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top.wp-adminify-active > a .wp-adminify-icon-button:before,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top:hover > a .wp-adminify-icon-button:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .notice a:not([class*=button]),
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice a:not([class*=button]),
+.wp-adminify.adminify-dark-mode #wpbody-content .components-notice a:not([class*=button]), .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .action-links .plugin-action-buttons .button.activate-now:hover {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-new-content > .ab-item, .wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top > a:hover, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top > a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-server-info .status-progressbar span,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-server-info .status-progressbar span,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-server-info .status-progressbar div,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-server-info .status-progressbar div,
+.wp-adminify.adminify-dark-mode .wp-adminify--user--wrapper .user-wrapper-content .panel-insider .admnify-switcher input[type=checkbox]:checked + .slider,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .components-button.block-editor-inserter__toggle,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset input[type=checkbox]:checked, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .disable-section-meta div input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .tabs-panel label input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td label input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content #thumbnail_crop input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser input[type=checkbox]:checked, .wp-adminify.adminify-dark-mode.profile-php #wpbody-content #profile-page #your-profile input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.wp-menu-open > a.wp-adminify-active:before,
+.wp-adminify.adminify-dark-mode .components-form-toggle .components-form-toggle__input:focus + .components-form-toggle__track,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .tabs li .nav-link.active:before,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container:after,
+.wp-adminify.adminify-dark-mode .aim-modal--footer button.aim-insert-icon-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li a.adminify-active:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li a:hover:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-drop li:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify--button-group .adminify--button.adminify--active,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-router .media-router .media-menu-item.active,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .button.button-primary:focus,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachments li.selected button.check,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame .media-frame-menu .media-menu button:hover,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame .media-frame-menu .media-menu button.active,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachments li.attachment .attachment-close,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-field-tabbed .adminify-tabbed-nav a.adminify-tabbed-active,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-drop li.highlighted,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered .router-link-active .nav-link, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .more-details, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .more-details, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .form-table .background-position-control input[type=radio]:checked ~ .button,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=radio]:checked:before,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=radio]:checked::before,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container button.is-pressed:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container button.edit-widgets-header-toolbar__inserter-toggle,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container button.edit-widgets-header-toolbar__inserter-toggle:hover, .wp-adminify.adminify-dark-mode.adminify-round-open-menu #adminmenu .wp_adminify_admin-menu li.wp-adminify-active:before, .wp-adminify.adminify-dark-mode.adminify-round-open-menu #adminmenu .wp_adminify_admin-menu li.wp-adminify-active:after {
+  background-color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=radio]:checked:before,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=radio]:checked::before {
+  background-color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions .-edit-columns,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container.category-add input[type=button],
+.wp-adminify.adminify-dark-mode #misc-publishing-actions button,
+.wp-adminify.adminify-dark-mode #wp-media-grid .media-frame .uploader-inline-content button.browser,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button.activate-now, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme:hover.activate, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme.active .activate .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme:hover.activate, .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme.active .activate,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .button.adminify-edit-gallery {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions .-edit-columns:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container.category-add input[type=button]:hover,
+.wp-adminify.adminify-dark-mode #misc-publishing-actions button:hover,
+.wp-adminify.adminify-dark-mode #wp-media-grid .media-frame .uploader-inline-content button.browser:hover,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button.activate-now:hover, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme:hover.activate:hover, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme.active .activate .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme:hover.activate:hover, .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme.active .activate:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .button.adminify-edit-gallery:hover {
+  background-color: #020407;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.adminify-default-v-menu #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu, .wp-adminify.adminify-dark-mode.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu, .wp-adminify.adminify-dark-mode.adminify-default-v-menu.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu, .wp-adminify.adminify-dark-mode.adminify-rounded-v-menu.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.wp-not-current-submenu .wp-submenu,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open .wp-submenu,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open, .wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top > a, .wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open > a.menu-top, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top > a, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open > a.menu-top,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--stats li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .interface-interface-skeleton__content,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .editor-styles-wrapper,
+.wp-adminify.adminify-dark-mode .components-popover__content,
+.wp-adminify.adminify-dark-mode #wpbody-content .inline-edit-row select, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .dropdown-menu .dropdown-item:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container,
+.wp-adminify.adminify-dark-mode .tokenize-dropdown > .dropdown-menu,
+.wp-adminify.adminify-dark-mode .aim-modal--icon-preview-wrap,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion.adminify_sub_menu_item,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat.comments .inline-edit-row .comment-reply textarea,
+.wp-adminify.adminify-dark-mode #the-comment-list div.undo,
+.wp-adminify.adminify-dark-mode #the-comment-list tr.undo,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-content,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-content .chosen-drop .chosen-search-input,
+.wp-adminify.adminify-dark-mode .adminify-field-typography .adminify--unit,
+.wp-adminify.adminify-dark-mode .media-frame-tab-panel .media-frame-router,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content,
+.wp-adminify.adminify-dark-mode .attachments-browser .media-toolbar,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .collection-settings select,
+.wp-adminify.adminify-dark-mode .embed-url,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset-content,
+.wp-adminify.adminify-dark-mode .adminify-field-tabbed .adminify-tabbed-content,
+.wp-adminify.adminify-dark-mode .adminify-sections .adminify-field-tabbed,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-content .adminify-fieldset input[data-depend-id],
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-content .adminify-fieldset textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-wp-editor .quicktags-toolbar input,
+.wp-adminify.adminify-dark-mode #wpbody-content #analyze .wp-adminify-speed-analyze-form input,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .nav-tabs .nav-link,
+.wp-adminify.adminify-dark-mode #wpbody-content #wpadminify-admin-columns .admin-column-accordion, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-about, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame #post-body,
+.wp-adminify.adminify-dark-mode .accordion-section-content,
+.wp-adminify.adminify-dark-mode #widgets-right .widget .widget-top,
+.wp-adminify.adminify-dark-mode #widgets-right .widgets-holder-wrap .widget-inside, .wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr td .notice,
+.wp-adminify.adminify-dark-mode #plugin-information-content, .wp-adminify.adminify-dark-mode.profile-php #wpbody-content .form-table input[type=text], .wp-adminify.adminify-dark-mode.profile-php #wpbody-content .form-table input[type=url], .wp-adminify.adminify-dark-mode.profile-php #wpbody-content .form-table input[type=email], .wp-adminify.adminify-dark-mode.profile-php #wpbody-content .form-table select, .wp-adminify.adminify-dark-mode.profile-php #wpbody-content .form-table textarea,
+.wp-adminify.adminify-dark-mode .health-check-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td code,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .block-editor-inserter__content .block-editor-inserter__search-input,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .block-editor-inserter__search .block-editor-inserter__search-input,
+.wp-adminify.adminify-dark-mode #wpbody-content #screen-options-wrap input#edit_post_per_page,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox#dashboard_quick_press input:not([type=submit]),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox#dashboard_quick_press textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form.search-plugins #search-plugins,
+.wp-adminify.adminify-dark-mode .community-events ul,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top.wp-adminify-active {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open .wp-submenu {
+  -webkit-border-top-right-radius: 19px;
+          border-top-right-radius: 19px;
+}
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper ul li > .ab-item:hover,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .shortlink-input ul li > .ab-item:hover {
+  background-color: #111 !important;
+}
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper ul li > .ab-item:hover input,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default .shortlink-input ul li > .ab-item:hover input {
+  background-color: #1d1d1d !important;
+}
+.wp-adminify.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button, .wp-adminify.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button {
+  background-color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.wp-adminify-nav-divider,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body .components-panel__body-title button:hover {
+  background-color: #2b2b2b;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside {
+  border-top-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside p {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside .wp-admin-users .table {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside .wp-admin-users td,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox .inside .wp-admin-users small {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_primary .inside .activity-block,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_right_now ul {
+  border-bottom-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .community-events-footer,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_activity .subsubsub,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox#dashboard_quick_press .drafts,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .community-events li {
+  border-top-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_activity #activity-widget #latest-comments .subsubsub li a {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_activity #activity-widget #latest-comments .subsubsub li a .count {
+  background-color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_activity #activity-widget #latest-comments .subsubsub li a .count span {
+  color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #wp_adminify_dash_system_info .wp-adminify-server-info li {
+  background-color: #1d1d1d;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #wp_adminify_dash_system_info .wp-adminify-server-info li:nth-child(even) {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_activity #activity-widget .activity-block ul li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_activity #activity-widget #latest-comments ul li .row-actions span a,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_right_now ul li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #wp_adminify_dash_system_info .wp-adminify-server-info li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder #dashboard_primary .rss-widget ul li a {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_user_activities table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_activity_logs table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table th,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_memory_usage .halfspace,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_system_info td,
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_system_info th,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--header,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--actions,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--stats,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--lists,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .tabs,
+.wp-adminify.adminify-dark-mode #plugin-information-tabs {
+  border-bottom-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_news_feed .wp-adminify-news-feed-dashboard_footer,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body .inner-content, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .outer-border li {
+  border-top-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion.adminify_sub_menu_item .panel,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode .health-check-body,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-accordion .health-check-accordion-panel,
+.wp-adminify.adminify-dark-mode hr {
+  border-top: 1px solid #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--actions a {
+  border-color: #cfcfcf;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--lists li:after,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--lists li:before,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content .wp-editor-container textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=radio],
+.wp-adminify.adminify-dark-mode .health-check-accordion-trigger .icon,
+.wp-adminify.adminify-dark-mode .site-health-view-passed .icon {
+  border-color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .subsubsub li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .edit-post-sidebar__panel-tabs,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body select,
+.wp-adminify.adminify-dark-mode #plugin-information-content .fyi,
+.wp-adminify.adminify-dark-mode #wpbody-content .fileedit-sub select,
+.wp-adminify.adminify-dark-mode #wpbody-content #documentation select,
+.wp-adminify.adminify-dark-mode .css-ebmrdk-Container,
+.wp-adminify.adminify-dark-mode .blocks-widgets-container .interface-interface-skeleton__footer,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__footer .block-editor-block-breadcrumb,
+.wp-adminify.adminify-dark-mode .wp-switch-editor {
+  background-color: #1d1d1d;
+  border-color: #1d1d1d;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .subsubsub li a .count {
+  background-color: #111;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-box input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-box input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-box input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav .one-page .displaying-num,
+.wp-adminify.adminify-dark-mode .components-modal__frame,
+.wp-adminify.adminify-dark-mode .components-popover,
+.wp-adminify.adminify-dark-mode .edit-post-header,
+.wp-adminify.adminify-dark-mode .edit-post-layout__inserter-panel,
+.wp-adminify.adminify-dark-mode .edit-post-sidebar,
+.wp-adminify.adminify-dark-mode .edit-post-text-editor,
+.wp-adminify.adminify-dark-mode .edit-post-visual-editor,
+.wp-adminify.adminify-dark-mode .editor-post-publish-panel,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .adminify--sub-menu a,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .edit-post-post-status .components-panel__body-title button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body-title button,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links .button,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links input,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-filter select,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #titlewrap input,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body button.editor-post-featured-image__toggle,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body select:not(.components-select-control__input),
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body .components-custom-select-control__button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar input[type=number],
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-fieldset .chosen-single.chosen-default,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-fieldset .search-choice,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-fieldset .chosen-single,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-field.adminify-field-subheading,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-embed input,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-field-slider .adminify--input .adminify--unit,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-content, .wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .search-box #plugin-search-input,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .plugin-card .plugin-card-bottom,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-body,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar input[type=number],
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar input[type=number],
+.wp-adminify.adminify-dark-mode .wp-adminify-review-notice.wp-adminify-review-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .nav-tab-wrapper .nav-tab,
+.wp-adminify.adminify-dark-mode div.mce-panel,
+.wp-adminify.adminify-dark-mode #poststuff #post-body-content input,
+.wp-adminify.adminify-dark-mode #poststuff #post-body-content textarea {
+  background-color: #1d1d1d;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav .actions select,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav .one-page .displaying-num,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat th,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat td,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__panel-content,
+.wp-adminify.adminify-dark-mode #wpbody-content select,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row ul.cat-checklist,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links .button,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links input,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links .button.disabled,
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links input.disabled,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-filter select,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-editor-container, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-edit,
+.wp-adminify.adminify-dark-mode #poststuff #post-body-content input,
+.wp-adminify.adminify-dark-mode #poststuff #post-body-content textarea {
+  border-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.updates-table th,
+.wp-adminify.adminify-dark-mode #wpbody-content .widefat.updates-table td,
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_activity #activity-widget .activity-block, .wp-adminify.adminify-dark-mode.edit-tags-php #wpbody-content .form-wrap input:not(.button), .wp-adminify.adminify-dark-mode.edit-tags-php #wpbody-content .form-wrap textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #titlewrap input,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp_attachment_details.edit-form-section .widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp_attachment_details.edit-form-section .wp-editor-area, .wp-adminify.adminify-dark-mode.adminify-dark-mode #major-publishing-actions, .wp-adminify.adminify-dark-mode.adminify-dark-mode #wpbody-content #post-body-content .wp-editor-container textarea,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container li.token span,
+.wp-adminify.adminify-dark-mode .aim-modal--icon-search input,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content .inline-edit-row select,
+.wp-adminify.adminify-dark-mode .edit-attachment-frame .edit-media-header .left,
+.wp-adminify.adminify-dark-mode .edit-attachment-frame .edit-media-header .right, .wp-adminify.adminify-dark-mode.upload-php .media-modal-close,
+.wp-adminify.adminify-dark-mode .edit-attachment-frame .attachment-info,
+.wp-adminify.adminify-dark-mode .edit-attachment-frame .attachment-info *,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .imgedit-wrap .imgedit-settings .imgedit-group,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .components-text-control__input,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .components-text-control__input,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content,
+.wp-adminify.adminify-dark-mode .components-custom-select-control__button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body .components-custom-select-control__button,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-content,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-field + .adminify-field,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-header .adminify-header-inner,
+.wp-adminify.adminify-dark-mode .wp-adminify-two-columns > .adminify-field,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-footer,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-fieldset .chosen-single.chosen-default,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-fieldset .search-choice,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-fieldset .chosen-single,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-field + .adminify-field,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .wp-color-result,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachment-info,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .settings,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .setting,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-sidebar,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame .media-frame-menu .media-menu .separator,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .collection-settings select,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-tabbed-contents .adminify-tabbed-content,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-content,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered .nav-link,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content,
+.wp-adminify.adminify-dark-mode .adminify-field + .adminify-field,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections,
+.wp-adminify.adminify-dark-mode .chosen-container.chosen-with-drop .chosen-drop, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-screenshot:after, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme:not(.add-new-theme) .theme-screenshot:after, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .left, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .right, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .close, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-screenshots:before, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-actions,
+.wp-adminify.adminify-dark-mode .theme-overlay .theme-tags, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme.add-new-theme a:after, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme.add-new-theme a:after,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-filter .filter-drawer, .wp-adminify.adminify-dark-mode.nav-menus-php .nav-tab-wrapper,
+.wp-adminify.adminify-dark-mode .nav-tab-wrapper, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .outer-border .accordion-section-title:after, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .outer-border .accordion-section-title:after, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame #nav-menu-footer, .wp-adminify.adminify-dark-mode.nav-menus-php .menu-edit #post-body #menu-to-edit .menu-item-bar .menu-item-handle, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame #nav-menu-header, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-settings, .wp-adminify.adminify-dark-mode.nav-menus-php #menu-locations-wrap table.widefat td, .wp-adminify.adminify-dark-mode.nav-menus-php #menu-locations-wrap table.widefat th,
+.wp-adminify.adminify-dark-mode #available-widgets .widget .widget-top,
+.wp-adminify.adminify-dark-mode #widgets-right .widget .widget-top,
+.wp-adminify.adminify-dark-mode .widget-holder.inactive .widget .widget-top,
+.wp-adminify.adminify-dark-mode #widgets-right .widgets-holder-wrap .widget-inside,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-body .health-check-accordion .health-check-accordion-panel .health-check-table,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .wp-block-widget-area .wp-block-widget-area__panel-body-content .block-editor-block-list__layout figure.wp-block,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__popover.is-quick .components-popover__content .block-editor-inserter__quick-inserter > :first-child,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__popover.is-quick .components-popover__content .block-editor-inserter__quick-inserter > *,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .components-popover .components-popover__content .block-editor-block-toolbar .components-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .components-input-control__backdrop,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .components-input-control__backdrop,
+.wp-adminify.adminify-dark-mode .welcome-panel,
+.wp-adminify.adminify-dark-mode .notice,
+.wp-adminify.adminify-dark-mode div.error,
+.wp-adminify.adminify-dark-mode div.updated,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-dashboard-widgets .adminify-content .adminify-field .adminify-cloneable-item,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-dashboard-widgets .adminify-content .adminify-field .adminify-field {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header-toolbar__left button svg path,
+.wp-adminify.adminify-dark-mode .edit-post-header button svg path,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__search-icon svg path,
+.wp-adminify.adminify-dark-mode .block-editor-block-icon.has-colors svg path,
+.wp-adminify.adminify-dark-mode .components-panel__body-toggle.components-button .components-panel__arrow path, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .dropdown-trigger button .icon path,
+.wp-adminify.adminify-dark-mode .wp-adminify--menu--editor--settings .accordion .menu-editor-title svg path,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-title svg path {
+  fill: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.block-editor-page .interface-interface-skeleton,
+.wp-adminify.adminify-dark-mode .block-editor-inserter__panel-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat.comments .inline-edit-row .comment-reply .quicktags-toolbar,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset-content,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections .adminify-siblings .adminify--sibling,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-header {
+  border-color: #111;
+}
+.wp-adminify.adminify-dark-mode #major-publishing-actions,
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content .wp-editor-container textarea {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-editor-container .quicktags-toolbar {
+  border-bottom: 1px solid #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .components-panel {
+  background-color: #111;
+  border-left-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__sidebar {
+  border-left-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__content::-webkit-scrollbar,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__content::-webkit-scrollbar-track,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__sidebar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__content::-webkit-scrollbar-thumb,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__sidebar::-webkit-scrollbar-thumb {
+  background-color: #4E4B66;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #jltwp_adminify_dash_recent_posts table th img {
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #dashboard_right_now ul li a:before {
+  -webkit-filter: invert(56%) sepia(68%) saturate(5251%) hue-rotate(204deg) brightness(102%) contrast(91%);
+          filter: invert(56%) sepia(68%) saturate(5251%) hue-rotate(204deg) brightness(102%) contrast(91%);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-header .adminify-header-inner h1 .wp-adminify-settings-logo {
+  -webkit-filter: brightness(9);
+          filter: brightness(9);
+}
+.wp-adminify.adminify-dark-mode .button-primary,
+.wp-adminify.adminify-dark-mode .button-secondary,
+.wp-adminify.adminify-dark-mode #wpbody-content .page-title-action,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=submit]:not(.actions .button),
+.wp-adminify.adminify-dark-mode .adminify-options .adminify-reset-section,
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .adminify-field button,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .adminify-fieldset button:not(.wp-switch-editor),
+.wp-adminify.adminify-dark-mode .adminify-data-wrapper .adminify-cloneable-content button,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-picker-input-wrap .button.wp-picker-default, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .sidebar-title a, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .wp-adminify--popup-container_inner form .button.button-primary,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .columns.is-desktop button, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .form-table #choose-from-library-link, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .wp-picker-container .wp-picker-input-wrap .button, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-edit .button, .wp-adminify.adminify-dark-mode.nav-menus-php .appearance_page_custom-background .wp-upload-form button,
+.wp-adminify.adminify-dark-mode #widgets-left .widgets-chooser .widgets-chooser-sidebars button,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container #post_tag input.button,
+.wp-adminify.adminify-dark-mode #post-body-content .postarea button:not(.wp-switch-editor, .ed_button, .mce-widget button),
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings .editor-post-switch-to-draft,
+.wp-adminify.adminify-dark-mode #posts-filter .wp-list-table.widefat .inline-edit-row.inline-edit-save button,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside .button,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside input[type=submit],
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside .button:not(.wp-editor-wrap .button),
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside input[type=submit],
+.wp-adminify.adminify-dark-mode #major-publishing-actions input[type=submit],
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-toolbar .media-toolbar button,
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor button:not(.imgedit-help-toggle),
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor input[type=button],
+.wp-adminify.adminify-dark-mode .wp-adminify-page-speed-wrapper .wp-adminify-analyze-button,
+.wp-adminify.adminify-dark-mode #wpbody-content #documentation #docs-lookup,
+.wp-adminify.adminify-dark-mode .wp-list-table.widefat.comments .inline-edit-row .comment-reply .reply-submit-buttons button, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme .theme-actions .button, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-actions .button, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme .theme-actions .button, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-install-overlay .wp-full-overlay-header .button, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .filter-drawer .buttons .button,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-view-passed,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-copy-buttons button,
+.wp-adminify.adminify-dark-mode .privacy-settings-accordion-actions button,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-generate-pw,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-hide-pw,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-generate-pw,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-hide-pw,
+.wp-adminify.adminify-dark-mode .adminify-copy-btn, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .action-links .plugin-action-buttons .button.activate-now {
+  background-color: #020407;
+  border-color: #020407;
+}
+.wp-adminify.adminify-dark-mode .button-primary:hover,
+.wp-adminify.adminify-dark-mode .button-secondary:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .page-title-action:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=submit]:not(.actions .button):hover,
+.wp-adminify.adminify-dark-mode .adminify-options .adminify-reset-section:hover,
+.wp-adminify.adminify-dark-mode .wp-adminify-dashboard-widgets .adminify-field button:hover,
+.wp-adminify.adminify-dark-mode .adminify-section[data-section-id] .adminify-fieldset button:not(.wp-switch-editor):hover,
+.wp-adminify.adminify-dark-mode .adminify-data-wrapper .adminify-cloneable-content button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-picker-input-wrap .button.wp-picker-default:hover, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .sidebar-title a:hover, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-sidebar-generator .wp-adminify--popup-container_inner form .button.button-primary:hover,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .columns.is-desktop button:hover, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .form-table #choose-from-library-link:hover, .wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .wp-picker-container .wp-picker-input-wrap .button:hover, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .menu-edit .button:hover, .wp-adminify.adminify-dark-mode.nav-menus-php .appearance_page_custom-background .wp-upload-form button:hover,
+.wp-adminify.adminify-dark-mode #widgets-left .widgets-chooser .widgets-chooser-sidebars button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container #post_tag input.button:hover,
+.wp-adminify.adminify-dark-mode #post-body-content .postarea button:not(.wp-switch-editor, .ed_button, .mce-widget button):hover,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings .editor-post-switch-to-draft:hover,
+.wp-adminify.adminify-dark-mode #posts-filter .wp-list-table.widefat .inline-edit-row.inline-edit-save button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button):hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside .button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .inside input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap button):hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside .button:not(.wp-editor-wrap .button):hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .postbox-header + .inside input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode #major-publishing-actions input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-toolbar .media-toolbar button:hover,
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor button:not(.imgedit-help-toggle):hover,
+.wp-adminify.adminify-dark-mode #post-body-content .image-editor input[type=button]:hover,
+.wp-adminify.adminify-dark-mode .wp-adminify-page-speed-wrapper .wp-adminify-analyze-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #documentation #docs-lookup:hover,
+.wp-adminify.adminify-dark-mode .wp-list-table.widefat.comments .inline-edit-row .comment-reply .reply-submit-buttons button:hover, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-browser .theme .theme-actions .button:hover, .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-actions .button:hover, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-browser .theme .theme-actions .button:hover, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .theme-install-overlay .wp-full-overlay-header .button:hover, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .filter-drawer .buttons .button:hover,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-view-passed:hover,
+.wp-adminify.adminify-dark-mode .health-check-body .site-health-copy-buttons button:hover,
+.wp-adminify.adminify-dark-mode .privacy-settings-accordion-actions button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-generate-pw:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser .wp-hide-pw:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-generate-pw:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #your-profile .wp-hide-pw:hover,
+.wp-adminify.adminify-dark-mode .adminify-copy-btn:hover, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .action-links .plugin-action-buttons .button.activate-now:hover {
+  background-color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content input[type=checkbox]:checked:not(.components-checkbox-control__input),
+.wp-adminify.adminify-dark-mode #wpbody-content #blog_public:checked:not(.components-checkbox-control__input),
+.wp-adminify.adminify-dark-mode .icon-picker-wrap ul li.select-icon,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections .adminify-siblings .adminify--sibling.adminify--active {
+  background-color: #020407;
+  border-color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .actions input[type=submit],
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions .-edit-columns,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container.category-add input[type=button],
+.wp-adminify.adminify-dark-mode .wp_attachment_image input.button,
+.wp-adminify.adminify-dark-mode .quicktags-toolbar input.button,
+.wp-adminify.adminify-dark-mode #misc-publishing-actions button,
+.wp-adminify.adminify-dark-mode #wp-media-grid .media-frame .uploader-inline-content button.browser,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content button:not(.imgedit-help-toggle),
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button.activate-now,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button.activate-now, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme:hover.activate, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme.active .activate .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme:hover.activate, .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme.active .activate,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .dropdown-trigger button {
+  border-color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .actions input[type=submit]:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions .-edit-columns:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container.category-add input[type=button]:hover,
+.wp-adminify.adminify-dark-mode .wp_attachment_image input.button:hover,
+.wp-adminify.adminify-dark-mode .quicktags-toolbar input.button:hover,
+.wp-adminify.adminify-dark-mode #misc-publishing-actions button:hover,
+.wp-adminify.adminify-dark-mode #wp-media-grid .media-frame .uploader-inline-content button.browser:hover,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content button:not(.imgedit-help-toggle):hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button.activate-now:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button.activate-now:hover, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme:hover.activate:hover, .wp-adminify.adminify-dark-mode.themes-php .theme-browser .theme.active .activate .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme:hover.activate:hover, .wp-adminify.adminify-dark-mode.theme-install-php .theme-browser .theme.active .activate:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-featured .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-popular .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-recommended .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-favorites .plugin-card .plugin-card-top .button:hover,
+.wp-adminify.adminify-dark-mode .plugin-install-tab-search .plugin-card .plugin-card-top .button:hover, .wp-adminify.adminify-dark-mode.wp-adminify_page_adminify-menu-editor #wpbody-content .dropdown-trigger button:hover {
+  border-color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-table-actions a.ac-table-button.-edit-columns.last,
+.wp-adminify.adminify-dark-mode .media-upload-form .drag-drop-inside #plupload-browse-button,
+.wp-adminify.adminify-dark-mode .icon-picker-wrap ul li,
+.wp-adminify.adminify-dark-mode .aim-modal--footer button.aim-insert-icon-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header-toolbar__left button.components-button.is-primary,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings button.block-editor-post-preview__button-toggle,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .block-editor-block-types-list__item:hover, .wp-adminify.adminify-dark-mode.nav-menus-php #wpbody-content .nav-tab-wrapper .nav-tab.nav-tab-active,
+.wp-adminify.adminify-dark-mode #wpbody-content .nav-tab-wrapper .nav-tab.nav-tab-active, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .accordion-section-content ul.add-menu-item-tabs li.tabs a,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .wp-filter .filter-links a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .wp-filter .filter-links a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .wp-filter .filter-links a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .wp-filter .filter-links a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .wp-filter .filter-links a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .wp-filter .filter-links a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .wp-filter .filter-links a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .wp-filter .filter-links a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .wp-filter .filter-links a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .wp-filter .filter-links a:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-header .privacy-settings-tab.active,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .block-editor-block-types-list__item:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .block-editor-block-types-list__item:hover {
+  border-color: #020407;
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .notice p,
+.wp-adminify.adminify-dark-mode #wpbody-content .notice .fs-notice-body,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice p,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice .fs-notice-body {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice.promotion {
+  background-color: #111 !important;
+  border: 1px solid #1d1d1d !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings button.block-editor-post-preview__button-toggle:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings button.editor-post-publish-button__button,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .editor-styles-wrapper .block-editor-block-list__layout .wp-block .components-button,
+.wp-adminify.adminify-dark-mode .media-upload-form .drag-drop-inside #plupload-browse-button:hover {
+  background-color: #020407;
+  color: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item:hover,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item:hover {
+  background-color: #020407 !important;
+  border-color: #020407 !important;
+  color: var(--adminify-text-color) !important;
+}
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item .ab-icon,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item .ab-icon:before,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item .ab-label,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item .ab-icon,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item .ab-icon:before,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item .ab-label,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item:hover .ab-icon,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item:hover .ab-icon:before,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-top-secondary #wp-admin-bar-new-content > .ab-item:hover .ab-label,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item:hover .ab-icon,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item:hover .ab-icon:before,
+.wp-adminify.adminify-dark-mode #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item:hover .ab-label {
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header__settings button.editor-post-publish-button__button:hover {
+  background-color: var(--adminify-text-color);
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__header .edit-post-header .edit-post-header-toolbar__left button.components-button.is-primary svg path,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-popover__content .block-editor-block-types-list__item:hover .block-editor-block-types-list__item-icon svg path,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .block-editor-block-types-list__item:hover .block-editor-block-icon svg path {
+  fill: var(--adminify-text-color);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .edit-post-sidebar__panel-tabs button.is-active:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .edit-widgets-sidebar__panel-tabs button.is-active:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .category-tabs li.tabs a {
+  border-bottom-color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #post-body-content #titlewrap input,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp_attachment_details.edit-form-section .widefat,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp_attachment_details.edit-form-section .wp-editor-area, .wp-adminify.adminify-dark-mode.term-php #wpbody-content .form-table input:not(.button), .wp-adminify.adminify-dark-mode.term-php #wpbody-content .form-table textarea,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .wp-color-result .wp-color-result-text,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify--button-group .adminify--button,
+.wp-adminify.adminify-dark-mode .media-frame-menu .media-menu,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-single.chosen-default,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .search-choice,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-metabox li a,
+.wp-adminify.adminify-dark-mode #plugin-information-footer,
+.wp-adminify.adminify-dark-mode #wpbody-content .health-check-body .health-check-accordion .health-check-table tbody > :nth-child(odd), .wp-adminify.adminify-dark-mode.export-personal-data-php #wpbody-content input[type=text], .wp-adminify.adminify-dark-mode.erase-personal-data-php #wpbody-content input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-post-sidebar .edit-post-sidebar__panel-tabs,
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .edit-widgets-sidebar .edit-widgets-sidebar__panel-tabs,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-header-inner,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-box input[type=search] {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body button.is-destructive:hover {
+  background-color: transparent;
+  color: var(--adminify-notif-bg-color);
+}
+.wp-adminify.adminify-dark-mode .aim-modal--sidebar-tab-item,
+.wp-adminify.adminify-dark-mode .wp-adminify-speed-analyze-history .history-table tr th,
+.wp-adminify.adminify-dark-mode .wp-adminify-speed-analyze-history .history-table tr td, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame .accordion-container .outer-border li {
+  border-bottom-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode .aim-modal .aim-modal--footer,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-toolbar .media-toolbar {
+  border-top-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-list-table.widefat.comments .inline-edit-row .comment-reply input.button,
+.wp-adminify.adminify-dark-mode #wpbody-content .metabox-holder .wp-editor-container .quicktags-toolbar input.button, .wp-adminify.adminify-dark-mode.comment-php #wpbody-content #post-body-content .stuffbox .form-table td input,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-fieldset .adminify-wp-editor .wp-editor-container,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options .adminify-fieldset .adminify-wp-editor .wp-editor-container textarea,
+.wp-adminify.adminify-dark-mode .adminify-wp-editor .wp-editor-container .quicktags-toolbar,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-server-info th,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-server-info th,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections .chosen-container-multi .chosen-choices,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .postbox .inside select,
+.wp-adminify.adminify-dark-mode #wpbody-content #profile-page .form-table input[type=radio],
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .category-add input,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .category-add select, .wp-adminify.adminify-dark-mode.options-general-php #wpbody-content form table input, .wp-adminify.adminify-dark-mode.options-general-php #wpbody-content form table textarea, .wp-adminify.adminify-dark-mode.options-general-php #wpbody-content form table select, .wp-adminify.adminify-dark-mode.options-writing-php #wpbody-content form table input, .wp-adminify.adminify-dark-mode.options-writing-php #wpbody-content form table textarea, .wp-adminify.adminify-dark-mode.options-writing-php #wpbody-content form table select, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content form table input, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content form table textarea, .wp-adminify.adminify-dark-mode.options-reading-php #wpbody-content form table select, .wp-adminify.adminify-dark-mode.options-discussion-php #wpbody-content form table input, .wp-adminify.adminify-dark-mode.options-discussion-php #wpbody-content form table textarea, .wp-adminify.adminify-dark-mode.options-discussion-php #wpbody-content form table select, .wp-adminify.adminify-dark-mode.options-media-php #wpbody-content form table input, .wp-adminify.adminify-dark-mode.options-media-php #wpbody-content form table textarea, .wp-adminify.adminify-dark-mode.options-media-php #wpbody-content form table select, .wp-adminify.adminify-dark-mode.options-permalink-php #wpbody-content form table input, .wp-adminify.adminify-dark-mode.options-permalink-php #wpbody-content form table textarea, .wp-adminify.adminify-dark-mode.options-permalink-php #wpbody-content form table select,
+.wp-adminify.adminify-dark-mode .components-select-control__input,
+.wp-adminify.adminify-dark-mode #wpbody-content .blocks-widgets-container .interface-interface-skeleton__body .components-panel .components-panel__body select,
+.wp-adminify.adminify-dark-mode #wp-excerpt-editor-container,
+.wp-adminify.adminify-dark-mode #wp-excerpt-editor-container textarea.wp-editor-area,
+.wp-adminify.adminify-dark-mode .wp-editor-container body#tinymce,
+.wp-adminify.adminify-dark-mode #elementor-go-to-edit-page-link {
+  background-color: #111;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset select,
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .media-toolbar-secondary select,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-wp-editor .quicktags-toolbar input,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-server-info tr td,
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-server-info tr td {
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .media-modal .media-frame-content .attachments li.selected {
+  -webkit-box-shadow: inset 0 0 0 3px #1d1d1d, inset 0 0 0 7px #020407;
+          box-shadow: inset 0 0 0 3px #1d1d1d, inset 0 0 0 7px #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset .chosen-choices .chosen-search-input {
+  background-color: #1d1d1d !important;
+  border-color: #2b2b2b !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-fieldset input[type=checkbox]:checked, .wp-adminify.adminify-dark-mode.nav-menus-php #nav-menus-frame input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .disable-section-meta div input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-container .tabs-panel label input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content #update-themes-table input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table td label input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content #thumbnail_crop input[type=checkbox]:checked,
+.wp-adminify.adminify-dark-mode #wpbody-content #createuser input[type=checkbox]:checked, .wp-adminify.adminify-dark-mode.profile-php #wpbody-content #profile-page #your-profile input[type=checkbox]:checked, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .wp-filter .filter-links a.current, .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .wp-filter .filter-links a:hover {
+  border-color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-page-speed-wrapper .speed-wrapper-tabs > li .nav-link {
+  background-color: transparent;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-page-speed-wrapper .speed-wrapper-tabs > li .nav-link svg path {
+  fill: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-page-speed-wrapper .speed-wrapper-tabs > li.router-link-active .nav-link {
+  background-color: #1d1d1d;
+  border-top-color: #020407;
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-page-speed-wrapper .speed-wrapper-tabs > li.router-link-active .nav-link svg path {
+  fill: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #analyze .wp-adminify-speed-analyze-form .search-icon path {
+  fill: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-speed-analyze-history .wp-adminify-pagination a.is-current,
+.wp-adminify.adminify-dark-mode #wpbody-content .wp-adminify-speed-analyze-history .wp-adminify-pagination a:hover,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .nav-tabs .router-link-active .nav-link,
+.wp-adminify.adminify-dark-mode #wpadminify-admin-columns .tabs.is-centered + .tab-content .nav-tabs .nav-link:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections .chosen-container-multi .chosen-results li:hover, .wp-adminify.adminify-dark-mode.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu li.menu-top:hover > a.menu-top, .wp-adminify.adminify-dark-mode.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu li.wp-adminify-active > a.menu-top,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu li a.current,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu li a:hover,
+.wp-adminify.adminify-dark-mode #adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu li a.wp-adminify-active,
+.wp-adminify.adminify-dark-mode .components-button.is-primary:disabled,
+.wp-adminify.adminify-dark-mode .components-button.is-primary:disabled:active:enabled,
+.wp-adminify.adminify-dark-mode .components-button.is-primary[aria-disabled=true],
+.wp-adminify.adminify-dark-mode .components-button.is-primary[aria-disabled=true]:active:enabled,
+.wp-adminify.adminify-dark-mode .components-button.is-primary[aria-disabled=true]:enabled {
+  background-color: #020407;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections .chosen-container-multi .chosen-results li,
+.wp-adminify.adminify-dark-mode #wpbody-content #_wp_adminify_admin_page_display .inside .adminify-sections .adminify-siblings .adminify--sibling,
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content #posts-filter input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-plugins input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=text], .wp-adminify.adminify-dark-mode.theme-install-php #wpbody-content .wrap .wp-filter .search-form input[type=search],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-form input[type=url],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-box input[type=text],
+.wp-adminify.adminify-dark-mode #wpbody-content .search-box input[type=url], .wp-adminify.adminify-dark-mode.user-new-php #wpbody-content .form-table select,
+.wp-adminify.adminify-dark-mode #wpbody-content #export-filters .export-filters select {
+  background-color: #111;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-adminify-top-header--search--form .top-header--search--form .adminify-search-expand {
+  background-color: #000;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .adminify-top_bar nav.adminify-top-navbar .wp-adminify-top-header--search--form .top-header--search--form .adminify-search-expand i {
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode #fs_affiliation_content_wrapper .inside {
+  margin-top: 0;
+  padding: 15px;
+}
+.wp-adminify.adminify-dark-mode #fs_affiliation_content_wrapper .inside #messages {
+  margin-top: 0;
+}
+.wp-adminify.adminify-dark-mode #fs_affiliation_content_wrapper .inside h3,
+.wp-adminify.adminify-dark-mode #fs_affiliation_content_wrapper .inside li {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .close:before {
+  color: rgb(195, 0, 82);
+}
+.wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widgets-chooser li {
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widgets-chooser li:hover:before {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widgets-chooser li button {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widgets-chooser li button:hover {
+  background-color: #1d1d1d;
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widget-control-actions button.widget-control-close:hover, .wp-adminify.adminify-dark-mode.plugin-install-php #wpbody-content .wp-list-table.widefat.plugin-install {
+  background-color: transparent;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-notice,
+.wp-adminify.adminify-dark-mode .notice,
+.wp-adminify.adminify-dark-mode div.error,
+.wp-adminify.adminify-dark-mode div.updated {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .notice p,
+.wp-adminify.adminify-dark-mode #wpbody-content .fs-notice p,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-notice p,
+.wp-adminify.adminify-dark-mode .notice p,
+.wp-adminify.adminify-dark-mode div.error p,
+.wp-adminify.adminify-dark-mode div.updated p {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.appearance_page_custom-background #custom-background .form-table .background-position-control .button-group .button {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #templateside .notice {
+  background-color: inherit;
+}
+.wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tr, .wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr th, .wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr td {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tr p,
+.wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tr .label, .wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr th p,
+.wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr th .label, .wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr td p,
+.wp-adminify.adminify-dark-mode.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr td .label {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-featured .wp-filter select,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-popular .wp-filter select,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-recommended .wp-filter select,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-favorites .wp-filter select,
+.wp-adminify.adminify-dark-mode #wpbody-content .plugin-install-tab-search .wp-filter select,
+.wp-adminify.adminify-dark-mode #plugin-information-tabs a.current,
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-body select,
+.wp-adminify.adminify-dark-mode .interface-interface-skeleton__footer,
+.wp-adminify.adminify-dark-mode .wp-adminify--folder-widget .folder--search input {
+  background-color: #111;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .form-table.permalink-structure .available-structure-tags button.active {
+  background-color: #1d1d1d;
+  border-color: #020407;
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-body .privacy-settings-accordion .privacy-settings-accordion-heading button {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-body .privacy-settings-accordion .privacy-settings-accordion-heading button span {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .privacy-settings-body .privacy-settings-accordion .privacy-settings-accordion-heading button span .icon {
+  border-color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-section[data-section-id] .adminify-field-notice .adminify-notice.adminify-notice-warning p {
+  color: #111;
+}
+.wp-adminify.adminify-dark-mode.adminify-round-open-menu #adminmenu .wp_adminify_admin-menu li.wp-adminify-active {
+  background-color: transparent;
+}
+.wp-adminify.adminify-dark-mode.adminify-rounded-v-menu #wpwrap #adminmenu .wp_adminify_admin-menu li.wp-menu-open .wp-submenu {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #fs_connect .fs-visual,
+.wp-adminify.adminify-dark-mode #fs_connect .fs-content,
+.wp-adminify.adminify-dark-mode #fs_connect .fs-permissions {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #fs_connect .fs-content p,
+.wp-adminify.adminify-dark-mode #fs_connect .fs-visual i {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #fs_account h3 {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #fs_account .fs-key-value-table {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #fs_account .alternate,
+.wp-adminify.adminify-dark-mode #fs_account .striped > tbody > :nth-child(odd),
+.wp-adminify.adminify-dark-mode #fs_account ul.striped > :nth-child(odd) {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #fs_account .fs-tag.fs-warn {
+  color: #14142B;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content a.adminify-video-url {
+  color: #c30052;
+}
+.wp-adminify.adminify-dark-mode .theme-overlay .theme-backdrop {
+  background: rgba(29, 29, 29, 0.7);
+}
+.wp-adminify.adminify-dark-mode #wpbody-content table.widefat.striped td {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.adminify-dark-mode.folded #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button, .wp-adminify.adminify-dark-mode.adminify-dark-mode.auto-fold.block-editor-page #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button {
+  background-color: transparent;
+}
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body h1,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body h2,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body h3,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body h4,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body h5,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body h6,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body span,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body p,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .wp-block-legacy-widget__edit-preview iframe body label,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content h1,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content h2,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content h3,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content h4,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content h5,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content h6,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content span,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content p,
+.wp-adminify.adminify-dark-mode .wp-block-legacy-widget__edit-form .widget-content label {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode table.widefat tbody tr {
+  background-color: #111 !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-nav-normal ul li .adminify-active {
+  background-color: #111 !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-nav-normal ul li .adminify-active:after {
+  border-right-color: #2b2b2b;
+  border-width: 8px;
+  margin-top: -8px;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .adminify-options.wp-adminify-settings .adminify-content {
+  border-left: 0;
+}
+.wp-adminify.adminify-dark-mode .select2-container .select2-selection--single .select2-selection__rendered {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.about-php #wpcontent, .wp-adminify.adminify-dark-mode.credits-php #wpcontent, .wp-adminify.adminify-dark-mode.freedoms-php #wpcontent, .wp-adminify.adminify-dark-mode.privacy-php #wpcontent,
+.wp-adminify.adminify-dark-mode nav.about__header-navigation.nav-tab-wrapper.wp-clearfix,
+.wp-adminify.adminify-dark-mode .adminify-dashboard-widgets .adminify-header-inner {
+  background: #111;
+}
+.wp-adminify.adminify-dark-mode .about__container h1.is-smaller-heading,
+.wp-adminify.adminify-dark-mode .about__container h2.is-smaller-heading,
+.wp-adminify.adminify-dark-mode .about__container h3 {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .components-placeholder.components-placeholder {
+  background-color: #1d1d1d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .tablenav-pages .pagination-links .button,
+.wp-adminify.adminify-dark-mode .image-editor input[type=text] {
+  background-color: #111 !important;
+  border-color: #2b2b2b !important;
+  color: #cfcfcf !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .image-editor input[type=radio] {
+  border-color: #2b2b2b !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #elementor-template-library-tabs-wrapper .nav-tab {
+  border-color: #2b2b2b !important;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #elementor-template-library-tabs-wrapper .nav-tab.nav-tab-active {
+  background-color: #111 !important;
+  border-bottom-color: #111 !important;
+}
+.wp-adminify #adminmenu * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+.wp-adminify #adminmenu * input#top-header-search-input::-webkit-input-placeholder {
+  color: #cfcfcf !important;
+}
+.wp-adminify #adminmenu * input#top-header-search-input::-moz-placeholder {
+  color: #cfcfcf !important;
+}
+.wp-adminify #adminmenu * input#top-header-search-input:-ms-input-placeholder {
+  color: #cfcfcf !important;
+}
+.wp-adminify #adminmenu * input#top-header-search-input::-ms-input-placeholder {
+  color: #cfcfcf !important;
+}
+.wp-adminify #adminmenu * input#top-header-search-input,
+.wp-adminify #adminmenu * input#top-header-search-input::placeholder {
+  color: #cfcfcf !important;
+}
+
+/*# sourceMappingURL=dark-mode.css.map*/

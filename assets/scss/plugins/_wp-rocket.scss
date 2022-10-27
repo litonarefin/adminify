@@ -1,0 +1,69 @@
+.wp-adminify {
+    &.adminify-dark-mode {
+        .wpr-Content,
+        .wpr-menuItem:hover, 
+        .wpr-menuItem.isActive,
+        .wpr-Sidebar-notice,
+        .wpr-Sidebar-info {
+            background-color: #1d1d1d;
+        }
+        .wpr-notice {
+            background-color: #111;
+            color: #cfcfcf;
+        }
+        .wpr-sectionHeader,
+        .wpr-Sidebar-notice {
+            border-color: #2b2b2b;
+        }
+        .wpr-menuItem,
+        .wpr-field+.wpr-field, 
+        .wpr-field+.wpr-warningContainer,
+        .wpr-warningContainer+.wpr-warningContainer, 
+        .wpr-warningContainer+.wpr-field, .wpr-field+.wpr-warningContainer,
+        .wpr-tools+.wpr-tools {
+            border-top-color: #2b2b2b;
+        }
+        .wpr-optionHeader {
+            border-bottom-color: #2b2b2b;
+        }
+        .wpr-menuItem-description,
+        .wpr-body,
+        .wpr-notice-continue,
+        .wpr-fieldsContainer-description,
+        .wpr-field-description,
+        .wpr-field--cache .wpr-field-description-label,
+        .wpr-field--textarea .wpr-field-description pre code,
+        #wpbody-content .wpr-rocketcdn-cta-footer a,
+        .wpr-tools .wpr-field-description,
+        .wpr-Header-footer,
+        .wpr-Page#dashboard .wpr-field--radio .wpr-field-description,
+        .wpr-field-list {
+            color: #cfcfcf;
+        }
+        .wpr-fieldsContainer-fieldset,
+        .wpr-rocketcdn-cta-content--no-promo,
+        #wpbody-content .wpr-upload input[type="file"] {
+            background-color: #111;
+            border-color: #2b2b2b;
+        }
+        #wpbody-content .wpr-button {
+            background-color: #4285F4;
+        }
+        .wpr-documentation {
+            .wpr-title2,
+            p {
+                color: #111 !important;
+            }
+        }
+        .wpr-Modal {
+            label {
+                color: #111;;
+            }
+        }
+        .wpr-Modal-footer {
+            .button {
+                color: #cfcfcf;
+            }
+        }
+    }
+}

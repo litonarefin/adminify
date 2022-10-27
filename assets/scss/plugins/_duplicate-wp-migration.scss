@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.duplicator_page_duplicator-settings {
+    #wpbody-content {
+        #dup-settings-form {
+            input[type="text"],select {
+                background-color: $whitecolor;
+            }
+        }
+    }
+}

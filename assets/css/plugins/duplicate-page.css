@@ -1,0 +1,9 @@
+.wp-adminify.settings_page_duplicate_page_settings #wpbody-content .close_dp_help {
+  color: #fff;
+}
+.wp-adminify.settings_page_duplicate_page_settings.adminify-dark-mode #wpbody-content .dpmrs {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+
+/*# sourceMappingURL=duplicate-page.css.map*/

@@ -1,0 +1,18 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wf-active {
+    #wpbody-content {
+        .notice {
+            .mdc-button {
+                color: $whitecolor;
+            }
+        }
+        .form-table {
+            input,select,textarea {
+                background-color: $whitecolor;
+            }
+        }
+    }
+}
+

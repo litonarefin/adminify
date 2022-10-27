@@ -1,0 +1,92 @@
+@import "bulma/bulma";
+
+@import "variables", "mixins", "fonts";
+
+html,
+body.wp-adminify {
+    background-color: $graycolor;
+    @include nunitosans;
+    height: auto;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html.wp-toolbar {
+    padding-top: 0 !important;
+}
+
+#plugin-information {
+    .adminify-top_bar {
+        display: none;
+    }
+    #plugin-information-title.with-banner h2 {
+        background-color: $primarylight3;
+        border-radius: $radius6p;
+        color: $titlecolor;
+        font-size: $fontsize + 10px;
+        text-shadow: none;
+    }
+    #plugin-information-footer {
+        height: auto;
+    }
+    a.button.button-primary.right.disabled {
+        background-color: $primarycolor !important;
+        border: 1px solid $primarycolor !important;
+        color: $whitecolor !important;
+        margin-bottom: 0;
+        &:hover {
+            background-color: $whitecolor !important;
+            color: $primarycolor !important;
+        }
+    }
+}
+.js.plugins-php.wp-adminify .search-box .wp-filter-search {
+    width: 200px;
+}
+.wp-adminify {
+    &.folded {
+        .adminify-top_bar {
+            nav.adminify-top-navbar {
+                .navbar-brand {
+                    padding: 0 10px;
+                    width: 6rem;
+                    img[class*="logo"] {
+                        object-position: 1px 0px;
+                        object-fit: cover;
+                        height: 36px;
+                        width: 40px;
+                    }
+                    .wp-adminify-site-name {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    [data-value="script"].adminify-field-code_editor .CodeMirror {
+        height: 200px;
+    }
+    #wpbody-content .wp-list-table.widefat #the-list{
+        position: relative;
+    }
+
+    @import "common-styles",
+        "dash-widgets",
+        "content_body",
+        "posts",
+        "post-category",
+        "media", "adminify_custom", "theme", "theme-editor",
+        "app-widgets", "app-menus", "plugins", "app-background", "users",
+        "tools", "general-settings", "sidebar-menu",
+        "circle-menu",
+        "page-speed",
+        "network-admin";
+}
+@import "theme-editor";
+
+// External Plugins
+
+// @import 'all-plugins';

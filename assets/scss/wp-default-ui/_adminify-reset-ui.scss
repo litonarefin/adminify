@@ -1,0 +1,45 @@
+&#screen-meta {
+    margin: 0 20px -1px 0px;
+}
+.count{
+    font-family: inherit;
+}
+a{
+    color: #2271b1;
+}
+
+
+// Menu CSS
+#adminmenu{
+    .wp-menu-image {
+        img{
+            height: 24px;
+            filter:brightness(1);
+        }
+    }
+}
+
+// Folder
+.wp-adminify--folder-widget{
+    top:25px;
+    left: 10rem;
+}
+
+
+.wp-adminify-settings .dashicons,
+.wp-adminify-settings .dashicons-before:before{
+    vertical-align: middle;
+}
+
+// Dark Mode CSS
+&.adminify-dark-mode{
+    #wpbody-content .tablenav.top {
+        background-color: inherit !important;
+        border-color: inherit !important;
+    }
+    #activity-filter{
+        h3{
+            color: $whitecolor !important;
+        }
+    }
+}

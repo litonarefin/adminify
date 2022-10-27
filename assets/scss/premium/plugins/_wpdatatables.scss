@@ -1,0 +1,144 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+.wp-adminify {
+    #wpbody-content {
+        .wdt-datatables-admin-wrap .wdt-support .btn-primary {
+            min-height: initial;
+        }
+    }
+    &.adminify-dark-mode {
+        &.wpdt-c.wpdatatables_page_wpdatatables-chart-wizard, 
+        &.wpdt-c.wpdatatables_page_wpdatatables-add-ons, 
+        &.wpdt-c.wpdatatables_page_wpdatatables-settings, 
+        &.wpdt-c.wpdatatables_page_wpdatatables-administration, 
+        &.wpdt-c.wpdatatables_page_wpdatatables-charts, 
+        &.wpdt-c.toplevel_page_wpdatatables-dashboard, 
+        &.wpdt-c.wpdatatables_page_wpdatatables-constructor,
+        .wdt-datatables-admin-wrap .wdt-changelog-card .alert-info,
+        .wdt-constructor-step .wdt-constructor-type-selecter-block {
+            background-color: $dark-mode-bg;
+        }
+        #wpbody-content {
+            .wdt-welcome-body,
+            .wdt-datatables-admin-wrap .card.wdt-browse-table table thead th,
+            .wdt-datatables-admin-wrap .card.wdt-browse-table table td.check-column,
+            .wdt-table-settings .col-sm-12 .btn-default,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card #wpdt-comparison .bg-blue,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card #wpdt-comparison .bg-grey,
+            .wdt-addons .thumbnail {
+                background-color: $dark-mode-bg;
+            }
+            .wdt-welcome-body .wdt-wizard-options .wdt-wizard-options-desc span,
+            .wdt-welcome-body .wdt-wizard-options .wdt-wizard-options-desc .wdt-lite,
+            .wdt-welcome-body .wdt-getting-started-sections h4,
+            .wdt-welcome-body .wdt-getting-started-section:first-of-type a,
+            .wdt-datatables-admin-wrap .wdt-dashbord .btn-primary,
+            .wdt-datatables-admin-wrap .wdt-card-header-title,
+            .wdt-datatables-admin-wrap .wdt-chart-card .wdt-chart-count-number, 
+            .wdt-datatables-admin-wrap .wdt-table-card .wdt-table-count-number,
+            .card-body,
+            .wdt-datatables-admin-wrap .wdt-settings-card .card-body li span,
+            .wdt-datatables-admin-wrap .wdt-dashbord .wdt-row-title,
+            .wdt-datatables-admin-wrap .wdt-addons-card .thumbnail h4,
+            .wdt-datatables-admin-wrap .wdt-amelia-card .amelia-title,
+            .wdt-constructor-step h4,
+            .wdt-table-constructor .wdt-constructor-type-selecter-block .card-body span,
+            .btn.btn-default.wdt-documentation, 
+            .btn.btn-default.wdt-documentation:hover, 
+            .btn.btn-default.wdt-documentation:focus,
+            .wdt-table-settings .col-sm-12 .btn-default,
+            .dropdown-menu li a span,
+            .wdt-datatables-admin-wrap div.toggle-switch label,
+            .wdt-datatables-admin-wrap table.wdt-system-info-table thead th,
+            .wdt-datatables-admin-wrap table.wdt-system-info-table td,
+            .wdt-datatables-admin-wrap .wdt-getting-started-card h5,
+            .wdt-datatables-admin-wrap .wdt-tutorial-card .card-body .wdt-tutorial-desc span,
+            .wdt-datatables-admin-wrap .wdt-support .card h5,
+            .wdt-datatables-admin-wrap .wdt-support .btn-primary,
+            .wdt-datatables-admin-wrap .wdt-support .wdt-footer-title,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card h5,
+            .btn-primary,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card table#wpdt-comparison th,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card table#wpdt-comparison td,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card table#wpdt-comparison i.wpdt-icon-minus,
+            .wdt-addons .wpdt-addons-desc h4 {
+                color: $dark-mode-white;
+            }
+            .wdt-welcome-body .wdt-getting-started-section:not(:first-of-type),
+            .card .card-body.card-padding:not(.wpdt-column-settings-card):not(.wdt-chart-wizard-chosen-columns-container):not(.wdt-chart-wizart-existing-columns-container):not(.wpdt-add-ons-card),
+            .card .card-header.ch-alt:not([class*="bgm-"]),
+            .wdt-datatables-admin-wrap .wdt-blog-card .wdt-subscribe,
+            ._form-content,
+            .wdt-datatables-admin-wrap .wdt-addons-card .thumbnail,
+            .wdt-datatables-admin-wrap .card.wdt-browse-table #wdt-datatables-browse-table,
+            .wdt-table-constructor .wdt-constructor-type-selecter-block .card .card-header,
+            .wdt-datatables-admin-wrap .wdt-table-name #wdt-table-title-edit,
+            .dropdown-menu,
+            .wdt-input-data-source-type,
+            .chart-wizard-breadcrumb,
+            .panel,
+            .wdt-datatables-admin-wrap .bg-white {
+                background-color: $dark-mode-black-1;
+            }
+            .wdt-welcome-body .wdt-getting-started-sections,
+            .wdt-welcome-body .wdt-getting-started-sections .wdt-getting-started-section:last-child,
+            .wdt-datatables-admin-wrap .wdt-dashbord .card-header,
+            .wdt-datatables-admin-wrap .wdt-settings-card .card-body li,
+            .wdt-datatables-admin-wrap .wdt-blog-card .card-body li,
+            .wdt-datatables-admin-wrap .wdt-blog-card .wdt-subscribe-message,
+            .wdt-datatables-admin-wrap .wdt-addons-card .thumbnail,
+            ._field-wrapper input,
+            .wdt-datatables-admin-wrap table.wdt-system-info-table td,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card .card-header.wdt-admin-card-header,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card table hr,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card .card-header.wdt-admin-card-header,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card #wpdt-comparison tr:last-child td[data-title='Features'] hr,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-footer,
+            .wdt-datatables-admin-wrap .wdt-lite-vs-premium-card #wpdt-comparison tr:last-child td[data-title='Lite'] hr,
+            .wdt-addons .thumbnail {
+                border-color: $dark-mode-border-color-1;
+            }
+            .wdt-welcome-body .wdt-showcase .carousel-inner > .item > .wdt-slider-img-desc > h3,
+            .card-body p,
+            .c-title-color,
+            .chart-wizard-breadcrumb li:not(.active) {
+                color: $dark-mode-white !important;
+            }
+            .wdt-datatables-admin-wrap .wdt-table-constructor,
+            .wdt-datatables-admin-wrap .card.wdt-table-settings .card-body,
+            .chart-name, 
+            .charts-type, 
+            .data-source, 
+            .render-engine, 
+            #chart-container-tabs-1, 
+            #chart-container-tabs-2, 
+            #chart-container-tabs-3, 
+            #chart-container-tabs-4, 
+            #chart-container-tabs-5, 
+            #chart-container-tabs-6, 
+            #chart-container-tabs-7, 
+            #chart-container-tabs-8, 
+            .chart-preview-container, 
+            #chart-container-tabs .tab-nav.settings, 
+            .wdt-chart-column-picker-container, 
+            .wdt-chart-wizard .bootstrap-select,
+            .wdt-datatables-admin-wrap .wdt-table-constructor, 
+            .wdt-datatables-admin-wrap .plugin-settings, 
+            .wdt-datatables-admin-wrap .plugin-dashboard, 
+            .wdt-datatables-admin-wrap .wdt-chart-wizard, 
+            .wdt-datatables-admin-wrap .wdt-addons, 
+            .wdt-datatables-admin-wrap .wdt-browse-table,
+            .wdt-addons .card-body {
+                background-color: $dark-mode-black-1 !important;
+            }
+            .bootstrap-select button {
+                background-color: $dark-mode-bg;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .panel-collapse .panel-heading:not(.active) .panel-title > a:before {
+                background-color: $dark-mode-border-color-1;
+            }
+        }
+    }
+}

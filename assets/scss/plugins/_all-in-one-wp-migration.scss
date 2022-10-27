@@ -1,0 +1,37 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wp-adminify {
+    #adminmenu .wp_adminify_admin-menu li.menu-top.wp-adminify-active {
+        background-color: #F9F9F9 !important;
+    }
+    #adminmenu .wp_adminify_admin-menu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+    #adminmenu .wp_adminify_admin-menu .wp-menu-arrow,
+    #adminmenu .wp_adminify_admin-menu .wp-menu-arrow div,
+    #adminmenu .wp_adminify_admin-menu li.current a.menu-top:not(.wp-adminify.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu li.wp-adminify-active>a.menu-top){
+        background-color: transparent !important;
+    }
+    &.adminify-dark-mode {
+        #adminmenu .wp_adminify_admin-menu li.menu-top.wp-adminify-active,
+        .ai1wm-query.ai1wm-open {
+            background-color: $dark-mode-bg !important;
+        }
+        .ai1wm-holder,
+        .ai1wm-right .ai1wm-segment {
+            background-color: $dark-mode-black-1;
+            border-color: $dark-mode-border-color-1;
+            box-shadow: none;
+        }
+        .ai1wm-holder h1,
+        .ai1wm-accordion h4 small {
+            color: $dark-mode-white;
+        }
+        .ai1wm-drag-drop-area {
+            background-color: $dark-mode-bg;
+            border-color: $dark-mode-border-color-1;
+        }
+        .ai1wm-button-blue, .ai1wm-button-green, .ai1wm-button-green-small, .ai1wm-button-red {
+            color: $dark-mode-white !important;
+        }
+    }
+}

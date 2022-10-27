@@ -1,0 +1,49 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+.tools_page_redirection #wpbody-content #react-ui .redirection input, .tools_page_redirection #wpbody-content #react-ui .redirection select, .tools_page_redirection #wpbody-content #react-ui .redirection textarea, .tools_page_redirection #wpbody-content #react-ui .redirection .button {
+  background-color: var(--adminify-text-color);
+  border: 1px solid #F1F1F3;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  color: rgba(78, 75, 102, 0.72);
+  min-height: 36px;
+}
+.tools_page_redirection #wpbody-content #react-ui .redirection input[type=checkbox], .tools_page_redirection #wpbody-content #react-ui .redirection input[type=radio] {
+  min-height: inherit;
+}
+.tools_page_redirection #wpbody-content #react-ui .redirection input[type=checkbox] input[type=checkbox], .tools_page_redirection #wpbody-content #react-ui .redirection input[type=radio] input[type=checkbox] {
+  border: 1px solid rgba(78, 75, 102, 0.54);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 14px;
+  width: 14px;
+  min-height: auto;
+  min-width: auto;
+  position: relative;
+}
+.tools_page_redirection #wpbody-content #react-ui .redirection input[type=checkbox] input[type=checkbox]:checked, .tools_page_redirection #wpbody-content #react-ui .redirection input[type=radio] input[type=checkbox]:checked {
+  background-color: var(--adminify-btn-bg);
+  border-color: var(--adminify-btn-bg);
+  color: var(--adminify-text-color);
+}
+.tools_page_redirection #wpbody-content #react-ui .redirection input[type=checkbox] input[type=checkbox]:checked:before, .tools_page_redirection #wpbody-content #react-ui .redirection input[type=radio] input[type=checkbox]:checked:before {
+  background-color: transparent;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  height: 15px;
+  width: 15px;
+  top: -1px;
+  left: -2px;
+  margin: 0;
+  position: inherit;
+}
+
+/*# sourceMappingURL=redirection.css.map*/

@@ -1,0 +1,140 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wp-adminify {
+  #e-admin-top-bar-root.e-admin-top-bar--active ~ #wpbody #wpbody-content {
+    margin-top: 0;
+  }
+  #e-admin-top-bar-root {
+    position: static;
+    width: 100%;
+  }
+  .nav-tab,
+  .nav-tab:hover {
+    color: #000;
+  }
+  .elementor-button-spinner:before {
+    top: 11px;
+  }
+  .e-notice__aside{
+    height: 55px;
+  }
+  .e-notice__content{
+    padding: 0 20px 10px;
+  }
+  .e-notice p+.e-notice__actions a,
+  .e-notice__actions a,
+  #wpbody-content .elementor-button.elementor-button-default,
+  a#elementor-template-library-add-new:hover {
+    color: #fff;
+  }
+  #adminmenu #toplevel_page_elementor .dashicons.dashicons-star-filled {
+    float: left;
+    margin: 4px 4px 0 0;
+  }
+  #adminify-main-submenu-goelementorpro:hover {
+    background-color: transparent !important;
+  }
+  #elementor-system-info .elementor-system-info-section .widefat {
+    white-space: initial;
+  }
+  #e-dashboard-overview {
+    .e-overview__header {
+      box-shadow: none;
+      margin: 0;
+      padding: 0 0 12px;
+      .button {
+        .dashicons {
+          color: $whitecolor;
+          font-size: 15px;
+          line-height: $lineheight20 + 2px;
+        }
+        &:hover {
+          .dashicons {
+            color: $primarycolor;
+          }
+        }
+      }
+    }
+  }
+  &.adminify-dark-mode {
+    #e-admin-top-bar-root,
+    #elementor-finder__search,
+    .elementor-role-label,
+    #wpbody-content .button.elementor-button-spinner,
+    .tab-import-export-kit__container {
+      background-color: #1d1d1d;
+    }
+    .e-admin-top-bar__heading-title,
+    #elementor_notice,
+    #tab-integrations,
+    #elementor-css-print-method-description,
+    .elementor-css-print-method-description,
+    .e-experiment__status,
+    .elementor-role-go-pro__desc,
+    .e-notice__actions a,
+    .elementor-button.elementor-button-default,
+    #elementor-role-manager h3,
+    #elementor-role-manager
+      .elementor-role-row
+      .elementor-role-label
+      span.elementor-role-name,
+    #tab-replace_url,
+    #tab-maintenance_mode,
+    #wpbody-content a.elementor-button.elementor-button-success,
+    #wpbody-content #elementor-settings-form #tab-versions,
+    #wpbody-content .widefat td,
+    #wpbody-content .widefat th,
+    #wpbody-content .wp-heading-inline,
+    #e-admin-top-bar-root .e-admin-top-bar__heading-title,
+    #e-admin-top-bar-root .e-admin-top-bar__secondary-area,
+    #e-admin-top-bar-root
+      .e-admin-top-bar__bar-button
+      .e-admin-top-bar__bar-button-title,
+    #e-admin-top-bar-root .e-admin-top-bar__bar-button,
+    &.wp-core-ui #wpbody-content .button-group.button-hero .button,
+    &.wp-core-ui #wpbody-content .button.button-hero,
+    #wpbody-content .e-getting-started__title,
+    .e-notice__content h1,
+    .e-notice__content h2,
+    .e-notice__content h3,
+    .e-notice__content h4,
+    .e-notice__content h5,
+    .e-notice__content h6,
+    #wpbody-content .e-button {
+      color: #cfcfcf;
+    }
+    .elementor-templates-modal__header,
+    #wpbody-content
+      #elementor-role-manager
+      .elementor-role-row
+      .elementor-role-controls,
+    #elementor-system-info #elementor-usage-recalc {
+      background-color: #111;
+    }
+    #wpbody-content .widefat,
+    #wpbody-content .widefat td,
+    #wpbody-content .widefat th,
+    .e-getting-started__skip,
+    #dashboard-widgets .e-dashboard-widget .e-divider_top,
+    #e-dashboard-overview .e-overview__footer ul li {
+      border-color: #2b2b2b;
+    }
+    #wpbody-content .e-getting-started__skip {
+      color: #ff4e42;
+    }
+    &.wp-core-ui #wpbody-content .e-getting-started__actions a.button:hover {
+      background-color: #fff;
+      color: #4285f4;
+    }
+    #dashboard-widgets .e-dashboard-widget .e-divider_bottom {
+      color: $dark-mode-white;
+      border-color: $dark-mode-border-color-1;
+    }
+  }
+  &.horizontal-menu {
+    #e-admin-top-bar-root {
+      width: 100%;
+    }
+  }
+}

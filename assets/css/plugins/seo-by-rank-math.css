@@ -1,0 +1,176 @@
+.wp-adminify #adminmenu .wp_adminify_admin-menu #toplevel_page_rank-math > a.menu-top .wp-adminify-icon-button {
+  -webkit-filter: invert(32%) sepia(7%) saturate(1545%) hue-rotate(207deg) brightness(70%) contrast(98%);
+          filter: invert(32%) sepia(7%) saturate(1545%) hue-rotate(207deg) brightness(70%) contrast(98%);
+}
+
+.wp-adminify.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu #toplevel_page_rank-math:hover > a.menu-top .wp-adminify-icon-button,
+.wp-adminify.adminify-rounded-v-menu #adminmenu .wp_adminify_admin-menu #toplevel_page_rank-math.wp-adminify-active > a.menu-top .wp-adminify-icon-button {
+  background-blend-mode: exclusion;
+  -webkit-filter: invert(16%) sepia(73%) brightness(1) contrast(1);
+          filter: invert(16%) sepia(73%) brightness(1) contrast(1);
+}
+
+.wp-adminify #adminmenu .wp_adminify_admin-menu li#toplevel_page_rank-math .awaiting-mod,
+.wp-adminify #adminmenu .wp_adminify_admin-menu li#toplevel_page_rank-math .update-plugins {
+  margin-top: -5px !important;
+  right: 15px;
+}
+
+.rank-math-box .cmb2-toggle .rank-math-tooltip {
+  min-height: 24px;
+}
+
+.wp-adminify div.interface-pinned-items button.components-button[aria-label="Rank Math"] .rank-math-toolbar-score {
+  padding: 0 5px;
+}
+.wp-adminify div.interface-pinned-items button.components-button[aria-label="Rank Math"] .rank-math-toolbar-score svg {
+  float: left;
+  margin-top: 8px;
+}
+.wp-adminify #wpbody-content .interface-interface-skeleton__body .components-panel .components-panel__body button.rank-math-edit-snippet {
+  color: #fff;
+}
+.wp-adminify #wpbody-content .wp-list-table td .rank-math-column-display.rank-math-link-count .dashicons {
+  font-size: 13px;
+}
+.wp-adminify #wpbody-content .wp-list-table td .rank-math-column-display.rank-math-link-count .divider {
+  margin-left: 0;
+  margin-right: 0;
+}
+.wp-adminify #wpbody-content [id^=cmb2-metabox-rank] .cmb2-radio-list label {
+  line-height: 34px;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpwrap,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpfooter {
+  background-color: transparent;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content h1,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content h2,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content h3,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content h4,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content h5,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content h6,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) .separator,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .button,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .button-secondary,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .is-secondary,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .health-check-accordion button,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .privacy-settings-accordion button,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box-tabs a {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-header,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tab:not(.rank-math-options-panel-content):hover,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tab:not(.rank-math-options-panel-content):focus,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tab:not(.rank-math-options-panel-content).is-active,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .module-listing .rank-math-box,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box .status,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs > .cmb-row.tab-header,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a.active,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a:focus,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a:hover,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-wrap-settings .rank-math-tabs-content,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .form-footer:not(.rank-math-custom),
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) .separator,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box footer,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .button,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .button-secondary,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .is-secondary,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box-tabs,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-import-export .rank-math-settings-backup-form .list-table,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box-tabs a {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-header .rank-math-logo:after {
+  background-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tab:not(.rank-math-options-panel-content),
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom),
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content [id^=cmb2-metabox-rank] .cmb-row:not(.rank-math-advanced-option):not(.tab-header):not(.cmb-type-notice) ~ .cmb-row:not(.rank-math-advanced-option):not(.rank-math-notice),
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content [id^=cmb2-metabox-rank] .cmb-row.rank-math-advanced-option ~ .rank-math-advanced-option,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .health-check-accordion,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .privacy-settings-accordion {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-breadcrumbs .active {
+  color: #fff;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tab:not(.rank-math-options-panel-content) {
+  background-color: #111;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a.active:after,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-content .notice-warning.notice-alt,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box-tabs .active-tab {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .dashboard-wrapper:before,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-search-options .search-field input,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-content .regular-text,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-content select,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-content textarea,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content [id^=cmb2-metabox-rank] .cmb2-radio-list {
+  background-color: #111;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content #rank-math-pro-cta .rank-math-cta-table {
+  background-color: transparent;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a.active,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a:focus,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-tabs-navigation:not(.rank-math-custom) a:hover,
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box-tabs .active-tab {
+  color: #4285f4;
+}
+.wp-adminify.adminify-dark-mode.rank-math-page #wpbody-content .rank-math-box-tabs .active-tab:after {
+  background-color: #4285f4;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-complementary-area-header,
+.wp-adminify.adminify-dark-mode #wpbody-content #rank-math-metabox-wrapper {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .interface-complementary-area-header svg path {
+  fill: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-tabs > .components-tab-panel__tabs {
+  background-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-tabs > .components-tab-panel__tabs button,
+.wp-adminify.adminify-dark-mode #wpbody-content .serp-preview .group,
+.wp-adminify.adminify-dark-mode #wpbody-content .serp-preview .serp-url,
+.wp-adminify.adminify-dark-mode #wpbody-content .serp-preview .serp-description,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-notice__content,
+.wp-adminify.adminify-dark-mode #wpbody-content .tagify,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-panel__body-toggle.components-button {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-tabs > .components-tab-panel__tabs button.is-active,
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-tabs > .components-tab-panel__tabs button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .serp-preview a,
+.wp-adminify.adminify-dark-mode #wpbody-content .serp-preview .serp-title {
+  color: #4285f4;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .serp-preview,
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-checklist,
+.wp-adminify.adminify-dark-mode #wpbody-content .tagify {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-metabox-frame-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .components-panel__body,
+.wp-adminify.adminify-dark-mode #wpbody-content .tagify {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .rank-math-tabs .preview {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .components-panel__body-toggle.components-button:hover {
+  color: #1e1e1e;
+}
+
+/*# sourceMappingURL=seo-by-rank-math.css.map*/

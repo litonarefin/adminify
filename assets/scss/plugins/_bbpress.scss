@@ -1,0 +1,11 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wp-adminify {
+    .about-wrap {
+        h2,h3,h4,p,span,
+        .about-text {
+            color: $dark-mode-white;
+        }
+    }
+}

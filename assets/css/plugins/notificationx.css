@@ -1,0 +1,78 @@
+.wp-adminify #wpbody-content .nx-metatab-inner-wrapper input[type=checkbox]:before {
+  -webkit-filter: none;
+          filter: none;
+}
+.wp-adminify #wpbody-content .nx-checkbox {
+  -webkit-flex-basis: 315px;
+      -ms-flex-preferred-size: 315px;
+          flex-basis: 315px;
+}
+.wp-adminify #wpbody-content .nx-admin-block-content .nx-button,
+.wp-adminify #wpbody-content .nx-stats-pro-tease p {
+  color: #fff;
+}
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-comment_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-custom_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-donation_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-elearning_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-form_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-mailchimp_themes .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-page_analytics_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-wporg_theme .nx-single-theme-wrapper,
+.wp-adminify #wpbody-content .nx-builder-content-wrapper .nx-wpstats_theme .nx-single-theme-wrapper {
+  -webkit-flex-basis: 195px;
+      -ms-flex-preferred-size: 195px;
+          flex-basis: 195px;
+}
+.wp-adminify #wpbody-content .nx-metatab-menu li:last-child:before,
+.wp-adminify #wpbody-content .nx-metatab-menu li:last-child:after {
+  display: none;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content h1, .wp-adminify.adminify-dark-mode #wpbody-content h2, .wp-adminify.adminify-dark-mode #wpbody-content h3, .wp-adminify.adminify-dark-mode #wpbody-content h4, .wp-adminify.adminify-dark-mode #wpbody-content h5, .wp-adminify.adminify-dark-mode #wpbody-content h6,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-header-right span,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-adv-checkbox-label:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-control-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-media-url, .wp-adminify.adminify-dark-mode #wpbody-content .nx-meta-field,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-menu ul li a,
+.wp-adminify.adminify-dark-mode #wpbody-content #nx-finalize_tab {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-metatab-menu li:not(.active) .nx-menu-title,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-adv-checkbox-label {
+  color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-header-analytics-counter,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-admin-items table tr > th,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-admin-items table tr > td,
+.wp-adminify.adminify-dark-mode #wpbody-content #notificationx_metabox_wrapper .nx-metatab-content h2.nx-meta-section-title,
+.wp-adminify.adminify-dark-mode #wpbody-content #nx-meta-section-config,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-control-wrapper .select2-container--default .select2-selection.select2-selection--single,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-media-url, .wp-adminify.adminify-dark-mode #wpbody-content .nx-meta-field,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-menu ul li:not(.active) a,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-form-wrapper,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-right,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-section > h2:before,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-documentation,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-builder-content-wrapper.nx-metatab-wrapper {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-meta-contents,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-single-theme-wrapper,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-checkbox,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-settings-menu ul li a,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-admin-block,
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-admin-items table thead tr > td {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-meta-section {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .nx-admin-block {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*# sourceMappingURL=notificationx.css.map*/

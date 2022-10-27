@@ -1,0 +1,249 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wp-adminify {
+    &.adminify-ui {
+        #wpbody-content {
+            h2 {
+                color: $titlecolor;
+            }
+
+            .form-table {
+
+                input,
+                select,
+                textarea {
+                    background-color: $whitecolor;
+                }
+            }
+
+            .sb-customizer-sidebar {
+                left: 15.25rem;
+                top: 180px;
+            }
+
+            .sb-customizer-preview {
+                margin-top: 40px;
+                width: calc(100% - 375px);
+
+                .sb-preview-chooser {
+                    button {
+                        height: inherit;
+                        padding: inherit;
+                    }
+                }
+            }
+
+            .sbi-csz-hd-actions {
+                margin-right: -50px;
+
+                button {
+                    padding: 2px 20px 0 34px;
+                }
+            }
+
+            .sbi-csz-header-insider {
+                button {
+                    padding: 0px 15px 0 40px;
+                }
+            }
+
+            .sbi-csz-name-ed-btn {
+                padding: 5px 7px !important;
+            }
+
+            .sbi-builder-app-lite-dismiss {
+                .sbi-fb-header {
+                    top: 114px;
+                }
+
+                .sbi-header-notice {
+                    top: 70px;
+                }
+            }
+
+            .sbi-csz-header {
+                &.sbi-fb-header {
+                    position: relative !important;
+                }
+            }
+
+            .sbi-fb-slctfd-action {
+                width: calc(100% - 240px);
+            }
+        }
+
+        // Dark Mode
+        &.adminify-dark-mode {
+            .sbi-fb-header,
+            .sb-control-toggle-set-ctn .sb-control-toggle-elm[data-active="true"],
+            .sb-tabs .tab.active,
+            .sbi-settings-cta,
+            .sb-tab-content .sb-tab-box,
+            .sbi-cta-try-demo a,
+            .sbi-cta-btn a,
+            .sbi-install-plugin-body .sbi-install-plugin-content,
+            .sbi-plugins-boxes-container .sb-plugins-box,
+            .sbi-about-box .sb-team-info,
+            .sbi-oembed-information,
+            .sbi-oembed-plugin-box,
+
+            .sbi-fb-inf-cnt,
+            .sbi-fb-types-ctn,
+            .sbi-fb-slctsrc-ctn,
+            .sbi-fb-section-wh,
+
+
+            .sbi-fd-lst-tbody tr:nth-child(odd),
+            .sb-customizer-sidebar-tab[data-active="true"],
+            .sb-preview-chooser button[data-active="true"],
+            #sbi-notifications,
+            .sbi-fb-slctfd-action,
+            .sbi-fb-mr-feeds,
+            .sbi-fb-section-wh,
+            .cff-fb-inf-cnt,
+            #cff-notifications,
+            .cff-settings-cta,
+            .cff-fb-header,
+            .cff-table thead th,
+            .cff-table tfoot th,
+            .cff-table tbody td,
+            .sbi-fb-popup-inside,
+            .cff-fb-type-el-pro,
+            .cff-fb-type-el-img,
+            .cff-fb-slctfd-action,
+            .cff-fb-mr-feeds,
+            .cff-fb-section-wh {
+                background-color: $black !important;
+            }
+
+            .sbi-fb-extpp-top,
+            .cff-fb-types-ctn,
+            .cff-fb-slctsrc-ctn,
+            .cff-fb-section-wh,
+            #ctf-notifications {
+                background-color: $dark-mode-black-1 !important;
+            }
+
+            #sbi-notice-bar a,
+            .cff-btn-blue {
+                color: $dark-mode-bg !important;
+            }
+
+            .cff-fb-slctfd-action{
+                width: calc(100% - 260px);
+            }
+            .sbi-fb-type-el,
+            .sbi-fb-type-el-img,
+            .sbi-fb-type-el-pro,
+            .sbi-btn-grey,
+            .cff-settings-cta .cff-cta-boxes,
+            .cff-settings-cta .cff-cta-try-demo a,
+            .cff-table tbody:nth-child(2n) td,
+            .sbi-fb-extpp-bottom,
+            .cff-fb-type-el {
+                background: $dark-mode-bg !important;
+            }
+
+            .sbi-fb-type-el[data-active="true"] .sbi-fb-type-el-img,
+            .cff-fb-type-el[data-active="true"] .cff-fb-type-el-img {
+                border: 1px solid $black !important;
+                border-bottom: 2px solid $black !important;
+            }
+
+            .sbi-install-plugin-body .sbi-install-plugin-header {
+                background-color: #0b5677 !important;
+            }
+
+            .sb-customizer-sidebar-tab[data-active="true"],
+            .sb-tabs .tab.active {
+                border-color: $primarycolor !important;
+            }
+
+            #sbi-builder-app .sb-standard-p,
+            .sbi-csz-header-insider button,
+            .sbi-csz-hd-actions a.sbi-btn-grey,
+            .sb-button-standard a,
+            .sb-plugins-box .sb-box-title,
+            .sbi-oembed-plugin-box,
+            .sbi-section-header h3,
+            .sb-customizer-sidebar,
+            .sbi-settings-cta,
+            #sbi-settings h3,
+            .sb-team-left h2,
+            .sbi-install-plugin-body .sbi-install-plugin-header h3,
+            .sbi-install-plugin-body .sbi-install-plugin-header p .sb-author-logo,
+            .sbi-install-plugin-body .sbi-install-plugin-header p .sb-author-name,
+            .sbi-settings-cta .sbi-cta-much-more .sbi-cta-mm-left h4,
+            .sbi-settings-cta .sbi-cta-much-more .sbi-cta-mm-right ul li,
+            .sb-tab-content .sb-tab-box,
+            .sb-tab-content .sb-tab-box h3,
+            #sbi-builder-app h2:not(#sb_instagram h2),
+            #sbi-settings .sb-tab-content .sb-tab-box h3,
+            .sb-srcs-item-name,
+            .sbi-fb-full-wrapper .section-header h1,
+            .sbi-fb-hd-logo .breadcrumb-title,
+            #sbi-builder-app .sb-lighter,
+            .sbi-fd-lst-thtf,
+            .sbi-oembed-information .sb-box-header h3,
+            .sb-two-column-box h4,
+            .sb-one-column-box h4,
+            .sbi-section-second-header h3,
+            #sbi-builder-app h3:not(#sb_instagram h3):not(.sb_instagram_header h3),
+            .sb-control-toggle-set-ctn .sb-control-toggle-elm[data-active="true"],
+            #sbi-builder-app .sb-dark-text,
+            .sbi-fb-type-el-pro,
+            #sbi-builder-app .sbi-fb-srcs-item .sbi-fb-srcs-item-inf .sbi-fb-srcs-item-name span,
+            .cff-settings-cta .cff-cta-box .cff-cta-box-title,
+            .cff-settings-cta .cff-cta-try-demo a,
+            .cff-settings-cta .cff-cta-much-more .cff-cta-mm-right ul li,
+            .sb-form-field .help-text,
+            .cff-table thead th,
+            .cff-table tfoot th,
+            .cff-table-row-header td,
+            #sbi-builder-app .sbi-fb-extpp-desc,
+            #sbi-builder-app .sbi-extension-single-bullet span,
+            #cff-builder-app .sb-small-p,
+            #cff-builder-app .sb-standard-p,
+            .cff-fb-type-el-pro,
+            #cff-builder-app h3,
+            #cff-builder-app .sb-small-p,
+            #cff-builder-app .sb-standard-p,
+            #cff-builder-app .sb-lighter {
+                color: $dark-mode-white !important;
+            }
+            .cff-settings-cta .cff-cta-title .cff-cta-discount-label{
+                max-width: 250px !important;
+            }
+            .sbi-csz-header-insider button:not(.sbi-csz-hd-actions .sbi-csz-btn-save),
+            .sb-control-toggle-set-ctn .sb-control-toggle-elm[data-disabled="true"],
+            .sbi-csz-hd-actions a.sbi-btn-grey,
+            .sbi-settings-cta .sbi-cta-boxes,
+            .sb-button-standard,
+            .sbi-oembed-btn a,
+            .sbi-oembed-btn .sbi-btn,
+            .sb-customizer-sidebar,
+            .sb-customizer-sidebar-tab,
+            .sb-preview-chooser,
+            .sbi-feeds-list table,
+            .sbi-fd-lst-thtf,
+            .sb-customizer-sidebar-sec-el {
+                background: $dark-mode-black-1 !important;
+            }
+
+            .sbi-csz-header-insider button svg path,
+            .sb-preview-chooser svg path,
+            .sb-customizer-sidebar-sec-el-icon svg path,
+            .sb-button-standard svg path,
+            .sbi-fd-lst-actions .sbi-fd-lst-btn:nth-child(2) svg path,
+            .sb-control-toggle-set-ctn .sb-control-toggle-elm[data-active="true"] svg path,
+            .sbi-csz-hd-actions a.sbi-btn-grey svg path,
+            .sbi-fb-popup-cls svg path,
+            .cff-fb-mr-fd-ch svg path,
+            .sbi-fb-mr-fd-ch svg path {
+                fill: $dark-mode-white !important;
+            }
+        }
+
+    }
+}

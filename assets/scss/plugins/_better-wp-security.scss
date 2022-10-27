@@ -1,0 +1,179 @@
+.wp-adminify {
+    #toplevel_page_itsec-dashboard:hover div.wp-menu-image,
+    #toplevel_page_itsec-dashboard.wp-menu-open div.wp-menu-image,
+    #toplevel_page_itsec-dashboard.wp-adminify-active div.wp-menu-image {
+        background-color: #fff !important;
+    }
+    #adminify-main-submenu-itsecgopro:hover,
+    #wpbody-content .itsec-aside header h2,
+    #wpbody-content .itsec-promo-pro-upgrade h2,
+    #wpbody-content .itsec-promo-pro-upgrade p {
+        color: #fff;
+    }
+    #wpbody-content {
+        .components-form-toggle
+            input.components-form-toggle__input[type="checkbox"] {
+            position: absolute;
+        }
+        .itsec-button-icon-right.components-button.has-icon {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        svg.components-checkbox-control__checked {
+            display: none;
+        }
+        .itsec-breadcrumbs
+            ul
+            .itsec-breadcrumbs__menu
+            .components-button.has-icon {
+            line-height: 27px;
+            padding: 0;
+        }
+        .components-checkbox-control__input {
+            float: left;
+            margin-top: 4px;
+        }
+
+        .itsec-card--type-database-backup
+            .itsec-card-database-backup__total-count {
+            top: 22%;
+        }
+        .itsec-card--type-database-backup
+            .itsec-card-database-backup__total-label {
+            bottom: 12%;
+        }
+        .itsec-admin-notice .itsec-admin-notice__header .components-button {
+            color: #0081e3;
+            &:hover {
+                color: #fff;
+            }
+        }
+        .itsec-promo-pro-upgrade .itsec-promo-pro-upgrade__button:hover {
+            color: #fff;
+        }
+    }
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .components-button.is-primary,
+            .components-button.is-secondary {
+                background-color: #4285f4;
+                border-color: #4285f4;
+                color: #cfcfcf;
+                &:hover {
+                    background-color: #cfcfcf;
+                    color: #4285f4;
+                }
+            }
+            .itsec-settings-toolbar,
+            .itsec-settings-sidebar {
+                background-color: #1d1d1d;
+            }
+            .itsec-settings-toolbar .components-button,
+            #itsec-page-header,
+            .itsec-selectable-card__title,
+            a.components-button.itsec-promo-pro-upgrade__button,
+            .itsec-settings
+                .itsec-primary-schema-form.rjsf
+                .components-base-control__label,
+            .itsec-settings
+                .itsec-primary-schema-form.rjsf
+                .components-input-control__label,
+            .itsec-settings .itsec-primary-schema-form.rjsf label,
+            .itsec-settings .itsec-primary-schema-form.rjsf caption,
+            .itsec-settings .itsec-primary-schema-form.rjsf legend,
+            .itsec-nav .itsec-nav__item-title,
+            .components-card__body h3,
+            .components-flex-item .components-button.is-primary,
+            .components-base-control__label,
+            .itsec-breadcrumbs
+                ul
+                .itsec-breadcrumbs__menu
+                .components-button.has-icon:hover,
+            .itsec-nc-user-role-list legend,
+            .itsec-accordion.itsec-accordion--styled
+                .itsec-accordion__header
+                .components-button
+                .itsec-accordion__header-title,
+            .itsec-accordion.itsec-accordion--styled
+                .itsec-accordion__header
+                .components-button:hover
+                .itsec-accordion__header-title,
+            .itsec-secure-site-user-groups-settings-panel li,
+            .components-button:hover, .components-button[aria-expanded=true],
+            a.itsec-promo-pro-upgrade__details,
+            .itsec-card--type-pie-chart .itsec-card-pie-chart__circle-label,
+            .itsec-card--type-pie-chart.itsec-card--type-pie-chart--no-data .itsec-card-pie-chart__values,
+            .itsec-card--type-database-backup .itsec-card-database-backup__total-count,
+            .itsec-card--type-database-backup .itsec-card-database-backup__total-label,
+            .itsec-card--type-pie-chart .itsec-card-pie-chart__circle-sum,
+            .itsec-dashboard-toolbar button.components-button {
+                color: #cfcfcf;
+            }
+            .itsec-settings-toolbar .components-button {
+                &.itsec-help-toggle-link {
+                    color: #4285f4;
+                }
+            }
+            .components-flex-item .components-button.is-primary:hover {
+                color: #4285f4;
+            }
+            .itsec-settings-main,
+            .css-yk16xz-control,
+            textarea.components-textarea-control__input,
+            input.components-text-control__input,
+            select.components-select-control__input {
+                background-color: #111;
+            }
+            .components-card,
+            .itsec-accordion.itsec-accordion--styled
+                .itsec-accordion__header
+                .components-button,
+                .itsec-dashboard-toolbar,
+                .itsec-card {
+                background-color: #1d1d1d;
+                border-color: #2b2b2b;
+            }
+            .itsec-tab-panel--styled .components-tab-panel__tabs {
+                border-bottom-color: #2b2b2b;
+            }
+            .components-card.itsec-promo.itsec-promo-vulnerability-report
+                svg
+                g:first-child
+                path,
+            .itsec-settings-sidebar__logo svg g:last-child path,
+            .itsec-card--type-pie-chart .itsec-card-pie-chart__circle-label,
+            .itsec-card--type-pie-chart .itsec-card-pie-chart__circle-sum {
+                fill: #cfcfcf;
+            }
+            .css-yk16xz-control,
+            .itsec-user-groups-group-tab_settings-list:nth-child(n + 2),
+            .itsec-user-groups-group-tab__edit-fields
+                > .components-base-control:nth-child(n + 2),
+            .css-1fhw71u-View-HeaderUI,
+            .itsec-settings
+                .itsec-primary-schema-form.rjsf
+                > .field-object
+                > .itsec-rjsf-object-fieldset
+                > .itsec-rjsf-title-field:not(:first-child),
+            .itsec-settings
+                .itsec-primary-schema-form.rjsf
+                > .field-object
+                > .itsec-rjsf-object-fieldset
+                > .itsec-rjsf-section-title:not(:first-child),
+            .itsec-settings .itsec-primary-form__section:not(:first-child),
+            .itsec-nc-user-role-list__group,
+            .itsec-accordion.itsec-accordion--styled
+                .itsec-accordion__header:not(:last-child),
+                .itsec-card-footer__actions,
+                .itsec-card--type-banned-users .itsec-card-banned-users__search {
+                border-color: #2b2b2b;
+            }
+            .itsec-card--type-malware-scan .itsec-card-malware-scan__scans-section .itsec-card-malware-scan__scans thead th,
+            .itsec-component-master-detail .itsec-component-master-detail__master-list thead th {
+                background-color: #1d1d1d;
+                border-color: #2b2b2b;
+                color: #cfcfcf;
+            }
+        }
+    }
+}

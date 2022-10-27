@@ -1,0 +1,179 @@
+@import "variables", "mixins", "fonts";
+
+&.post-type-post {
+    #wpbody-content {
+        .page-title-action {
+            &:before {
+                content: "\f543";
+                font-family: dashicons;
+                font-size: $fontsize - 1px;
+                float: left;
+                margin: -1px 7px 0 0;
+            }
+        }
+
+        .post-state {
+            background-color: $bodycolor;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 10px;
+            padding: 3px 6px;
+            border-radius: 3px;
+            margin: 0 4px;
+        }
+
+        .status-draft .post-state {
+            background-color: #dab35f;
+        }
+
+        .status-pending .post-state {
+            background-color: #da905f;
+        }
+
+        .status-private .post-state,
+        .post-password-required .post-state {
+            background-color: #222222;
+        }
+
+        .status-future .post-state {
+            background-color: #a0c96a;
+        }
+
+        mark.instock,
+        mark.outofstock {
+            background-color: #a0c96a;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 10px;
+            padding: 3px 6px;
+            border-radius: 3px;
+        }
+
+        mark.outofstock {
+            background-color: #da905f;
+        }
+    }
+}
+
+// Comments inline edit
+
+#wpbody-content {
+    .wp-list-table.widefat.comments {
+        .inline-edit-row {
+            .colspanchange {
+                padding: 15px;
+            }
+            .comment-reply {
+                legend {
+                    color: $black;
+                    @include font14_600;
+                    padding: 0;
+                }
+                input.button {
+                    background-color: $whitecolor;
+                    line-height: 1;
+                }
+                .quicktags-toolbar {
+                    border-bottom: 1px solid $whitecolor;
+                }
+                #replysubmit {
+                    padding: 10px 0 0;
+                }
+                .reply-submit-buttons {
+                    button {
+                        float: left;
+                        vertical-align: middle;
+                        #addbtn,
+                        #savebtn,
+                        #replybtn {
+                            font-size: $fontsize;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+&.comment-php {
+    #wpbody-content {
+        #poststuff {
+            .stuffbox {
+                padding: 15px;
+            }
+        }
+        #post-body-content {
+            #comment-link-box {
+                @include font14_600;
+                line-height: $lineheight20;
+                padding: 0;
+                a {
+                    color: $primarycolor;
+                }
+            }
+            .stuffbox {
+                .edit-comment-author {
+                    border: 0;
+                    padding: 0 0 15px;
+                }
+                .form-table {
+                    td {
+                        padding: 0;
+                        &.first {
+                            padding-right: 15px;
+                        }
+                        label {
+                            font-size: $fontsize - 1px;
+                        }
+                        input {
+                            margin: 7.5px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        //right sidebar
+
+        #submitdiv {
+            h2 {
+                border: 0;
+                color: $black;
+                @include font14_600;
+                line-height: $lineheight20;
+                padding: 0 0 15px;
+            }
+            .misc-pub-section {
+                color: $titlecolor;
+                @include font14_400;
+                line-height: $lineheight20;
+                padding: 0;
+                &:before {
+                    color: $titlecolor;
+                    margin-left: -3px;
+                }
+                #comment-status-radio {
+                    label {
+                        clear: both;
+                        font-size: $fontsize - 1px;
+                        input {
+                            margin-right: 10px;
+                        }
+                    }
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .curtime {
+                margin-bottom: 15px;
+            }
+            #major-publishing-actions {
+                border: 0;
+                margin: 15px 0 0;
+                padding: 0;
+            }
+        }
+    }
+}

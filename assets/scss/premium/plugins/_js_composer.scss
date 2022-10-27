@@ -1,0 +1,84 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+.wp-adminify {
+    #adminmenu .wp_adminify_admin-menu li.menu-top > a.toplevel_page_vc-general .wp-adminify-icon-button {
+        filter: brightness(0.5);
+    }
+    #wpbody-content {
+        .nav-tab-wrapper .nav-tab-active {
+            color: $primarycolor;
+        }
+        .composer-switch {
+            margin-bottom: 1rem;
+            a {
+                padding-top: 0;
+                padding-bottom: 0;
+                &:hover {
+                    color: $whitecolor;
+                }
+            }
+        }
+        .vc_settings #vc_settings-automapper .vc_add-form-atm .vc_wrapper .vc_buttons .button {
+            margin-top: 6px;
+        }
+    }
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .composer-switch {
+                a {
+                    color: $whitecolor;
+                    &:hover {
+                        color: $whitecolor;
+                    }
+                }
+            }
+            .vc_general.vc_wp-form-table {
+                border-color: $dark-mode-border-color-1;
+                tr,
+                th,
+                td {
+                    background-color: $dark-mode-black-1;
+                    border-color: $dark-mode-border-color-1;
+                    color: $dark-mode-white;
+                }
+            }
+            .widget-title h3, 
+            .widget-title h4 {
+                background-color: $dark-mode-black-1;
+                color: $dark-mode-white;
+            }
+            .vc_ui-settings-roles-role select,
+            #vc_settings-color input.css-control {
+                background-color: $dark-mode-black-1;
+            }
+        }
+        .form-table td,
+        .about-wrap h3,
+        .about-wrap .about-text {
+            color: $dark-mode-white;
+        }
+        #menu-management .menu-edit, 
+        #menu-settings-column .accordion-container, 
+        .comment-ays, 
+        .feature-filter, 
+        .imgedit-group, 
+        .manage-menus, 
+        .menu-item-handle, 
+        .popular-tags, 
+        .stuffbox, 
+        .widget-inside, 
+        .widget-top, 
+        .widgets-holder-wrap, 
+        .wp-editor-container, 
+        p.popular-tags, 
+        table.widefat {
+            border-color: $dark-mode-border-color-1;
+        }
+        .vc_settings #vc_settings-automapper .vc_add-form-atm {
+            background-color: $dark-mode-black-1;
+            border-color: $dark-mode-border-color-1;
+            color: $dark-mode-white;
+        }
+    }
+}

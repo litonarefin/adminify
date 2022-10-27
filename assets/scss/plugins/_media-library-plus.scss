@@ -1,0 +1,80 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.wp-adminify {
+    #wpbody-content {
+        .gray-blue-link, .gray-blue-link:active {
+            color: #2ea2cc;
+        }
+        .gray-blue-link:hover,
+        .big-pluspro-btn,
+        .big-pluspro-btn:hover,
+        .features h2 {
+            color: $whitecolor;
+        }
+        #new-gallery-box, #rename-box, #new-folder-box {
+            height: auto;
+        }
+    }
+    &.adminify-dark-mode {
+        #wpwrap,
+        input#mgmlp-media-search-input:hover {
+            background-color: $dark-mode-bg !important;
+        }
+        div#wp-media-grid.wrap div.media-plus-toolbar, 
+        .media-plus-toolbar,
+        .utp-body,
+        .options-section .option {
+            background-color: $dark-mode-black-1 !important;
+            border-color: $dark-mode-border-color-1;
+            color: $dark-mode-white;
+        }
+        #wpbody-content {
+            color: $dark-mode-white;
+            .gray-blue-link, 
+            .gray-blue-link:active {
+                color: #2ea2cc;
+            }
+            .gray-blue-link {
+                background-color: $dark-mode-bg;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+                &:hover,
+                &:active {
+                    background-color: #2ea2cc;
+                    border-color: #2ea2cc;
+                    color: $dark-mode-white;
+                }
+            }
+            #pro-btn,
+            #dragandrophandler,
+            h1,
+            .top-section strong,
+            .big-pluspro-btn,
+            h4 {
+                color: $dark-mode-white;
+            }
+            #mgmlp-outer-container,
+            #new-top-promo,
+            #dragandrophandler,
+            .vakata-context, 
+            .vakata-context ul,
+            #new-folder-box,
+            #rename-box,
+            .tabbed-content ul.tabs li a {
+                border-color: $dark-mode-border-color-1;
+            }
+            #mgmlp-breadcrumbs,
+            .vakata-context, 
+            .vakata-context ul,
+            #mlf-info,
+            .tabbed-content ul.tabs li a {
+                background-color: $dark-mode-bg;
+                color: $dark-mode-white;
+            }
+            .attachment-name {
+                background-color: $dark-mode-black-1;
+            }
+            
+        }
+    }
+}

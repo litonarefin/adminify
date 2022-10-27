@@ -1,0 +1,294 @@
+@import "variables", "mixins", "fonts";
+&.nav-menus-php {
+    // Apperance Menus
+
+    .nav-tab-wrapper {
+        border-bottom: 1px solid $grayborder;
+        .nav-tab {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            border-top-left-radius: $radius6p - 4px;
+            border-top-right-radius: $radius6p - 4px;
+            color: $blackplaceholder;
+            @include font14_600;
+            line-height: $lineheight20;
+            margin-left: 0;
+            padding: 10px 15px;
+            &.nav-tab-active {
+                border-bottom-color: $primarycolor;
+                color: $primarycolor;
+            }
+        }
+    }
+    p {
+        color: $blackcolor;
+    }
+
+    .manage-menus {
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        color: $black;
+        @include font14_400;
+        line-height: $lineheight20;
+        a {
+            color: $primarycolor;
+        }
+    }
+
+    #nav-menus-frame {
+        .accordion-container {
+            background-color: $whitecolor;
+            border: 0;
+            border-radius: $radius6p + 2px;
+            box-shadow: $grayshadow;
+            .outer-border {
+                border: 0;
+                border-radius: $radius6p + 2px;
+                box-shadow: $insetshadow;
+                li {
+                    border: 0;
+                    border-top: 1px solid $grayborder;
+                    &.open {
+                        .accordion-section-title {
+                            &:after {
+                                content: "\f343";
+                            }
+                        }
+                    }
+                    &:first-child {
+                        border-top: 0;
+                    }
+                }
+                .accordion-section-title {
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                    color: $black;
+                    @include font14_700;
+                    line-height: $lineheight20;
+                    opacity: 1;
+                    padding: 24px 10px 22px 14px;
+                    &:after {
+                        content: "\f347";
+                        color: $black;
+                        font-size: $fontsize;
+                        top: calc(50% - 6px);
+                    }
+                }
+            }
+            .accordion-section-content {
+                opacity: 1;
+                padding: 0 15px 15px;
+                .inside {
+                    margin-top: 0;
+                }
+                ul.add-menu-item-tabs {
+                    border-bottom: 1px solid $grayborder;
+                    display: flex;
+                    margin: 0 0 15px;
+                    li {
+                        border: 0;
+                        box-shadow: none;
+                        display: block;
+                        float: left;
+                        margin: 0 0 -1px;
+                        padding: 0;
+                        a {
+                            border-bottom: 2px solid transparent;
+                            border-top-left-radius: $radius6p - 4px;
+                            border-top-right-radius: $radius6p - 4px;
+                            color: $blackcolor;
+                            display: inline-block;
+                            font-size: $fontsize - 1px;
+                            font-weight: $weight400;
+                            line-height: $lineheight20;
+                            margin: 0 0 -1px;
+                            padding: 5px 10px;
+                        }
+                        &.tabs {
+                            a {
+                                border-bottom-color: $primarycolor;
+                                color: $primarycolor;
+                            }
+                        }
+                    }
+                }
+                .tabs-panel {
+                    border: 0;
+                    clear: both;
+                    min-height: inherit;
+                    max-height: inherit;
+                    padding: 0;
+                    &.tabs-panel-active {
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                    ul {
+                        margin: 6px 0;
+                        li {
+                            border: 0;
+                            box-shadow: none;
+                            padding: 6px 0;
+                            ul {
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                    input[type="search"] {
+                        margin: 0;
+                        width: 100%;
+                    }
+                    input[type="text"] {
+                        @include selectone;
+                    }
+                    .spinner {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        label,
+        p,
+        legend {
+            color: $black;
+            font-size: $fontsize - 1px;
+            font-weight: $weight400;
+            line-height: $lineheight16;
+            margin: 0;
+        }
+        .customlinkdiv p {
+            margin: 5px 0;
+        }
+
+        // Right side panel
+
+        .menu-edit {
+            background-color: $whitecolor;
+            border: 1px solid $whitegray;
+            border-radius: $radius6p + 2px;
+            box-shadow: $grayshadow;
+        }
+        #nav-menu-header {
+            background-color: $whitecolor;
+            border-bottom-color: $whitegray;
+            border-top-left-radius: $radius6p + 2px;
+            border-top-right-radius: $radius6p + 2px;
+            padding: 1.125rem 1.5rem;
+        }
+        .menu-settings {
+            border-top-color: $whitegray;
+        }
+        #nav-menu-footer {
+            background-color: $whitecolor;
+            border-top: 1px solid $whitegray;
+            border-bottom-left-radius: $radius6p + 2px;
+            border-bottom-right-radius: $radius6p + 2px;
+            box-shadow: none;
+            padding: 1.125rem 1.5rem;
+            .major-publishing-actions {
+                line-height: 1;
+                padding: 0;
+            }
+        }
+    }
+
+    .menu-edit {
+        #post-body {
+            border: 0;
+            padding: 1.125rem 1.5rem;
+            #menu-to-edit {
+                .menu-item-bar {
+                    .menu-item-handle {
+                        background-color: $whitecolor;
+                        border: 1px solid $whitegray;
+                        border-radius: $radius6p;
+                        box-shadow: none;
+                        color: $black;
+                        @include font14_600;
+                        line-height: $lineheight20;
+                    }
+                }
+                .menu-item-settings {
+                    border: 1px solid $whitegray;
+                    border-radius: $radius6p;
+                    box-shadow: none;
+                    max-width: 382px;
+                    padding: 20px 15px 15px;
+                }
+                .description-thin {
+                    margin-right: 10px;
+                    width: calc(50% - 10px);
+                }
+                label {
+                    .widefat {
+                        margin: 10px 0;
+                    }
+                }
+                .field-link-target {
+                    margin-bottom: 5px;
+                }
+                .link-to-original {
+                    border: 0;
+                    margin-bottom: 10px;
+                    padding: 0;
+                }
+                .menu-item-actions {
+                    font-size: $fontsize - 1px;
+                    a {
+                        color: $primarycolor;
+                        &.item-delete {
+                            color: $reddark;
+                        }
+                        &.item-cancel {
+                            color: $slow;
+                        }
+                        &.item-duplicate {
+                            color: $fast;
+                        }
+                    }
+                    span {
+                        color: $whitegray;
+                    }
+                }
+            }
+            .menu-settings {
+                legend {
+                    margin: 0 0 0 -25%;
+                }
+            }
+        }
+    }
+
+    .appearance_page_custom-background {
+        #wpbody-content {
+            .form-table {
+                .wp-upload-form {
+                    p {
+                        margin: 0 0 10px;
+                    }
+                    label {
+                        display: inline-block;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #menu-locations-wrap {
+        table.widefat {
+            td,
+            th {
+                border-bottom: 1px solid $whitegray;
+                color: $titlecolor;
+                a {
+                    color: $primarycolor;
+                }
+            }
+        }
+    }
+}

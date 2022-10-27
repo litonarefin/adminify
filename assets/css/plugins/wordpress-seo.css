@@ -1,0 +1,136 @@
+.wp-adminify #wpbody-content .nav-tab, .wp-adminify #wpbody-content .nav-tab-active,
+.wp-adminify #wpbody-content .yoast-button-upsell {
+  color: #000;
+}
+.wp-adminify #wpbody-content .fieldset-switch-toggle .switch-light.switch-yoast-seo, .wp-adminify #wpbody-content .fieldset-switch-toggle .switch-toggle.switch-yoast-seo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wp-adminify #wpbody-content .wpseo-admin-submit.wpseo-admin-submit-fixed {
+  left: 250px;
+}
+.wp-adminify #wpbody-content .yst-replacevar button {
+  line-height: 28px;
+  padding: 0;
+}
+.wp-adminify #wpbody-content button.yoast-image-select__preview.yoast-image-select__preview--no-preview {
+  height: 165px;
+}
+.wp-adminify #wpbody-content .wpseo_content_wrapper .paper.tab-block button.toggleable-container-trigger {
+  line-height: 1;
+}
+.wp-adminify #wpbody-content .wpseo_content_cell .ul-disc {
+  margin-left: 0;
+  padding: 15px 15px 10px 35px;
+}
+.wp-adminify #wpadminbar .menupop .menupop > .ab-item .wp-admin-bar-arrow:before {
+  top: 6px;
+}
+.wp-adminify #yoast-helpscout-beacon button.sc-dkPtyc.gnliEL {
+  height: 60px;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .nav-tab,
+.wp-adminify.adminify-dark-mode #wpbody-content .nav-tab-active,
+.wp-adminify.adminify-dark-mode #dashboard-widgets h3,
+.wp-adminify.adminify-dark-mode #dashboard-widgets h4,
+.wp-adminify.adminify-dark-mode #dashboard_quick_press .drafts h2,
+.wp-adminify.adminify-dark-mode h2, .wp-adminify.adminify-dark-mode h3,
+.wp-adminify.adminify-dark-mode .yoast-measure,
+.wp-adminify.adminify-dark-mode .yoast_premium_upsell--argument,
+.wp-adminify.adminify-dark-mode .yoast-sidebar__section li,
+.wp-adminify.adminify-dark-mode .wpseo_content_wrapper .toggleable-container-trigger,
+.wp-adminify.adminify-dark-mode .wpseo_content_wrapper .paper.tab-block .paper-container,
+.wp-adminify.adminify-dark-mode .wpseo_content_wrapper #separator input.radio:checked + label,
+.wp-adminify.adminify-dark-mode .yst-replacevar__label,
+.wp-adminify.adminify-dark-mode #wpbody-content .yst-replacevar__button-insert,
+.wp-adminify.adminify-dark-mode .yoast-field-group__title,
+.wp-adminify.adminify-dark-mode .yoast-image-select .yoast-image-select-buttons button,
+.wp-adminify.adminify-dark-mode .yst-replacevar__editor,
+.wp-adminify.adminify-dark-mode .DraftEditor-editorContainer,
+.wp-adminify.adminify-dark-mode .select2-container--default .select2-selection--single .select2-selection__rendered,
+.wp-adminify.adminify-dark-mode .switch-light-visual-label,
+.wp-adminify.adminify-dark-mode .wpseo_content_cell .ul-disc li,
+.wp-adminify.adminify-dark-mode .yoast-seo-premium-extension,
+.wp-adminify.adminify-dark-mode .yoast-list--usp li,
+.wp-adminify.adminify-dark-mode #wpseo-workouts-container h2,
+.wp-adminify.adminify-dark-mode #wpseo-workouts-container h3,
+.wp-adminify.adminify-dark-mode #wpseo-workouts-container h4,
+.wp-adminify.adminify-dark-mode #wpseo-workouts-container .yoast-button,
+.wp-adminify.adminify-dark-mode #wpbody-content #mc_embed_signup_scroll {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .nav-tab,
+.wp-adminify.adminify-dark-mode .yoast-container,
+.wp-adminify.adminify-dark-mode .yoast-notifications .yoast-container h3,
+.wp-adminify.adminify-dark-mode .yoast-notifications .yoast-container__configuration-wizard,
+.wp-adminify.adminify-dark-mode .wp-core-ui .button, .wp-adminify.adminify-dark-mode .wp-core-ui .button-secondary,
+.wp-adminify.adminify-dark-mode .yoast-sidebar__section,
+.wp-adminify.adminify-dark-mode .yoast_premium_upsell,
+.wp-adminify.adminify-dark-mode #wpseo-submit-container-fixed,
+.wp-adminify.adminify-dark-mode .yoast-notification .button,
+.wp-adminify.adminify-dark-mode .wpseo_content_wrapper .paper.tab-block.search-appearance,
+.wp-adminify.adminify-dark-mode .wpseotab.save,
+.wp-adminify.adminify-dark-mode .wpseo_content_cell .ul-disc,
+.wp-adminify.adminify-dark-mode .yoast-seo-premium-extension,
+.wp-adminify.adminify-dark-mode .yoast-promo-extension {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode span.sc-kHOZQx.fZtdAk.progress__part,
+.wp-adminify.adminify-dark-mode .yoast-notification,
+.wp-adminify.adminify-dark-mode .wpseo_content_wrapper #separator input.radio:checked + label,
+.wp-adminify.adminify-dark-mode .yst-replacevar__editor,
+.wp-adminify.adminify-dark-mode #wpbody-content .yst-replacevar__button-insert,
+.wp-adminify.adminify-dark-mode #wpbody-content button.yoast-image-select__preview.yoast-image-select__preview--no-preview,
+.wp-adminify.adminify-dark-mode .yoast-image-select .yoast-image-select-buttons button,
+.wp-adminify.adminify-dark-mode #breadcrumbsinfo input.textinput,
+.wp-adminify.adminify-dark-mode .select2-container--default .select2-selection--single,
+.wp-adminify.adminify-dark-mode #wpbody-content #rss textarea.textinput,
+.wp-adminify.adminify-dark-mode #wpseo-workouts-container .yoast-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .mc-field-group .email {
+  background-color: #111;
+}
+.wp-adminify.adminify-dark-mode .nav-tab,
+.wp-adminify.adminify-dark-mode .nav-tab-active,
+.wp-adminify.adminify-dark-mode .yoast-container,
+.wp-adminify.adminify-dark-mode .nav-tab-wrapper,
+.wp-adminify.adminify-dark-mode #yoast-seo-dashboard-widget .wordpress-feed,
+.wp-adminify.adminify-dark-mode #yoast-seo-dashboard-widget .wordpress-feed .wordpress-feed__footer,
+.wp-adminify.adminify-dark-mode .yoast-notifications .yoast-container h3,
+.wp-adminify.adminify-dark-mode .yoast-notification,
+.wp-adminify.adminify-dark-mode .yoast-sidebar__section,
+.wp-adminify.adminify-dark-mode .yoast_premium_upsell,
+.wp-adminify.adminify-dark-mode .wpseo_content_wrapper #separator input.radio + label,
+.wp-adminify.adminify-dark-mode .yst-replacevar__editor,
+.wp-adminify.adminify-dark-mode #wpbody-content .yst-replacevar__button-insert,
+.wp-adminify.adminify-dark-mode #wpbody-content .yst-replacevar__button-insert,
+.wp-adminify.adminify-dark-mode .yoast-image-select .yoast-image-select-buttons button,
+.wp-adminify.adminify-dark-mode .yoast-settings-section.yoast-settings-section-disabled,
+.wp-adminify.adminify-dark-mode .select2-container--default .select2-selection--single,
+.wp-adminify.adminify-dark-mode .yoast-promoblock {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .yoast-button-upsell,
+.wp-adminify.adminify-dark-mode #wpbody-content .sc-BHxdU.bJNOuF,
+.wp-adminify.adminify-dark-mode #wpbody-content p.sc-bjeSvz.jIKvhc {
+  color: #141414;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .yoast-field-group select {
+  background-color: #cfcfcf;
+  color: #111;
+}
+.wp-adminify.adminify-dark-mode .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #2b2b2b transparent transparent transparent;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content table.yoast_help,
+.wp-adminify.adminify-dark-mode #wpbody-content table.yoast_help td,
+.wp-adminify.adminify-dark-mode #wpbody-content table.yoast_help th {
+  background-color: #111;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode .wpseotab.save,
+.wp-adminify.adminify-dark-mode .yoast-seo-premium-extension {
+  padding: 15px;
+}

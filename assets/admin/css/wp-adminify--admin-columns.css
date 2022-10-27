@@ -1,0 +1,93 @@
+.admin-column-name .comment-grey-bubble:before {
+  content: "\f101";
+  font: normal 20px/0.5 "dashicons";
+  speak: none;
+  display: inline-block;
+  padding: 0;
+  top: 8px;
+  left: 0;
+  position: relative;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+
+.wp-adminify #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body .range-slider-wrapper {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wp-adminify #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-body .range-slider {
+  background: transparent;
+  height: 24px;
+  margin: 0;
+}
+.wp-adminify #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .range-slider-fill {
+  background: #6079ff;
+  cursor: pointer;
+}
+.wp-adminify #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion.admin-column-accordion-force--open .accordion-body {
+  display: block;
+}
+
+.wp-adminify--popup-container {
+  width: 32.8125rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.wp-adminify--popup-container_inner h3 {
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.wp-adminify--popup-container_inner .popup-content {
+  margin-bottom: 18px;
+}
+
+#wpadminify-admin-columns .tab-pane {
+  position: relative;
+}
+
+.admin-column--pro-guard {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminify-dark-mode .admin-column--pro-guard {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=wp-adminify--admin-columns.css.map*/

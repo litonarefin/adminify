@@ -1,0 +1,34 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.wp-adminify {
+    &.adminify-ui {
+
+        // Dark Mode
+        &.adminify-dark-mode {
+            #wpbody-content {
+
+                #content_ifr body#tinymce {
+                    background: $dark-mode-bg !important;
+                }
+
+                .simcal-panels-wrap,
+                .simcal-tabs,
+                .simcal-tabs:after {
+                    background: $dark-mode-black-1 !important;
+                }
+
+                .simcal-tabs {
+                    li.active a {
+                        background: $dark-mode-bg !important;
+                    }
+                }
+
+                .simcal-help-tip {
+                    color: $dark-mode-white !important;
+                }
+
+            }
+        }
+    }
+}

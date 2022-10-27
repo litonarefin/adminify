@@ -1,0 +1,361 @@
+// Sidebar Tools
+
+&.tools-php {
+    #wpbody-content {
+        .card {
+            @include cardshadow;
+            .title {
+                color: $black;
+                font-size: $fontsize + 4px;
+                font-weight: $weight700;
+                margin-bottom: 0;
+            }
+            p {
+                color: $black;
+            }
+        }
+    }
+}
+
+#wpbody-content {
+    .widefat.importers {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        width: 100%;
+        tbody {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .importer-item {
+            @include cardshadow;
+            display: block;
+            flex: 0 0 46%;
+            width: 46%;
+            margin-bottom: 1.875rem;
+            padding: 1.125rem;
+            position: relative;
+            td {
+                display: block;
+                max-width: inherit;
+                padding: 0;
+                &.desc {
+                    margin: 0 0 1.75rem;
+                }
+                .importer-desc {
+                    font-size: $fontsize;
+                }
+            }
+            .importer-title {
+                color: $black;
+                font-size: $fontsize + 4px;
+                font-weight: $weight700;
+                line-height: $lineheight20;
+                margin-bottom: 0.65rem;
+            }
+            .importer-action {
+                color: $whitegray;
+                left: 1.125rem;
+                bottom: 1.125rem;
+                margin: 0;
+                position: absolute;
+                a {
+                    color: $primarycolor;
+                    @include font14_400;
+                    line-height: $lineheight20;
+                }
+            }
+        }
+    }
+
+    // Tools Export
+
+    #export-filters {
+        @include cardshadow;
+        @include insidepadding;
+        padding-top: 1.5rem;
+        max-width: 685px;
+        p.description {
+            color: $blackmuted;
+            @include font12;
+        }
+        .export-filters {
+            max-width: 550px;
+            li {
+                margin-bottom: 1.25rem;
+                > label,
+                fieldset {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                label[for="post-status"],
+                label[for="page-status"] {
+                    display: inline-flex;
+                    width: 14.5%;
+                }
+                select {
+                    &#post-status,
+                    &#page-status,
+                    &#attachment-status {
+                        width: 73%;
+                    }
+                }
+            }
+            li > label {
+                .label-responsive {
+                    flex-basis: 15%;
+                }
+                select {
+                    flex-basis: 85%;
+                }
+            }
+            .label-responsive {
+                color: $titlecolor;
+                @include font14_600;
+                line-height: $lineheight20;
+            }
+            select {
+                @include content_input;
+                margin: 0;
+            }
+            fieldset {
+                .label-responsive {
+                    flex-basis: 15%;
+                }
+                select {
+                    flex-basis: 25%;
+                    &#post-start-date,
+                    &#page-start-date,
+                    &#attachment-start-date {
+                        margin-right: 2.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Site health
+
+    .health-check-header {
+        border: 0;
+        .health-check-title-section {
+            margin-top: 7px;
+            .site-health-progress {
+                height: 44px;
+                width: 44px;
+                svg {
+                    circle {
+                        stroke: $whitegray;
+                    }
+                }
+            }
+            .site-health-progress-label {
+                color: $greencolor;
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 12px;
+            }
+            #bar {
+                stroke: $greencolor;
+                &.orange {
+                    stroke: $yellowlight;
+                }
+            }
+            &.orange {
+                #bar {
+                    stroke: $yellowlight;
+                }
+                .site-health-progress-label {
+                    color: $yellowlight;
+                }
+            }
+        }
+        .health-check-tabs-wrapper {
+            .health-check-tab {
+                color: $black;
+                @include font14_600;
+                line-height: $lineheight20;
+                &.active {
+                    box-shadow: inset 0 -3px $primarycolor;
+                    color: $primarycolor;
+                }
+                &:focus {
+                    border: 0;
+                    outline: 0;
+                }
+            }
+        }
+    }
+
+    // Health check body
+
+    .site-health .site-health-issues-wrapper {
+        margin: 1.5rem 0;
+    }
+    .health-check-body {
+        p {
+            color: $black;
+        }
+        .health-check-accordion {
+            border: 0;
+            .health-check-accordion-heading {
+                margin-bottom: 1rem;
+                button {
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                    color: $blackcolor;
+                    @include font14_600;
+                    line-height: $lineheight20;
+                    padding: 15px 2.5rem 15px 15px;
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                        border: 0;
+                        outline: 0;
+                    }
+                    .title {
+                        color: $blackcolor;
+                        font-size: $fontsize + 1px;
+                        font-weight: $weight600;
+                        margin-bottom: 0;
+                    }
+                    .badge {
+                        border: 0;
+                        color: $whitecolor;
+                        font-size: $fontsize - 1px;
+                        font-weight: $weight600;
+                        line-height: $lineheight20;
+                        padding: 3px 10px;
+                        &.blue {
+                            background-color: $primarycolor;
+                        }
+                    }
+                    .icon {
+                        height: 6px;
+                        width: 6px;
+                    }
+                }
+            }
+            .health-check-accordion-panel {
+                margin: -1rem 0 1rem;
+                p {
+                    .dashicons {
+                        font-size: $fontsize + 2px;
+                    }
+                }
+                .health-check-table {
+                    border: 1px solid $whitegray;
+                    border-radius: $radius6p;
+                    box-shadow: none;
+                    tbody {
+                        tr:first-child {
+                            td:first-child {
+                                border-top-left-radius: $radius6p;
+                            }
+                            td:last-child {
+                                border-top-right-radius: $radius6p;
+                            }
+                        }
+                        tr:last-child {
+                            td:first-child {
+                                border-bottom-left-radius: $radius6p;
+                            }
+                            td:last-child {
+                                border-bottom-right-radius: $radius6p;
+                            }
+                        }
+                    }
+                }
+            }
+            .health-check-table {
+                border: 1px solid $grayborder;
+                box-shadow: none;
+                td,
+                th {
+                    color: $black;
+                    @include font12;
+                    line-height: $lineheight16;
+                }
+                tbody > :nth-child(odd) {
+                    background-color: $updatecolor;
+                }
+            }
+        }
+        code,
+        kbd {
+            background-color: $graycolor;
+            @include font12;
+        }
+        .site-health-view-passed {
+            &:hover {
+                .icon {
+                    border-color: $primarycolor;
+                }
+            }
+            .icon {
+                border-color: $whitecolor;
+                height: 6px;
+                width: 6px;
+                right: 14px;
+            }
+        }
+        .site-health-view-more {
+            button.site-health-view-passed {
+                padding-right: 1.75rem !important;
+            }
+        }
+    }
+
+    // Export Personal Data
+
+    .wp-privacy-request-form-field {
+        .form-table {
+            th,
+            td {
+                color: $titlecolor;
+                @include font14_400;
+                line-height: $lineheight20;
+            }
+        }
+    }
+}
+
+&.import-php,
+&.export-personal-data-php {
+    #wpbody-content {
+        p,
+        .importer-desc {
+            color: $black;
+        }
+    }
+}
+&.export-personal-data-php,
+&.erase-personal-data-php {
+    #wpbody-content {
+        h2 {
+            color: $black;
+        }
+        input[type="text"] {
+            background-color: $whitecolor;
+            border: 1px solid $whitegray;
+        }
+    }
+}
+&.export-php {
+    #wpbody-content {
+        p {
+            color: $black;
+        }
+        #export-filters {
+            input[type="radio"] {
+                background-color: $whitecolor;
+                margin-top: -3px;
+            }
+        }
+    }
+}

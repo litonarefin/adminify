@@ -1,0 +1,20 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.loco-translate_page_loco-core,
+.loco-translate_page_loco-config {
+    #wpbody-content {
+        #loco-content {
+            input,select,textarea {
+                background-color: $whitecolor;
+            }
+            input[type="submit"] {
+                background-color: $primarycolor;
+                &:hover {
+                    background-color: $whitecolor;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+.wp-adminify {
+    #wpbody-content {
+        #ct-edit-template-builder-parent:hover,
+        #ct-edit-template-builder-parent:focus {
+            color: $whitecolor;
+        }
+        .oxygen-vsb-settings-title,
+        .nav-tab-wrapper .nav-tab-active {
+            color: $whitecolor;
+        }
+        input#oxy-cache-generate {
+            line-height: 20px;
+        }
+        #ct-edit-template-builder {
+            min-height: initial;
+        }
+        .nav-tab-wrapper .nav-tab-active {
+            color: $primarycolor;
+        }
+    }
+    #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item, 
+    #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content:hover > .ab-item {
+        background-color: $primarycolor !important;
+        border-color: $primarycolor !important;
+    }
+    #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content > .ab-item .ab-label, 
+    #wpadminbar #wp-admin-bar-root-default #wp-admin-bar-new-content .ab-item .ab-icon:before {
+        color: $whitecolor !important;
+    }
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .oxygen-admin-screen-home-section,
+            .import-export-section,
+            .oxygen-vsb-settings-container {
+                background-color: $dark-mode-black-1;
+            }
+            .wrap,
+            .oxygen-admin-screen-home-link,
+            .import-export-section h3,
+            #oxygen_user_access_add_user,
+            .oxygen-vsb-settings-info-button,
+            .oxygen-vsb-settings-button,
+            .oxygen-vsb-settings-container h3 {
+                color: $dark-mode-white;
+            }
+        }
+    }
+}

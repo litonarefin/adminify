@@ -1,0 +1,22 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.wp-adminify {
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .nav-tab-wrapper {
+                .nav-tab {
+                    border-color: $dark-mode-border-color-1;
+                }
+            }
+            .fbv-tab-content {
+                background-color: $dark-mode-black-1;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .fbv-breakline {
+                background-color: $dark-mode-bg;
+                box-shadow: none;
+            }
+        }
+    }
+}

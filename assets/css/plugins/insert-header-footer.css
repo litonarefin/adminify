@@ -1,0 +1,13 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+.settings_page_insert-headers-and-footers #wpbody-content .postbox-container .postbox p {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=insert-header-footer.css.map*/

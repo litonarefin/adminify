@@ -1,0 +1,24 @@
+.wp-adminify #wpbody-content p.wp-ui-highlight {
+  color: #fff;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .email-octopus-form-wrapper,
+.wp-adminify.adminify-dark-mode #wpbody-content .changelog.about-integrations {
+  background-color: #1d1d1d;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .email-octopus-form-row input,
+.wp-adminify.adminify-dark-mode #wpbody-content table.form-table.cptui-table input,
+.wp-adminify.adminify-dark-mode #wpbody-content table.form-table.cptui-table textarea {
+  background-color: #111;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .postbox-header {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content table#support {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode.cpt-ui_page_cptui_tools table.form-table.cptui-table {
+  background-color: #1d1d1d;
+}
+
+/*# sourceMappingURL=custom-post-type-ui.css.map*/

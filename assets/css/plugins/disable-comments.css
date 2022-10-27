@@ -1,0 +1,16 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+.settings_page_disable_comments_settings #wpbody-content .notice .button {
+  color: inherit;
+}
+.settings_page_disable_comments_settings #wpbody-content .notice .button.button__success {
+  color: var(--adminify-text-color);
+}
+
+/*# sourceMappingURL=disable-comments.css.map*/

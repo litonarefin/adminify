@@ -1,0 +1,69 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.wp-adminify {
+
+    &.adminify-dark-mode {
+        .wp-pointer-content {
+            background-color: $dark-mode-black-1;
+            border-color: $dark-mode-border-color-1;
+        }
+        #wpbody-content {
+            h3 {
+                color: $dark-mode-white;
+            }
+        }
+        .aiot-tree {
+            border-right-color: $dark-mode-border-color-1;
+            .aiot-fixed-header>div {
+                background-color: $dark-mode-black-1;
+            }
+            .aiot-tree-headline,
+            .aiot-tooltip,
+            .aiot-nodes .aiot-node {
+                color: $dark-mode-white;
+            }
+            .page-title-action {
+                background-color: $dark-mode-bg;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .aiot-toolbar,
+            .aiot-nodes .aiot-node.aiot-active,
+            .aiot-split-collapse, 
+            .aiot-split-resizer {
+                background: $dark-mode-black-1;
+                border-color: $dark-mode-border-color-1;
+                box-shadow: none;
+                color: $dark-mode-white;
+            }
+            .aiot-fixed-header.active>div .aiot-toolbar {
+                border-color: $dark-mode-border-color-1;
+            }
+            .aiot-theme-wordpress .aiot-nodes .aiot-node-icon i {
+                color: $dark-mode-bg;
+            }
+        }
+        
+        .ant-modal-content {
+            background-color: $dark-mode-black-1;
+            .ant-modal-header {
+                background-color: $dark-mode-bg;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .ant-modal-title,
+            h3 {
+                color: $dark-mode-white;
+            }
+            .ant-modal-close-x {
+                color: $reddark;
+            }
+            .rml-postbox {
+                background-color: $dark-mode-black-1;
+            }
+            .ant-modal-footer {
+                border-top-color: $dark-mode-border-color-1;
+            }
+        }
+    }
+}

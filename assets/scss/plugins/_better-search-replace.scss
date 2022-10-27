@@ -1,0 +1,16 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.tools_page_better-search-replace {
+    #wpbody-content {
+        #bsr-main {
+            input,select,textarea {
+                background-color: $whitecolor;
+            }
+            input[type="submit"] {
+                color: $primarycolor;
+            }
+        }
+    }
+}
+

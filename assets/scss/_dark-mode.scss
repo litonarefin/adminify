@@ -1,0 +1,3763 @@
+@import "variables", "mixins", "fonts";
+
+.wp-adminify {
+	&.adminify-dark-mode {
+		background-color: $dark-mode-bg;
+		a {
+			color: $dark-primary;
+		}
+		.wp-adminify--copyright a,
+		#wpbody-content .welcome-panel-header h2,
+		#wpbody-content .welcome-panel-header a,
+		#wpbody-content a.welcome-panel-close,
+		.wp-adminify--folder-widget .folder--search input::placeholder,
+		.wp-adminify--popup-container_inner
+			.popup--new-folder__name
+			input::placeholder {
+			color: $white !important;
+		}
+		.wp-adminify--folder-widget .folder--lists li.active a{
+			background-color:$dark-mode-bg !important;
+		}
+		.about__container .has-subtle-background-color,
+		.welcome-panel .welcome-panel-column-container {
+			background-color: $dark-mode-black-1 !important;
+		}
+		input[type="checkbox"]{
+			border: 1px solid rgba(78, 75, 102, 0.54);
+		}
+		input:not([type="checkbox"], [type="radio"], [type="hidden"], [type="submit"], [type="button"], [type="number"]),
+		[type="text"],
+		textarea,
+		.block-editor-block-contextual-toolbar{
+			border: 1px solid #cfcfcf;
+			background: #111;
+			.block-editor-block-toolbar{
+				.components-toolbar-group{
+					margin-top: 0px;
+					margin-bottom: 0px;
+				}
+			}
+		}
+		.editor-post-publish-panel__prepublish{
+			.components-panel__body{
+				background: #111;
+				.components-panel__body-title{
+					button{
+						color: #cfcfcf;
+					}
+					&:hover {
+						background: #333;
+					}
+				}
+			}
+		}
+		.editor-post-visibility__dialog-fieldset .editor-post-visibility__dialog-radio[type=radio]:checked::before {
+			transform: translate(0px, 0px);
+		}
+		.block-library-classic__toolbar:empty {
+			background-color: $dark-primary !important;
+		}
+		.wp-adminify--popup-container_inner .popup--new-folder__name input{
+			color: $whitecolor !important;
+		}
+		.interface-pinned-items .components-button svg {
+			margin: 5px;
+		}
+
+		&.plugins-php
+			.wp-list-table.plugins
+			tbody#the-list
+			.row-actions
+			.network_only,
+		&.plugins-php
+			.wp-list-table.plugins
+			tbody#the-list
+			.row-actions
+			.network_active {
+			color: $dark-mode-white !important;
+		}
+
+		#dashboard_activity
+			#activity-widget
+			#latest-comments
+			.subsubsub
+			li
+			a
+			span[class*="-count"] {
+			color: $dark-mode-black-1 !important;
+		}
+		#wpbody-content {
+			a:not(.post-publish-panel__postpublish-buttons .components-button, .page-title-action) {
+				color: $dark-primary-light !important;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				color: $dark-mode-white !important;
+			}
+
+			// Plugins Page
+			.tablenav.top {
+				margin: 2px 0;
+				border-radius: 6px;
+			}
+			.subsubsub {
+				padding: 10px 0 10px;
+			}
+			// .interface-interface-skeleton__header {
+			// 	.edit-post-header {
+			// 		.edit-post-header__settings {
+			// 			button.block-editor-post-preview__button-toggle {
+			// 				background-color: $dark-primary-dark !important;
+			// 			}
+			// 		}
+			// 	}
+			// }
+			.interface-interface-skeleton__body {
+				.block-editor-inserter__content {
+					.components-tab-panel__tabs-item {
+						background: $dark-primary;
+						color: $whitecolor;
+					}
+				}
+				.block-editor-inserter__tabs {
+					.block-editor-inserter__panel-header {
+						h2 {
+							color: $whitecolor;
+						}
+					}
+				}
+				.components-panel {
+					.components-panel__body {
+						select {
+							border-radius: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.wp-adminify-top-header--search--form
+			.top-header--search--form
+			input::placeholder,
+		#wpbody-content #posts-filter input[type="text"]::placeholder,
+		#wpbody-content #posts-filter input[type="url"]::placeholder,
+		#wpbody-content .search-plugins input[type="text"]::placeholder,
+		#wpbody-content .search-plugins input[type="search"]::placeholder,
+		#wpbody-content .search-plugins input[type="url"]::placeholder,
+		#wpbody-content .search-form input[type="text"]::placeholder {
+			color: $white !important;
+			opacity: 1;
+		}
+		#posts-filter .search-box {
+			padding-bottom: 20px;
+		}
+		#wpbody-content {
+			a {
+				color: $dark-primary;
+			}
+			.wrap h1,
+			h2,
+			h2.wp-current-version,
+			.update-core-php h2,
+			.widefat tfoot tr td,
+			.widefat tfoot tr th,
+			.widefat thead tr td,
+			.widefat thead tr th {
+				color: $dark-mode-white;
+			}
+			select {
+				background-color: $dark-mode-white;
+				border-color: $dark-mode-border-color-1;
+				color: $dark-mode-white;
+			}
+		}
+		.wp-die-message,
+		p:not(.edit-post-visual-editor p) {
+			color: $dark-mode-white;
+			a {
+				color: $dark-primary-light;
+			}
+		}
+		input,
+		textarea {
+			color: $blackplaceholder2;
+		}
+		::-webkit-input-placeholder,
+		::-moz-placeholder,
+		:-ms-input-placeholder,
+		:-moz-placeholder {
+			color: $dark-mode-white;
+		}
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-image,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top:hover
+			> a.menu-top
+			.wp-adminify-icon-image {
+			filter: brightness(1) contrast(1);
+		}
+		#wpbody-content .card,
+		#wpadminbar #wp-admin-bar-root-default li:hover,
+		#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item,
+		#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+		#wpadminbar.nojs .ab-top-menu > li.menupop:hover > .ab-item,
+		#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+		#wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus,
+		.wp-adminify_page_adminify-custom-css-js
+			.adminify-field.adminify-field-group,
+		.wp-adminify-top-header--search--form .top-header-search-results,
+		#wpadminify-admin-columns .tabs.is-centered + .tab-content,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion,
+		&.adminify-options.adminify-container,
+		.wp-adminify-dashboard-widgets .adminify-field + .adminify-field,
+		.adminify-section[data-section-id] .chosen-drop,
+		&.modal-open #wp-link-wrap,
+		&.appearance_page_custom-background .form-table #custom-background-image,
+		&.nav-menus-php #menu-locations-wrap table.widefat,
+		#wpbody-content .wp-list-table.widefat,
+		#wpbody-content #post-body-content #post-status-info,
+		#wpbody-content .postbox,
+		#wpbody-content #update-themes-table,
+		.options-general-php .wrap form,
+		.options-writing-php .wrap form,
+		.options-reading-php .wrap form,
+		.options-discussion-php .wrap form,
+		.options-media-php .wrap form,
+		.options-permalink-php .wrap form,
+		#wpbody-content .privacy-settings-accordion-heading,
+		#wpbody-content .privacy-settings-accordion-panel,
+		.media-modal .media-modal-content,
+		#wpbody-content .image-editor .imgedit-group,
+		.wp-adminify--menu--editor--settings .accordion,
+		.wp-adminify--popup-container_inner,
+		.wp-adminify-page-speed-wrapper .tab-content,
+		#adminmenu .wp-submenu,
+		.theme-install-php #wpbody-content .upload-theme .wp-upload-form,
+		#wpbody-content .wp-filter .filter-drawer .filter-group,
+		&.themes-php #wpbody-content .theme-overlay .theme-wrap,
+		&.themes-php #wpbody-content .theme-overlay .screenshot,
+		#wpbody-content .health-check-accordion .health-check-accordion-heading,
+		#wpbody-content .health-check-accordion .health-check-accordion-panel,
+		#wpbody-content .wp-list-table.widefat td.colspanchange,
+		.table,
+		#wpbody-content .card,
+		.wp-adminify_page_adminify-custom-css-js
+			.adminify-field.adminify-field-group,
+		.wp-adminify-top-header--search--form .top-header-search-results,
+		#wpadminify-admin-columns .tabs.is-centered + .tab-content,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion,
+		.adminify-options .adminify-container,
+		.wp-adminify-dashboard-widgets .adminify-field + .adminify-field,
+		.adminify-section[data-section-id] .chosen-drop,
+		&.modal-open #wp-link-wrap,
+		&.appearance_page_custom-background .form-table #custom-background-image,
+		&.nav-menus-php #menu-locations-wrap table.widefat,
+		#wpbody-content .wp-list-table.widefat,
+		#wpbody-content #post-body-content #post-status-info,
+		#wpbody-content .postbox,
+		#wpbody-content #update-themes-table,
+		&.options-general-php .wrap form,
+		&.options-writing-php .wrap form,
+		&.options-reading-php .wrap form,
+		&.options-discussion-php .wrap form,
+		&.options-media-php .wrap form,
+		&.options-permalink-php .wrap form,
+		#wpbody-content .privacy-settings-accordion-heading,
+		#wpbody-content .privacy-settings-accordion-panel,
+		.media-modal .media-modal-content,
+		#wpbody-content .image-editor .imgedit-group,
+		&.wp-adminify_page_adminify-menu-editor
+			.selector-popup-wrap.icons-selector
+			.selector-popup,
+		.wp-adminify--menu--editor--settings .accordion,
+		.wp-adminify--popup-container_inner,
+		.wp-adminify-page-speed-wrapper .tab-content,
+		#adminmenu .wp-submenu,
+		.theme-install-php #wpbody-content .upload-theme .wp-upload-form,
+		#wpbody-content .wp-filter .filter-drawer .filter-group,
+		&.themes-php #wpbody-content .theme-overlay .theme-wrap,
+		&.themes-php #wpbody-content .theme-overlay .screenshot,
+		.editwidget .widget-inside,
+		.editwidget table.widefat,
+		.adminify-server-info .adminify-tabbed-contents,
+		#PHPinfo table.widefat,
+		#MYSQLinfo table.widefat,
+		#wpbody-content .widefat.updates-table,
+		#adminify-pto-media,
+		.upload-plugin .wp-upload-form,
+		.upload-theme .wp-upload-form,
+		&.comment-php #wpbody-content #poststuff .stuffbox,
+		#createuser,
+		#your-profile,
+		.mwp-notice td,
+		.plugins tr,
+		.wp-adminify--page--title--actions .dropdown-menu {
+			background-color: $dark-mode-black-1;
+		}
+		input,
+		textarea,
+		select,
+		#wpbody-content input,
+		#wpbody-content textarea,
+		#wpbody-content select,
+		.wp-adminify-top-header--search--form input,
+		&.modal-open input[type="text"],
+		&.modal-open input[type="search"],
+		.wp-adminify-dashboard-widgets .chosen-choices,
+		.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-content
+			.adminify--result,
+		#nav-menus-frame .tabs-panel input[type="search"],
+		#nav-menu-header input[type="text"],
+		#posts-filter .wp-filter .search-form input,
+		.postbox-container #comments-form .search-box input,
+		.postbox-container #post_tag input[type="text"],
+		#wpbody-content .permalink-structure .available-structure-tags button,
+		.media-modal .media-frame-content input[type="search"],
+		.media-frame-content .media-sidebar .compat-item input[type="text"],
+		.media-frame-content .settings input,
+		.media-frame-content .settings textarea,
+		.media-frame-content .setting input,
+		.media-frame-content .setting textarea,
+		#wpbody-content #createuser .form-table input,
+		#wpbody-content
+			.components-popover__content
+			.block-editor-inserter__search-input,
+		.components-accessible-toolbar
+			.components-toolbar-group
+			.components-button,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			input[type="text"],
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			input[type="text"],
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			textarea,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			ul.cat-checklist,
+		#wpbody-content .tablenav-pages .pagination-links .button.disabled,
+		#wpbody-content .tablenav-pages .pagination-links input.disabled,
+		#wpbody-content #post-body-content .wp-editor-container textarea,
+		#wpbody-content #post-body-content .wp-editor-container input.button,
+		#wpbody-content .imgedit-wrap .imgedit-group input,
+		.form-table .select2-container .select2-selection {
+			background-color: $dark-mode-bg;
+			color: $dark-mode-white;
+		}
+		select,
+		#wpbody-content select,
+		.form-table .select2-container .select2-selection {
+			border-color: $dark-mode-border-color-1;
+		}
+		#wpbody-content .button-primary,
+		#wpbody-content .button-secondary,
+		#wpbody-content .page-title-action,
+		#wpbody-content input[type="submit"],
+		&.adminify-options .adminify-reset-section,
+		.wp-adminify-dashboard-widgets .adminify-field button,
+		.adminify-section[data-section-id]
+			.adminify-fieldset
+			button:not(.wp-switch-editor),
+		.adminify-data-wrapper .adminify-cloneable-content button,
+		#wpbody-content .wp-picker-input-wrap .button.wp-picker-default,
+		&.wp-adminify_page_adminify-sidebar-generator .sidebar-title a,
+		&.wp-adminify_page_adminify-sidebar-generator
+			.wp-adminify--popup-container_inner
+			form
+			.button.button-primary,
+		#wpadminify-admin-columns .columns.is-desktop button,
+		&.appearance_page_custom-background
+			#custom-background
+			.form-table
+			#choose-from-library-link,
+		&.appearance_page_custom-background
+			#custom-background
+			.wp-picker-container
+			.wp-picker-input-wrap
+			.button,
+		&.nav-menus-php #nav-menus-frame .menu-edit .button,
+		&.nav-menus-php .appearance_page_custom-background .wp-upload-form button,
+		#widgets-left .widgets-chooser .widgets-chooser-sidebars button,
+		#wpbody-content .ac-table-actions .-edit-columns,
+		#wpbody-content .postbox-container #post_tag input.button,
+		#post-body-content
+			.postarea
+			button:not(.wp-switch-editor, .ed_button, .mce-widget button),
+		.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header__settings
+			.editor-post-switch-to-draft,
+		#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row.inline-edit-save
+			button,
+		#wpbody-content
+			.metabox-holder
+			.inside
+			button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap
+				button),
+		#wpbody-content .metabox-holder .inside .button,
+		#wpbody-content .metabox-holder .inside input[type="submit"],
+		#wpbody-content
+			.metabox-holder
+			.postbox-header
+			+ .inside
+			button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap
+				button),
+		#wpbody-content
+			.metabox-holder
+			.postbox-header
+			+ .inside
+			.button:not(.wp-editor-wrap .button),
+		#wpbody-content
+			.metabox-holder
+			.postbox-header
+			+ .inside
+			input[type="submit"],
+		#major-publishing-actions input[type="submit"],
+		.media-modal .media-frame-toolbar .media-toolbar button,
+		#post-body-content .image-editor button:not(.imgedit-help-toggle),
+		#post-body-content .image-editor input[type="button"],
+		.wp-adminify-page-speed-wrapper .wp-adminify-analyze-button,
+		#wpbody-content #documentation #docs-lookup,
+		.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			.reply-submit-buttons
+			button,
+		&.themes-php #wpbody-content .theme-browser .theme .theme-actions .button,
+		&.themes-php #wpbody-content .theme-overlay .theme-actions .button,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme
+			.theme-actions
+			.button,
+		&.theme-install-php
+			#wpbody-content
+			.theme-install-overlay
+			.wp-full-overlay-header
+			.button,
+		&.theme-install-php #wpbody-content .filter-drawer .buttons .button,
+		.health-check-body .site-health-view-passed,
+		.health-check-body .site-health-copy-buttons button,
+		.privacy-settings-accordion-actions button,
+		#wpbody-content #createuser .wp-generate-pw,
+		#wpbody-content #createuser .wp-hide-pw,
+		#wpbody-content #your-profile .wp-generate-pw,
+		#wpbody-content #your-profile .wp-hide-pw,
+		.wp-adminify--folder-widget .folder--header a,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			button.components-button.components-color-palette__clear,
+		.narrow form button,
+		#copy_billing {
+			background-color: $dark-primary !important;
+			border-color: $dark-primary !important;
+			color: $whitecolor !important;
+			&:hover {
+				background-color: $whitecolor !important;
+				color: $dark-primary !important;
+			}
+		}
+		#wpbody-content .subsubsub li a.current {
+			border-color: $dark-primary;
+			color: $dark-primary;
+			.count {
+				background-color: $dark-primary;
+				color: $whitecolor;
+			}
+		}
+		#wpbody-content #posts-filter input[type="submit"]:hover {
+			background-color: $dark-primary;
+			color: $dark-mode-white;
+		}
+
+		// Admin Top Bar
+
+		.adminify-top_bar {
+			nav.adminify-top-navbar {
+				background-color: $dark-mode-black-1;
+				.navbar-brand {
+					.navbar-item {
+						.logo-light {
+							display: none;
+						}
+						.logo-dark {
+							display: block;
+						}
+						.wp-adminify-site-name {
+							color: #b1b1b1;
+							font-size: 1.8em;
+							text-align: center;
+						}
+					}
+					a.navbar-item:focus,
+					a.navbar-item:focus-within,
+					a.navbar-item:hover,
+					a.navbar-item.is-active,
+					.navbar-link:focus,
+					.navbar-link:focus-within,
+					.navbar-link:hover,
+					.navbar-link.is-active {
+						background-color: $dark-mode-black-1;
+					}
+					.navbar-burger {
+						color: $dark-mode-white;
+					}
+				}
+				#wpadminbar .ab-empty-item,
+				#wpadminbar a.ab-item,
+				#wpadminbar > #wp-toolbar span.ab-label,
+				#wpadminbar > #wp-toolbar span.ab-icon,
+				#wpadminbar > #wp-toolbar span.ab-icon:before,
+				#wpadminbar > #wp-toolbar span.noticon {
+					color: $whitecolor !important;
+				}
+				#wpadminbar .menupop .ab-sub-wrapper .ab-submenu,
+				#wpadminbar .shortlink-input .ab-submenu,
+				#wpadminbar .menupop .ab-sub-wrapper,
+				#wpadminbar .shortlink-input,
+				#wpadminbar .menupop .ab-sub-wrapper .ab-item,
+				#wpadminbar .shortlink-input .ab-item {
+					background-color: $dark-mode-black-1;
+				}
+				#wpadminbar .menupop .ab-sub-wrapper .ab-item:hover,
+				#wpadminbar .shortlink-input .ab-item:hover {
+					background-color: $dark-mode-bg;
+				}
+				#wp-admin-bar-new-content .ab-item .ab-icon:before {
+					color: $whitecolor;
+				}
+				#wpadminbar #wp-admin-bar-top-secondary li .ab-item,
+				#wpadminbar #wp-admin-bar-root-default li .ab-item {
+					color: $whitecolor;
+				}
+			}
+		}
+
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.wp-adminify-top-header--search--form
+			.top-header-search-results
+			table
+			tbody
+			td {
+			border-top-color: #2b2b2b;
+			color: $dark-mode-white;
+		}
+		&.adminify-default-v-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu
+			a,
+		&.adminify-rounded-v-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu
+			a,
+		&.adminify-default-v-menu.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu
+			a,
+		&.adminify-rounded-v-menu.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu
+			a,
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.wp-adminify-top-header--search--form
+			.top-header-search-results
+			p,
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.wp-adminify-top-header--search--form
+			.top-header-search-results
+			table
+			thead
+			th,
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.wp-adminify-top-header--search--form
+			.top-header-search-results
+			table
+			tbody
+			td
+			a,
+		#wpbody-content .metabox-holder .postbox h2.hndle,
+		#tab-panel-overview p,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.edit-post-sidebar__panel-tabs
+			button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.edit-widgets-sidebar__panel-tabs
+			button,
+		.interface-complementary-area,
+		.block-editor-block-breadcrumb__button.components-button,
+		.block-editor-block-breadcrumb__current,
+		&.wp-adminify_page_adminify-menu-editor #wpbody-content p,
+		#wpbody-content table.widefat.striped.action-scheduler td,
+		.menu-editor-form .dashicons,
+		.narrow form td,
+		#wpbody-content .wp-heading-inline,
+		#wpbody-content .edit-widgets-welcome-guide__heading,
+		#wpbody-content .edit-widgets-welcome-guide__text,
+		#wpbody-content .components-popover__content .components-menu-item__info {
+			color: $dark-mode-white;
+		}
+		.adminify-top_bar nav.adminify-top-navbar .wp-admnify--mode--switcher,
+		&.nav-menus-php .menu-edit #post-body #menu-to-edit .menu-item-settings {
+			border-right-color: $dark-mode-border-color-1;
+		}
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.navbar-end
+			.wp-adminify--top--comment
+			.topbar-icon,
+		#wpbody-content .interface-interface-skeleton__header,
+		.block-editor-block-icon,
+		.css-1einvap-DownArrowWrapper {
+			svg path {
+				fill: $dark-mode-white;
+			}
+		}
+		#screen-meta {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-mode-border-color-1;
+			#contextual-help-back,
+			.contextual-help-tabs a {
+				background-color: $blackpopover;
+				color: $whitecolor;
+			}
+		}
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-button:before {
+			filter: brightness(1);
+			background: $dark-primary;
+		}
+		#screen-meta-links button {
+			background-color: $dark-primary;
+			border-color: $dark-primary;
+			color: $whitecolor;
+			&:hover {
+				background-color: $whitecolor;
+				color: $dark-primary;
+			}
+		}
+		label,
+		#wpbody-content p:not(.edit-post-visual-editor p),
+		.wp-filter,
+		#wpbody-content .tablenav-pages .displaying-num,
+		.tablenav-paging-text,
+		#adminmenu
+			.wp_adminify_admin-menu
+			.wp-has-current-submenu
+			.wp-submenu
+			.wp-submenu-head,
+		#adminmenu .wp_adminify_admin-menu .wp-menu-arrow,
+		#adminmenu .wp_adminify_admin-menu .wp-menu-arrow div,
+		#adminmenu .wp_adminify_admin-menu li.current a.menu-top,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-has-current-submenu
+			a.wp-has-current-submenu,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-button:before,
+		&.folded
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			.wp-submenu
+			.wp-adminify-active:hover,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			.wp-submenu
+			.wp-adminify-active:hover,
+		#screen-options-wrap legend,
+		#screen-options-wrap label,
+		.adminify-top_bar nav.adminify-top-navbar .navbar-end i,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-author-name
+			a,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-post-category
+			a,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-post-comments
+			a,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-author-name,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-post-category,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-post-comments,
+		#wpbody-content #update-themes-table td p,
+		#wpbody-content #update-themes-table th p,
+		#wpbody-content .wp-adminify-notices,
+		#wpbody-content .wp-adminify-notices h3,
+		#wpbody-content .wp-adminify-notices .wp-adminify-notice-container p,
+		#wpbody-content
+			.wp-adminify-notices
+			.wp-adminify-notice-container
+			.notice,
+		#wpbody-content
+			.wp-adminify-notices
+			.wp-adminify-notice-container
+			.fs-notice
+			.fs-plugin-title,
+		#wpbody-content
+			.wp-adminify-notices
+			.wp-adminify-notice-container
+			.fs-notice
+			.fs-notice-body,
+		.wp-adminify--folder-widget .folder--header span,
+		.wp-adminify--folder-widget .folder--lists li a .wp-adminify--name,
+		.wp-adminify--folder-widget .folder--stats li a,
+		#wpbody-content .wp-list-table.widefat tr th .comment-grey-bubble:before,
+		.edit-post-header button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.editor-styles-wrapper
+			.editor-post-title__block
+			textarea,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.editor-styles-wrapper
+			.block-editor-block-list__layout
+			.wp-block.block-editor-default-block-appender
+			.block-editor-default-block-appender__content,
+		.block-editor-inserter__search,
+		.components-button.block-editor-block-types-list__item,
+		#dashboard_site_health p,
+		.handle-actions button span,
+		#dashboard_activity #activity-widget .activity-block h3,
+		#dashboard_primary .inside .activity-block p,
+		#dashboard_activity #activity-widget #latest-comments ul li .comment-meta,
+		#dashboard_activity #activity-widget #latest-comments ul li blockquote p,
+		#dashboard_right_now ul li a .counter,
+		#dashboard_right_now #wp-version,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.edit-post-sidebar__panel-tabs
+			button,
+		.wp-adminify--popup-container_inner h3,
+		.wp-adminify--popup-container_inner
+			.popup--new-folder__name
+			div:first-child,
+		.wp-adminify--popup-container_inner
+			.popup--new-folder__color
+			div:first-child,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.edit-post-post-visibility
+			span,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.edit-post-post-schedule
+			span,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__row
+			label,
+		.interface-complementary-area h2,
+		.interface-complementary-area h3,
+		.components-dropdown-menu__menu .components-menu-item__button,
+		.components-dropdown-menu__menu
+			.components-menu-item__button.components-button,
+		#wpbody-content .components-popover__content .components-menu-item__item,
+		#wpbody-content
+			#jltwp_adminify_dash_server_uptime
+			.adminify-uptime-chart
+			.adminify-chart-status,
+		#wpbody-content #jltwp_adminify_dash_user_activities table tr,
+		#wpbody-content #jltwp_adminify_dash_user_activities table td,
+		#wpbody-content #jltwp_adminify_dash_user_activities table th,
+		#wpbody-content #jltwp_adminify_dash_activity_logs table tr,
+		#wpbody-content #jltwp_adminify_dash_activity_logs table td,
+		#wpbody-content #jltwp_adminify_dash_activity_logs table th,
+		#wpbody-content #jltwp_adminify_dash_recent_posts table tr,
+		#wpbody-content #jltwp_adminify_dash_recent_posts table td,
+		#wpbody-content #jltwp_adminify_dash_recent_posts table th,
+		#wpbody-content input,
+		#wpbody-content textarea,
+		.form-table th,
+		.form-wrap label,
+		.row-actions,
+		#wpbody-content .form-table th,
+		#wpbody-content .form-table td .description,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			.inline-edit-legend,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			.title,
+		#wpbody-content .wp-list-table.widefat th,
+		#wpbody-content .wp-list-table.widefat td,
+		.widefat ol,
+		.widefat p,
+		.widefat ul,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			.inline-edit-col
+			label.alignleft
+			.checkbox-title,
+		#wpbody-content #post-body-content #edit-slug-box,
+		#wpbody-content #post-body-content label,
+		#wpbody-content .postbox-container .misc-pub-section,
+		#misc-publishing-actions #timestamp,
+		#wpbody-content .postbox-container .category-tabs li a,
+		#wpbody-content .postbox-container .tabs-panel label,
+		.imgedit-settings fieldset,
+		.imgedit-settings p,
+		.imgedit-separator,
+		.imgedit-thumbnail-preview-caption,
+		#wpbody-content .wp-adminify-server-info tr strong,
+		#wpbody-content .adminify-server-info tr strong,
+		#wpbody-content .metabox-holder .handle-actions button span,
+		#wpfooter,
+		#wpbody-content
+			#jltwp_adminify_dash_recent_posts
+			table
+			.adminify-post-time,
+		#wpbody-content #jltwp_adminify_memory_usage .halfspace span,
+		#wpbody-content #jltwp_adminify_memory_usage div.halfspace .spacedark,
+		#wpbody-content
+			#jltwp_adminify_dash_user_activities
+			.wp-adminify-user-time-tracker
+			time,
+		#wpbody-content #dashboard_primary .inside .activity-block p,
+		#wpbody-content .metabox-holder .postbox .inside,
+		#wpbody-content #dashboard_site_health p,
+		#wpbody-content #dashboard_site_health p strong,
+		#wpbody-content #dashboard_activity #activity-widget .activity-block h3,
+		#wpbody-content
+			#dashboard_activity
+			#activity-widget
+			.activity-block
+			ul
+			li
+			span,
+		#wpbody-content #dashboard_right_now ul li a .counter,
+		#wpbody-content #dashboard_right_now #wp-version,
+		#wpbody-content
+			#jltwp_adminify_dash_user_activities
+			.wp-adminify-user-name,
+		#wpbody-content #jltwp_adminify_dash_activity_logs .wp-adminify-user-name,
+		#wpbody-content
+			#jltwp_adminify_dash_activity_logs
+			table
+			.wp-adminify-user-details
+			span,
+		#wpbody-content
+			#dashboard_activity
+			#activity-widget
+			#latest-comments
+			ul
+			li
+			.comment-meta,
+		#wpbody-content
+			#dashboard_activity
+			#activity-widget
+			#latest-comments
+			ul
+			li
+			blockquote
+			p,
+		&.edit-tags-php #wpbody-content .form-wrap p,
+		&.edit-tags-php #wpbody-content .form-wrap label,
+		&.term-php #wpbody-content .form-table label,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			button.is-destructive,
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.dropdown-menu
+			.dropdown-item,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			label,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			.tokens-container
+			li.placeholder,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			.tokens-container
+			li.token
+			span,
+		.tokenize-dropdown > .dropdown-menu li a,
+		.aim-modal--header-logo-title,
+		.aim-modal--sidebar-tab-item,
+		.aim-modal--sidebar-tab-item i,
+		.aim-modal--icon-search input,
+		.aim-icon-item-inner i,
+		.aim-icon-item__icon,
+		.aim-icon-item-name,
+		#wpbody-content .wp-list-table.widefat.media #the-list td.date,
+		.media-frame-title h1,
+		.media-modal .media-frame-content .attachment-info label,
+		.media-modal .media-frame-content .attachment-info .details,
+		.media-modal .media-frame-content .attachment-info p,
+		.media-modal .media-frame-content .attachment-info .filename,
+		.media-modal
+			.media-frame-content
+			.imgedit-wrap
+			.imgedit-settings
+			.imgedit-group
+			h2,
+		.media-modal
+			.media-frame-content
+			.imgedit-wrap
+			.imgedit-settings
+			.imgedit-group
+			p,
+		.media-modal
+			.media-frame-content
+			.imgedit-wrap
+			.imgedit-settings
+			.imgedit-group
+			legend,
+		.media-modal
+			.media-frame-content
+			.imgedit-wrap
+			.imgedit-settings
+			.imgedit-group
+			label,
+		.media-modal .media-frame-content .attachment-info .alignleft,
+		#wpbody-content
+			.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			legend,
+		#wpbody-content
+			.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			input.button,
+		&.comment-php #wpbody-content #post-body-content #comment-link-box,
+		&.comment-php #wpbody-content #submitdiv .misc-pub-section:before,
+		&.comment-php #wpbody-content #submitdiv h2,
+		&.comment-php #wpbody-content #submitdiv .misc-pub-section,
+		#wpbody-content .wp-list-table.widefat #the-comment-list .submitted-on a,
+		#wpbody-content .wp-list-table.widefat .row-actions .submitted-on a,
+		#wpbody-content .wp-list-table.widefat .table-view-list .submitted-on a,
+		#wpbody-content .wp-list-table.widefat .comments .submitted-on a,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-header
+			.adminify-header-inner
+			h1
+			small,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-normal
+			li
+			a,
+		#wpbody-content .adminify-section[data-section-id] .adminify-title h4,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-subtitle-text,
+		#wpbody-content .adminify-section[data-section-id] .adminify--label,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-drop
+			li,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.wp-color-result
+			.wp-color-result-text,
+		.adminify-field-typography .adminify--unit,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify--button-group
+			.adminify--button,
+		.media-modal .media-frame-router .media-router .media-menu-item,
+		.media-attachments-filter-heading,
+		.uploader-inline h2,
+		.attachments-browser .media-sidebar .setting label,
+		.media-modal .media-frame-content .media-sidebar .description,
+		.media-modal .media-frame .media-frame-menu .media-menu button,
+		.media-modal .media-frame .media-frame-menu-heading,
+		.media-modal .media-frame-content .collection-settings select,
+		.adminify-after-text,
+		#wpbody-content
+			.adminify-options
+			.adminify-field-tabbed
+			.adminify-tabbed-nav
+			a,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-single.chosen-default,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.search-choice,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-subtitle-text,
+		#wpbody-content .adminify-section[data-section-id] .adminify--label,
+		#wpbody-content .adminify-section[data-section-id] label,
+		.wp-adminify-error-logs li,
+		.wp-adminify-speed-analyze-history .history-table tr,
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.tabs
+			li
+			.nav-link,
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.menu-editor-title,
+		#wpadminify-admin-columns .tabs.is-centered .nav-link,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.nav-tabs
+			.nav-link,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-title,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-type-title
+			.accordion-type,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-body
+			.column
+			label,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-body
+			.range-value,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-body
+			.unit-labels
+			label,
+		&.wp-adminify_page_adminify-activity-logs
+			#wpbody-content
+			.wp-list-table.widefat.wp-adminify_page_adminify-activity-logs
+			#the-list
+			td,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-metabox
+			li
+			a,
+		.adminify-field .adminify-title h4,
+		#wpbody-content #post-body-content .postarea #post-status-info td,
+		#wpbody-content .postbox-container .postbox .inside select,
+		&.themes-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-id-container
+			.theme-name,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-id-container
+			.theme-name,
+		&.themes-php #wpbody-content .theme-overlay .theme-header .left,
+		&.themes-php #wpbody-content .theme-overlay .theme-header .right,
+		&.themes-php #wpbody-content .theme-overlay .theme-name,
+		&.themes-php #wpbody-content .theme-overlay .theme-name .theme-version,
+		&.themes-php #wpbody-content .theme-overlay p,
+		.theme-overlay .theme-tags span,
+		&.theme-install-php #wpbody-content .wp-filter .filter-links a,
+		.filter-group .filter-group-feature label,
+		&.nav-menus-php #wpbody-content .manage-menus,
+		&.nav-menus-php #wpbody-content .nav-tab-wrapper .nav-tab,
+		#wpbody-content .nav-tab-wrapper .nav-tab,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.outer-border
+			.accordion-section-title,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.accordion-section-content
+			ul.add-menu-item-tabs
+			li
+			a,
+		&.nav-menus-php #nav-menus-frame label,
+		&.nav-menus-php #nav-menus-frame p,
+		&.nav-menus-php #nav-menus-frame legend,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.outer-border
+			.accordion-section-title:after,
+		.menu-edit #post-body-content h3,
+		&.nav-menus-php
+			.menu-edit
+			#post-body
+			#menu-to-edit
+			.menu-item-bar
+			.menu-item-handle,
+		.nav-menus-php .item-edit:before,
+		&.widgets-php
+			#widgets-left
+			.widgets-holder-wrap
+			.handlediv
+			.toggle-indicator:before,
+		&.widgets-php
+			#widgets-right
+			.widgets-holder-wrap
+			.handlediv
+			.toggle-indicator:before,
+		#available-widgets .widget .widget-top .widget-title h3,
+		#widgets-right .widget .widget-top .widget-title h3,
+		.widget-holder.inactive .widget .widget-top .widget-title h3,
+		#widgets-left .sidebar-name h2,
+		#widgets-left .widget-holder .widget-description,
+		#widgets-right .widgets-holder-wrap .widgets-sortables .sidebar-name h2,
+		#wpbody-content .form-table td label,
+		#wpbody-content .form-table form,
+		#wpbody-content .fileedit-sub label,
+		#wpbody-content #documentation label,
+		#wpbody-content .plugin-install-tab-featured .wp-filter .filter-links a,
+		#wpbody-content .plugin-install-tab-popular .wp-filter .filter-links a,
+		#wpbody-content
+			.plugin-install-tab-recommended
+			.wp-filter
+			.filter-links
+			a,
+		#wpbody-content .plugin-install-tab-favorites .wp-filter .filter-links a,
+		#wpbody-content .plugin-install-tab-search .wp-filter .filter-links a,
+		&.plugin-install-php #wpbody-content .wp-filter + p,
+		&.plugin-install-php
+			#wpbody-content
+			.plugin-card
+			.plugin-card-top
+			.action-links
+			.plugin-action-buttons
+			.button,
+		&.plugin-install-php
+			#wpbody-content
+			.plugin-card
+			.plugin-card-top
+			.action-links
+			.plugin-action-buttons
+			.button.activate-now,
+		&.plugin-install-php
+			#wpbody-content
+			.plugin-card
+			.plugin-card-top
+			.desc
+			p,
+		#plugin-information-content,
+		#plugin-information-content h4,
+		#plugin-information-content p,
+		#plugin-information-footer a.button.button-primary,
+		#plugin-information-content .fyi strong,
+		#wpbody-content #profile-page #your-profile h2,
+		#wpbody-content #profile-page .form-table th,
+		#wpbody-content #profile-page .form-table label,
+		#wpbody-content #profile-page .form-table .description,
+		&.tools-php #wpbody-content .card .title,
+		&.tools-php #wpbody-content .card p,
+		#wpbody-content .widefat.importers .importer-item .importer-title,
+		#wpbody-content .widefat.importers .importer-item .importer-desc,
+		#wpbody-content #export-filters p.description,
+		#wpbody-content #export-filters .export-filters .label-responsive,
+		.health-check-body h3,
+		#wpbody-content
+			.health-check-body
+			.health-check-accordion
+			.health-check-accordion-heading
+			button
+			.title,
+		.health-check-header h1,
+		#wpbody-content
+			.health-check-header
+			.health-check-tabs-wrapper
+			.health-check-tab,
+		#wpbody-content
+			.health-check-body
+			.health-check-accordion
+			.health-check-table
+			td,
+		#wpbody-content
+			.health-check-body
+			.health-check-accordion
+			.health-check-table
+			th,
+		&.options-general-php #wpbody-content form table #utc-time,
+		&.options-writing-php #wpbody-content form table #utc-time,
+		&.options-reading-php #wpbody-content form table #utc-time,
+		&.options-discussion-php #wpbody-content form table #utc-time,
+		&.options-media-php #wpbody-content form table #utc-time,
+		&.options-permalink-php #wpbody-content form table #utc-time,
+		&.options-general-php #wpbody-content form table p strong,
+		&.options-writing-php #wpbody-content form table p strong,
+		&.options-reading-php #wpbody-content form table p strong,
+		&.options-discussion-php #wpbody-content form table p strong,
+		&.options-media-php #wpbody-content form table p strong,
+		&.options-permalink-php #wpbody-content form table p strong,
+		#wpbody-content .form-table td p .example,
+		&.options-general-php #wpbody-content form p,
+		&.options-writing-php #wpbody-content form p,
+		&.options-reading-php #wpbody-content form p,
+		&.options-discussion-php #wpbody-content form p,
+		&.options-media-php #wpbody-content form p,
+		&.options-permalink-php #wpbody-content form p,
+		&.options-reading-php #wpbody-content tr,
+		#wpbody-content .form-table.permalink-structure td code,
+		.privacy-settings-header h1,
+		#wpbody-content .privacy-settings-header .privacy-settings-tab,
+		.privacy-settings-body h2,
+		.privacy-settings-body h3,
+		#wpbody-content
+			.privacy-settings-body
+			.privacy-settings-accordion
+			.privacy-settings-accordion-panel
+			p,
+		.edit-widgets-header__title,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.editor-styles-wrapper
+			.rich-text,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.components-panel
+			.components-panel__body-title
+			button.components-button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.components-panel
+			.components-panel__body-title
+			button.components-button,
+		&.themes-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.notice
+			p,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.notice
+			p,
+		#wpbody-content
+			.blocks-widgets-container
+			.wp-block-widget-area
+			.components-panel__body
+			.components-panel__body-title
+			button.components-panel__body-toggle,
+		.welcome-panel h3,
+		#wpbody-content .metabox-holder .postbox#dashboard_quick_press label,
+		#dashboard_quick_press .drafts li time,
+		.community-events li,
+		#wpbody-content
+			#post-body-content
+			.wp_attachment_details.edit-form-section
+			p,
+		#wpbody-content .components-notice,
+		#wpbody-content .components-popover__content .components-button,
+		#wpbody-content .fs-notice .fs-plugin-title,
+		#wpbody-content .notice,
+		#wpbody-content .fs-notice,
+		#wpbody-content .components-notice,
+		.adminify-update-head {
+			color: $dark-mode-white !important;
+		}
+
+		// Vertical Menu / Sidebar Menu
+		&.folded #adminmenu .wp_adminify_admin-menu li.menu-top,
+		&.folded #adminmenu .wp_adminify_admin-menu li.menu-top:hover,
+		&.folded #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top:hover,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top.wp-menu-open,
+		#adminmenu,
+		#adminmenuback,
+		#adminmenuwrap,
+		&.block-editor-page.auto-fold #adminmenu,
+		&.block-editor-page.auto-fold #adminmenuwrap,
+		#wpbody-content
+			.wp-adminify-notices
+			.wp-adminify-notice-container
+			.notice,
+		#wpbody-content
+			.wp-adminify-notices
+			.wp-adminify-notice-container
+			.fs-notice,
+		.wp-adminify--folder-widget .wp-adminify--folder-app--inner,
+		.wp-adminify--folder-widget .folder--lists li a,
+		.block-editor-inserter__search,
+		#wpbody-content .tablenav .actions select,
+		.interface-interface-skeleton__secondary-sidebar,
+		.interface-interface-skeleton__sidebar,
+		.block-editor-block-inspector__no-blocks,
+		#wpbody-content .wp-editor-container .quicktags-toolbar,
+		#wpbody-content .postbox-container #major-publishing-actions,
+		#wpbody-content .postbox-container .category-tabs li.tabs a,
+		.categorydiv div.tabs-panel,
+		.customlinkdiv div.tabs-panel,
+		.posttypediv div.tabs-panel,
+		.taxonomydiv div.tabs-panel,
+		.wp-tab-panel,
+		.wp-tab-active,
+		ul.add-menu-item-tabs li.tabs,
+		ul.category-tabs li.tabs,
+		.comment-ays,
+		.feature-filter,
+		.imgedit-group,
+		.popular-tags,
+		.stuffbox,
+		.widgets-holder-wrap,
+		.wp-editor-container,
+		p.popular-tags,
+		table.widefat,
+		#wpbody-content .widefat.updates-table,
+		#wpbody-content .widefat.updates-table tr,
+		#wpbody-content .fs-notice .fs-plugin-title,
+		#wpbody-content input[type="checkbox"],
+		#wpbody-content #blog_public,
+		&.edit-tags-php #wpbody-content .form-wrap input:not(.button),
+		&.edit-tags-php #wpbody-content .form-wrap textarea,
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.dropdown-trigger
+			button,
+		.dropdown-content,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			.tokens-container
+			li.token
+			span,
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.adminify_sub_menu_item
+			.menu-editor-form
+			input[type="text"],
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.adminify_sub_menu_item
+			.menu-editor-form
+			input[type="url"],
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.adminify_sub_menu_item
+			.panel
+			.menu-editor-form
+			.tokens-container,
+		.tokenize-dropdown > .dropdown-menu li a:hover,
+		.aim-modal .aim-modal--content,
+		.aim-modal .aim-modal--header,
+		.aim-modal--body,
+		.aim-modal .aim-modal--footer,
+		.aim-modal--sidebar,
+		.aim-modal--sidebar-tab-item,
+		.aim-modal--icon-search input,
+		.aim-icon-item,
+		.media-modal .media-frame-content .attachment-info,
+		.media-modal .media-frame-content .imgedit-wrap .imgedit-settings,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-header
+			.adminify-header-inner,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-normal
+			li
+			a,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-background,
+		#wpbody-content .adminify-options.wp-adminify-settings .adminify-footer,
+		.media-modal .media-frame-content .media-toolbar-secondary select,
+		.media-modal .media-frame-content .media-sidebar,
+		.media-modal
+			.media-frame-content
+			.media-toolbar-primary
+			input#media-search-input,
+		#wpbody-content .wrap .wp-filter .search-form input[type="search"],
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-choices,
+		.adminify-field-slider .ui-slider-handle:hover,
+		.adminify-field-slider .ui-state-active,
+		.adminify-field.adminify-field-group,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-content
+			.adminify-fieldset
+			div[data-depend-id]
+			input[data-depend-id],
+		#wpadminify-admin-columns .tabs.is-centered .nav-link,
+		&.themes-php #wpbody-content .theme-browser .theme:not(.add-new-theme),
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme),
+		&.themes-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-id-container
+			.theme-name,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-id-container
+			.theme-name,
+		&.themes-php #wpbody-content .theme-overlay .theme-header,
+		&.themes-php #wpbody-content .theme-overlay .theme-actions,
+		&.theme-install-php #wpbody-content .wp-filter,
+		#wpbody-content .wp-filter .filter-drawer,
+		&.nav-menus-php #nav-menus-frame .accordion-container,
+		&.nav-menus-php #nav-menus-frame .menu-edit,
+		&.nav-menus-php #nav-menus-frame #nav-menu-header,
+		&.nav-menus-php #nav-menus-frame #nav-menu-footer,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.accordion-section-content,
+		&.nav-menus-php
+			.menu-edit
+			#post-body
+			#menu-to-edit
+			.menu-item-bar
+			.menu-item-handle,
+		#available-widgets .widget .widget-top,
+		.widget-holder.inactive .widget .widget-top,
+		#widgets-right .widgets-holder-wrap,
+		.wp-filter,
+		#wpbody-content .plugin-install-tab-featured .plugin-card-top,
+		#wpbody-content .plugin-install-tab-popular .plugin-card-top,
+		#wpbody-content .plugin-install-tab-recommended .plugin-card-top,
+		#wpbody-content .plugin-install-tab-favorites .plugin-card-top,
+		#wpbody-content .plugin-install-tab-search .plugin-card-top,
+		#plugin-information-tabs,
+		#wpbody-content .widefat.importers .importer-item,
+		#wpbody-content #export-filters,
+		#wpbody-content .interface-interface-skeleton__header,
+		#wpbody-content
+			.blocks-widgets-container
+			.wp-block-widget-area
+			.wp-block-widget-area__panel-body-content
+			.block-editor-block-list__layout,
+		&.adminify-round-open-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-adminify-active
+			> a.menu-top::before,
+		#wpbody-content table.widefat.striped.action-scheduler td code,
+		#wpbody-content table.widefat.striped.action-scheduler td kbd,
+		#wpbody-content .metabox-holder .postbox .inside p,
+		#wpbody-content .adminify-field input {
+			background-color: $dark-mode-black-1;
+		}
+
+		#wpadminbar #wp-admin-bar-top-secondary .menupop .ab-sub-wrapper,
+		#wpadminbar #wp-admin-bar-root-default .menupop .ab-sub-wrapper,
+		#wpadminbar
+			#wp-admin-bar-top-secondary
+			.menupop
+			.ab-sub-wrapper
+			.ab-submenu,
+		#wpadminbar
+			#wp-admin-bar-root-default
+			.menupop
+			.ab-sub-wrapper
+			.ab-submenu,
+		#wpadminbar #wp-admin-bar-top-secondary .shortlink-input .ab-submenu,
+		#wpadminbar #wp-admin-bar-root-default .shortlink-input .ab-submenu,
+		#wpadminbar
+			#wp-admin-bar-top-secondary
+			.menupop
+			.ab-sub-wrapper
+			ul
+			li
+			> .ab-item,
+		#wpadminbar
+			#wp-admin-bar-root-default
+			.menupop
+			.ab-sub-wrapper
+			ul
+			li
+			> .ab-item,
+		#wpadminbar #wp-admin-bar-top-secondary .shortlink-input ul li > .ab-item,
+		#wpadminbar #wp-admin-bar-root-default .shortlink-input ul li > .ab-item {
+			background-color: $dark-mode-black-1 !important;
+			color: $dark-mode-white !important;
+		}
+		#adminmenu .wp_adminify_admin-menu .wp-submenu-head,
+		#adminmenu .wp_adminify_admin-menu a.menu-top,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top.wp-menu-open
+			.wp-submenu
+			li
+			a,
+		#adminmenu .wp-submenu li a {
+			color: #b1b1b1;
+		}
+		#adminmenu .wp-submenu li a:hover,
+		#adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top:hover {
+			color: $dark-primary-light;
+		}
+		#wpbody-content .wp-list-table.widefat a {
+			color: var(--adminify-btn-bg) !important;
+		}
+		#wpbody-content .wp-adminify-server-info tr a,
+		#wpbody-content .adminify-server-info tr a,
+		#wpbody-content #posts-filter input[type="submit"],
+		#wpbody-content .wp-list-table.widefat a,
+		#wpbody-content
+			.blocks-widgets-container
+			.block-editor-block-types-list__item:hover
+			.block-editor-block-types-list__item-title,
+		#wpbody-content
+			.components-popover__content
+			.block-editor-block-types-list__item:hover
+			.block-editor-block-types-list__item-title
+			#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			a,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			button,
+		#wpbody-content #post-body-content #edit-slug-box a,
+		#wpbody-content .postbox-container .taxonomy-add-new,
+		.icon-picker-wrap ul li,
+		.aim-modal--sidebar-tab-item:hover,
+		.aim-modal--sidebar-tab-item:hover i,
+		.aim-modal--sidebar-tab-item.aesthetic-active,
+		.aim-modal--sidebar-tab-item.aesthetic-active i,
+		.aim-icon-item:hover .aim-icon-item-inner i,
+		.aim-icon-item:hover .aim-icon-item__icon,
+		.aim-icon-item:hover .aim-icon-item-name,
+		.media-modal .media-frame-content .attachment-info a,
+		#wpbody-content #posts-filter .wp-filter .view-switch a.current:before,
+		#adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top.current,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top.current
+			.wp-adminify-icon-button:before,
+		&.comment-php #wpbody-content #post-body-content #comment-link-box a,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-normal
+			li
+			a.adminify-active,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-normal
+			li
+			a:hover,
+		.media-modal .media-frame-content .media-sidebar a,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-subtitle-text
+			a,
+		#wpbody-content .adminify-section[data-section-id] .adminify--label a,
+		#wpbody-content .adminify-section[data-section-id] label a,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-helper
+			.adminify-cloneable-sort,
+		.wp-adminify-speed-analyze-history .history-table tr th:first-child,
+		.wp-adminify-speed-analyze-history
+			.history-table
+			.progress-chart.desktop
+			.progress-percentagte,
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.tabs
+			li
+			.nav-link.active,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-helper
+			.accordion-toggler,
+		&.themes-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-actions
+			.button.activate,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-actions
+			.button.activate,
+		&.theme-install-php #wpbody-content .wp-filter .filter-links a.current,
+		#wpbody-content .wp-filter button.button.drawer-toggle,
+		#wpbody-content .wp-filter button.button.drawer-toggle:hover,
+		#wpbody-content .wp-filter button.button.drawer-toggle:before,
+		#wpbody-content .wp-filter button.button.drawer-toggle:focus,
+		&.nav-menus-php #menu-locations-wrap table.widefat td a,
+		&.nav-menus-php #menu-locations-wrap table.widefat th a,
+		&.widgets-php
+			#wpbody-content
+			.widget-control-actions
+			button.widget-control-close,
+		&.users-php #wpbody-content .wp-list-table.widefat .row-actions span a,
+		#wpbody-content .widefat.importers .importer-item .importer-action a,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.edit-post-sidebar__panel-tabs
+			button.is-active,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.edit-widgets-sidebar__panel-tabs
+			button.is-active,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top.wp-adminify-active
+			> a
+			.wp-adminify-icon-button:before,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top:hover
+			> a
+			.wp-adminify-icon-button:before,
+		#wpbody-content .notice a:not([class*="button"]),
+		#wpbody-content .fs-notice a:not([class*="button"]),
+		#wpbody-content .components-notice a:not([class*="button"]),
+		&.plugin-install-php
+			#wpbody-content
+			.plugin-card
+			.plugin-card-top
+			.action-links
+			.plugin-action-buttons
+			.button.activate-now:hover {
+			color: $dark-primary;
+		}
+
+		#wpadminbar #wp-admin-bar-new-content > .ab-item,
+		&.folded #adminmenu .wp_adminify_admin-menu li.menu-top > a:hover,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a:hover,
+		#wpbody-content .wp-adminify-server-info .status-progressbar span,
+		#wpbody-content .adminify-server-info .status-progressbar span,
+		#wpbody-content .wp-adminify-server-info .status-progressbar div,
+		#wpbody-content .adminify-server-info .status-progressbar div,
+		.wp-adminify--user--wrapper
+			.user-wrapper-content
+			.panel-insider
+			.admnify-switcher
+			input[type="checkbox"]:checked
+			+ .slider,
+		#wpbody-content
+			.components-popover__content
+			.components-button.block-editor-inserter__toggle,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			input[type="checkbox"]:checked,
+		&.nav-menus-php #nav-menus-frame input[type="checkbox"]:checked,
+		#wpbody-content
+			.postbox-container
+			.disable-section-meta
+			div
+			input[type="checkbox"]:checked,
+		#wpbody-content
+			.postbox-container
+			.tabs-panel
+			label
+			input[type="checkbox"]:checked,
+		#wpbody-content #update-themes-table input[type="checkbox"]:checked,
+		#wpbody-content .form-table td input[type="checkbox"]:checked,
+		#wpbody-content .form-table td label input[type="checkbox"]:checked,
+		#wpbody-content #thumbnail_crop input[type="checkbox"]:checked,
+		#wpbody-content #createuser input[type="checkbox"]:checked,
+		&.profile-php
+			#wpbody-content
+			#profile-page
+			#your-profile
+			input[type="checkbox"]:checked,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-menu-open
+			> a.wp-adminify-active:before,
+		.components-form-toggle
+			.components-form-toggle__input:focus
+			+ .components-form-toggle__track,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.tabs
+			li
+			.nav-link.active:before,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			.tokens-container:after,
+		.aim-modal--footer button.aim-insert-icon-button,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-normal
+			li
+			a.adminify-active:before,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-nav-normal
+			li
+			a:hover:before,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-drop
+			li:hover,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify--button-group
+			.adminify--button.adminify--active,
+		.media-modal .media-frame-router .media-router .media-menu-item.active,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.button.button-primary:focus,
+		.media-modal .media-frame-content .attachments li.selected button.check,
+		.media-modal .media-frame .media-frame-menu .media-menu button:hover,
+		.media-modal .media-frame .media-frame-menu .media-menu button.active,
+		.media-modal
+			.media-frame-content
+			.attachments
+			li.attachment
+			.attachment-close,
+		#wpbody-content
+			.adminify-options
+			.adminify-field-tabbed
+			.adminify-tabbed-nav
+			a.adminify-tabbed-active,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-drop
+			li.highlighted,
+		#wpadminify-admin-columns .tabs.is-centered .router-link-active .nav-link,
+		&.themes-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.more-details,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.more-details,
+		&.appearance_page_custom-background
+			#custom-background
+			.form-table
+			.background-position-control
+			input[type="radio"]:checked
+			~ .button,
+		#wpbody-content input[type="radio"]:checked:before,
+		#wpbody-content input[type="radio"]:checked::before,
+		#wpbody-content .blocks-widgets-container button.is-pressed:hover,
+		#wpbody-content
+			.blocks-widgets-container
+			button.edit-widgets-header-toolbar__inserter-toggle,
+		#wpbody-content
+			.blocks-widgets-container
+			button.edit-widgets-header-toolbar__inserter-toggle:hover,
+		&.adminify-round-open-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-adminify-active:before,
+		&.adminify-round-open-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-adminify-active:after {
+			background-color: $dark-primary;
+		}
+
+		#wpbody-content input[type="radio"]:checked:before,
+		#wpbody-content input[type="radio"]:checked::before{
+			background-color: $whitecolor
+		}
+		#wpbody-content .ac-table-actions .-edit-columns,
+		#wpbody-content .postbox-container.category-add input[type="button"],
+		#misc-publishing-actions button,
+		#wp-media-grid .media-frame .uploader-inline-content button.browser,
+		.media-modal .media-frame-content button,
+		.plugin-install-tab-featured
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-popular
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-recommended
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-favorites
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-search
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		&.themes-php .theme-browser .theme:hover.activate,
+		&.themes-php
+			.theme-browser
+			.theme.active
+			.activate
+			&.theme-install-php
+			.theme-browser
+			.theme:hover.activate,
+		&.theme-install-php .theme-browser .theme.active .activate,
+		.plugin-install-tab-featured .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-popular .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-recommended .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-favorites .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-search .plugin-card .plugin-card-top .button,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.button.adminify-edit-gallery {
+			color: $dark-primary;
+			&:hover {
+				background-color: $dark-primary;
+				color: $dark-mode-white;
+			}
+		}
+		&.adminify-default-v-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu,
+		&.adminify-rounded-v-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu,
+		&.adminify-default-v-menu.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu,
+		&.adminify-rounded-v-menu.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-not-current-submenu
+			.wp-submenu,
+		#adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open .wp-submenu,
+		#adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open,
+		&.folded #adminmenu .wp_adminify_admin-menu li.menu-top > a,
+		&.folded
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top.wp-menu-open
+			> a.menu-top,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top.wp-menu-open
+			> a.menu-top,
+		.wp-adminify--folder-widget .folder--stats li a,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.interface-interface-skeleton__content,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.editor-styles-wrapper,
+		.components-popover__content,
+		#wpbody-content .inline-edit-row select,
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.dropdown-menu
+			.dropdown-item:hover,
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			input[type="text"],
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			input[type="url"],
+		#wpbody-content
+			.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			.tokens-container,
+		.tokenize-dropdown > .dropdown-menu,
+		.aim-modal--icon-preview-wrap,
+		.wp-adminify--menu--editor--settings .accordion.adminify_sub_menu_item,
+		.media-modal .media-frame-content,
+		#wpbody-content
+			.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			textarea,
+		#the-comment-list div.undo,
+		#the-comment-list tr.undo,
+		#wpbody-content .adminify-options.wp-adminify-settings .adminify-content,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-content
+			.chosen-drop
+			.chosen-search-input,
+		.adminify-field-typography .adminify--unit,
+		.media-frame-tab-panel .media-frame-router,
+		.media-modal .media-frame-content,
+		.attachments-browser .media-toolbar,
+		.media-modal .media-frame-content .collection-settings select,
+		.embed-url,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset-content,
+		.adminify-field-tabbed .adminify-tabbed-content,
+		.adminify-sections .adminify-field-tabbed,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-content
+			.adminify-fieldset
+			input[data-depend-id],
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-content
+			.adminify-fieldset
+			textarea,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-wp-editor
+			.quicktags-toolbar
+			input,
+		#wpbody-content #analyze .wp-adminify-speed-analyze-form input,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.nav-tabs
+			.nav-link,
+		#wpbody-content #wpadminify-admin-columns .admin-column-accordion,
+		&.themes-php #wpbody-content .theme-overlay .theme-about,
+		&.nav-menus-php #nav-menus-frame #post-body,
+		.accordion-section-content,
+		#widgets-right .widget .widget-top,
+		#widgets-right .widgets-holder-wrap .widget-inside,
+		&.plugins-php
+			#wpbody-content
+			.wp-list-table.plugins
+			tbody#the-list
+			tr
+			td
+			.notice,
+		#plugin-information-content,
+		&.profile-php #wpbody-content .form-table input[type="text"],
+		&.profile-php #wpbody-content .form-table input[type="url"],
+		&.profile-php #wpbody-content .form-table input[type="email"],
+		&.profile-php #wpbody-content .form-table select,
+		&.profile-php #wpbody-content .form-table textarea,
+		.health-check-header,
+		#wpbody-content .form-table td code,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.block-editor-inserter__content
+			.block-editor-inserter__search-input,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.block-editor-inserter__search
+			.block-editor-inserter__search-input,
+		#wpbody-content #screen-options-wrap input#edit_post_per_page,
+		#wpbody-content
+			.metabox-holder
+			.postbox#dashboard_quick_press
+			input:not([type="submit"]),
+		#wpbody-content .metabox-holder .postbox#dashboard_quick_press textarea,
+		#wpbody-content .search-form.search-plugins #search-plugins,
+		.community-events ul,
+		#adminmenu .wp_adminify_admin-menu li.menu-top.wp-adminify-active {
+			background-color: $dark-mode-bg;
+		}
+
+		#adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open .wp-submenu{
+			border-top-right-radius: 19px;
+		}
+		#wpadminbar
+			#wp-admin-bar-top-secondary
+			.menupop
+			.ab-sub-wrapper
+			ul
+			li
+			> .ab-item:hover,
+		#wpadminbar
+			#wp-admin-bar-root-default
+			.shortlink-input
+			ul
+			li
+			> .ab-item:hover {
+			background-color: $dark-mode-bg !important;
+			input{
+				background-color: $dark-mode-black-1 !important;
+			}
+		}
+		&.folded
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-button,
+		&.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-button {
+			background-color: $dark-mode-white;
+		}
+		#adminmenu .wp_adminify_admin-menu li.wp-adminify-nav-divider,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			.components-panel__body-title
+			button:hover {
+			background-color: $dark-mode-border-color-1;
+			border-radius: 0;
+		}
+
+		//Dashboard widgets
+
+		#wpbody-content .metabox-holder {
+			.postbox {
+				.inside {
+					border-top-color: $dark-mode-border-color-1;
+					p {
+						color: $dark-mode-white;
+					}
+					.wp-admin-users {
+						.table {
+							background-color: $dark-mode-black-1;
+						}
+						td,
+						small {
+							color: $dark-mode-white;
+						}
+					}
+				}
+			}
+			#dashboard_primary .inside .activity-block,
+			#dashboard_right_now ul {
+				border-bottom-color: $dark-mode-border-color-1;
+			}
+			.community-events-footer,
+			#dashboard_activity .subsubsub,
+			.postbox#dashboard_quick_press .drafts,
+			.community-events li {
+				border-top-color: $dark-mode-border-color-1;
+			}
+			#dashboard_activity #activity-widget #latest-comments .subsubsub li a {
+				background-color: $dark-mode-black-1;
+				border-color: $dark-mode-border-color-1;
+				color: $dark-mode-white;
+				.count {
+					background-color: $dark-mode-white;
+					span {
+						color: $dark-mode-black-1;
+					}
+				}
+			}
+			#wp_adminify_dash_system_info .wp-adminify-server-info {
+				li {
+					background-color: $dark-mode-black-1;
+					color: $dark-mode-white;
+					&:nth-child(even) {
+						background-color: $dark-mode-bg;
+					}
+				}
+			}
+			#dashboard_activity #activity-widget .activity-block ul li a,
+			#dashboard_activity
+				#activity-widget
+				#latest-comments
+				ul
+				li
+				.row-actions
+				span
+				a,
+			#dashboard_right_now ul li a,
+			#wp_adminify_dash_system_info .wp-adminify-server-info li a,
+			#dashboard_primary .rss-widget ul li a {
+				color: $dark-primary;
+			}
+		}
+
+		#wpbody-content #jltwp_adminify_dash_user_activities table th,
+		#wpbody-content #jltwp_adminify_dash_activity_logs table th,
+		#wpbody-content #jltwp_adminify_dash_recent_posts table th,
+		#wpbody-content #jltwp_adminify_dash_user_activities table td,
+		#wpbody-content #jltwp_adminify_dash_activity_logs table td,
+		#wpbody-content #jltwp_adminify_dash_recent_posts table td,
+		#wpbody-content #update-themes-table td,
+		#wpbody-content #update-themes-table th,
+		#wpbody-content #jltwp_adminify_memory_usage .halfspace,
+		#wpbody-content #jltwp_adminify_dash_system_info td,
+		#wpbody-content #jltwp_adminify_dash_system_info th,
+		.wp-adminify--folder-widget .folder--header,
+		.wp-adminify--folder-widget .folder--actions,
+		.wp-adminify--folder-widget .folder--search,
+		.wp-adminify--folder-widget .folder--stats,
+		.wp-adminify--folder-widget .folder--lists,
+		.wp-adminify--menu--editor--settings .accordion .tabs,
+		#plugin-information-tabs {
+			border-bottom-color: $dark-mode-border-color-1;
+			color: $dark-mode-white;
+		}
+
+		#wpbody-content
+			#jltwp_adminify_dash_news_feed
+			.wp-adminify-news-feed-dashboard_footer,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-body,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-body
+			.inner-content,
+		&.nav-menus-php #nav-menus-frame .accordion-container .outer-border li {
+			border-top-color: $dark-mode-border-color-1;
+		}
+		.wp-adminify--menu--editor--settings
+			.accordion.adminify_sub_menu_item
+			.panel,
+		#wpbody-content
+			.plugin-install-tab-featured
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-popular
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-recommended
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-favorites
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-search
+			.plugin-card
+			.plugin-card-bottom,
+		.health-check-body,
+		#wpbody-content .health-check-accordion .health-check-accordion-panel,
+		hr {
+			border-top: 1px solid $dark-mode-border-color-1;
+		}
+		.wp-adminify--folder-widget .folder--actions a {
+			border-color: $dark-mode-white;
+			color: $dark-mode-white;
+		}
+		.wp-adminify--folder-widget .folder--lists li:after,
+		.wp-adminify--folder-widget .folder--lists li:before,
+		#wpbody-content #post-body-content .wp-editor-container textarea,
+		#wpbody-content input[type="radio"],
+		.health-check-accordion-trigger .icon,
+		.site-health-view-passed .icon {
+			border-color: $dark-mode-white;
+		}
+		#wpbody-content .subsubsub li a,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.edit-post-sidebar__panel-tabs,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			select,
+		#plugin-information-content .fyi,
+		#wpbody-content .fileedit-sub select,
+		#wpbody-content #documentation select,
+		.css-ebmrdk-Container,
+		.blocks-widgets-container .interface-interface-skeleton__footer,
+		.interface-interface-skeleton__footer .block-editor-block-breadcrumb,
+		.wp-switch-editor {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-mode-black-1;
+			color: $dark-mode-white;
+		}
+		#wpbody-content .subsubsub li a .count {
+			background-color: $dark-mode-bg;
+			color: $dark-mode-white;
+		}
+		#wpbody-content #posts-filter input[type="text"],
+		#wpbody-content #posts-filter input[type="search"],
+		#wpbody-content #posts-filter input[type="url"],
+		#wpbody-content .search-plugins input[type="text"],
+		#wpbody-content .search-plugins input[type="search"],
+		#wpbody-content .search-plugins input[type="url"],
+		#wpbody-content .search-form input[type="text"],
+		#wpbody-content .search-form input[type="search"],
+		#wpbody-content .search-form input[type="url"],
+		#wpbody-content .search-box input[type="text"],
+		#wpbody-content .search-box input[type="search"],
+		#wpbody-content .search-box input[type="url"],
+		#wpbody-content .tablenav .one-page .displaying-num,
+		.components-modal__frame,
+		.components-popover,
+		.edit-post-header,
+		.edit-post-layout__inserter-panel,
+		.edit-post-sidebar,
+		.edit-post-text-editor,
+		.edit-post-visual-editor,
+		.editor-post-publish-panel,
+		.wp-adminify--folder-widget .adminify--sub-menu a,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.edit-post-post-status
+			.components-panel__body-title
+			button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body-title
+			button,
+		#wpbody-content .tablenav-pages .pagination-links .button,
+		#wpbody-content .tablenav-pages .pagination-links input,
+		#wpbody-content #posts-filter .wp-filter select,
+		#wpbody-content #post-body-content #titlewrap input,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			button.editor-post-featured-image__toggle,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			select:not(.components-select-control__input),
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			.components-custom-select-control__button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			input[type="number"],
+		#wpbody-content .adminify-fieldset .chosen-single.chosen-default,
+		#wpbody-content .adminify-fieldset .search-choice,
+		#wpbody-content .adminify-fieldset .chosen-single,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-field.adminify-field-subheading,
+		.media-modal .media-frame-content .media-embed input,
+		#wpbody-content
+			.adminify-options
+			.adminify-field-slider
+			.adminify--input
+			.adminify--unit,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-title,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-content,
+		&.plugins-php #wpbody-content .search-box #plugin-search-input,
+		#wpbody-content
+			.plugin-install-tab-featured
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-popular
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-recommended
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-favorites
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content
+			.plugin-install-tab-search
+			.plugin-card
+			.plugin-card-bottom,
+		#wpbody-content .privacy-settings-body,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			input[type="number"],
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			input[type="number"],
+		.wp-adminify-review-notice.wp-adminify-review-notice,
+		#wpbody-content .nav-tab-wrapper .nav-tab,
+		div.mce-panel,
+		#poststuff #post-body-content input,
+		#poststuff #post-body-content textarea {
+			background-color: $dark-mode-black-1;
+			color: $dark-mode-white;
+		}
+		#wpbody-content .tablenav .actions select,
+		#wpbody-content .tablenav .one-page .displaying-num,
+		#wpbody-content .wp-list-table.widefat th,
+		#wpbody-content .wp-list-table.widefat td,
+		.block-editor-inserter__panel-content,
+		#wpbody-content select,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			ul.cat-checklist,
+		#wpbody-content .tablenav-pages .pagination-links .button,
+		#wpbody-content .tablenav-pages .pagination-links input,
+		#wpbody-content .tablenav-pages .pagination-links .button.disabled,
+		#wpbody-content .tablenav-pages .pagination-links input.disabled,
+		#wpbody-content #posts-filter .wp-filter select,
+		#wpbody-content .wp-editor-container,
+		&.nav-menus-php #nav-menus-frame .menu-edit,
+		#poststuff #post-body-content input,
+		#poststuff #post-body-content textarea {
+			border-color: $dark-mode-black-1;
+		}
+		#wpbody-content .widefat.updates-table th,
+		#wpbody-content .widefat.updates-table td,
+		#wpbody-content #dashboard_activity #activity-widget .activity-block,
+		&.edit-tags-php #wpbody-content .form-wrap input:not(.button),
+		&.edit-tags-php #wpbody-content .form-wrap textarea,
+		#wpbody-content #post-body-content #titlewrap input,
+		#wpbody-content .wp_attachment_details.edit-form-section .widefat,
+		#wpbody-content .wp_attachment_details.edit-form-section .wp-editor-area,
+		&.adminify-dark-mode #major-publishing-actions,
+		&.adminify-dark-mode
+			#wpbody-content
+			#post-body-content
+			.wp-editor-container
+			textarea,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.panel
+			.menu-editor-form
+			.tokens-container
+			li.token
+			span,
+		.aim-modal--icon-search input,
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			input[type="text"],
+		#wpbody-content
+			#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row
+			textarea,
+		#wpbody-content .inline-edit-row select,
+		.edit-attachment-frame .edit-media-header .left,
+		.edit-attachment-frame .edit-media-header .right,
+		&.upload-php .media-modal-close,
+		.edit-attachment-frame .attachment-info,
+		.edit-attachment-frame .attachment-info *,
+		.media-modal
+			.media-frame-content
+			.imgedit-wrap
+			.imgedit-settings
+			.imgedit-group,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.components-text-control__input,
+		,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.components-text-control__input,
+		#wpbody-content .components-popover__content,
+		.components-custom-select-control__button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			.components-custom-select-control__button,
+		#wpbody-content .adminify-options.wp-adminify-settings .adminify-content,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-field
+			+ .adminify-field,
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-header
+			.adminify-header-inner,
+		.wp-adminify-two-columns > .adminify-field,
+		#wpbody-content .adminify-options.wp-adminify-settings .adminify-footer,
+		#wpbody-content .adminify-fieldset .chosen-single.chosen-default,
+		#wpbody-content .adminify-fieldset .search-choice,
+		#wpbody-content .adminify-fieldset .chosen-single,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-field
+			+ .adminify-field,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.wp-color-result,
+		.media-modal .media-frame-content .attachment-info,
+		.media-modal .media-frame-content .settings,
+		.media-modal .media-frame-content .setting,
+		.media-modal .media-frame-content .media-sidebar,
+		.media-modal .media-frame .media-frame-menu .media-menu .separator,
+		.media-modal .media-frame-content .collection-settings select,
+		#wpbody-content
+			.adminify-options
+			.adminify-tabbed-contents
+			.adminify-tabbed-content,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-title,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-data-wrapper
+			.adminify-cloneable-item
+			.adminify-cloneable-content,
+		#wpadminify-admin-columns .tabs.is-centered .nav-link,
+		#wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content,
+		.adminify-field + .adminify-field,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections,
+		.chosen-container.chosen-with-drop .chosen-drop,
+		&.themes-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-screenshot:after,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme:not(.add-new-theme)
+			.theme-screenshot:after,
+		&.themes-php #wpbody-content .theme-overlay .theme-header,
+		&.themes-php #wpbody-content .theme-overlay .theme-header .left,
+		&.themes-php #wpbody-content .theme-overlay .theme-header .right,
+		&.themes-php #wpbody-content .theme-overlay .theme-header .close,
+		&.themes-php #wpbody-content .theme-overlay .theme-screenshots:before,
+		&.themes-php #wpbody-content .theme-overlay .theme-actions,
+		.theme-overlay .theme-tags,
+		&.themes-php #wpbody-content .theme-browser .theme.add-new-theme a:after,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme.add-new-theme
+			a:after,
+		#wpbody-content .wp-filter .filter-drawer,
+		&.nav-menus-php .nav-tab-wrapper,
+		.nav-tab-wrapper,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.outer-border
+			.accordion-section-title:after,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.outer-border
+			.accordion-section-title:after,
+		&.nav-menus-php #nav-menus-frame #nav-menu-footer,
+		&.nav-menus-php
+			.menu-edit
+			#post-body
+			#menu-to-edit
+			.menu-item-bar
+			.menu-item-handle,
+		&.nav-menus-php #nav-menus-frame #nav-menu-header,
+		&.nav-menus-php #nav-menus-frame .menu-settings,
+		&.nav-menus-php #menu-locations-wrap table.widefat td,
+		&.nav-menus-php #menu-locations-wrap table.widefat th,
+		#available-widgets .widget .widget-top,
+		#widgets-right .widget .widget-top,
+		.widget-holder.inactive .widget .widget-top,
+		#widgets-right .widgets-holder-wrap .widget-inside,
+		#wpbody-content
+			.health-check-body
+			.health-check-accordion
+			.health-check-accordion-panel
+			.health-check-table,
+		#wpbody-content
+			.blocks-widgets-container
+			.wp-block-widget-area
+			.wp-block-widget-area__panel-body-content
+			.block-editor-block-list__layout
+			figure.wp-block,
+		.block-editor-inserter__popover.is-quick
+			.components-popover__content
+			.block-editor-inserter__quick-inserter
+			> :first-child,
+		.block-editor-inserter__popover.is-quick
+			.components-popover__content
+			.block-editor-inserter__quick-inserter
+			> *,
+		#wpbody-content
+			.blocks-widgets-container
+			.components-popover
+			.components-popover__content
+			.block-editor-block-toolbar
+			.components-button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.components-input-control__backdrop,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.components-input-control__backdrop,
+		.welcome-panel,
+		.notice,
+		div.error,
+		div.updated,
+		#wpbody-content
+			.wp-adminify-dashboard-widgets
+			.adminify-content
+			.adminify-field
+			.adminify-cloneable-item,
+		#wpbody-content
+			.wp-adminify-dashboard-widgets
+			.adminify-content
+			.adminify-field
+			.adminify-field {
+			border-color: $dark-mode-border-color-1;
+		}
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header-toolbar__left
+			button
+			svg
+			path,
+		.edit-post-header button svg path,
+		.block-editor-inserter__search-icon svg path,
+		.block-editor-block-icon.has-colors svg path,
+		.components-panel__body-toggle.components-button
+			.components-panel__arrow
+			path,
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.dropdown-trigger
+			button
+			.icon
+			path,
+		.wp-adminify--menu--editor--settings
+			.accordion
+			.menu-editor-title
+			svg
+			path,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.tab-content
+			.admin-column-accordion
+			.accordion-title
+			svg
+			path {
+			fill: $dark-mode-white;
+		}
+		&.block-editor-page .interface-interface-skeleton,
+		.block-editor-inserter__panel-header,
+		#wpbody-content
+			.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			.quicktags-toolbar,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset-content,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections
+			.adminify-siblings
+			.adminify--sibling,
+		#wpbody-content .privacy-settings-header {
+			border-color: $dark-mode-bg;
+		}
+		#major-publishing-actions,
+		#wpbody-content #post-body-content .wp-editor-container textarea {
+			border-top: 1px solid $blackpopover;
+		}
+		#wpbody-content .wp-editor-container .quicktags-toolbar {
+			border-bottom: 1px solid $dark-mode-black-1;
+		}
+		.components-panel {
+			background-color: $dark-mode-bg;
+			border-left-color: $dark-mode-black-1;
+		}
+		.interface-interface-skeleton__sidebar {
+			border-left-color: $dark-mode-black-1;
+		}
+		.interface-interface-skeleton__content,
+		.interface-interface-skeleton__sidebar {
+			&::-webkit-scrollbar {
+				width: 10px;
+			}
+			&::-webkit-scrollbar-track {
+				-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $blackcolor;
+			}
+		}
+		#wpbody-content #jltwp_adminify_dash_recent_posts table th img {
+			filter: brightness(2);
+		}
+		#wpbody-content #dashboard_right_now ul li a:before {
+			filter: invert(56%) sepia(68%) saturate(5251%) hue-rotate(204deg)
+				brightness(102%) contrast(91%);
+		}
+		#wpbody-content
+			.adminify-options.wp-adminify-settings
+			.adminify-header
+			.adminify-header-inner
+			h1
+			.wp-adminify-settings-logo {
+			filter: brightness(9);
+		}
+
+		.button-primary,
+		.button-secondary,
+		#wpbody-content .page-title-action,
+		#wpbody-content input[type="submit"]:not(.actions .button),
+		.adminify-options .adminify-reset-section,
+		.wp-adminify-dashboard-widgets .adminify-field button,
+		.adminify-section[data-section-id]
+			.adminify-fieldset
+			button:not(.wp-switch-editor),
+		.adminify-data-wrapper .adminify-cloneable-content button,
+		#wpbody-content .wp-picker-input-wrap .button.wp-picker-default,
+		&.wp-adminify_page_adminify-sidebar-generator .sidebar-title a,
+		&.wp-adminify_page_adminify-sidebar-generator
+			.wp-adminify--popup-container_inner
+			form
+			.button.button-primary,
+		#wpadminify-admin-columns .columns.is-desktop button,
+		&.appearance_page_custom-background
+			#custom-background
+			.form-table
+			#choose-from-library-link,
+		&.appearance_page_custom-background
+			#custom-background
+			.wp-picker-container
+			.wp-picker-input-wrap
+			.button,
+		&.nav-menus-php #nav-menus-frame .menu-edit .button,
+		&.nav-menus-php .appearance_page_custom-background .wp-upload-form button,
+		#widgets-left .widgets-chooser .widgets-chooser-sidebars button,
+		#wpbody-content .postbox-container #post_tag input.button,
+		#post-body-content
+			.postarea
+			button:not(.wp-switch-editor, .ed_button, .mce-widget button),
+		.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header__settings
+			.editor-post-switch-to-draft,
+		#posts-filter
+			.wp-list-table.widefat
+			.inline-edit-row.inline-edit-save
+			button,
+		#wpbody-content
+			.metabox-holder
+			.inside
+			button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap
+				button),
+		#wpbody-content .metabox-holder .inside .button,
+		#wpbody-content .metabox-holder .inside input[type="submit"],
+		#wpbody-content
+			.metabox-holder
+			.postbox-header
+			+ .inside
+			button:not(.button-link, .wp-editor-wrap .button, .wp-editor-wrap
+				button),
+		#wpbody-content
+			.metabox-holder
+			.postbox-header
+			+ .inside
+			.button:not(.wp-editor-wrap .button),
+		#wpbody-content
+			.metabox-holder
+			.postbox-header
+			+ .inside
+			input[type="submit"],
+		#major-publishing-actions input[type="submit"],
+		.media-modal .media-frame-toolbar .media-toolbar button,
+		#post-body-content .image-editor button:not(.imgedit-help-toggle),
+		#post-body-content .image-editor input[type="button"],
+		.wp-adminify-page-speed-wrapper .wp-adminify-analyze-button,
+		#wpbody-content #documentation #docs-lookup,
+		.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			.reply-submit-buttons
+			button,
+		&.themes-php #wpbody-content .theme-browser .theme .theme-actions .button,
+		&.themes-php #wpbody-content .theme-overlay .theme-actions .button,
+		&.theme-install-php
+			#wpbody-content
+			.theme-browser
+			.theme
+			.theme-actions
+			.button,
+		&.theme-install-php
+			#wpbody-content
+			.theme-install-overlay
+			.wp-full-overlay-header
+			.button,
+		&.theme-install-php #wpbody-content .filter-drawer .buttons .button,
+		.health-check-body .site-health-view-passed,
+		.health-check-body .site-health-copy-buttons button,
+		.privacy-settings-accordion-actions button,
+		#wpbody-content #createuser .wp-generate-pw,
+		#wpbody-content #createuser .wp-hide-pw,
+		#wpbody-content #your-profile .wp-generate-pw,
+		#wpbody-content #your-profile .wp-hide-pw,
+		.adminify-copy-btn,
+		&.plugin-install-php
+			#wpbody-content
+			.plugin-card
+			.plugin-card-top
+			.action-links
+			.plugin-action-buttons
+			.button.activate-now {
+			background-color: $dark-primary;
+			border-color: $dark-primary;
+			&:hover {
+				background-color: $dark-mode-white;
+			}
+		}
+		#wpbody-content
+			input[type="checkbox"]:checked:not(.components-checkbox-control__input),
+		#wpbody-content
+			#blog_public:checked:not(.components-checkbox-control__input),
+		.icon-picker-wrap ul li.select-icon,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections
+			.adminify-siblings
+			.adminify--sibling.adminify--active {
+			background-color: $dark-primary;
+			border-color: $dark-primary;
+		}
+
+		#wpbody-content .actions input[type="submit"],
+		#wpbody-content .ac-table-actions .-edit-columns,
+		#wpbody-content .postbox-container.category-add input[type="button"],
+		.wp_attachment_image input.button,
+		.quicktags-toolbar input.button,
+		#misc-publishing-actions button,
+		#wp-media-grid .media-frame .uploader-inline-content button.browser,
+		.media-modal .media-frame-content button:not(.imgedit-help-toggle),
+		.plugin-install-tab-featured
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-popular
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-recommended
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-favorites
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		.plugin-install-tab-search
+			.plugin-card
+			.plugin-card-top
+			.button.activate-now,
+		&.themes-php .theme-browser .theme:hover.activate,
+		&.themes-php
+			.theme-browser
+			.theme.active
+			.activate
+			&.theme-install-php
+			.theme-browser
+			.theme:hover.activate,
+		&.theme-install-php .theme-browser .theme.active .activate,
+		.plugin-install-tab-featured .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-popular .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-recommended .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-favorites .plugin-card .plugin-card-top .button,
+		.plugin-install-tab-search .plugin-card .plugin-card-top .button,
+		&.wp-adminify_page_adminify-menu-editor
+			#wpbody-content
+			.dropdown-trigger
+			button {
+			border-color: $dark-primary;
+			&:hover {
+				border-color: $dark-primary;
+			}
+		}
+		#wpbody-content .ac-table-actions a.ac-table-button.-edit-columns.last,
+		.media-upload-form .drag-drop-inside #plupload-browse-button,
+		.icon-picker-wrap ul li,
+		.aim-modal--footer button.aim-insert-icon-button:hover,
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header-toolbar__left
+			button.components-button.is-primary,
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header__settings
+			button.block-editor-post-preview__button-toggle,
+		#wpbody-content
+			.components-popover__content
+			.block-editor-block-types-list__item:hover,
+		&.nav-menus-php #wpbody-content .nav-tab-wrapper .nav-tab.nav-tab-active,
+		#wpbody-content .nav-tab-wrapper .nav-tab.nav-tab-active,
+		&.nav-menus-php
+			#nav-menus-frame
+			.accordion-container
+			.accordion-section-content
+			ul.add-menu-item-tabs
+			li.tabs
+			a,
+		#wpbody-content
+			.plugin-install-tab-featured
+			.wp-filter
+			.filter-links
+			a.current,
+		#wpbody-content
+			.plugin-install-tab-featured
+			.wp-filter
+			.filter-links
+			a:hover,
+		#wpbody-content
+			.plugin-install-tab-popular
+			.wp-filter
+			.filter-links
+			a.current,
+		#wpbody-content
+			.plugin-install-tab-popular
+			.wp-filter
+			.filter-links
+			a:hover,
+		#wpbody-content
+			.plugin-install-tab-recommended
+			.wp-filter
+			.filter-links
+			a.current,
+		#wpbody-content
+			.plugin-install-tab-recommended
+			.wp-filter
+			.filter-links
+			a:hover,
+		#wpbody-content
+			.plugin-install-tab-favorites
+			.wp-filter
+			.filter-links
+			a.current,
+		#wpbody-content
+			.plugin-install-tab-favorites
+			.wp-filter
+			.filter-links
+			a:hover,
+		#wpbody-content
+			.plugin-install-tab-search
+			.wp-filter
+			.filter-links
+			a.current,
+		#wpbody-content
+			.plugin-install-tab-search
+			.wp-filter
+			.filter-links
+			a:hover,
+		#wpbody-content .privacy-settings-header .privacy-settings-tab.active,
+		#wpbody-content
+			.blocks-widgets-container
+			.block-editor-block-types-list__item:hover,
+		#wpbody-content
+			.components-popover__content
+			.block-editor-block-types-list__item:hover {
+			border-color: $dark-primary;
+			color: $dark-primary;
+		}
+		#wpbody-content .notice p,
+		#wpbody-content .notice .fs-notice-body,
+		#wpbody-content .fs-notice p,
+		#wpbody-content .fs-notice .fs-notice-body {
+			color: $dark-mode-white;
+		}
+		#wpbody-content .fs-notice.promotion {
+			background-color: $dark-mode-bg !important;
+			border: 1px solid $dark-mode-black-1 !important;
+		}
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header__settings
+			button.block-editor-post-preview__button-toggle:hover,
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header__settings
+			button.editor-post-publish-button__button,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.editor-styles-wrapper
+			.block-editor-block-list__layout
+			.wp-block
+			.components-button,
+		.media-upload-form .drag-drop-inside #plupload-browse-button:hover {
+			background-color: $dark-primary;
+			color: $whitecolor;
+		}
+		#wpadminbar
+			#wp-admin-bar-top-secondary
+			#wp-admin-bar-new-content
+			> .ab-item,
+		#wpadminbar
+			#wp-admin-bar-root-default
+			#wp-admin-bar-new-content
+			> .ab-item,
+		#wpadminbar
+			#wp-admin-bar-top-secondary
+			#wp-admin-bar-new-content
+			> .ab-item:hover,
+		#wpadminbar
+			#wp-admin-bar-root-default
+			#wp-admin-bar-new-content
+			> .ab-item:hover {
+			background-color: $dark-primary !important;
+			border-color: $dark-primary !important;
+			color: $whitecolor !important;
+			.ab-icon,
+			.ab-icon:before,
+			.ab-label {
+				color: $dark-mode-white !important;
+			}
+		}
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header__settings
+			button.editor-post-publish-button__button:hover {
+			background-color: $whitecolor;
+			color: $dark-primary;
+		}
+		#wpbody-content
+			.interface-interface-skeleton__header
+			.edit-post-header
+			.edit-post-header-toolbar__left
+			button.components-button.is-primary
+			svg
+			path,
+		#wpbody-content
+			.components-popover__content
+			.block-editor-block-types-list__item:hover
+			.block-editor-block-types-list__item-icon
+			svg
+			path,
+		#wpbody-content
+			.blocks-widgets-container
+			.block-editor-block-types-list__item:hover
+			.block-editor-block-icon
+			svg
+			path {
+			fill: $whitecolor;
+		}
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.edit-post-sidebar__panel-tabs
+			button.is-active:before,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.edit-widgets-sidebar__panel-tabs
+			button.is-active:before,
+		#wpbody-content .postbox-container .category-tabs li.tabs a {
+			border-bottom-color: $dark-primary;
+		}
+		#wpbody-content #post-body-content #titlewrap input,
+		#wpbody-content .wp_attachment_details.edit-form-section .widefat,
+		#wpbody-content .wp_attachment_details.edit-form-section .wp-editor-area,
+		&.term-php #wpbody-content .form-table input:not(.button),
+		&.term-php #wpbody-content .form-table textarea,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.wp-color-result
+			.wp-color-result-text,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify--button-group
+			.adminify--button,
+		.media-frame-menu .media-menu,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-single.chosen-default,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.search-choice,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-metabox
+			li
+			a,
+		#plugin-information-footer,
+		#wpbody-content
+			.health-check-body
+			.health-check-accordion
+			.health-check-table
+			tbody
+			> :nth-child(odd),
+		&.export-personal-data-php #wpbody-content input[type="text"],
+		&.erase-personal-data-php #wpbody-content input[type="text"],
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-post-sidebar
+			.edit-post-sidebar__panel-tabs,
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.edit-widgets-sidebar
+			.edit-widgets-sidebar__panel-tabs,
+		#wpbody-content .adminify-options .adminify-header-inner,
+		#wpbody-content #posts-filter input[type="search"],
+		#wpbody-content .search-box input[type="search"] {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-mode-border-color-1;
+		}
+		#wpbody-content
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			button.is-destructive:hover {
+			background-color: transparent;
+			color: $redlight;
+		}
+		.aim-modal--sidebar-tab-item,
+		.wp-adminify-speed-analyze-history .history-table tr th,
+		.wp-adminify-speed-analyze-history .history-table tr td,
+		&.nav-menus-php #nav-menus-frame .accordion-container .outer-border li {
+			border-bottom-color: $dark-mode-border-color-1;
+		}
+		.aim-modal .aim-modal--footer,
+		.media-modal .media-frame-content,
+		.media-modal .media-frame-toolbar .media-toolbar {
+			border-top-color: $dark-mode-border-color-1;
+		}
+		#wpbody-content
+			.wp-list-table.widefat.comments
+			.inline-edit-row
+			.comment-reply
+			input.button,
+		#wpbody-content
+			.metabox-holder
+			.wp-editor-container
+			.quicktags-toolbar
+			input.button,
+		&.comment-php
+			#wpbody-content
+			#post-body-content
+			.stuffbox
+			.form-table
+			td
+			input,
+		#wpbody-content
+			.adminify-options
+			.adminify-fieldset
+			.adminify-wp-editor
+			.wp-editor-container,
+		#wpbody-content
+			.adminify-options
+			.adminify-fieldset
+			.adminify-wp-editor
+			.wp-editor-container
+			textarea,
+		.adminify-wp-editor .wp-editor-container .quicktags-toolbar,
+		#wpbody-content .wp-adminify-server-info th,
+		#wpbody-content .adminify-server-info th,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections
+			.chosen-container-multi
+			.chosen-choices,
+		#wpbody-content .postbox-container .postbox .inside select,
+		#wpbody-content #profile-page .form-table input[type="radio"],
+		#wpbody-content .postbox-container .category-add input,
+		#wpbody-content .postbox-container .category-add select,
+		&.options-general-php #wpbody-content form table input,
+		&.options-general-php #wpbody-content form table textarea,
+		&.options-general-php #wpbody-content form table select,
+		&.options-writing-php #wpbody-content form table input,
+		&.options-writing-php #wpbody-content form table textarea,
+		&.options-writing-php #wpbody-content form table select,
+		&.options-reading-php #wpbody-content form table input,
+		&.options-reading-php #wpbody-content form table textarea,
+		&.options-reading-php #wpbody-content form table select,
+		&.options-discussion-php #wpbody-content form table input,
+		&.options-discussion-php #wpbody-content form table textarea,
+		&.options-discussion-php #wpbody-content form table select,
+		&.options-media-php #wpbody-content form table input,
+		&.options-media-php #wpbody-content form table textarea,
+		&.options-media-php #wpbody-content form table select,
+		&.options-permalink-php #wpbody-content form table input,
+		&.options-permalink-php #wpbody-content form table textarea,
+		&.options-permalink-php #wpbody-content form table select,
+		.components-select-control__input,
+		#wpbody-content
+			.blocks-widgets-container
+			.interface-interface-skeleton__body
+			.components-panel
+			.components-panel__body
+			select,
+		#wp-excerpt-editor-container,
+		#wp-excerpt-editor-container textarea.wp-editor-area,
+		.wp-editor-container body#tinymce,
+		#elementor-go-to-edit-page-link {
+			background-color: $dark-mode-bg;
+			border-color: $dark-mode-border-color-1;
+		}
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			select,
+		.media-modal .media-frame-content .media-toolbar-secondary select,
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-wp-editor
+			.quicktags-toolbar
+			input,
+		#wpbody-content .wp-adminify-server-info tr td,
+		#wpbody-content .adminify-server-info tr td {
+			border-color: $dark-mode-border-color-1;
+			color: $dark-mode-white;
+		}
+		.media-modal .media-frame-content .attachments li.selected {
+			box-shadow: inset 0 0 0 3px $dark-mode-black-1,
+				inset 0 0 0 7px $dark-primary;
+		}
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			.chosen-choices
+			.chosen-search-input {
+			background-color: $dark-mode-black-1 !important;
+			border-color: $dark-mode-border-color-1 !important;
+		}
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-fieldset
+			input[type="checkbox"]:checked,
+		&.nav-menus-php #nav-menus-frame input[type="checkbox"]:checked,
+		#wpbody-content
+			.postbox-container
+			.disable-section-meta
+			div
+			input[type="checkbox"]:checked,
+		#wpbody-content
+			.postbox-container
+			.tabs-panel
+			label
+			input[type="checkbox"]:checked,
+		#wpbody-content #update-themes-table input[type="checkbox"]:checked,
+		#wpbody-content .form-table td input[type="checkbox"]:checked,
+		#wpbody-content .form-table td label input[type="checkbox"]:checked,
+		#wpbody-content #thumbnail_crop input[type="checkbox"]:checked,
+		#wpbody-content #createuser input[type="checkbox"]:checked,
+		&.profile-php
+			#wpbody-content
+			#profile-page
+			#your-profile
+			input[type="checkbox"]:checked,
+		&.theme-install-php #wpbody-content .wp-filter .filter-links a.current,
+		&.theme-install-php #wpbody-content .wp-filter .filter-links a:hover {
+			border-color: $dark-primary;
+		}
+		#wpbody-content
+			.wp-adminify-page-speed-wrapper
+			.speed-wrapper-tabs
+			> li
+			.nav-link {
+			background-color: transparent;
+			color: $dark-mode-white;
+			svg path {
+				fill: $dark-mode-white;
+			}
+		}
+		#wpbody-content
+			.wp-adminify-page-speed-wrapper
+			.speed-wrapper-tabs
+			> li.router-link-active
+			.nav-link {
+			background-color: $dark-mode-black-1;
+			border-top-color: $dark-primary;
+			color: $dark-primary;
+			svg path {
+				fill: $dark-primary;
+			}
+		}
+		#wpbody-content
+			#analyze
+			.wp-adminify-speed-analyze-form
+			.search-icon
+			path {
+			fill: $dark-mode-white;
+		}
+		#wpbody-content
+			.wp-adminify-speed-analyze-history
+			.wp-adminify-pagination
+			a.is-current,
+		#wpbody-content
+			.wp-adminify-speed-analyze-history
+			.wp-adminify-pagination
+			a:hover,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.nav-tabs
+			.router-link-active
+			.nav-link,
+		#wpadminify-admin-columns
+			.tabs.is-centered
+			+ .tab-content
+			.nav-tabs
+			.nav-link:hover,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections
+			.chosen-container-multi
+			.chosen-results
+			li:hover,
+		&.adminify-rounded-v-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top:hover
+			> a.menu-top,
+		&.adminify-rounded-v-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-adminify-active
+			> a.menu-top,
+		#adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu li a.current,
+		#adminmenu .wp_adminify_admin-menu li.menu-top .wp-submenu li a:hover,
+		#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			.wp-submenu
+			li
+			a.wp-adminify-active,
+		.components-button.is-primary:disabled,
+		.components-button.is-primary:disabled:active:enabled,
+		.components-button.is-primary[aria-disabled="true"],
+		.components-button.is-primary[aria-disabled="true"]:active:enabled,
+		.components-button.is-primary[aria-disabled="true"]:enabled {
+			background-color: $dark-primary;
+			color: $dark-mode-white;
+		}
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections
+			.chosen-container-multi
+			.chosen-results
+			li,
+		#wpbody-content
+			#_wp_adminify_admin_page_display
+			.inside
+			.adminify-sections
+			.adminify-siblings
+			.adminify--sibling,
+		#wpbody-content #posts-filter input[type="text"],
+		#wpbody-content #posts-filter input[type="url"],
+		#wpbody-content .search-plugins input[type="text"],
+		#wpbody-content .search-plugins input[type="search"],
+		#wpbody-content .search-plugins input[type="url"],
+		#wpbody-content .search-form input[type="text"],
+		&.theme-install-php
+			#wpbody-content
+			.wrap
+			.wp-filter
+			.search-form
+			input[type="search"],
+		#wpbody-content .search-form input[type="url"],
+		#wpbody-content .search-box input[type="text"],
+		#wpbody-content .search-box input[type="url"],
+		&.user-new-php #wpbody-content .form-table select,
+		#wpbody-content #export-filters .export-filters select {
+			background-color: $dark-mode-bg;
+			color: $dark-mode-white;
+		}
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.wp-adminify-top-header--search--form
+			.top-header--search--form
+			.adminify-search-expand {
+			background-color: $black;
+			color: $dark-mode-white;
+		}
+		.adminify-top_bar
+			nav.adminify-top-navbar
+			.wp-adminify-top-header--search--form
+			.top-header--search--form
+			.adminify-search-expand
+			i {
+			color: $dark-mode-white !important;
+		}
+		#fs_affiliation_content_wrapper {
+			.inside {
+				margin-top: 0;
+				padding: 15px;
+				#messages {
+					margin-top: 0;
+				}
+				h3,
+				li {
+					color: $dark-mode-white;
+				}
+			}
+		}
+		&.themes-php #wpbody-content .theme-overlay .theme-header .close:before {
+			color: $reddark;
+		}
+		&.widgets-php {
+			#wpbody-content {
+				.widgets-chooser li {
+					background-color: transparent;
+					border: 0;
+					box-shadow: none;
+					&:hover:before {
+						color: $dark-primary;
+					}
+					button {
+						background-color: $dark-mode-black-1;
+						border-color: $dark-mode-border-color-1;
+						&:hover {
+							background-color: $dark-mode-black-1;
+							color: $dark-primary;
+						}
+					}
+				}
+			}
+		}
+		&.widgets-php
+			#wpbody-content
+			.widget-control-actions
+			button.widget-control-close:hover,
+		&.plugin-install-php
+			#wpbody-content
+			.wp-list-table.widefat.plugin-install {
+			background-color: transparent;
+		}
+		#wpbody-content .notice,
+		#wpbody-content .fs-notice,
+		#wpbody-content .components-notice,
+		.notice,
+		div.error,
+		div.updated {
+			background-color: $dark-mode-black-1;
+			p {
+				color: $dark-mode-white;
+			}
+		}
+		&.appearance_page_custom-background
+			#custom-background
+			.form-table
+			.background-position-control
+			.button-group
+			.button {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-mode-border-color-1;
+			color: $dark-primary;
+		}
+		#templateside .notice {
+			background-color: inherit;
+		}
+		&.plugins-php #wpbody-content .wp-list-table.plugins tr,
+		&.plugins-php #wpbody-content .wp-list-table.plugins tbody#the-list tr th,
+		&.plugins-php
+			#wpbody-content
+			.wp-list-table.plugins
+			tbody#the-list
+			tr
+			td {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-mode-border-color-1;
+			color: $dark-mode-white;
+			p,
+			.label {
+				color: $dark-mode-white;
+			}
+		}
+		#wpbody-content .plugin-install-tab-featured .wp-filter select,
+		#wpbody-content .plugin-install-tab-popular .wp-filter select,
+		#wpbody-content .plugin-install-tab-recommended .wp-filter select,
+		#wpbody-content .plugin-install-tab-favorites .wp-filter select,
+		#wpbody-content .plugin-install-tab-search .wp-filter select,
+		#plugin-information-tabs a.current,
+		#wpbody-content .privacy-settings-body select,
+		.interface-interface-skeleton__footer,
+		.wp-adminify--folder-widget .folder--search input {
+			background-color: $dark-mode-bg;
+			border-color: $dark-mode-border-color-1;
+			color: $dark-mode-white;
+		}
+		#wpbody-content
+			.form-table.permalink-structure
+			.available-structure-tags
+			button.active {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-primary;
+			color: $dark-primary;
+		}
+		#wpbody-content
+			.privacy-settings-body
+			.privacy-settings-accordion
+			.privacy-settings-accordion-heading
+			button {
+			background-color: $dark-mode-bg;
+			span {
+				color: $dark-mode-white;
+				.icon {
+					border-color: $dark-mode-white;
+				}
+			}
+		}
+		#wpbody-content
+			.adminify-section[data-section-id]
+			.adminify-field-notice
+			.adminify-notice.adminify-notice-warning
+			p {
+			color: $dark-mode-bg;
+		}
+		&.adminify-round-open-menu
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-adminify-active{
+			background-color: transparent;
+		}
+
+		&.adminify-rounded-v-menu
+			#wpwrap
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.wp-menu-open
+			.wp-submenu {
+				background-color: $dark-mode-bg;
+			}
+		#fs_connect {
+			.fs-visual,
+			.fs-content,
+			.fs-permissions {
+				background-color: $dark-mode-black-1;
+			}
+			.fs-content p,
+			.fs-visual i {
+				color: $dark-mode-white;
+			}
+		}
+		#fs_account {
+			h3 {
+				border-color: $dark-mode-border-color-1;
+			}
+			.fs-key-value-table {
+				color: $dark-mode-white;
+			}
+			.alternate,
+			.striped > tbody > :nth-child(odd),
+			ul.striped > :nth-child(odd) {
+				background-color: $dark-mode-black-1;
+			}
+			.fs-tag.fs-warn {
+				color: $titlecolor;
+			}
+		}
+		#wpbody-content a.adminify-video-url {
+			color: #c30052;
+		}
+		.theme-overlay .theme-backdrop {
+			background: rgba($color: $dark-mode-black-1, $alpha: 0.7);
+		}
+		#wpbody-content table.widefat.striped {
+			td {
+				color: $dark-mode-white;
+			}
+		}
+		// .adminify-theme-dark .adminify-nav-normal ul li .adminify-active:after {
+		//     border-right-color: $dark-mode-bg;
+		// }
+		&.adminify-dark-mode.folded
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-button,
+		&.adminify-dark-mode.auto-fold.block-editor-page
+			#adminmenu
+			.wp_adminify_admin-menu
+			li.menu-top
+			> a.menu-top
+			.wp-adminify-icon-button {
+			background-color: transparent;
+		}
+		.wp-block-legacy-widget__edit-form {
+			background-color: $dark-mode-black-1;
+			border-color: $dark-mode-border-color-1;
+
+			.wp-block-legacy-widget__edit-preview iframe body,
+			.widget-content {
+				background-color: $dark-mode-black-1;
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6,
+				span,
+				p,
+				label {
+					color: $dark-mode-white;
+				}
+			}
+		}
+		table.widefat tbody tr {
+			background-color: $dark-mode-bg !important;
+		}
+		#wpbody-content {
+			.adminify-nav-normal ul li .adminify-active {
+				background-color: $dark-mode-bg !important;
+				&:after {
+					border-right-color: $dark-mode-border-color-1;
+					border-width: 8px;
+					margin-top: -8px;
+				}
+			}
+			.adminify-options.wp-adminify-settings .adminify-content {
+				border-left: 0;
+			}
+		}
+		.select2-container .select2-selection--single {
+			.select2-selection__rendered {
+				color: $dark-mode-white;
+			}
+		}
+		&.about-php #wpcontent,
+		&.credits-php #wpcontent,
+		&.freedoms-php #wpcontent,
+		&.privacy-php #wpcontent,
+		nav.about__header-navigation.nav-tab-wrapper.wp-clearfix,
+		.adminify-dashboard-widgets .adminify-header-inner {
+			background: $dark-mode-bg;
+		}
+		.about__container {
+			h1.is-smaller-heading,
+			h2.is-smaller-heading,
+			h3 {
+				color: $dark-mode-white;
+			}
+		}
+		.components-placeholder.components-placeholder {
+			background-color: $dark-mode-black-1;
+			box-shadow: none;
+			color: $dark-mode-white;
+		}
+		#wpbody-content .tablenav-pages .pagination-links .button,
+		.image-editor input[type="text"] {
+			background-color: $dark-mode-bg !important;
+			border-color: $dark-mode-border-color-1 !important;
+			color: $dark-mode-white !important;
+		}
+		#wpbody-content .image-editor input[type="radio"] {
+			border-color: $dark-mode-border-color-1 !important;
+		}
+		#wpbody-content #elementor-template-library-tabs-wrapper .nav-tab{
+			border-color: $dark-mode-border-color-1 !important;
+		}
+		#wpbody-content #elementor-template-library-tabs-wrapper .nav-tab.nav-tab-active{
+			background-color: $dark-mode-bg !important;
+			border-bottom-color: $dark-mode-bg !important;
+		}
+	}
+	#adminmenu * {
+  		box-sizing: inherit;
+		input#top-header-search-input,
+		input#top-header-search-input::placeholder{
+			color: $dark-mode-white !important;
+		}
+	}
+}

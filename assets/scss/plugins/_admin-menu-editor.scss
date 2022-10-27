@@ -1,0 +1,169 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+// Admin Menu Editor
+
+.wrap {
+    #ws_ame_editor_heading {
+        float: none;
+    }
+    .ws_main_container {
+        @include postboxreset;
+        #ws_save_menu {
+            @include submitfill;
+            &:hover {
+                @include submitfillHover;
+            }
+        }
+        #ws_reset_menu,#ws_load_menu {
+            @include submittransparent;
+            width: 150px;
+            &:hover {
+                @include submittransparentHover;
+            }
+        }
+    }
+    #ws_menu_editor {
+        .ws_container {
+            .ws_editbox {
+                background-color: $whitecolor;
+                .ws_field_label_text {
+                    color: $titlecolor;
+                }
+                input {
+                    @include search_input;
+                    &.ws_dropdown_button.ws_cap_selector_trigger {
+                        margin: 0 0 0 -7px;
+                        padding: 0;
+                        width: 32px;
+                    }
+                }
+                select {
+                    @include selectone;
+                }
+            }
+            .ws_toggle_advanced_fields {
+                color: $primarycolor;
+            }
+        }
+    }
+    .ws_basic_container {
+        .metabox-holder {
+            .postbox {
+                .ame-tutorial-list {
+                    a {
+                        color: $primarycolor;
+                    }
+                }
+            }
+        }
+    }
+    #ws_sidebar_pro_ad {
+        .ws_hint_content {
+            a {
+                color: $primarycolor;
+            }
+        }
+    }
+    .dashicons {
+        color: $primarycolor;
+    }
+}    
+
+#ame-pv-usage-notice {
+    .notice-dismiss:before {
+        color: $redlight;
+    }
+}
+
+#ame-plugin-visibility-editor {
+    table.widefat.plugins {
+        border: 0;
+        border-radius: $radius6p + 2px;
+        thead {
+            th {
+                border-bottom: 1px solid $grayborder;
+                border-top-left-radius: $radius6p + 2px;
+            }
+            th:last-child {
+                border-top-right-radius: $radius6p + 2px;
+            }
+        }
+        tfoot {
+            tr:last-child {
+                th {
+                    border-top: 0;
+                    border-bottom-left-radius: $radius6p + 2px;
+                }
+                th:last-child {
+                    border-bottom-right-radius: $radius6p + 2px;
+                }
+            }
+        }
+        tbody {
+            tr{
+                &.active  {
+                    th {
+                        border-left: 0;
+                    }
+                }    
+                th {
+                    padding-left: 4px;
+                }
+                th,td {
+                    background-color: $whitecolor;
+                    box-shadow: none;
+                    color: $blackplaceholder2;
+                    vertical-align: text-top;
+                    input[type="checkbox"] {
+                        margin-top: 0;
+                    }
+                    p {
+                        color: $blackplaceholder2;
+                    }
+                }
+                .edit a {
+                    color: $primarycolor;
+                }
+            }
+        }
+    }
+}
+
+.wp-adminify.adminify-dark-mode {
+    .wrap .ws_main_container {
+        background-color: $dark-mode-black-1;
+        .ws_button,
+        .ws_container {
+            border-color: $dark-mode-border-color-1;
+        }
+        .ws_menu_separator {
+            background-color: $dark-mode-bg;
+        }
+        #ws_reset_menu,
+        #ws_load_menu {
+            border-color: $dark-mode-white !important;
+            color: $dark-mode-white !important;
+            &:hover {
+                background-color: $dark-primary !important;
+                border-color: $dark-primary !important;
+            }
+        }
+    }
+    #ame-plugin-visibility-editor table.widefat.plugins th, 
+    #ame-plugin-visibility-editor table.widefat.plugins td {
+        background-color: $dark-mode-black-1;
+        border-color: $dark-mode-border-color-1;
+        border-radius: 0;
+        p {
+            color: $dark-mode-white;
+        }
+    }
+    #ws_plugin_settings_form {
+        background-color: $dark-mode-black-1;
+        padding: 0 15px;
+        figure {
+            color: $dark-mode-white;
+        }
+    }
+}

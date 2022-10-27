@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.settings_page_wpsupercache {
+    #wpbody-content {
+        .wpsc-settings-table {
+            input[type="text"],select,textarea {
+                @include selectone;
+            }
+        }
+    }
+}

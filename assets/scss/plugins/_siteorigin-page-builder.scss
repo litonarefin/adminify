@@ -1,0 +1,13 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.settings_page_siteorigin_panels {
+    #wpbody-content {
+        .form-table {
+            input,select,textarea {
+                background-color: $whitecolor;
+            }
+        }
+    }
+}
+

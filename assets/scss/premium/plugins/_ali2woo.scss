@@ -1,0 +1,127 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+html {
+    font-size: 16px;
+}
+.wp-adminify {
+    #wpbody-content {
+        button,
+        .btn {
+            line-height: 1.7;
+        }
+        a.btn.btn-primary,
+        .btn-danger {
+            color: $whitecolor;
+        }
+        .a2w-content .select2-container .select2-search--inline .select2-search__field {
+            margin-top: 0;
+        }
+        .a2w-content .dropdown-icon, 
+        .a2w-content a.dropdown-icon, 
+        .a2w-content a.dropdown-toggle, 
+        .a2w-content button.dropdown-toggle {
+            background-position: right 5px center !important;
+            background-repeat: no-repeat !important;
+        }
+    }
+    .ui-dialog .ui-dialog-content {
+        clear: both;
+    }
+    table.wp-list-table td.column-thumb img {
+        font-size: 0;
+    }
+    &.ali2woo_page_a2w_addons {
+        font-size: 16px;
+    }
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .a2w-content .panel,
+            .a2w-content .search-panel,
+            .modal-content,
+            .a2w-content .product-card,
+            .a2w-content .pagination__list,
+            .a2w-product-import-list .product,
+            .table>tbody>tr.active>td, 
+            .table>tbody>tr.active>th, 
+            .table>tbody>tr>td.active, 
+            .table>tbody>tr>th.active, 
+            .table>tfoot>tr.active>td, 
+            .table>tfoot>tr.active>th, 
+            .table>tfoot>tr>td.active, 
+            .table>tfoot>tr>th.active, 
+            .table>thead>tr.active>td, 
+            .table>thead>tr.active>th, 
+            .table>thead>tr>td.active, 
+            .table>thead>tr>th.active,
+            .a2w-addon-block {
+                background: $dark-mode-black-1;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .a2w-content .search-panel-header,
+            .modal-header,
+            .modal-footer,
+            .modal-body .shipping-table td,
+            .a2w-content .pagination__list li,
+            .a2w-content .a2w-product-import-list .product .border-img,
+            .a2w-content .for-checkbox,
+            .a2w-content .a2w-product-import-list .product .tabs-content,
+            .a2w-content .panel,
+            .a2w-content .border-top,
+            .nav-tabs,
+            .a2w-content .border-bottom,
+            .table-bordered,
+            .table-bordered>tbody>tr>td, 
+            .table-bordered>tbody>tr>th, 
+            .table-bordered>tfoot>tr>td, 
+            .table-bordered>tfoot>tr>th, 
+            .table-bordered>thead>tr>td, 
+            .table-bordered>thead>tr>th {
+                border-color: $dark-mode-border-color-1;
+            }
+            .select2-container--default .select2-selection--single,
+            .a2w-content .btn-default,
+            .nav-tabs>li.active>a, 
+            .nav-tabs>li.active>a:focus, 
+            .nav-tabs>li.active>a:hover,
+            .a2w-content .select2-container--default .select2-selection--single, 
+            .a2w-content .select2-container--default .select2-selection--multiple,
+            .a2w-product-import-list .nav-tabs>li>a:hover,
+            .nav-tabs>li>a:hover {
+                background: $dark-mode-bg;
+                border-color: $dark-mode-border-color-1;
+                color: $dark-mode-white;
+            }
+            .a2w-content .country-select-descr,
+            .a2w-content .product-card-shipping-info,
+            .a2w-content .product-card__orderscount,
+            .a2w-content .pagination__list li a,
+            .a2w-content h3,
+            .a2w-content .margin-right,
+            a.btn.btn-danger,
+            .btn .btn-title,
+            h1,
+            .a2w-content .grey-color {
+                color: $dark-mode-white;
+            }
+            .a2w-content .btn.load {
+                background-color: $dark-primary;
+                border-color: $dark-primary;
+                color: $dark-mode-white;
+            }
+            .a2w-content .darker-background span {
+                background-color: $dark-mode-bg;
+            }
+            .a2w-product-import-list .nav-tabs>li>a,
+            .a2w-content .panel-heading {
+                border-color: $dark-mode-border-color-1 !important; 
+            }
+            .a2w-content .info-box {
+                background-color: $dark-mode-white;
+            }
+            input[type=checkbox] {
+                border-color: $dark-mode-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "litonarefin/wp-adminify",
+    "description": "WP Adminify - All in One WordPress Admin Customization, Security Plugin",
+    "authors": [
+        {
+            "name": "litonarefin",
+            "email": "litonice09@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "WPAdminify\\": "adminify/",
+            "WPAdminify\\Inc\\": "Inc/",
+            "WPAdminify\\Pro\\": "Pro/",
+            "WPAdminify\\Inc\\Admin\\": "Inc/Admin/",
+            "WPAdminify\\Inc\\Classes\\": "Inc/classes/",
+            "WPAdminify\\Inc\\Modules\\": "Inc/Modules/",
+            "WPAdminify\\Inc\\DashboardWidgets\\": "Inc/dashboard-widgets/"
+        },
+        "files": [
+            "Inc/utils.php",
+            "Inc/base-data.php",
+            "Inc/base-model.php",
+            "Inc/functions.php",
+            "Inc/Admin/AdminSettings.php",
+            "Inc/Modules/NotificationBar/Inc/add-sections.php",
+            "Inc/Modules/LoginCustomizer/Inc/add-sections.php",
+            "Inc/Modules/AdminColumns/AdminColumnsData.php",
+            "lib/adminify-framework/adminify-framework.php"
+        ]
+    },
+    "require-dev": {
+    }
+}

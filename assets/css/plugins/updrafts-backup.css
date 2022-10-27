@@ -1,0 +1,22 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+#updraft-wrap .dashicons {
+  color: inherit;
+}
+
+.settings_page_updraftplus #updraft-wrap select {
+  background-color: var(--adminify-text-color);
+  border: 1px solid #F1F1F3;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  color: rgba(78, 75, 102, 0.72);
+  min-height: 36px;
+}
+
+/*# sourceMappingURL=updrafts-backup.css.map*/

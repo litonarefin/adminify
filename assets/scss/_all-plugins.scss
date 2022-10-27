@@ -1,0 +1,41 @@
+
+@import 'variables','mixins';
+
+// Plugins scss file
+.wp-adminify
+     @import 'plugins/_plugin-aio-contact-lite';
+     @import 'plugins/_plugin-admin-menu-editor';
+     @import 'plugins/_plugin-advanced-custom-field';
+     @import 'plugins/_plugin-all-in-one-wp-migration';
+     @import 'plugins/_plugin-wordfence';
+     @import 'plugins/_plugin-breeze';
+     @import 'plugins/_plugin-admin-column';
+     @import 'plugins/_plugin-contact-form-7';
+     @import 'plugins/_plugin-forminator-contact-form';
+     @import 'plugins/_plugin-akismet';
+     @import 'plugins/_plugin-bbpress';
+     @import 'plugins/_plugin-buddy-press';
+     @import 'plugins/_plugin-gutenberg';
+     @import 'plugins/_plugin-elementor';
+     @import 'plugins/_plugin-updrafts-backup';
+     @import 'plugins/_plugin-wpforms';
+     @import 'plugins/_plugin-yoast-duplicate';
+     @import 'plugins/_plugin-all-in-one-seo';
+     @import 'plugins/_plugin-xml-sitemap';
+     @import 'plugins/_plugin-wp-super-cache';
+     @import 'plugins/_plugin-mc4wp-mailchimp';
+     @import 'plugins/_plugin-redirection';
+     @import 'plugins/_plugin-duplicate-page';
+     @import 'plugins/_plugin-limit-login-attempts';
+     @import 'plugins/_plugin-autoptimize';
+     @import 'plugins/_plugin-duplicate-wp-migration';
+     @import 'plugins/_plugin-cookie-notice';
+     @import 'plugins/_plugin-loco-translate';
+     @import 'plugins/_plugin-disable-comments';
+     @import 'plugins/_plugin-insert-header-footer';
+     @import 'plugins/_plugin-w3-total-cache';
+     @import 'plugins/_plugin-instagram-feed';
+     @import 'plugins/_plugin-better-search-replace';
+     @import 'plugins/_plugin-siteorigin-page-builder';
+     @import 'plugins/_plugin-google-site-kit';
+

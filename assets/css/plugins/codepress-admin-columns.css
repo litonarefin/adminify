@@ -1,0 +1,82 @@
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+body.wp-adminify {
+  --adminify-text-color: #fff;
+}
+
+.wp-adminify #wpbody-content input#ac-username-width {
+  max-height: 35px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.wp-adminify #wpbody-content .unit {
+  max-height: 35px;
+}
+.wp-adminify #wpbody-content .ac-setting-input-width div.description span {
+  border: 0;
+}
+.wp-adminify #wpbody-content .inside p {
+  color: var(--adminify-text-color);
+}
+.wp-adminify #wpbody-content #posts-filter .tablenav.top .ac-table-actions .ac-table-button {
+  height: auto;
+}
+.wp-adminify #wpbody-content #posts-filter .tablenav.top .ac-table-actions .ac-table-button span {
+  line-height: 20px;
+}
+.wp-adminify #wpbody-content .ac-admin__header select {
+  border: 0;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-column-header,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-column.opened .ac-column-header {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.edit-button,
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.close-button,
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.remove-button,
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.clone-button,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-admin__sidebar .sidebox#direct-feedback .inside > a {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.edit-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.close-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.remove-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content div.ac-column-header table tr td.column_label .inner > a.clone-button:hover,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-admin__sidebar .sidebox#direct-feedback .inside > a:hover {
+  color: #020407;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-column-setting td,
+.wp-adminify.adminify-dark-mode #wpbody-content .unit,
+.wp-adminify.adminify-dark-mode #wpbody-content .column-footer,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-admin__sidebar .sidebox,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-admin__sidebar .sidebox h3 span.left,
+.wp-adminify.adminify-dark-mode #wpbody-content #ac-pro-version .padding-box.ac-pro-newsletter {
+  background-color: #1d1d1d;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content h1, .wp-adminify.adminify-dark-mode #wpbody-content h2, .wp-adminify.adminify-dark-mode #wpbody-content h3, .wp-adminify.adminify-dark-mode #wpbody-content h4, .wp-adminify.adminify-dark-mode #wpbody-content h5, .wp-adminify.adminify-dark-mode #wpbody-content h6,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-column-setting td.col-label span.label,
+.wp-adminify.adminify-dark-mode #wpbody-content a.acp-button {
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content #ac-username-width,
+.wp-adminify.adminify-dark-mode #wpbody-content .select2-container--acs2 .select2-selection--single .select2-selection__rendered,
+.wp-adminify.adminify-dark-mode #wpbody-content .inside input[type=text] {
+  background-color: #111;
+  border-color: #2b2b2b;
+  color: #cfcfcf;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content table,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-column.opened .ac-column-body,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-admin__sidebar .sidebox#direct-feedback .inside > a {
+  border-color: #2b2b2b;
+}
+.wp-adminify.adminify-dark-mode #wpbody-content .toggle,
+.wp-adminify.adminify-dark-mode #wpbody-content .ac-column.opened .ac-column-header table td {
+  text-shadow: none;
+}
+
+/*# sourceMappingURL=codepress-admin-columns.css.map*/

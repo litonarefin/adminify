@@ -1,0 +1,256 @@
+// General Settings
+
+//General
+
+#wpbody-content {
+    .form-table {
+        th {
+            color: $titlecolor;
+            @include font14_600;
+            line-height: $lineheight20;
+        }
+        select {
+            color: $titlecolor;
+            padding-right: 25px;
+        }
+        td {
+            .description {
+                color: $blackcolor;
+                font-size: $fontsize - 1px;
+                font-weight: $weight400;
+                line-height: $lineheight16;
+                margin-top: 10px;
+            }
+            label {
+                color: $black;
+                @include font14_400;
+                line-height: $lineheight20;
+                .avatar {
+                    height: 36px;
+                    width: 36px;
+                    margin-right: 10px;
+                }
+            }
+            code {
+                background-color: $graycolor;
+                color: $redlight;
+                @include font12;
+                line-height: $lineheight16;
+            }
+            p {
+                @include font14_400;
+                #utc-time {
+                    font-size: $fontsize - 2px;
+                }
+                strong {
+                    font-weight: $weight400;
+                }
+                .example {
+                    color: $blackmuted;
+                }
+            }
+        }
+        &.permalink-structure {
+            td {
+                code {
+                    background-color: $graycolor;
+                    color: $titlecolor;
+                    @include font12;
+                    line-height: $lineheight16;
+                    padding: 3px;
+                }
+                input.code {
+                    background-color: $whitegray;
+                    color: $titlecolor;
+                }
+            }
+            .available-structure-tags {
+                button {
+                    background-color: $whitecolor;
+                    border-color: $blackmuted;
+                    box-shadow: none;
+                    color: $blackmuted;
+                    &.active {
+                        background-color: $whitecolor;
+                        border: 1px solid $primarycolor;
+                        color: $primarycolor;
+                    }
+                }
+            }
+        }
+    }
+    .small-text {
+        min-width: inherit;
+        width: auto;
+    }
+
+    // Privacy
+
+    .privacy-settings-header {
+        background-color: inherit;
+        border-bottom-color: $graycolor;
+        margin: 0;
+        .privacy-settings-tab {
+            border: 0;
+            color: $blackcolor;
+            @include font14_600;
+            line-height: $lineheight20;
+            &.active {
+                box-shadow: inset 0 -3px $primarycolor;
+            }
+            &:focus {
+                border: 0;
+                outline: 0;
+            }
+        }
+    }
+    .privacy-settings-body {
+        @include cardshadow;
+        @include insidepadding;
+        margin-top: 1.5rem;
+        max-width: inherit;
+        width: calc(100% - 8%);
+        h2 {
+            color: $black;
+            display: inline-block;
+            width: 100%;
+        }
+        p {
+            color: $black;
+            font-size: $fontsize;
+            line-height: $lineheight20;
+        }
+        select {
+            background-color: $whitegray;
+        }
+        .privacy-settings-accordion {
+            border: 0;
+            .privacy-settings-accordion-heading {
+                margin-bottom: 1rem;
+                button {
+                    background-color: transparent;
+                    border: 0;
+                    box-shadow: none;
+                    color: $blackcolor;
+                    @include font14_600;
+                    line-height: $lineheight20;
+                    padding: 14px 1rem;
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                        border: 0;
+                        outline: 0;
+                    }
+                    .title {
+                        color: $blackcolor;
+                        font-size: $fontsize + 2px;
+                        font-weight: $weight700;
+                        margin-bottom: 0;
+                    }
+                    .badge {
+                        border: 0;
+                        color: $whitecolor;
+                        font-size: $fontsize - 1px;
+                        font-weight: $weight600;
+                        line-height: $lineheight20;
+                        padding: 3px 10px;
+                        &.blue {
+                            background-color: $primarycolor;
+                        }
+                    }
+                    .icon {
+                        height: 7px;
+                        width: 7px;
+                    }
+                }
+            }
+            .privacy-settings-accordion-panel {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                margin: -15px 0 1rem;
+                p {
+                    color: $blackcolor;
+                    .dashicons {
+                        font-size: $fontsize + 2px;
+                    }
+                }
+            }
+            .health-check-table {
+                border: 1px solid $grayborder;
+                box-shadow: none;
+                td,
+                th {
+                    color: $black;
+                    @include font12;
+                    line-height: $lineheight16;
+                }
+                tbody > :nth-child(odd) {
+                    background-color: $updatecolor;
+                }
+            }
+        }
+    }
+    .tools-privacy-policy-page {
+        td {
+            padding: 0;
+        }
+        form {
+            background-color: transparent;
+            box-shadow: none;
+            margin-bottom: 0;
+        }
+    }
+}
+&.options-privacy-php {
+    #wpbody-content {
+        .notice {
+            margin: 0 30px 20px;
+        }
+    }
+}
+&.options-general-php,
+&.options-writing-php,
+&.options-reading-php,
+&.options-discussion-php,
+&.options-media-php,
+&.options-permalink-php {
+    #wpbody-content form {
+        @include insidepadding;
+        padding-top: 1rem;
+        p {
+            color: $black;
+        }
+        table {
+            margin-top: 0;
+            p {
+                color: $blackmuted;
+                strong {
+                    color: $black;
+                }
+            }
+            #utc-time {
+                color: $black;
+            }
+            input,
+            textarea,
+            select {
+                background-color: $whitegray;
+            }
+            input[type="radio"],
+            input[type="checkbox"] {
+                background-color: $whitecolor;
+            }
+        }
+    }
+}
+
+&.options-discussion-php,
+&.options-media-php {
+    #wpbody-content {
+        .form-table {
+            input[type="checkbox"] {
+                @include squarecheckbox
+            }
+        }
+    }
+}

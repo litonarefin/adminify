@@ -1,0 +1,87 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.wp-adminify {
+    #wpbody-content {
+        .master-addons-supports-list a {
+            color: #393c3f;
+        }
+        .jltma-white-label-notice-content a.jltma-get-pro:hover,
+        .ugb_extras .inner_content p {
+            color: #fff;
+        }
+        .master_addons_feature_switchbox {
+            .switch-label {
+                top: 0;
+                position: absolute;
+                width: 100%;
+            }
+        }
+        .inner_content .master_addons_button, 
+        .inner_content .master_addons_button:hover, 
+        .inner_content .master_addons_button:active .inner_content .master_addons_button:visited, 
+        .inner_content .master_addons_button:focus {
+            line-height: 36px;
+        }
+        .jltma-review-notice-banner .jltma-admin-notice-middle .upgrade-btn {
+            color: $primarycolor;
+        }
+    }
+    .swal2-modal .styled {
+        min-height: 36px;
+    }
+    &.adminify-dark-mode {
+        #wpbody-content {
+            h1,h2,h3,h4,h5,h6,
+            .master_addons .master_addons_navbar.wp-tab-bar li a, 
+            .master_addons .master_addons_navbar.wp-tab-bar a.nav-upgrade-pro,
+            .master-addons-supports-list .addons-supports-list-content a,
+            .master_addons_features .master-addons-el-title-content,
+            .master_addons_feature button, 
+            .master_addons_feature a.jltma-get-pro,
+            #changelogs li,
+            .jltma-system-info .api-forms th,
+            .jltma-system-info .api-forms td,
+            .jltma-notice,
+            .jltma-notice h1, 
+            .jltma-notice h2,
+            .jltma-notice h3,
+            .jltma-notice h4,
+            .jltma-notice h5,
+            .jltma-notice h6 {
+                color: #cfcfcf;
+            }
+            .master_addons .master_addons_navbar.wp-tab-bar li a,
+            .master_addons_contents,
+            a.form-control.jltma-wl-plugin-logo {
+                background-color: #1d1d1d;
+            }
+            .master_addons_contents .wp-tab-panel {
+                background-color: transparent;
+            }
+            .master-addons-supports-list .addons-supports-list-content,
+            .master-addons-star-review,
+            .master-addons-support-faq,
+            .master-addons-banner,
+            .master-addons-right-column-widget,
+            .master-addons-faq-content,
+            .master-addons-dashboard-checkbox-content,
+            .api-settings-element .api-forms,
+            .jltma-system-info .api-forms th,
+            .jltma-system-info .api-forms td,
+            a.form-control.jltma-wl-plugin-logo {
+                border-color: #2b2b2b;
+            }
+            .master-addons-dashboard-checkbox-content,
+            .api-settings-element .api-forms,
+            .wp-core-ui .button, 
+            .wp-core-ui .button-secondary {
+                background-color: #111;;
+            }
+            .notice {
+                .button {
+                    color: $dark-primary;
+                }
+            }
+        }
+    }
+}

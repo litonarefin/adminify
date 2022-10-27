@@ -1,0 +1,26 @@
+.wp-adminify {
+    &.adminify-dark-mode {
+        #wpbody-content {
+            .ab-wrap {
+                h3,h6,
+                .ab-column>ul>li label span {
+                    color: #cfcfcf;
+                }
+                .ab-column>ul>li {
+                    background-color: #1d1d1d;
+                }
+                .ab-column.ab-arrow>ul>li::after {
+                    border-color: #1d1d1d transparent;
+                }
+                .ab-column.ab-arrow>ul>li::before {
+                    border-color: #2b2b2b transparent;
+                }
+                .ab-column.ab-join>ul>li::before,
+                .ab-column.ab-diff>ul>li::before,
+                .ab-column--submit-service p {
+                    border-color: #2b2b2b;
+                }
+            }
+        }
+    }
+}

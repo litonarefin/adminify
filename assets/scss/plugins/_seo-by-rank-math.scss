@@ -1,0 +1,222 @@
+.wp-adminify
+    #adminmenu
+    .wp_adminify_admin-menu
+    #toplevel_page_rank-math
+    > a.menu-top
+    .wp-adminify-icon-button {
+    filter: invert(32%) sepia(7%) saturate(1545%) hue-rotate(207deg)
+        brightness(70%) contrast(98%);
+}
+.wp-adminify.adminify-rounded-v-menu
+    #adminmenu
+    .wp_adminify_admin-menu
+    #toplevel_page_rank-math:hover
+    > a.menu-top
+    .wp-adminify-icon-button,
+.wp-adminify.adminify-rounded-v-menu
+    #adminmenu
+    .wp_adminify_admin-menu
+    #toplevel_page_rank-math.wp-adminify-active
+    > a.menu-top
+    .wp-adminify-icon-button {
+    background-blend-mode: exclusion;
+    filter: invert(16%) sepia(73%) brightness(1) contrast(1);
+}
+.wp-adminify
+    #adminmenu
+    .wp_adminify_admin-menu
+    li#toplevel_page_rank-math
+    .awaiting-mod,
+.wp-adminify
+    #adminmenu
+    .wp_adminify_admin-menu
+    li#toplevel_page_rank-math
+    .update-plugins {
+    margin-top: -5px !important;
+    right: 15px;
+}
+.rank-math-box .cmb2-toggle .rank-math-tooltip {
+    min-height: 24px;
+}
+.wp-adminify {
+    div.interface-pinned-items
+        button.components-button[aria-label="Rank Math"]
+        .rank-math-toolbar-score {
+        padding: 0 5px;
+        svg {
+            float: left;
+            margin-top: 8px;
+        }
+    }
+    #wpbody-content {
+        .interface-interface-skeleton__body
+            .components-panel
+            .components-panel__body
+            button.rank-math-edit-snippet {
+            color: #fff;
+        }
+        .wp-list-table
+            td
+            .rank-math-column-display.rank-math-link-count
+            .dashicons {
+            font-size: 13px;
+        }
+        .wp-list-table
+            td
+            .rank-math-column-display.rank-math-link-count
+            .divider {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        [id^="cmb2-metabox-rank"] .cmb2-radio-list label {
+            line-height: 34px;
+        }
+    }
+    &.adminify-dark-mode {
+        &.rank-math-page {
+            #wpwrap,
+            #wpfooter {
+                background-color: transparent;
+                border-color: #2b2b2b;
+            }
+            #wpbody-content {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a,
+                .rank-math-tabs-navigation:not(.rank-math-custom) .separator,
+                .button,
+                .button-secondary,
+                .is-secondary,
+                .health-check-accordion button,
+                .privacy-settings-accordion button,
+                .rank-math-box-tabs a {
+                    color: #cfcfcf;
+                }
+                .rank-math-header,
+                .rank-math-tab:not(.rank-math-options-panel-content):hover,
+                .rank-math-tab:not(.rank-math-options-panel-content):focus,
+                .rank-math-tab:not(.rank-math-options-panel-content).is-active,
+                .module-listing .rank-math-box,
+                .rank-math-box .status,
+                .rank-math-tabs > .cmb-row.tab-header,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a.active,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a:focus,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a:hover,
+                .rank-math-wrap-settings .rank-math-tabs-content,
+                .form-footer:not(.rank-math-custom),
+                .rank-math-tabs-navigation:not(.rank-math-custom) .separator,
+                .rank-math-box,
+                .rank-math-box footer,
+                .button,
+                .button-secondary,
+                .is-secondary,
+                .rank-math-box-tabs,
+                .rank-math-import-export
+                    .rank-math-settings-backup-form
+                    .list-table,
+                .rank-math-box-tabs a {
+                    background-color: #1d1d1d;
+                    border-color: #2b2b2b;
+                }
+                .rank-math-header .rank-math-logo:after {
+                    background-color: #2b2b2b;
+                }
+                .rank-math-tab:not(.rank-math-options-panel-content),
+                .rank-math-tabs-navigation:not(.rank-math-custom),
+                [id^="cmb2-metabox-rank"]
+                    .cmb-row:not(.rank-math-advanced-option):not(.tab-header):not(.cmb-type-notice)
+                    ~ .cmb-row:not(.rank-math-advanced-option):not(.rank-math-notice),
+                [id^="cmb2-metabox-rank"]
+                    .cmb-row.rank-math-advanced-option
+                    ~ .rank-math-advanced-option,
+                .health-check-accordion,
+                .privacy-settings-accordion {
+                    border-color: #2b2b2b;
+                }
+                .rank-math-breadcrumbs .active {
+                    color: #fff;
+                }
+                .rank-math-tab:not(.rank-math-options-panel-content) {
+                    background-color: #111;
+                    color: #cfcfcf;
+                }
+                .rank-math-tabs-navigation:not(.rank-math-custom)
+                    a.active:after,
+                .rank-math-tabs-content .notice-warning.notice-alt,
+                .rank-math-box-tabs .active-tab {
+                    background-color: #111;
+                }
+                .dashboard-wrapper:before,
+                .rank-math-search-options .search-field input,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a,
+                .rank-math-tabs-content .regular-text,
+                .rank-math-tabs-content select,
+                .rank-math-tabs-content textarea,
+                [id^="cmb2-metabox-rank"] .cmb2-radio-list {
+                    background-color: #111;
+                    border-color: #2b2b2b;
+                }
+                #rank-math-pro-cta .rank-math-cta-table {
+                    background-color: transparent;
+                }
+                .rank-math-tabs-navigation:not(.rank-math-custom) a.active,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a:focus,
+                .rank-math-tabs-navigation:not(.rank-math-custom) a:hover,
+                .rank-math-box-tabs .active-tab {
+                    color: #4285f4;
+                }
+                .rank-math-box-tabs .active-tab:after {
+                    background-color: #4285f4;
+                }
+            }
+        }
+        #wpbody-content {
+            .interface-complementary-area-header,
+            #rank-math-metabox-wrapper {
+                background-color: #1d1d1d;
+                border-color: #2b2b2b;
+            }
+            .interface-complementary-area-header svg path {
+                fill: #cfcfcf;
+            }
+            .rank-math-tabs > .components-tab-panel__tabs {
+                background-color: #2b2b2b;
+            }
+            .rank-math-tabs>.components-tab-panel__tabs button,
+            .serp-preview .group,
+            .serp-preview .serp-url,
+            .serp-preview .serp-description,
+            .components-notice__content,
+            .tagify,
+            .components-panel__body-toggle.components-button {
+                color: #cfcfcf;
+            }
+            .rank-math-tabs>.components-tab-panel__tabs button.is-active,
+            .rank-math-tabs>.components-tab-panel__tabs button:hover,
+            .serp-preview a,
+            .serp-preview .serp-title {
+                color: #4285f4;
+            }
+            .serp-preview,
+            .rank-math-checklist,
+            .tagify {
+                background-color: #111;
+            }
+            .rank-math-metabox-frame-title,
+            .components-panel__body,
+            .tagify {
+                border-color: #2b2b2b;
+            }
+            .rank-math-tabs .preview {
+                background-color: #1d1d1d;
+            }
+            .components-panel__body-toggle.components-button:hover {
+                color: #1e1e1e;
+            }
+        }
+    }
+}

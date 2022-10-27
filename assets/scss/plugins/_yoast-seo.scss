@@ -1,0 +1,147 @@
+.wp-adminify {
+    #wpbody-content {
+        .nav-tab, .nav-tab-active,
+        .yoast-button-upsell {
+            color: #000;
+        }
+        .fieldset-switch-toggle {
+            .switch-light.switch-yoast-seo, .switch-toggle.switch-yoast-seo {
+                display: flex;
+            }
+        }
+        .wpseo-admin-submit.wpseo-admin-submit-fixed {
+            left: 250px;
+        }
+        .yst-replacevar {
+            button {
+                line-height: 28px;
+                padding: 0;
+            }
+        }
+        button.yoast-image-select__preview.yoast-image-select__preview--no-preview {
+            height: 165px;
+        }
+        .wpseo_content_wrapper .paper.tab-block button.toggleable-container-trigger {
+            line-height: 1;
+        }
+        .wpseo_content_cell .ul-disc {
+            margin-left: 0;
+            padding: 15px 15px 10px 35px;
+        }
+    }
+    #wpadminbar .menupop .menupop>.ab-item .wp-admin-bar-arrow:before {
+        top: 6px;
+    }
+    #yoast-helpscout-beacon button.sc-dkPtyc.gnliEL {
+        height: 60px;
+    }
+    &.adminify-dark-mode {
+        #wpbody-content .nav-tab, 
+        #wpbody-content .nav-tab-active, 
+        #dashboard-widgets h3, 
+        #dashboard-widgets h4, 
+        #dashboard_quick_press .drafts h2,
+        h2, h3,
+        .yoast-measure,
+        .yoast_premium_upsell--argument,
+        .yoast-sidebar__section li,
+        .wpseo_content_wrapper .toggleable-container-trigger,
+        .wpseo_content_wrapper .paper.tab-block .paper-container,
+        .wpseo_content_wrapper #separator input.radio:checked+label,
+        .yst-replacevar__label,
+        #wpbody-content .yst-replacevar__button-insert,
+        .yoast-field-group__title,
+        .yoast-image-select .yoast-image-select-buttons button,
+        .yst-replacevar__editor,
+        .DraftEditor-editorContainer,
+        .select2-container--default .select2-selection--single .select2-selection__rendered,
+        .switch-light-visual-label,
+        .wpseo_content_cell .ul-disc li,
+        .yoast-seo-premium-extension,
+        .yoast-list--usp li,
+        #wpseo-workouts-container h2,
+        #wpseo-workouts-container h3,
+        #wpseo-workouts-container h4,
+        #wpseo-workouts-container .yoast-button,
+        #wpbody-content #mc_embed_signup_scroll {
+            color: #cfcfcf;
+        }
+        .nav-tab,
+        .yoast-container,
+        .yoast-notifications .yoast-container h3,
+        .yoast-notifications .yoast-container__configuration-wizard,
+        .wp-core-ui .button, .wp-core-ui .button-secondary,
+        .yoast-sidebar__section,
+        .yoast_premium_upsell,
+        #wpseo-submit-container-fixed,
+        .yoast-notification .button,
+        .wpseo_content_wrapper .paper.tab-block.search-appearance,
+        .wpseotab.save,
+        .wpseo_content_cell .ul-disc,
+        .yoast-seo-premium-extension,
+        .yoast-promo-extension {
+            background-color: #1d1d1d;
+        }
+        span.sc-kHOZQx.fZtdAk.progress__part,
+        .yoast-notification,
+        .wpseo_content_wrapper #separator input.radio:checked+label,
+        .yst-replacevar__editor,
+        #wpbody-content .yst-replacevar__button-insert,
+        #wpbody-content button.yoast-image-select__preview.yoast-image-select__preview--no-preview,
+        .yoast-image-select .yoast-image-select-buttons button,
+        #breadcrumbsinfo input.textinput,
+        .select2-container--default .select2-selection--single,
+        #wpbody-content #rss textarea.textinput,
+        #wpseo-workouts-container .yoast-button,
+        #wpbody-content .mc-field-group .email {
+            background-color: #111;
+        }
+        .nav-tab,
+        .nav-tab-active,
+        .yoast-container,
+        .nav-tab-wrapper,
+        #yoast-seo-dashboard-widget .wordpress-feed,
+        #yoast-seo-dashboard-widget .wordpress-feed .wordpress-feed__footer,
+        .yoast-notifications .yoast-container h3,
+        .yoast-notification,
+        .yoast-sidebar__section,
+        .yoast_premium_upsell,
+        .wpseo_content_wrapper #separator input.radio+label,
+        .yst-replacevar__editor,
+        #wpbody-content .yst-replacevar__button-insert,
+        #wpbody-content .yst-replacevar__button-insert,
+        .yoast-image-select .yoast-image-select-buttons button,
+        .yoast-settings-section.yoast-settings-section-disabled,
+        .select2-container--default .select2-selection--single,
+        .yoast-promoblock {
+            border-color: #2b2b2b;
+        }
+        #wpbody-content {
+            .yoast-button-upsell,
+            .sc-BHxdU.bJNOuF,
+            p.sc-bjeSvz.jIKvhc {
+                color: #141414;
+            }
+        }
+        #wpbody-content .yoast-field-group select {
+            background-color: #cfcfcf;
+            color: #111;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            border-color: #2b2b2b transparent transparent transparent;
+        }
+        #wpbody-content {
+            table.yoast_help, 
+            table.yoast_help td, 
+            table.yoast_help th {
+                background-color: #111;
+                border-color: #2b2b2b;
+                color: #cfcfcf;
+            }
+        }
+        .wpseotab.save,
+        .yoast-seo-premium-extension {
+            padding: 15px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+#wpcf7-contact-form-editor {
+    a {
+        color: $primarycolor;
+        &.thickbox {
+            border: 1px solid $primarycolor;
+            line-height: $lineheight20 + 6px;
+        }
+    }
+    #messages-panel {
+        input {
+            @include selectone;
+        }
+    }
+}

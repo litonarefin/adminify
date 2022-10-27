@@ -1,0 +1,18 @@
+&:not(.adminify-ui) {
+    #adminmenu {
+        li.menu-top .adminify-menu-icon:before{
+            font-size: 20px !important;
+            display: inline-block !important;
+        }
+        li.menu-top.adminify-menu-separator {
+            border-bottom: 1px solid rgba(240, 246, 252, 0.5);
+        }
+    }
+    #adminmenumain {
+        #adminmenuwrap {
+            top: 0 !important;
+            bottom: inherit;
+            position: relative !important;
+        }
+    }
+}

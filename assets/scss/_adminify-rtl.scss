@@ -1,0 +1,621 @@
+@import "variables", "mixins";
+
+.wp-adminify.adminify-rtl {
+    direction: rtl;
+    .is-pulled-left {
+        float: right !important;
+    }
+    .is-pulled-right {
+        float: left !important;
+    }
+    .mr-1 {
+        margin: 0 0 0 0.25rem !important;
+    }
+    .mr-2 {
+        margin: 0 0 0 0.5rem !important;
+    }
+    .wp-adminify--user--wrapper {
+        right: auto;
+        left: 0;
+        transform: translate3d(-390px, 0, 0);
+        &.active {
+            transform: translate3d(0, 0, 0);
+        }
+        .user-wrapper-top figure {
+            margin: 0 0 0 1.125rem;
+        }
+        .user-wrapper-content .panel-insider {
+            .user-panel-icon {
+                float: right;
+                margin: 4px 0 0 10px;
+            }
+            li span:not(.count, .slider) {
+                float: right;
+                margin: 6px 0 0 7px;
+            }
+            li span.count {
+                float: left;
+            }
+            .admnify-switcher {
+                transform: rotate(180deg) !important;
+            }
+        }
+        .user-wrapper-close {
+            right: auto;
+            left: 16px;
+        }
+    }
+    .adminify-top_bar nav.adminify-top-navbar .navbar-end {
+        margin-left: 0;
+    }
+    .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-burger {
+        margin: 0 1rem 0 0;
+        padding: 1rem 1rem 1rem 0;
+    }
+    #wpadminbar #wp-admin-bar-root-default li:last-child {
+        margin-right: 10px;
+    }
+    #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button {
+        float: right;
+        margin: 8px 0 0 12px
+    }
+    #adminmenu .wp_adminify_admin-menu li.wp-menu-open > a.wp-adminify-active:before {
+        right: -1.125rem;
+        left: inherit;
+    }
+    #adminmenu .wp_adminify_admin-menu li.wp-adminify-parent a:after {
+        right: inherit;
+        left: 15px;
+    }
+    #adminmenu .wp_adminify_admin-menu li.menu-top.wp-menu-open .wp-submenu {
+        right: 0;
+        padding: 0 1.4rem 7px 0;
+    }
+    #adminmenu .wp-submenu {
+        right: 15.3125rem;
+    }
+    #adminmenu .wp_adminify_admin-menu li .awaiting-mod, 
+    #adminmenu .wp_adminify_admin-menu li .update-plugins {
+        right: inherit;
+        left: 1.25rem;
+    }
+    #wp-adminify-top-adminbar .wp-adminify--preview.mr-4 {
+        margin-left: 1rem !important;
+        margin-right: auto;
+    }
+    .adminify-top_bar nav.adminify-top-navbar .navbar-end .wp-adminify--top--comment .topbar-icon {
+        float: right;
+        margin-left: 5px;
+        margin-right: auto;
+    }
+    .admnify-switcher .slider.round{
+        transform: rotate(180deg);
+    }
+    #adminmenumain #adminmenuwrap,
+    #wpbody-content #jltwp_adminify_memory_usage .halfspace span,
+    #wpbody-content .postbox-container .category-tabs li {
+        float: right;
+    }
+    #wpcontent,
+    #wpfooter {
+        margin-left: 0;
+        margin-right: 15.25rem;
+    }
+    #wpfooter .adminify-last-child .column {
+        margin-right: 1.25rem;
+        margin-left: 0;
+    }
+    &.folded {
+        #adminmenu .wp_adminify_admin-menu li.menu-top > a.menu-top .wp-adminify-icon-button {
+            float: left;
+            margin: 0;
+        }
+        #wpcontent,
+        #wpfooter {
+            margin-left: 0;
+            margin-right: 4.0625rem;
+        }
+    }
+    #wpfooter .adminify-first-child,
+    #wpbody-content .wp-list-table.widefat #the-comment-list span:not(.button span, [class*=-count-]), 
+    #wpbody-content .wp-list-table.widefat .row-actions span:not(.button span, [class*=-count-]), 
+    #wpbody-content .wp-list-table.widefat .table-view-list span:not(.button span, [class*=-count-]), 
+    #wpbody-content .wp-list-table.widefat .comments span:not(.button span, [class*=-count-]),
+    .wp-adminify-page-speed-wrapper .speed-wrapper-tabs > li {
+        float: right;
+    }
+    #wpfooter .adminify-last-child,
+    #wpbody-content .page-title-action,
+    .wp-adminify--folder-widget .folder--lists li a .wp-adminify--count {
+        float: left;
+    }
+    #wp-adminify--circle--menu {
+        right: inherit;
+        left: 1.5rem;
+    }
+    #wpbody-content #jltwp_adminify_dash_user_activities table th, 
+    #wpbody-content #jltwp_adminify_dash_activity_logs table th, 
+    #wpbody-content #jltwp_adminify_dash_recent_posts table th,
+    #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-post-time,
+    .media-modal .media-frame-content .attachment-info label, 
+    .media-modal .media-frame-content .attachment-info .details {
+        text-align: right;
+    }
+    #wpbody-content #jltwp_adminify_dash_recent_posts table .adminify-author-avatar,
+    #wpbody-content .adminify-options.wp-adminify-settings .adminify-header .adminify-header-inner h1 .wp-adminify-settings-logo {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .wp-adminify-user-time-tracker {
+        float: right;
+        text-align: right;
+    }
+    #wpbody-content #jltwp_adminify_dash_user_activities .wp-adminify-user-avatar,
+    #wpbody-content #jltwp_adminify_dash_activity_logs table .wp-adminify-user-avatar {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    #wpbody-content #jltwp_adminify_dash_user_activities .media-content,
+    #wpbody-content #jltwp_adminify_dash_user_activities table tr td, 
+    #wpbody-content #jltwp_adminify_dash_activity_logs table tr td, 
+    #wpbody-content #jltwp_adminify_dash_recent_posts table tr td,
+    .media-modal .media-frame-content .attachment-info .alignleft {
+        text-align: right;
+    }
+    #wpbody-content #jltwp_adminify_dash_user_activities .user-status, 
+    #wpbody-content #jltwp_adminify_dash_activity_logs .user-status,
+    .adminify-top-navbar .navbar-end .wp-adminify--user--account .user-status,
+    .wp-adminify--folder-widget .has--sub-menu .adminify--sub-menu {
+        right: auto !important;
+        left: 0;
+    }
+    .adminify-top-navbar .navbar-menu .wp-adminify-top-header--search--form .top-header--search--form .adminify-search-expand{
+        left: auto;
+        right: 0;
+    }
+    .adminify-top-navbar .navbar-menu .wp-adminify-top-header--search--form .top-header--search--form input{
+        padding: 10px 40px 10px 10px !important;
+    }
+    #wpbody-content .wp-adminify-server-info tr td, 
+    #wpbody-content .adminify-server-info tr td,
+    #wpbody-content #jltwp_adminify_dash_user_activities table tr td, 
+    #wpbody-content #jltwp_adminify_dash_activity_logs table tr td, 
+    #wpbody-content #jltwp_adminify_dash_recent_posts table tr td {
+        text-align: right;
+    }
+    #wpbody-content .wp-adminify-server-info .status-progressbar span, 
+    #wpbody-content .adminify-server-info .status-progressbar span {
+        right: 101px;
+        left: inherit;
+    }
+    #wpbody-content #dashboard_right_now ul li a:before {
+        margin: 2px 0 0 4px;
+    }
+    .fs-notice label.fs-plugin-title {
+        left: auto;
+    }
+    #wpbody-content .notice-dismiss, 
+    #wpbody-content .fs-close, 
+    #wpbody-content .e-notice__dismiss {
+        right: inherit;
+        left: 10px;
+    }
+    #wpbody-content .notice, 
+    #wpbody-content .fs-notice, 
+    #wpbody-content .components-notice {
+        border-width: 0 4px 0 0;
+    }
+    .wp-adminify--folder-widget {
+        right: 15rem;
+        left: inherit;
+    }
+    &.has-folder-options #wpbody-content {
+        padding-right: 18.875rem;
+        padding-left: 0;
+    }
+    &.has-folder-options.folded .wp-adminify--folder-widget {
+        right: 60px;
+        left: inherit;
+    }
+    .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists a {
+        margin-right: 2.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists a {
+        margin-right: 3.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 4.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 5.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 6.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 7.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 8.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 9.5rem;
+      }
+      .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists .folder--sub-lists a {
+        margin-right: 10.5rem;
+      }
+    .wp-adminify--folder-widget .folder--lists li:before, .wp-adminify--folder-widget .folder--lists li:after {
+        right: 0;
+        left: inherit;
+    }
+    .wp-adminify--folder-widget .folder--lists li a {
+        margin-right: 1.5rem;
+        margin-left: 0;
+    }
+    .wp-adminify--folder-widget .folder--lists li .folder--sub-lists li a {
+        margin-right: 2rem;
+        margin-left: 0;
+    }
+    .wp-adminify--folder-widget .folder--lists li a .wp-adminify--icon-control {
+        float: right;
+        margin: -1px 0 0 5px;
+    }
+    .wp-adminify--folder-widget .folder--lists .adminify--sub-menu li a {
+        margin-right: 0;
+    }
+    #wpbody-content #posts-filter .wp-list-table.widefat .inline-edit-row label input[type=checkbox],
+    #wpbody-content .postbox-container .tabs-panel label input[type=checkbox] {
+        float: right;
+        margin: 4px 0 0 5px;
+    }
+    input[type=checkbox]:checked::before, 
+    input[type=radio]:checked::before {
+        float: left;
+        margin-left: -3px;
+    }
+    .media-modal .media-frame-content .attachment-info p.media-types-required-info {
+        margin-right: 35%;
+    }
+    &.comment-php #wpbody-content #post-body-content .stuffbox .form-table td.first {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    #wpbody-content .adminify-options.wp-adminify-settings .adminify-content {
+        border-width: 0 1px 0 0;
+    }
+    .adminify-nav-normal+.adminify-content {
+        margin-right: 225px;
+        margin-left: 0;
+    }
+    #wpbody-content .adminify-pro-notice {
+        border-width: 0 2px 0 0;
+    }
+    #wpbody-content .adminify-options.wp-adminify-settings .adminify-nav-normal li {
+        a,
+        a.adminify-active {
+            &:before {
+                right: 0;
+                left: inherit;
+            }
+            &:after {
+                right: auto;
+            }
+        }
+        ul li a {
+            padding-right: 2.25rem;
+            padding-left: 0;    
+        }
+    }
+    #wpbody-content .adminify-section[data-section-id] .adminify-data-wrapper .adminify-cloneable-item .adminify-cloneable-title {
+        padding: 13px 1rem 13px 4.725rem;
+    }
+    .wp-adminify--menu--editor--settings .accordion .menu-editor-title:before {
+        right: inherit;
+        left: 1rem;
+    }
+    .tabs .icon:first-child {
+        margin-left: 0.5em;
+    }
+    #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content .admin-column-accordion .accordion-helper {
+        right: inherit;
+        left: 10px;
+    }
+    #wpadminify-admin-columns .tabs.is-centered + .tab-content .nav-tabs {
+        padding-right: 0;
+        padding-left: 1.875rem;
+    }
+    #wpadminify-admin-columns .tabs.is-centered + .tab-content .tab-content {
+        border-width: 0 1px 0 0;
+        padding-right: 1.875rem;
+        padding-left: 0;
+        .admin-column-accordion .accordion-title {
+            margin-right: 0 !important;
+            padding: 1rem 1rem 1rem 6rem !important;
+        }
+        .admin-column-accordion .accordion-opener {
+            right: inherit;
+            left: 0;
+        }
+    }
+    #wpbody-content table.wp-list-table.widefat.fixed.striped.table-view-list.wp-adminify_page_adminify-activity-logs {
+        direction: ltr;
+        text-align: right;
+    }
+    .fs-secure-notice {
+        margin: 20px 0 0 20px;
+    }
+    &.theme-install-php #wpbody-content .wp-filter .search-form {
+        margin: 10px 0 0 15px;
+    }
+    &.nav-menus-php .menu-edit #post-body .menu-settings legend {
+        margin: 3px -25% 0 0;
+    }
+    &.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .desc {
+        margin-right: 148px;
+        margin-left: 0;
+    }
+    &.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .desc p.authors {
+        right: 0;
+    }
+    &.plugin-install-php #wpbody-content .plugin-card .plugin-card-top .action-links .plugin-action-buttons .button {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    #wpbody-content .widefat.importers .importer-item .importer-action {
+        right: 1.125rem;
+        left: inherit;
+    }
+    
+}
+
+/* RTL Responsive styles */
+
+@media (max-width: 1300px) {
+   .wp-adminify.adminify-rtl.has-folder-options #wpbody-content {
+       padding-right: 17rem;
+   }
+   .wp-adminify.adminify-rtl .wp-adminify--folder-widget {
+       right: 14.75rem;
+       width: 310px;
+       .folder--actions a {
+           padding: 0 5px;
+       }
+   }
+}
+
+@media (max-width: 1280px) { 
+    .wp-adminify.adminify-rtl {
+       #adminmenu, 
+       #adminmenuback, 
+           #adminmenuwrap {
+           width: 12.5rem;
+       }
+       .wp-adminify--folder-widget {
+           right: 12rem;
+           width: 280px;
+           .folder--header {
+               span {
+                   font-size: 1rem;
+               }
+               a {
+                   padding: 5px 8px;
+               }
+           }
+           .folder--actions {
+               a {
+                   padding: 0 8px;
+               }
+               ul {
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   a {
+                       margin: 10px 5px 0;
+                   }
+               }
+           }
+           .folder--lists {
+               li {
+                   a {
+                       padding-right: 0;
+                   }
+               }
+           }
+       }
+       &.has-folder-options.folded #wpbody-content,
+       &.has-folder-options #wpbody-content {
+           padding-right: 15rem;
+       }       
+       #wpcontent, 
+       #wpfooter {
+           margin-right: 12.75rem;
+       }
+       &.horizontal-menu {
+            #wpcontent, 
+            #wpfooter {
+                margin-right: 0 !important;
+                padding-right: 0;
+            }
+       }
+       #adminmenu .wp-submenu {
+           right: 12.55rem;
+       }
+       #adminmenu .wp_adminify_admin-menu li.menu-top {
+           padding: 5px 15px 5px .875rem;
+       }
+       #adminmenu .wp_adminify_admin-menu li.wp-menu-open > a.wp-adminify-active:before {
+           right: -.875rem;
+       }
+       .adminify-field {
+           padding: 20px;
+       }
+       #wpbody-content .tablenav-pages .pagination-links .button, 
+       #wpbody-content .tablenav-pages .pagination-links input {
+           min-width: 32px;
+       }
+   }
+}
+
+@media (max-width: 1170px) { 
+   .wp-adminify.adminify-rtl .adminify-top_bar nav.adminify-top-navbar .navbar-brand {
+       width: 13.5rem;
+       .navbar-item img {
+           max-width: 130px;
+       }
+   }
+   .wp-adminify.adminify-rtl #adminmenu, .wp-adminify.adminify-rtl #adminmenuback, .wp-adminify.adminify-rtl #adminmenuwrap {
+       width: 11rem;
+   }
+   .wp-adminify.adminify-rtl #adminmenu .wp-submenu {
+       left: 11.05rem;
+   }
+   .wp-adminify.adminify-rtl .wp-adminify--folder-widget {
+       right: 10.5rem;
+       width: 280px;
+   }
+   .wp-adminify.adminify-rtl.wp-adminify #wpcontent, .wp-adminify #wpfooter {
+       margin-right: 11rem;
+   }
+   .wp-adminify.adminify-rtl.js.plugins-php .search-box .wp-filter-search,
+   .wp-adminify.adminify-rtl .wp-filter .search-form input[type=search] {
+       max-width: 200px;
+   }
+   .wp-adminify.adminify-rtl #wpbody-content .wp-list-table.widefat tr th {
+       padding: 15px 5px;
+   }
+   .wp-adminify-sidebar-generator .adminify-container {
+        max-width: 100%;
+    }
+    .wp-adminify-page-speed-wrapper.tabbable.p-4 {
+        padding: 0 !important;
+    }
+    .wp-adminify-page-speed-wrapper .tab-content {
+        padding: 1rem;
+    }
+    .wp-adminify-speed-analyze-history .history-table button.report-button {
+        margin: 0 0 10px;
+    }
+}
+
+@media (max-width: 1025px) and (max-width: 1170px) {
+    .wp-adminify.adminify-rtl {
+        .wp-adminify--folder-widget {
+            width: 250px;
+            .folder--lists {
+                li {
+                    a {
+                        margin-right: .625rem !important;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        .wp-adminify--folder-widget .folder--header, 
+        .wp-adminify--folder-widget .folder--actions, 
+        .wp-adminify--folder-widget .folder--search, 
+        .wp-adminify--folder-widget .folder--stats, 
+        .wp-adminify--folder-widget .folder--lists {
+            padding: 13px 10px;
+        }
+        .folder--header,
+        .folder--header a {
+            display: block;        
+        }
+        &.has-folder-options.folded #wpbody-content, 
+        &.has-folder-options #wpbody-content {
+            padding-right: 13rem;
+        }
+        #wpbody-content .wp-list-table.widefat td.title,  
+        #wpbody-content .wp-list-table.widefat td.column-title {
+            min-width: 170px;
+            max-width: 170px;
+        }
+        &.has-folder-options #wpbody-content {
+            .wp-list-table.widefat tbody td {
+                padding: 15px 3px;
+            }
+            .subsubsub li a {
+                padding: 7px 8px 8px;
+            }
+            #posts-filter .search-box {
+                input[type="search"] {
+                    max-width: 130px;
+                }
+                input[type="submit"] {
+                    padding: 0 5px;
+                }
+            }
+            .tablenav .actions {
+                padding: 0;
+            }
+            .quick-edit-row-post .inline-edit-col-right {
+                width: 37%;
+            }
+        }
+        #wpfooter {
+            font-size: 12px;
+        }
+        #menu-management-liquid {
+            min-width: inherit;
+            max-width: 100%;
+        }
+        #menu-name {
+            width: 200px;
+        }
+        .wp-adminify-two-columns > .adminify-field {
+            flex-basis: 100%;
+            width: 100%;
+        }
+        #wpbody-content .adminify-section[data-section-id] .adminify--switcher {
+            float: right;
+        }
+        #wpbody-content .adminify-section[data-section-id] .adminify-field-notice .adminify-notice.adminify-notice-warning p {
+            display: initial;
+        }
+        #wpbody-content .adminify-section[data-section-id] .adminify--button-group .adminify--button {
+            padding: 0 1rem;
+        }
+        .adminify-field .adminify-title {
+            width: 30%;
+        }
+        .adminify-field .adminify-fieldset {
+            width: calc(70% - 20px);
+        }
+        .adminify-fieldset .adminify--label {
+            text-align: right;
+        }
+        .button,
+        button {
+            padding: 0 6px;
+        }
+
+    }
+    .wp-adminify.adminify-rtl.js.plugins-php .search-box .wp-filter-search, 
+    .wp-adminify.adminify-rtl .wp-filter .search-form input[type=search] {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wp-adminify.adminify-rtl {
+        .adminify-field .adminify-title {
+            width: 20%;
+        }
+        .adminify-field .adminify-fieldset {
+            width: calc(80% - 20px);
+        }
+        #wpbody-content .adminify-section[data-section-id] .adminify--button-group .adminify--button {
+            padding: 0 14px;
+        }
+        .adminify-nav-normal {
+            width: 190px;
+        }
+        #wpbody-content .adminify-options.wp-adminify-settings .adminify-content {
+            margin-right: 200px;
+            margin-left: 0;
+        }
+        .wp-adminify--user--wrapper {
+            width: 300px;
+        }
+    }
+}
