@@ -448,7 +448,7 @@ body.wp-adminify--popup-show .wp-adminify--popup-area {
   width: 100%;
 }
 .wp-adminify--popup-container_inner .wp-adminify--popup-close {
-  color: rgb(195, 0, 82);
+  color: #c30052;
   font-size: 20px;
   top: 1rem;
   right: 1rem;
@@ -588,14 +588,14 @@ body.wp-adminify--popup-show .wp-adminify--popup-area {
   color: #0347FF !important;
 }
 .wp-adminify--popup-container_inner .popup--delete-folder .button.button-primary {
-  background-color: rgb(195, 0, 82) !important;
-  border-color: rgb(195, 0, 82) !important;
+  background-color: #c30052 !important;
+  border-color: #c30052 !important;
   margin: 0 5px;
 }
 .wp-adminify--popup-container_inner .popup--delete-folder .button.button-primary:hover {
   background-color: transparent !important;
-  border-color: rgb(195, 0, 82) !important;
-  color: rgb(195, 0, 82) !important;
+  border-color: #c30052 !important;
+  color: #c30052 !important;
 }
 .wp-adminify--popup-container_inner .popup--delete-folder h3 {
   color: #4E4B66;
@@ -646,14 +646,14 @@ body.wp-adminify--popup-show .wp-adminify--popup-area {
   color: #0347FF !important;
 }
 .wp-adminify--popup-container_inner .popup--move-to-folder .button.button-primary {
-  background-color: rgb(195, 0, 82) !important;
-  border-color: rgb(195, 0, 82) !important;
+  background-color: #c30052 !important;
+  border-color: #c30052 !important;
   margin: 0 5px;
 }
 .wp-adminify--popup-container_inner .popup--move-to-folder .button.button-primary:hover {
   background-color: transparent !important;
-  border-color: rgb(195, 0, 82) !important;
-  color: rgb(195, 0, 82) !important;
+  border-color: #c30052 !important;
+  color: #c30052 !important;
 }
 .wp-adminify--popup-container_inner .popup--move-to-folder h3 {
   color: #4E4B66;

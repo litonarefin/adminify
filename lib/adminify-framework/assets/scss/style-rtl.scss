@@ -1,0 +1,728 @@
+/**
+ *
+ * ---------------------------------------------------------
+ * ADMINIFY FRAMEWORK RTL CSS MAP
+ * ---------------------------------------------------------
+ *
+ * 01. Base
+ *     01. 01. Header
+ *     01. 02. Header Buttons
+ *     01. 03. Navigation
+ *     01. 04. Content
+ *     01. 05. Section
+ *     01. 06. Show All Settings
+ *     01. 07. Search Input
+ *     01. 08. Copyright
+ *     01. 09. Metabox
+ * 02. Fields
+ *     02. 01. Field: typography
+ *     02. 02. Field: checkbox, radio
+ *     02. 03. Field: switcher
+ *     02. 04. Field: upload
+ *     02. 05. Field: group
+ *     02. 06. Field: repeater
+ *     02. 07. Field: help
+ *     02. 08. Field: icon
+ *     02. 09. Field: gallery
+ *     02. 10. Field: sorter
+ *     02. 11. Field: tabbed
+ *     02. 12. Field: media
+ *     02. 13. Field: notice
+ *     02. 14. Field: border, spacing, dimensions
+ *     02. 15. Field: background
+ *     02. 16. Field: spinner
+ *     02. 17. Field: slider
+ *     02. 18. Field: button_set
+ *     02. 19. Field: link_color
+ *     02. 20. Field: color_group
+ *     02. 21. Field: palette
+ *     02. 22. Field: accordion
+ *     02. 23. Field: date
+ *     02. 24. Field: map
+ *     02. 25. Field: sortable
+ *     02. 26. Field: number
+ * 03. Taxonomy
+ * 04. Profile
+ * 05. Nav Menu
+ * 06. Modal
+ * 07. Customizer
+ * 08. Responsive
+ * 09. Others
+ *
+ * ---------------------------------------------------------
+ *
+ */
+
+/**
+ * 01. Base
+ */
+.adminify-options{
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/**
+ * 01. 01. Header
+ */
+.adminify-header{
+  h1{
+    float: right;
+  }
+
+  fieldset{
+    float: left;
+  }
+}
+
+/**
+ * 01. 02. Header Buttons
+ */
+.adminify-buttons{
+  float: left;
+  direction: ltr;
+}
+
+.adminify-header-left{
+  float: right;
+}
+
+.adminify-header-right{
+  float: left;
+}
+
+/**
+ * 01. 03. Navigation
+ */
+.adminify-nav{
+  float: right;
+
+  ul{
+    clear: right;
+
+    li{
+      .adminify-active:after{
+        right: auto;
+        left: 0;
+        border-left-color: #fff;
+        border-right-color: transparent;
+      }
+
+      .adminify-arrow:after{
+        content: "\f053";
+        right: auto;
+        left: 10px;
+      }
+
+      &.adminify-tab-expanded .adminify-arrow:after{
+        transform: rotate(-90deg);
+      }
+    }
+
+    ul{
+      li{
+        a{
+          padding-right: 25px;
+          padding-left: 15px;
+        }
+      }
+
+      &:before{
+        left: auto;
+        right: 15px;
+      }
+    }
+  }
+
+  .adminify-tab-icon{
+    margin-left: 5px;
+    margin-right: 0;
+  }
+}
+
+.adminify-nav-background{
+  left: auto;
+  right: 0;
+}
+
+/**
+ * 01. 04. Content
+ */
+.adminify-content{
+  margin-left: 0;
+  margin-right: 225px;
+}
+
+/**
+ * 01. 05. Section
+ */
+.adminify-sections{
+  float: right;
+}
+
+/**
+ * 01. 06. Show all options
+ */
+.adminify-show-all .adminify-content{
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.adminify-expand-all{
+  float: right;
+  right: auto;
+  left: 40px;
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+/**
+ * 01. 07. Search Input
+ */
+.adminify-search{
+  float: right;
+
+  input{
+    margin: 0 0 0 5px;
+  }
+}
+
+/**
+ * 01. 08. Copyright
+ */
+.adminify-copyright{
+  float: right;
+}
+
+/**
+ * 01. 09. Metabox
+ */
+.adminify-metabox{
+  margin: -6px -12px -12px -12px;
+
+  .adminify-section-title{
+    padding: 20px;
+  }
+}
+
+.adminify-section-title{
+
+  .adminify-section-icon{
+    margin-left: 5px;
+    margin-right: 0;
+  }
+}
+
+/**
+ * 02. Fields
+ */
+.adminify-field{
+
+  .adminify-title{
+    float: right;
+  }
+
+  .adminify-fieldset{
+    float: left;
+  }
+}
+
+.adminify-pseudo-field{
+  padding: 0 0 0 5px !important;
+}
+
+/**
+ * 02. 01. Field: typography
+ */
+.adminify-field-typography{
+
+  select{
+    margin: 0;
+    width: 100%;
+  }
+
+  .adminify--blocks-inputs{
+    .adminify--blocks{
+      flex-direction: row-reverse;
+    }
+  }
+
+  .adminify--unit{
+    left: 4px;
+    right: auto;
+  }
+}
+
+/**
+ * 02. 02. Field: checkbox, radio
+ */
+.adminify-field-checkbox,
+.adminify-field-radio{
+
+  ul ul li{
+    margin-left: 0;
+    margin-right: 8px;
+
+    &:first-child{
+      margin-right: 0;
+    }
+  }
+
+  .adminify--inline-list li{
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .adminify--text{
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
+
+/**
+ * 02. 03. Field: switcher
+ */
+.adminify-field-switcher{
+
+  .adminify--switcher{
+    float: right;
+  }
+
+  .adminify--label{
+    float: right;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
+
+/**
+ * 02. 04. Field: upload
+ */
+.adminify-field-upload{
+
+  .adminify--remove,
+  .adminify--button{
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
+
+/**
+ * 02. 05. Field: group
+ */
+.adminify-field-group{
+
+  .adminify-cloneable-title{
+    padding: 15px 10px 15px 65px;
+  }
+
+  .adminify-cloneable-helper{
+    right: auto;
+    left: 10px;
+  }
+}
+
+/**
+ * 02. 06. Field: repeater
+ */
+.adminify-field-repeater{
+
+  .adminify-repeater-helper{
+    border-left: 0;
+    border-right: 1px solid #eee;
+  }
+}
+
+/**
+ * 02. 07. Field: help
+ */
+.adminify-help{
+  right: auto;
+  left: 5px;
+}
+
+/**
+ * 02. 08. Field: icon
+ */
+.adminify-field-icon{
+
+  .button{
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+  .adminify-icon-preview i{
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+
+/**
+ * 02. 09. Field: gallery
+ */
+.adminify-field-gallery{
+
+  ul li{
+    margin-right: 0;
+    margin-left: 5px;
+  }
+
+  .button{
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+
+/**
+ * 02. 11. Field: tabbed
+ */
+.adminify-field-tabbed{
+
+  .adminify-tabbed-nav{
+
+    .adminify--icon{
+      padding-right: 0;
+      padding-left: 5px;
+    }
+
+    a{
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+}
+
+/**
+ * 02. 12. Field: media
+ */
+.adminify-field-media{
+
+  .button{
+    margin-left: 0;
+    margin-right: 7px;
+  }
+
+  .hidden + .button{
+    margin-right: 0;
+  }
+}
+
+/**
+ * 02. 13. Field: notice
+ */
+.adminify-notice{
+  border-left: none;
+  border-right-style: solid;
+  border-right-width: 4px;
+}
+
+/**
+ * 02. 14. Field: border, spacing, dimensions
+ */
+.adminify-field-dimensions,
+.adminify-field-spacing,
+.adminify-field-border{
+
+  .adminify--input,
+  .adminify-fieldset{
+    direction: ltr;
+  }
+
+  .adminify--inputs,
+  .adminify--color{
+    float: right;
+  }
+
+  .adminify--color{
+    margin-right: 4px;
+    direction: rtl;
+  }
+}
+
+/**
+ * 02. 15. Field: background
+ */
+.adminify-field-background{
+
+  .adminify--block{
+    float: right;
+  }
+
+  .adminify--select,
+  .adminify--media{
+    padding-right: 0;
+  }
+
+  .adminify--title{
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+
+/**
+ * 02. 16. Field: spinner
+ */
+.adminify-field-spinner{
+
+  .adminify--spin{
+    float: right;
+    direction: ltr;
+  }
+}
+
+/**
+ * 02. 17. Field: slider
+ */
+.adminify-field-slider{
+
+  .adminify-slider-ui{
+    direction: ltr;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .adminify--input{
+    direction: ltr;
+  }
+}
+
+/**
+ * 02. 18. Field: button_set
+ */
+.adminify-field-button_set{
+
+  .adminify--button-group{
+    float: right;
+  }
+}
+
+/**
+ * 02. 19. Field: link_color
+ */
+.adminify-field-link_color{
+
+  .adminify--left{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+/**
+ * 02. 20. Field: color_group
+ */
+.adminify-field-color_group{
+
+  .adminify--left{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+/**
+ * 02. 21. Field: palette
+ */
+.adminify-field-palette{
+
+  .adminify--palette{
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+/**
+ * 02. 22. Field: accordion
+ */
+.adminify-field-accordion{
+
+  .adminify--icon{
+    margin-right: 0;
+    margin-left: 2px;
+  }
+}
+
+/**
+ * 02. 23. Field: date
+ */
+.adminify-field-date{
+
+  .adminify--to {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+}
+
+/**
+ * 02. 24. Field: map
+ */
+.adminify-field-map{
+
+  .adminify--map-input:last-child {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+/**
+ * 02. 25. Field: sortable
+ */
+.adminify-field-sortable{
+
+  .adminify-sortable-helper{
+    border-left: none;
+    border-right: 1px solid #eee;
+  }
+}
+
+/**
+ * 02. 26. Field: number
+ */
+.adminify-field-number{
+
+  .adminify--wrap{
+    float: right;
+  }
+
+  .adminify--unit{
+    left: 4px;
+    right: auto;
+  }
+}
+
+/**
+ * 03. Taxonomy
+ */
+.adminify-taxonomy-add-fields{
+  margin-right: 0;
+  margin-left: 30px;
+
+  .adminify-field > .adminify-fieldset > .adminify-help{
+    left: -5px;
+    right: auto;
+  }
+}
+
+.adminify-taxonomy-edit-fields{
+  margin-right: 0;
+  margin-left: 35px;
+
+  .adminify-field > .adminify-fieldset > .adminify-help{
+    right: auto;
+    left: -5px;
+  }
+}
+
+/**
+ * 04. Profile
+ */
+.adminify-profile-options{
+
+  > h2 > .fa{
+    padding-right: 0;
+    padding-left: 7px;
+  }
+
+  > .adminify-field{
+
+    > .adminify-fieldset{
+
+      > .adminify-help{
+        left: -5px;
+        right: auto;
+      }
+    }
+  }
+}
+
+/**
+ * 05. Nav Menu
+ */
+.adminify-nav-menu-options{
+
+  > .adminify-fields{
+    margin-left: 0;
+    margin-right: -10px;
+  }
+}
+
+.adminify-nav-menu-title {
+  padding-left: 14px;
+  padding-right: 12px;
+}
+
+.adminify-nav-menu-icon{
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/**
+ * 06. Modal
+ */
+.adminify-modal-content{
+
+  .adminify-field{
+    padding: 15px 15px 15px 30px;
+  }
+}
+
+.adminify-modal-title{
+  padding: 0 16px 0 36px;
+}
+
+.adminify-modal-close{
+  right: auto;
+  left: 0;
+}
+
+/**
+ * 07. Customizer
+ */
+.control-section{
+
+  .adminify-field{
+
+    .adminify-fieldset{
+      margin-right: 0;
+    }
+  }
+}
+
+/**
+ * 08. Responsive
+ */
+@media only screen and (max-width:1200px){
+  .adminify-metabox .adminify-field .adminify-fieldset{
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width:782px){
+  .adminify .adminify-fieldset,
+  .adminify .adminify-content{
+    margin-right: 0;
+  }
+}
+
+/**
+ * 09. Others
+ */
+.adminify-field{
+
+  .adminify--transparent-slider{
+    margin-left: 0;
+    margin-right: 2px;
+
+    .ui-slider-handle{
+      margin: 0 -11px;
+    }
+  }
+
+  .adminify--transparent-offset{
+    background-position: center right;
+  }
+
+  .adminify--transparent-text{
+    right: auto;
+    left: 10px;
+  }
+}

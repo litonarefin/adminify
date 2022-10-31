@@ -1,0 +1,470 @@
+/**
+ * 01. Base
+ */
+.adminify{
+  position: relative;
+
+  label{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.adminify-ab-icon{
+  top: 2px;
+}
+
+#screen-meta-links + .adminify-options{
+  margin-top: 40px;
+}
+
+.adminify-options{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/**
+ * 01. 01. Header
+ */
+.adminify-header{
+  position: relative;
+}
+
+.adminify-header-inner{
+  padding: 25px;
+  transition: box-shadow .3s ease;
+
+  h1{
+    float: left;
+    font-size: 1.5em;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 0;
+
+    small{
+      font-size: 11px;
+      font-weight: 500;
+    }
+  }
+}
+
+/**
+ * 01. 02. Sticky
+ */
+.adminify-sticky{
+
+  .adminify-header-inner{
+    position: fixed;
+    z-index: 99;
+    top: 32px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+}
+
+/**
+ * 01. 03. Header Buttons
+ */
+.adminify-buttons{
+  float: right;
+
+  .button{
+    margin: 0 2px;
+    line-height: 26px;
+
+    &:focus{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .adminify-save{
+    min-width: 72px;
+  }
+}
+
+.adminify-header-left{
+  float: left;
+}
+
+.adminify-header-right{
+  float: right;
+}
+
+/**
+ * 01. 04. Navigation
+ */
+.adminify-nav{
+  display: block;
+  position: relative;
+  z-index: 10;
+  float: left;
+
+  ul{
+    clear: left;
+    margin: 0;
+    list-style-type: none;
+
+    li{
+      margin-bottom: 0;
+
+      a{
+        font-size: 13px;
+        position: relative;
+        display: block;
+        padding: 14px 12px;
+        text-decoration: none;
+        transition-property: color, background;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+
+        &:focus{
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .adminify-arrow:after{
+        content: "\f054";
+        display: inline-block;
+        font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+        font-weight: 900;
+        font-size: 9px;
+        line-height: 1;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -4px;
+      }
+
+      &.adminify-tab-expanded{
+
+        .adminify-arrow:after{
+          transform: rotate(90deg);
+        }
+
+        ul{
+          display: block;
+        }
+      }
+    }
+
+    ul{
+      display: none;
+      position: relative;
+
+      li{
+
+        a{
+          font-size: 12px;
+          padding: 12px 14px 12px 24px;
+        }
+      }
+    }
+  }
+
+  .adminify-tab-icon{
+    width: 20px;
+    margin-right: 5px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .adminify-label-error{
+    margin-left: 4px;
+    vertical-align: top;
+  }
+}
+
+.adminify-nav-normal{
+  width: 225px;
+
+  + .adminify-content{
+    margin-left: 225px;
+  }
+}
+
+.adminify-nav-inline{
+  width: 100%;
+
+  ul{
+
+    li{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+.adminify-nav-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 225px;
+}
+
+/**
+ * 01. 05. Wrapper
+ */
+.adminify-wrapper{
+  position: relative;
+}
+
+/**
+ * 01. 06. Content
+ */
+.adminify-content{
+  position: relative;
+  background-color: #fff;
+}
+
+/**
+ * 01. 07. Section
+ */
+.adminify-sections{
+  float: left;
+  width: 100%;
+}
+
+.adminify-section-title{
+  display: none;
+  padding: 20px 30px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+
+  h3{
+    margin: 0;
+    padding: 0 ;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .adminify-section-icon{
+    margin-right: 5px;
+  }
+}
+
+/**
+ * 01. 08. Footer
+ */
+.adminify-footer{
+  padding: 20px;
+  font-size: 11px;
+}
+
+/**
+ * 01. 09. Copyright
+ */
+.adminify-copyright{
+  float: left;
+  margin-top: 5px;
+}
+
+/**
+ * 01. 10. Show All Settings
+ */
+.adminify-search-all,
+.adminify-show-all{
+  .adminify-nav-background,
+  .adminify-nav{
+    display: none;
+  }
+
+  .adminify-content{
+    margin-left: 0;
+  }
+
+  .adminify-section-title,
+  .adminify-section{
+    display: block !important;
+  }
+}
+
+.adminify-search-all{
+  .adminify-section-title{
+    display: none !important;
+  }
+}
+
+//
+// Expand
+//
+.adminify-expand-all{
+  float: left;
+  padding: 0 8px;
+  margin-right: 4px;
+  z-index: 1;
+  font-size: 13px;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2px;
+  transition: all .2s;
+
+  span{
+    font-size: 11px;
+    vertical-align: middle;
+  }
+}
+
+/**
+ * 01. 11. Search Input
+ */
+.adminify-search{
+  float: left;
+
+  input{
+    margin: 0 2px 0 0;
+    border: none;
+    font-size: 12px;
+    line-height: 30px;
+    min-height: 30px;
+    text-align: inherit;
+    padding: 0 10px;
+    border-radius: 2px;
+    box-shadow: none;
+
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
+
+.adminify-saving{
+
+  .adminify-buttons,
+  .adminify-content{
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+/**
+ * 01. 12. Metabox
+ */
+.adminify-metabox{
+  margin: -6px -12px -12px -12px;
+
+  .adminify-field{
+    padding: 20px;
+  }
+
+  .adminify-section-title{
+    padding: 20px;
+  }
+}
+
+.block-editor-page{
+
+  .adminify-metabox{
+    margin: -6px -14px -14px -14px;
+  }
+}
+
+.block-editor-editor-skeleton__content{
+
+  .adminify-metabox{
+    border-left: 1px solid #e2e4e7;
+    border-right: 1px solid #e2e4e7;
+  }
+}
+
+.adminify-sections-reset{
+  float: left;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #eee;
+
+  .adminify-button-cancel,
+  input{
+    display: none;
+  }
+
+  label{
+    padding: 10px;
+  }
+
+  span{
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+
+  input:checked ~ .adminify-button-reset{
+    display: none;
+  }
+
+  input:checked ~ .adminify-button-cancel{
+    display: inline-block;
+  }
+
+}
+
+#side-sortables{
+
+  .adminify-section-title{
+    padding: 12px;
+  }
+
+  .adminify-field{
+    padding: 10px 15px;
+
+    .adminify-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
+    .adminify-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .adminify-field-text input{
+    width: 100%;
+  }
+
+  .adminify-notice{
+    padding: 10px 15px;
+  }
+}
+
+/**
+ * 01. 13. Comment Metabox
+ */
+.adminify-comment-metabox{
+  margin: -6px -12px -12px -12px;
+
+  .adminify-field{
+    padding: 20px;
+  }
+
+  .adminify-section-title{
+    padding: 20px;
+  }
+}
+
+
+/**
+ * 01. 14. Help Tooltip
+ */
+.adminify-tooltip{
+  position: absolute;
+  z-index: 5000001;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 12px;
+  max-width: 200px;
+  color: #fff;
+  background-color: #000;
+  background-color: rgba(black, 0.85);
+  border-radius: 4px;
+}

@@ -3,102 +3,97 @@
 namespace WPAdminify\Inc\Modules\ActivityLogs\Inc;
 
 // no direct access allowed
-if (!defined('ABSPATH'))  exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-class DB_Table
-{
-    public function __construct()
-    {
-        // add_action('plugins_loaded', [$this, 'init']);
-        $this->init();
-    }
+class DB_Table {
 
-    // Activation/Deactivation Hook
-    public function init()
-    {
-        add_action('wp_initialize_site', ['WPAdminify\Inc\Modules\ActivityLogs\Inc\DB_Table', 'adminify_new_mu_site_installer'], 30);
-        add_filter('wpmu_drop_tables', ['WPAdminify\Inc\Modules\ActivityLogs\Inc\DB_Table', 'adminify_mu_drop_tables'], 30);
-    }
+	public function __construct() {
+		// add_action('plugins_loaded', [$this, 'init']);
+		$this->init();
+	}
 
-    public static function adminify_mu_drop_tables( $tables )
-    {
-        global $wpdb;
+	// Activation/Deactivation Hook
+	public function init() {
+		add_action( 'wp_initialize_site', [ 'WPAdminify\Inc\Modules\ActivityLogs\Inc\DB_Table', 'adminify_new_mu_site_installer' ], 30 );
+		add_filter( 'wpmu_drop_tables', [ 'WPAdminify\Inc\Modules\ActivityLogs\Inc\DB_Table', 'adminify_mu_drop_tables' ], 30 );
+	}
 
-        $tables['adminify_activity_logs'] = $wpdb->prefix . 'adminify_activity_logs';
-        $tables['adminify_page_speed'] = $wpdb->prefix . 'adminify_page_speed';
+	public static function adminify_mu_drop_tables( $tables ) {
+		global $wpdb;
 
-        return $tables;
-    }
+		$tables['adminify_activity_logs'] = $wpdb->prefix . 'adminify_activity_logs';
+		$tables['adminify_page_speed']    = $wpdb->prefix . 'adminify_page_speed';
 
-    public static function adminify_new_mu_site_installer( $site )
-    {
-        global $wpdb;
+		return $tables;
+	}
 
-        if ( is_plugin_active_for_network(WP_ADMINIFY_BASE) ) {
-            $old_blog_id = $wpdb->blogid;
-            switch_to_blog( $site->blog_id );
-            self::adminify_logs_create_table();
-            switch_to_blog($old_blog_id);
-        }
-    }
+	public static function adminify_new_mu_site_installer( $site ) {
+		global $wpdb;
 
-    public static function activation_hook($network_wide)
-    {
-        global $wpdb;
+		if ( is_plugin_active_for_network( WP_ADMINIFY_BASE ) ) {
+			$old_blog_id = $wpdb->blogid;
+			switch_to_blog( $site->blog_id );
+			self::adminify_logs_create_table();
+			switch_to_blog( $old_blog_id );
+		}
+	}
 
-        if (function_exists('is_multisite') && is_multisite() && $network_wide) {
-            $old_blog_id = $wpdb->blogid;
+	public static function activation_hook( $network_wide ) {
+		global $wpdb;
 
-            $blog_ids = $wpdb->get_col("SELECT blog_id FROM {$wpdb->blogs}");
-            foreach ($blog_ids as $blog_id) {
-                switch_to_blog($blog_id);
-                self::adminify_logs_create_table();
-            }
+		if ( function_exists( 'is_multisite' ) && is_multisite() && $network_wide ) {
+			$old_blog_id = $wpdb->blogid;
 
-            switch_to_blog($old_blog_id);
-        } else {
-            self::adminify_logs_create_table();
-        }
-    }
+			$blog_ids = $wpdb->get_col( "SELECT blog_id FROM {$wpdb->blogs}" );
+			foreach ( $blog_ids as $blog_id ) {
+				switch_to_blog( $blog_id );
+				self::adminify_logs_create_table();
+			}
 
-    public static function deactivation_hook($network_deactivating)
-    {
-        global $wpdb;
+			switch_to_blog( $old_blog_id );
+		} else {
+			self::adminify_logs_create_table();
+		}
+	}
 
-        if (function_exists('is_multisite') && is_multisite() && $network_deactivating) {
-            $old_blog_id = $wpdb->blogid;
+	public static function deactivation_hook( $network_deactivating ) {
+		global $wpdb;
 
-            $blog_ids = $wpdb->get_col("SELECT blog_id FROM {$wpdb->blogs};");
-            foreach ($blog_ids as $blog_id) {
-                switch_to_blog($blog_id);
-                self::delete_table();
-            }
+		if ( function_exists( 'is_multisite' ) && is_multisite() && $network_deactivating ) {
+			$old_blog_id = $wpdb->blogid;
 
-            switch_to_blog($old_blog_id);
-        } else {
-            self::delete_table();
-        }
-    }
+			$blog_ids = $wpdb->get_col( "SELECT blog_id FROM {$wpdb->blogs};" );
+			foreach ( $blog_ids as $blog_id ) {
+				switch_to_blog( $blog_id );
+				self::delete_table();
+			}
 
-    protected static function delete_table()
-    {
-        global $wpdb;
+			switch_to_blog( $old_blog_id );
+		} else {
+			self::delete_table();
+		}
+	}
 
-        $wpdb->query("DROP TABLE IF EXISTS `{$wpdb->prefix}adminify_activity_logs`;");
+	protected static function delete_table() {
+		global $wpdb;
 
-        $admin_role = get_role('administrator');
-        if ($admin_role && $admin_role->has_cap('view_all_adminify_activity_logs'))
-            $admin_role->remove_cap('view_all_adminify_activity_logs');
+		$wpdb->query( "DROP TABLE IF EXISTS `{$wpdb->prefix}adminify_activity_logs`;" );
 
-        delete_option('adminify_activity_logs_version');
-    }
+		$admin_role = get_role( 'administrator' );
+		if ( $admin_role && $admin_role->has_cap( 'view_all_adminify_activity_logs' ) ) {
+			$admin_role->remove_cap( 'view_all_adminify_activity_logs' );
+		}
+
+		delete_option( 'adminify_activity_logs_version' );
+	}
 
 
-    protected static function adminify_logs_create_table()
-    {
-        global $wpdb;
+	protected static function adminify_logs_create_table() {
+		global $wpdb;
 
-        $sql_query = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}adminify_activity_logs` (
+		$sql_query = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}adminify_activity_logs` (
             `log_id` int(11) NOT NULL AUTO_INCREMENT,
             `user_caps` varchar(70) NOT NULL DEFAULT 'guest',
             `action` varchar(255) NOT NULL,
@@ -112,13 +107,14 @@ class DB_Table
             PRIMARY KEY (`log_id`)
         ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;";
 
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-        dbDelta($sql_query);
+		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+		dbDelta( $sql_query );
 
-        $admin_role = get_role('administrator');
-        if ($admin_role instanceof \WP_Role && !$admin_role->has_cap('view_all_adminify_activity_logs'))
-            $admin_role->add_cap('view_all_adminify_activity_logs');
+		$admin_role = get_role( 'administrator' );
+		if ( $admin_role instanceof \WP_Role && ! $admin_role->has_cap( 'view_all_adminify_activity_logs' ) ) {
+			$admin_role->add_cap( 'view_all_adminify_activity_logs' );
+		}
 
-        update_option('adminify_activity_logs_version', WP_ADMINIFY_VER);
-    }
+		update_option( 'adminify_activity_logs_version', WP_ADMINIFY_VER );
+	}
 }

@@ -56,7 +56,7 @@ select:focus,
 textarea:focus {
   border-color: #0073aa;
   -webkit-box-shadow: 0 0 0 1px #0073aa;
-          box-shadow: 0 0 0 1px #0073aa;
+		  box-shadow: 0 0 0 1px #0073aa;
 }
 
 /* Core UI */
@@ -82,7 +82,7 @@ textarea:focus {
   border-color: #0073aa;
   color: #006291;
   -webkit-box-shadow: 0 0 0 1px #0073aa;
-          box-shadow: 0 0 0 1px #0073aa;
+		  box-shadow: 0 0 0 1px #0073aa;
 }
 
 .wp-core-ui .button:active {
@@ -96,7 +96,7 @@ textarea:focus {
   border-color: #006291;
   color: #006291;
   -webkit-box-shadow: inset 0 2px 5px -3px #006291;
-          box-shadow: inset 0 2px 5px -3px #006291;
+		  box-shadow: inset 0 2px 5px -3px #006291;
 }
 
 .wp-core-ui .button-primary {
@@ -114,7 +114,7 @@ textarea:focus {
 
 .wp-core-ui .button-primary:focus {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0073aa;
-          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0073aa;
+		  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0073aa;
 }
 
 .wp-core-ui .button-primary:active {
@@ -130,7 +130,7 @@ textarea:focus {
   color: #fff;
   border-color: #003f5e;
   -webkit-box-shadow: inset 0 2px 5px -3px black;
-          box-shadow: inset 0 2px 5px -3px black;
+		  box-shadow: inset 0 2px 5px -3px black;
 }
 
 .wp-core-ui .button-primary[disabled],
@@ -503,18 +503,18 @@ ul#adminmenu > li.current > a.current:after {
 
 .details.attachment {
   -webkit-box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #0073aa;
-          box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #0073aa;
+		  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 7px #0073aa;
 }
 
 .attachment.details .check {
   background-color: #0073aa;
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0073aa;
-          box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0073aa;
+		  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0073aa;
 }
 
 .media-selection .attachment.selection.details .thumbnail {
   -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0073aa;
-          box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0073aa;
+		  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0073aa;
 }
 
 /* Themes */

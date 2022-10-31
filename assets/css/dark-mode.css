@@ -1733,7 +1733,7 @@ body.wp-adminify {
   color: #cfcfcf;
 }
 .wp-adminify.adminify-dark-mode.themes-php #wpbody-content .theme-overlay .theme-header .close:before {
-  color: rgb(195, 0, 82);
+  color: #c30052;
 }
 .wp-adminify.adminify-dark-mode.widgets-php #wpbody-content .widgets-chooser li {
   background-color: transparent;

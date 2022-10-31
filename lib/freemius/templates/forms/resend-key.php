@@ -6,15 +6,15 @@
 	 * @since       1.2.0
 	 */
 
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 	/**
 	 * @var array $VARS
 	 * @var Freemius $fs
 	 */
-	$fs   = freemius( $VARS['id'] );
+	$fs = freemius( $VARS['id'] );
 
 	$slug = $fs->get_slug();
 
@@ -25,7 +25,7 @@
 
 	$is_freemium = $fs->is_freemium();
 
-	$send_button_text_html = esc_html($send_button_text);
+	$send_button_text_html = esc_html( $send_button_text );
 
 	$button_html = <<< HTML
 <div class="button-container">
@@ -33,29 +33,29 @@
 </div>
 HTML;
 
-	if ( $is_freemium ) {
-		$current_user          = Freemius::_get_current_wp_user();
-		$email                 = $current_user->user_email;
-		$esc_email             = esc_attr( $email );
-		$form_html      = <<< HTML
+if ( $is_freemium ) {
+	$current_user = Freemius::_get_current_wp_user();
+	$email        = $current_user->user_email;
+	$esc_email    = esc_attr( $email );
+	$form_html    = <<< HTML
 <div class="email-address-container">
     <label><input name="email-address" type="radio" checked="checked" tabindex="1" value="{$esc_email}"> {$email}</label>
     <label><input name="email-address" type="radio" tabindex="1" value="other">{$other_text}: <input class="email-address" type="text" placeholder="{$email_address_placeholder}"></label>
 </div>
 {$button_html}
 HTML;
-	} else {
-		$email = '';
-		$form_html      = <<< HTML
+} else {
+	$email     = '';
+	$form_html = <<< HTML
 {$button_html}
 <div class="email-address-container">
     <input class="email-address" type="text" placeholder="{$email_address_placeholder}" tabindex="1">
 </div>
 HTML;
-	}
+}
 
 	$message_above_input_field = fs_esc_html_inline( "Enter the email address you've used for the upgrade below and we will resend you the license key.", 'ask-for-upgrade-email-address', $slug );
-	$modal_content_html = <<< HTML
+	$modal_content_html        = <<< HTML
     <div class="notice notice-error inline license-resend-message"><p></p></div>
     <p>{$message_above_input_field}</p>
     <div class="input-container">
@@ -69,32 +69,32 @@ HTML;
 	(function ($) {
 		$(document).ready(function () {
 			var contentHtml      = <?php echo json_encode( $modal_content_html ); ?>,
-			    modalHtml        =
-				    '<div class="fs-modal fs-modal-license-key-resend <?php echo $is_freemium ? 'fs-freemium' : 'fs-premium' ?>">'
-				    + ' <div class="fs-modal-dialog">'
-				    + '     <div class="fs-modal-header">'
-				    + '         <h4><?php echo esc_js( $send_button_text ) ?></h4>'
-				    + '         <a href="#!" class="fs-close" tabindex="3" title="Close"><i class="dashicons dashicons-no" title="<?php echo esc_js( fs_text_x_inline( 'Dismiss', 'as close a window', 'dismiss', $slug ) ) ?>"></i></a>'
-				    + '     </div>'
-				    + '     <div class="fs-modal-body">'
-				    + '         <div class="fs-modal-panel active">' + contentHtml + '</div>'
-				    + '     </div>'
-				    + ' </div>'
-				    + '</div>',
-			    $modal           = $(modalHtml),
-			    $sendButton      = $modal.find('.button-send-license-key'),
-			    $emailInput      = $modal.find('input.email-address'),
-			    $feedbackMessage = $modal.find('.license-resend-message'),
-			    isFreemium       = <?php echo json_encode( $is_freemium ) ?>,
-			    userEmail        = <?php echo json_encode( $email ) ?>,
-			    moduleID         = '<?php echo $fs->get_id() ?>',
-			    isChild          = false;
+				modalHtml        =
+					'<div class="fs-modal fs-modal-license-key-resend <?php echo esc_js($is_freemium) ? 'fs-freemium' : 'fs-premium'; ?>">'
+					+ ' <div class="fs-modal-dialog">'
+					+ '     <div class="fs-modal-header">'
+					+ '         <h4><?php echo esc_js( $send_button_text ); ?></h4>'
+					+ '         <a href="#!" class="fs-close" tabindex="3" title="Close"><i class="dashicons dashicons-no" title="<?php echo esc_js( fs_text_x_inline( 'Dismiss', 'as close a window', 'dismiss', $slug ) ); ?>"></i></a>'
+					+ '     </div>'
+					+ '     <div class="fs-modal-body">'
+					+ '         <div class="fs-modal-panel active">' + contentHtml + '</div>'
+					+ '     </div>'
+					+ ' </div>'
+					+ '</div>',
+				$modal           = $(modalHtml),
+				$sendButton      = $modal.find('.button-send-license-key'),
+				$emailInput      = $modal.find('input.email-address'),
+				$feedbackMessage = $modal.find('.license-resend-message'),
+				isFreemium       = <?php echo json_encode( $is_freemium ); ?>,
+				userEmail        = <?php echo json_encode( $email ); ?>,
+				moduleID         = '<?php echo esc_js($fs->get_id()); ?>',
+				isChild          = false;
 
 
 			$modal.appendTo($('body'));
 
 			function registerEventHandlers() {
-				$('a.show-license-resend-modal-<?php echo $fs->get_unique_affix() ?>').click(function (evt) {
+				$('a.show-license-resend-modal-<?php echo esc_js($fs->get_unique_affix()); ?>').click(function (evt) {
 					evt.preventDefault();
 
 					showModal();
@@ -145,13 +145,13 @@ HTML;
 						url       : ajaxurl,
 						method    : 'POST',
 						data      : {
-							action     : '<?php echo $fs->get_ajax_action( 'resend_license_key' ) ?>',
-							security   : '<?php echo $fs->get_ajax_security( 'resend_license_key' ) ?>',
+							action     : '<?php echo esc_js($fs->get_ajax_action( 'resend_license_key' )); ?>',
+							security   : '<?php echo esc_js($fs->get_ajax_security( 'resend_license_key' )); ?>',
 							module_id  : moduleID,
 							email      : email
 						},
 						beforeSend: function () {
-							$sendButton.text('<?php fs_esc_js_echo_inline( 'Sending license key', 'sending-license-key', $slug ) ?>...');
+							$sendButton.text('<?php fs_esc_js_echo_inline( 'Sending license key', 'sending-license-key', $slug ); ?>...');
 						},
 						success   : function (result) {
 							var resultObj = $.parseJSON(result);
@@ -202,7 +202,7 @@ HTML;
 
 			function resetButton() {
 				updateButtonState();
-				$sendButton.text(<?php echo json_encode($send_button_text) ?>);
+				$sendButton.text(<?php echo json_encode( $send_button_text ); ?>);
 			}
 
 			function resetModal() {

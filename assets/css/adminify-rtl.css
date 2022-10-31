@@ -377,6 +377,7 @@ body.wp-adminify {
   .wp-adminify.adminify-rtl.has-folder-options #wpbody-content {
     padding-right: 17rem;
   }
+
   .wp-adminify.adminify-rtl .wp-adminify--folder-widget {
     right: 14.75rem;
     width: 310px;
@@ -460,35 +461,45 @@ body.wp-adminify {
   .wp-adminify.adminify-rtl .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-item img {
     max-width: 130px;
   }
+
   .wp-adminify.adminify-rtl #adminmenu, .wp-adminify.adminify-rtl #adminmenuback, .wp-adminify.adminify-rtl #adminmenuwrap {
     width: 11rem;
   }
+
   .wp-adminify.adminify-rtl #adminmenu .wp-submenu {
     left: 11.05rem;
   }
+
   .wp-adminify.adminify-rtl .wp-adminify--folder-widget {
     right: 10.5rem;
     width: 280px;
   }
+
   .wp-adminify.adminify-rtl.wp-adminify #wpcontent, .wp-adminify #wpfooter {
     margin-right: 11rem;
   }
+
   .wp-adminify.adminify-rtl.js.plugins-php .search-box .wp-filter-search,
 .wp-adminify.adminify-rtl .wp-filter .search-form input[type=search] {
     max-width: 200px;
   }
+
   .wp-adminify.adminify-rtl #wpbody-content .wp-list-table.widefat tr th {
     padding: 15px 5px;
   }
+
   .wp-adminify-sidebar-generator .adminify-container {
     max-width: 100%;
   }
+
   .wp-adminify-page-speed-wrapper.tabbable.p-4 {
     padding: 0 !important;
   }
+
   .wp-adminify-page-speed-wrapper .tab-content {
     padding: 1rem;
   }
+
   .wp-adminify-speed-analyze-history .history-table button.report-button {
     margin: 0 0 10px;
   }
@@ -577,6 +588,7 @@ body.wp-adminify {
 .wp-adminify.adminify-rtl button {
     padding: 0 6px;
   }
+
   .wp-adminify.adminify-rtl.js.plugins-php .search-box .wp-filter-search,
 .wp-adminify.adminify-rtl .wp-filter .search-form input[type=search] {
     max-width: 150px;

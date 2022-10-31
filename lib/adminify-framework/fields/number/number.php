@@ -1,60 +1,65 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
+
+use WPAdminify\Inc\Utils;
+
 /**
  *
  * Field: number
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! class_exists( 'ADMINIFY_Field_number' ) ) {
-  class ADMINIFY_Field_number extends ADMINIFY_Fields {
+	class ADMINIFY_Field_number extends ADMINIFY_Fields {
 
-    public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
-      parent::__construct( $field, $value, $unique, $where, $parent );
-    }
+		public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
+			parent::__construct( $field, $value, $unique, $where, $parent );
+		}
 
-    public function render() {
+		public function render() {
+			$args = wp_parse_args(
+				$this->field,
+				[
+					'min'  => 'any',
+					'max'  => 'any',
+					'step' => 'any',
+					'unit' => '',
+				]
+			);
 
-      $args = wp_parse_args( $this->field, array(
-        'unit' => '',
-      ) );
+			echo Utils::wp_kses_custom($this->field_before());
+			echo '<div class="adminify--wrap">';
+			echo '<input type="number" name="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '"' . $this->field_attributes() . ' min="' . esc_attr( $args['min'] ) . '" max="' . esc_attr( $args['max'] ) . '" step="' . esc_attr( $args['step'] ) . '"/>';
+			echo ( ! empty( $args['unit'] ) ) ? '<span class="adminify--unit">' . esc_attr( $args['unit'] ) . '</span>' : '';
+			echo '</div>';
+			echo Utils::wp_kses_custom($this->field_after());
+		}
 
-      echo $this->field_before();
-      echo '<div class="adminify--wrap">';
-      echo '<input type="number" name="'. esc_attr( $this->field_name() ) .'" value="'. esc_attr( $this->value ) .'"'. $this->field_attributes( array( 'class' => 'adminify-input-number' ) ) .' step="any" />';
-      echo ( ! empty( $args['unit'] ) ) ? '<span class="adminify--unit">'. esc_attr( $args['unit'] ) .'</span>' : '';
-      echo '</div>';
-      echo $this->field_after();
+		public function output() {
+			$output    = '';
+			$elements  = ( is_array( $this->field['output'] ) ) ? $this->field['output'] : array_filter( (array) $this->field['output'] );
+			$important = ( ! empty( $this->field['output_important'] ) ) ? '!important' : '';
+			$mode      = ( ! empty( $this->field['output_mode'] ) ) ? $this->field['output_mode'] : 'width';
+			$unit      = ( ! empty( $this->field['unit'] ) ) ? $this->field['unit'] : 'px';
 
-    }
+			if ( ! empty( $elements ) && isset( $this->value ) && $this->value !== '' ) {
+				foreach ( $elements as $key_property => $element ) {
+					if ( is_numeric( $key_property ) ) {
+						if ( $mode ) {
+							  $output = implode( ',', $elements ) . '{' . $mode . ':' . $this->value . $unit . $important . ';}';
+						}
+						break;
+					} else {
+						$output .= $element . '{' . $key_property . ':' . $this->value . $unit . $important . '}';
+					}
+				}
+			}
 
-    public function output() {
+			$this->parent->output_css .= $output;
 
-      $output    = '';
-      $elements  = ( is_array( $this->field['output'] ) ) ? $this->field['output'] : array_filter( (array) $this->field['output'] );
-      $important = ( ! empty( $this->field['output_important'] ) ) ? '!important' : '';
-      $mode      = ( ! empty( $this->field['output_mode'] ) ) ? $this->field['output_mode'] : 'width';
-      $unit      = ( ! empty( $this->field['unit'] ) ) ? $this->field['unit'] : 'px';
+			return $output;
+		}
 
-      if ( ! empty( $elements ) && isset( $this->value ) && $this->value !== '' ) {
-        foreach ( $elements as $key_property => $element ) {
-          if ( is_numeric( $key_property ) ) {
-            if ( $mode ) {
-              $output = implode( ',', $elements ) .'{'. $mode .':'. $this->value . $unit . $important .';}';
-            }
-            break;
-          } else {
-            $output .= $element .'{'. $key_property .':'. $this->value . $unit . $important .'}';
-          }
-        }
-      }
-
-      $this->parent->output_css .= $output;
-
-      return $output;
-
-    }
-
-  }
+	}
 }

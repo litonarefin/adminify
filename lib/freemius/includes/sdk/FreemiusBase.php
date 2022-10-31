@@ -15,32 +15,32 @@
 	 * under the License.
 	 */
 
-    if ( ! defined( 'ABSPATH' ) ) {
-        exit;
-    }
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-	if ( ! defined( 'FS_API__VERSION' ) ) {
-		define( 'FS_API__VERSION', '1' );
-	}
-	if ( ! defined( 'FS_SDK__PATH' ) ) {
-		define( 'FS_SDK__PATH', dirname( __FILE__ ) );
-	}
-	if ( ! defined( 'FS_SDK__EXCEPTIONS_PATH' ) ) {
-		define( 'FS_SDK__EXCEPTIONS_PATH', FS_SDK__PATH . '/Exceptions/' );
-	}
+if ( ! defined( 'FS_API__VERSION' ) ) {
+	define( 'FS_API__VERSION', '1' );
+}
+if ( ! defined( 'FS_SDK__PATH' ) ) {
+	define( 'FS_SDK__PATH', dirname( __FILE__ ) );
+}
+if ( ! defined( 'FS_SDK__EXCEPTIONS_PATH' ) ) {
+	define( 'FS_SDK__EXCEPTIONS_PATH', FS_SDK__PATH . '/Exceptions/' );
+}
 
-	if ( ! function_exists( 'json_decode' ) ) {
-		throw new Exception( 'Freemius needs the JSON PHP extension.' );
-	}
+if ( ! function_exists( 'json_decode' ) ) {
+	throw new Exception( 'Freemius needs the JSON PHP extension.' );
+}
 
 	// Include all exception files.
-	$exceptions = array(
+	$exceptions = [
 		'Exception',
 		'InvalidArgumentException',
 		'ArgumentNotExistException',
 		'EmptyArgumentException',
-		'OAuthException'
-	);
+		'OAuthException',
+	];
 
 	foreach ( $exceptions as $e ) {
 		require_once FS_SDK__EXCEPTIONS_PATH . $e . '.php';
@@ -52,7 +52,7 @@
 
 	abstract class Freemius_Api_Base {
 		const VERSION = '1.0.4';
-		const FORMAT = 'json';
+		const FORMAT  = 'json';
 
 		protected $_id;
 		protected $_public;
@@ -91,7 +91,7 @@
 
 			// Trim '.json' suffix.
 			$format_length = strlen( '.' . self::FORMAT );
-			$start         = $format_length * ( - 1 ); //negative
+			$start         = $format_length * ( - 1 ); // negative
 			if ( substr( strtolower( $pPath ), $start ) === ( '.' . self::FORMAT ) ) {
 				$pPath = substr( $pPath, 0, strlen( $pPath ) - $format_length );
 			}
@@ -117,11 +117,11 @@
 			}
 
 			return '/v' . FS_API__VERSION . $base .
-			       ( ! empty( $pPath ) ? '/' : '' ) . $pPath .
-			       ( ( false === strpos( $pPath, '.' ) ) ? '.' . self::FORMAT : '' ) . $query;
+				   ( ! empty( $pPath ) ? '/' : '' ) . $pPath .
+				   ( ( false === strpos( $pPath, '.' ) ) ? '.' . self::FORMAT : '' ) . $query;
 		}
 
-		abstract function MakeRequest( $pCanonizedPath, $pMethod = 'GET', $pParams = array() );
+		abstract function MakeRequest( $pCanonizedPath, $pMethod = 'GET', $pParams = [] );
 
 		/**
 		 * @param string $pPath
@@ -130,7 +130,7 @@
 		 *
 		 * @return object[]|object|null
 		 */
-		private function _Api( $pPath, $pMethod = 'GET', $pParams = array() ) {
+		private function _Api( $pPath, $pMethod = 'GET', $pParams = [] ) {
 			$pMethod = strtoupper( $pMethod );
 
 			try {
@@ -140,20 +140,20 @@
 				$result = (object) $e->getResult();
 			} catch ( Exception $e ) {
 				// Map to error object.
-				$result = (object) array(
-					'error' => (object) array(
+				$result = (object) [
+					'error' => (object) [
 						'type'    => 'Unknown',
 						'message' => $e->getMessage() . ' (' . $e->getFile() . ': ' . $e->getLine() . ')',
 						'code'    => 'unknown',
-						'http'    => 402
-					)
-				);
+						'http'    => 402,
+					],
+				];
 			}
 
 			return $result;
 		}
 
-		public function Api( $pPath, $pMethod = 'GET', $pParams = array() ) {
+		public function Api( $pPath, $pMethod = 'GET', $pParams = [] ) {
 			return $this->_Api( $this->CanonizePath( $pPath ), $pMethod, $pParams );
 		}
 
@@ -210,7 +210,7 @@
 			 * @since 1.2.2
 			 * @author Vova Feldman (@svovaf)
 			 */
-			$fn = 'base64' . '_encode';
+			$fn  = 'base64' . '_encode';
 			$str = strtr( $fn( $input ), '+/', '-_' );
 			$str = str_replace( '=', '', $str );
 

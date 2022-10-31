@@ -434,7 +434,7 @@ body.wp-adminify {
   z-index: 3;
 }
 .wp-adminify .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container li.token .dismiss {
-  color: rgb(195, 0, 82);
+  color: #c30052;
   padding: 0 0 0 3px;
 }
 .wp-adminify .wp-adminify--menu--editor--settings .accordion .panel .menu-editor-form .tokens-container li.token span {
@@ -492,8 +492,8 @@ body.wp-adminify {
   height: 30px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background: conic-gradient(rgba(0, 0, 0, 0) 10%, #0347ff);
-  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) -webkit-calc(100% - 8px), #000 0);
+  background: conic-gradient(#0000 10%, #0347ff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 -webkit-calc(100% - 8px), #000 0);
   -webkit-animation: wp_adminify_loader_keyframe 1s infinite linear;
           animation: wp_adminify_loader_keyframe 1s infinite linear;
   z-index: 1;

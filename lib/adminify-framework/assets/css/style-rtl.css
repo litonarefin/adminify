@@ -562,13 +562,13 @@
  */
 @media only screen and (max-width: 1200px) {
   .adminify-metabox .adminify-field .adminify-fieldset {
-    margin-left: 0;
+	margin-left: 0;
   }
 }
 @media only screen and (max-width: 782px) {
   .adminify .adminify-fieldset,
   .adminify .adminify-content {
-    margin-right: 0;
+	margin-right: 0;
   }
 }
 /**

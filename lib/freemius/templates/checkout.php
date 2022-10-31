@@ -33,9 +33,9 @@
 	 * @since 1.2.2
 	 */
 
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'json2' );
@@ -54,13 +54,13 @@
 
 	$timestamp = time();
 
-	$context_params = array(
+	$context_params = [
 		'plugin_id'      => $fs->get_id(),
 		'public_key'     => $fs->get_public_key(),
 		'plugin_version' => $fs->get_plugin_version(),
 		'mode'           => 'dashboard',
 		'trial'          => fs_request_get_bool( 'trial' ),
-	);
+	];
 
 	$plan_id = fs_request_get( 'plan_id' );
 	if ( FS_Plugin_Plan::is_valid_id( $plan_id ) ) {
@@ -80,11 +80,11 @@
 	if ( $plugin_id == $fs->get_id() ) {
 		$is_premium = $fs->is_premium();
 
-        $bundle_id = $fs->get_bundle_id();
-        if ( ! is_null( $bundle_id ) ) {
-            $context_params['bundle_id'] = $bundle_id;
-        }
-    } else {
+		$bundle_id = $fs->get_bundle_id();
+		if ( ! is_null( $bundle_id ) ) {
+			$context_params['bundle_id'] = $bundle_id;
+		}
+	} else {
 		// Identify the module code version of the checkout context module.
 		if ( $fs->is_addon_activated( $plugin_id ) ) {
 			$fs_addon   = Freemius::get_instance_by_id( $plugin_id );
@@ -101,40 +101,49 @@
 
 		if ( $plugin_id != $fs->get_id() ) {
 			if ( $fs->is_addon_activated( $plugin_id ) ) {
-                $fs_addon   = Freemius::get_instance_by_id( $plugin_id );
-                $addon_site = $fs_addon->get_site();
-                if ( is_object( $addon_site ) ) {
-                    $site = $addon_site;
-                }
+				$fs_addon   = Freemius::get_instance_by_id( $plugin_id );
+				$addon_site = $fs_addon->get_site();
+				if ( is_object( $addon_site ) ) {
+					$site = $addon_site;
+				}
 			}
 		}
 
-		$context_params = array_merge( $context_params, FS_Security::instance()->get_context_params(
-			$site,
-			$timestamp,
-			'checkout'
-		) );
+		$context_params = array_merge(
+			$context_params,
+			FS_Security::instance()->get_context_params(
+				$site,
+				$timestamp,
+				'checkout'
+			)
+		);
 	} else {
 		$current_user = Freemius::_get_current_wp_user();
 
 		// Add site and user info to the request, this information
 		// is NOT being stored unless the user complete the purchase
 		// and agrees to the TOS.
-		$context_params = array_merge( $context_params, array(
-			'user_firstname' => $current_user->user_firstname,
-			'user_lastname'  => $current_user->user_lastname,
-			'user_email'     => $current_user->user_email,
-			'home_url'       => home_url(),
-		) );
+		$context_params = array_merge(
+			$context_params,
+			[
+				'user_firstname' => $current_user->user_firstname,
+				'user_lastname'  => $current_user->user_lastname,
+				'user_email'     => $current_user->user_email,
+				'home_url'       => home_url(),
+			]
+		);
 
 		$fs_user = Freemius::_get_user_by_email( $current_user->user_email );
 
 		if ( is_object( $fs_user ) && $fs_user->is_verified() ) {
-			$context_params = array_merge( $context_params, FS_Security::instance()->get_context_params(
-				$fs_user,
-				$timestamp,
-				'checkout'
-			) );
+			$context_params = array_merge(
+				$context_params,
+				FS_Security::instance()->get_context_params(
+					$fs_user,
+					$timestamp,
+					'checkout'
+				)
+			);
 		}
 	}
 
@@ -161,26 +170,30 @@
 		( $fs->is_theme() && current_user_can( 'install_themes' ) )
 	);
 
-	$query_params = array_merge( $context_params, $_GET, array(
-		// Current plugin version.
-		'plugin_version' => $fs->get_plugin_version(),
-		'sdk_version'    => WP_FS__SDK_VERSION,
-		'is_premium'     => $is_premium ? 'true' : 'false',
-		'can_install'    => $can_user_install ? 'true' : 'false',
-		'return_url'     => $return_url,
-	) );
+	$query_params = array_merge(
+		$context_params,
+		$_GET,
+		[
+			// Current plugin version.
+			'plugin_version' => $fs->get_plugin_version(),
+			'sdk_version'    => WP_FS__SDK_VERSION,
+			'is_premium'     => $is_premium ? 'true' : 'false',
+			'can_install'    => $can_user_install ? 'true' : 'false',
+			'return_url'     => $return_url,
+		]
+	);
 
 	$xdebug_session = fs_request_get( 'XDEBUG_SESSION' );
 	if ( false !== $xdebug_session ) {
 		$query_params['XDEBUG_SESSION'] = $xdebug_session;
 	}
 
-	$view_params = array(
+	$view_params = [
 		'id'   => $VARS['id'],
 		'page' => strtolower( $fs->get_text_inline( 'Checkout', 'checkout' ) ) . ' ' . $fs->get_text_inline( 'PCI compliant', 'pci-compliant' ),
-	);
-	fs_require_once_template('secure-https-header.php', $view_params);
-?>
+	];
+	fs_require_once_template( 'secure-https-header.php', $view_params );
+	?>
 	<div id="fs_checkout" class="wrap fs-section fs-full-size-wrapper">
 		<div id="fs_frame"></div>
 		<script type="text/javascript">
@@ -236,10 +249,10 @@
 					var
 						// Keep track of the i-frame height.
 						frame_height = 800,
-						base_url     = '<?php echo FS_CHECKOUT__ADDRESS ?>',
+						base_url     = '<?php echo FS_CHECKOUT__ADDRESS; ?>',
 						// Pass the parent page URL into the i-frame in a meaningful way (this URL could be
 						// passed via query string or hard coded into the child page, it depends on your needs).
-						src          = base_url + '/?<?php echo http_build_query( $query_params ) ?>#' + encodeURIComponent(document.location.href),
+						src          = base_url + '/?<?php echo http_build_query( $query_params ); ?>#' + encodeURIComponent(document.location.href),
 						// Append the i-frame into the DOM.
 						frame        = $('<i' + 'frame " src="' + src + '" width="100%" height="' + frame_height + 'px" scrolling="no" frameborder="0" style="background: transparent; width: 1px; min-width: 100%;"><\/i' + 'frame>')
 							.appendTo('#fs_frame');
@@ -269,10 +282,20 @@
 							requestData.auto_install = true;
 
 						// Post data to activation URL.
-						$.form('<?php echo fs_nonce_url( $fs->_get_admin_page_url( 'account', array(
-							'fs_action' => $fs->get_unique_affix() . '_activate_new',
-							'plugin_id' => $plugin_id
-						) ), $fs->get_unique_affix() . '_activate_new' ) ?>', requestData).submit();
+						$.form('
+						<?php
+						echo fs_nonce_url(
+							$fs->_get_admin_page_url(
+								'account',
+								[
+									'fs_action' => $fs->get_unique_affix() . '_activate_new',
+									'plugin_id' => $plugin_id,
+								]
+							),
+							$fs->get_unique_affix() . '_activate_new'
+						)
+						?>
+						', requestData).submit();
 					});
 
 					FS.PostMessage.receiveOnce('pending_activation', function (data) {
@@ -283,11 +306,21 @@
 						if (true === data.auto_install)
 							requestData.auto_install = true;
 
-						$.form('<?php echo fs_nonce_url( $fs->_get_admin_page_url( 'account', array(
-							'fs_action'          => $fs->get_unique_affix() . '_activate_new',
-							'plugin_id'          => $plugin_id,
-							'pending_activation' => true,
-						) ), $fs->get_unique_affix() . '_activate_new' ) ?>', requestData).submit();
+						$.form('
+						<?php
+						echo fs_nonce_url(
+							$fs->_get_admin_page_url(
+								'account',
+								[
+									'fs_action'          => $fs->get_unique_affix() . '_activate_new',
+									'plugin_id'          => $plugin_id,
+									'pending_activation' => true,
+								]
+							),
+							$fs->get_unique_affix() . '_activate_new'
+						)
+						?>
+						', requestData).submit();
 					});
 
 					FS.PostMessage.receiveOnce('get_context', function () {
@@ -298,22 +331,37 @@
 						// and then click the purchase button, the context information
 						// of the user will be shared with Freemius in order to complete the
 						// purchase workflow and activate the license for the right user.
-						<?php $install_data = array_merge( $fs->get_opt_in_params(),
-						array(
-							'activation_url' => fs_nonce_url( $fs->_get_admin_page_url( '',
-								array(
-									'fs_action' => $fs->get_unique_affix() . '_activate_new',
-									'plugin_id' => $plugin_id,
+						<?php
+						$install_data = array_merge(
+							$fs->get_opt_in_params(),
+							[
+								'activation_url' => fs_nonce_url(
+									$fs->_get_admin_page_url(
+										'',
+										[
+											'fs_action' => $fs->get_unique_affix() . '_activate_new',
+											'plugin_id' => $plugin_id,
 
-								) ),
-								$fs->get_unique_affix() . '_activate_new' )
-						) ) ?>
-						FS.PostMessage.post('context', <?php echo json_encode( $install_data ) ?>, frame[0]);
+										]
+									),
+									$fs->get_unique_affix() . '_activate_new'
+								),
+							]
+						)
+						?>
+						FS.PostMessage.post('context', <?php echo json_encode( $install_data ); ?>, frame[0]);
 					});
 
-					FS.PostMessage.receiveOnce('purchaseCompleted', <?php echo $fs->apply_filters('checkout/purchaseCompleted', 'function (data) {
-						console.log("checkout", "purchaseCompleted");
-					}') ?>);
+					FS.PostMessage.receiveOnce('purchaseCompleted', 
+					<?php
+						echo esc_js($fs->apply_filters(
+							'checkout/purchaseCompleted',
+							'function (data) {
+							console.log("checkout", "purchaseCompleted");
+						}'
+					));
+					?>
+					);
 
 					FS.PostMessage.receiveOnce('get_dimensions', function (data) {
 						console.debug('receiveOnce', 'get_dimensions');

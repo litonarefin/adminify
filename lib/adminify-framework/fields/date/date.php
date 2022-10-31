@@ -1,64 +1,65 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
+
+use WPAdminify\Inc\Utils;
+
 /**
  *
  * Field: date
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! class_exists( 'ADMINIFY_Field_date' ) ) {
-  class ADMINIFY_Field_date extends ADMINIFY_Fields {
+	class ADMINIFY_Field_date extends ADMINIFY_Fields {
 
-    public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
-      parent::__construct( $field, $value, $unique, $where, $parent );
-    }
+		public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
+			parent::__construct( $field, $value, $unique, $where, $parent );
+		}
 
-    public function render() {
+		public function render() {
+			$default_settings = [
+				'dateFormat' => 'mm/dd/yy',
+			];
 
-      $default_settings = array(
-        'dateFormat' => 'mm/dd/yy',
-      );
+			$settings = ( ! empty( $this->field['settings'] ) ) ? $this->field['settings'] : [];
+			$settings = wp_parse_args( $settings, $default_settings );
 
-      $settings = ( ! empty( $this->field['settings'] ) ) ? $this->field['settings'] : array();
-      $settings = wp_parse_args( $settings, $default_settings );
+			echo Utils::wp_kses_custom($this->field_before());
 
-      echo $this->field_before();
+			if ( ! empty( $this->field['from_to'] ) ) {
+				$args = wp_parse_args(
+					$this->field,
+					[
+						'text_from' => esc_html__( 'From', 'adminify' ),
+						'text_to'   => esc_html__( 'To', 'adminify' ),
+					]
+				);
 
-      if ( ! empty( $this->field['from_to'] ) ) {
+				$value = wp_parse_args(
+					$this->value,
+					[
+						'from' => '',
+						'to'   => '',
+					]
+				);
 
-        $args = wp_parse_args( $this->field, array(
-          'text_from' => esc_html__( 'From', 'adminify' ),
-          'text_to'   => esc_html__( 'To', 'adminify' ),
-        ) );
+				echo '<label class="adminify--from">' . esc_attr( $args['text_from'] ) . ' <input type="text" name="' . esc_attr( $this->field_name( '[from]' ) ) . '" value="' . esc_attr( $value['from'] ) . '"' . $this->field_attributes() . '/></label>';
+				echo '<label class="adminify--to">' . esc_attr( $args['text_to'] ) . ' <input type="text" name="' . esc_attr( $this->field_name( '[to]' ) ) . '" value="' . esc_attr( $value['to'] ) . '"' . $this->field_attributes() . '/></label>';
+			} else {
+				echo '<input type="text" name="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $this->value ) . '"' . $this->field_attributes() . '/>';
+			}
 
-        $value = wp_parse_args( $this->value, array(
-          'from' => '',
-          'to'   => '',
-        ) );
+			echo '<div class="adminify-date-settings" data-settings="' . esc_attr( json_encode( $settings ) ) . '"></div>';
 
-        echo '<label class="adminify--from">'. esc_attr( $args['text_from'] ) .' <input type="text" name="'. esc_attr( $this->field_name( '[from]' ) ) .'" value="'. esc_attr( $value['from'] ) .'"'. $this->field_attributes() .'/></label>';
-        echo '<label class="adminify--to">'. esc_attr( $args['text_to'] ) .' <input type="text" name="'. esc_attr( $this->field_name( '[to]' ) ) .'" value="'. esc_attr( $value['to'] ) .'"'. $this->field_attributes() .'/></label>';
+			echo Utils::wp_kses_custom($this->field_after());
+		}
 
-      } else {
+		public function enqueue() {
+			if ( ! wp_script_is( 'jquery-ui-datepicker' ) ) {
+				wp_enqueue_script( 'jquery-ui-datepicker' );
+			}
+		}
 
-        echo '<input type="text" name="'. esc_attr( $this->field_name() ) .'" value="'. esc_attr( $this->value ) .'"'. $this->field_attributes() .'/>';
-
-      }
-
-      echo '<div class="adminify-date-settings" data-settings="'. esc_attr( json_encode( $settings ) ) .'"></div>';
-
-      echo $this->field_after();
-
-    }
-
-    public function enqueue() {
-
-      if ( ! wp_script_is( 'jquery-ui-datepicker' ) ) {
-        wp_enqueue_script( 'jquery-ui-datepicker' );
-      }
-
-    }
-
-  }
+	}
 }

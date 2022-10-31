@@ -1,0 +1,157 @@
+/**
+ * 12. Responsive
+ */
+@media only screen and (max-width:1200px){
+
+  .adminify-metabox{
+
+    .adminify-field{
+
+      .adminify-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .adminify-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:782px){
+
+  .adminify-header-inner{
+    text-align: center;
+
+    h1{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .adminify-form-result{
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .adminify-search,
+  .adminify-header-right,
+  .adminify-header-left{
+    width: 100%;
+  }
+
+  .adminify-search{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .adminify-footer{
+    text-align: center;
+  }
+
+  .adminify-buttons{
+    float: none;
+  }
+
+  .adminify-copyright{
+    float: none;
+    margin-top: 10px;
+  }
+
+  .adminify-nav,
+  .adminify-expand-all,
+  .adminify-reset-section,
+  .adminify-nav-background{
+    display: none !important;
+  }
+
+  .adminify-nav-normal + .adminify-content{
+    margin-left: 0;
+  }
+
+  .adminify-section-title,
+  .adminify-section{
+    display: block !important;
+  }
+
+  .adminify-field{
+
+    .adminify-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .adminify-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .adminify-field-color{
+
+    .button.wp-picker-clear{
+      padding: 0 8px;
+      line-height: 2.14285714;
+      min-height: 32px;
+    }
+  }
+
+  .adminify-profile-options,
+  .adminify-taxonomy-edit-fields{
+
+    > .adminify-field{
+
+      > .adminify-title{
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      > .adminify-fieldset{
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .adminify-nav-menu-options{
+
+    > .adminify-fields{
+      margin-left: -10px;
+      margin-right: -10px;
+
+      > .adminify-field{
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 782px) {
+
+  .adminify-modal{
+
+    .adminify-modal-inner{
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-height: 750px) {
+
+  .adminify-modal{
+
+    .adminify-modal-inner{
+      height: auto;
+    }
+
+    .adminify-modal-content{
+      height: calc(100vh - 200px);
+    }
+  }
+}

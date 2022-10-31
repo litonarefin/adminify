@@ -33,9 +33,9 @@
 	 * @since 1.2.2
 	 */
 
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'json2' );
@@ -50,41 +50,50 @@
 	$fs   = freemius( $VARS['id'] );
 	$slug = $fs->get_slug();
 
-	$context_params = array(
+	$context_params = [
 		'plugin_id'         => $fs->get_id(),
 		'plugin_public_key' => $fs->get_public_key(),
 		'plugin_version'    => $fs->get_plugin_version(),
-	);
+	];
 
 
 	// Get site context secure params.
 	if ( $fs->is_registered() ) {
-		$context_params = array_merge( $context_params, FS_Security::instance()->get_context_params(
-			$fs->get_site(),
-			time(),
-			'contact'
-		) );
+		$context_params = array_merge(
+			$context_params,
+			FS_Security::instance()->get_context_params(
+				$fs->get_site(),
+				time(),
+				'contact'
+			)
+		);
 	}
 
-	$query_params = array_merge( $_GET, array_merge( $context_params, array(
-		'plugin_version' => $fs->get_plugin_version(),
-		'wp_login_url'   => wp_login_url(),
-		'site_url'       => get_site_url(),
-//		'wp_admin_css' => get_bloginfo('wpurl') . "/wp-admin/load-styles.php?c=1&load=buttons,wp-admin,dashicons",
-	) ) );
+	$query_params = array_merge(
+		$_GET,
+		array_merge(
+			$context_params,
+			[
+				'plugin_version' => $fs->get_plugin_version(),
+				'wp_login_url'   => wp_login_url(),
+				'site_url'       => get_site_url(),
+			// 'wp_admin_css' => get_bloginfo('wpurl') . "/wp-admin/load-styles.php?c=1&load=buttons,wp-admin,dashicons",
+			]
+		)
+	);
 
-	$view_params = array(
+	$view_params = [
 		'id'   => $VARS['id'],
 		'page' => strtolower( $fs->get_text_inline( 'Contact', 'contact' ) ),
-	);
-	fs_require_once_template('secure-https-header.php', $view_params);
+	];
+	fs_require_once_template( 'secure-https-header.php', $view_params );
 
 	$has_tabs = $fs->_add_tabs_before_content();
 
 	if ( $has_tabs ) {
 		$query_params['tabs'] = 'true';
 	}
-?>
+	?>
 	<div id="fs_contact" class="wrap fs-section fs-full-size-wrapper">
 		<div id="fs_frame"></div>
 		<script type="text/javascript">
@@ -94,8 +103,8 @@
 					var
 					// Keep track of the i-frame height.
 					frame_height = 800,
-					base_url = '<?php echo WP_FS__ADDRESS ?>',
-					src = base_url + '/contact/?<?php echo http_build_query($query_params) ?>#' + encodeURIComponent(document.location.href),
+					base_url = '<?php echo WP_FS__ADDRESS; ?>',
+					src = base_url + '/contact/?<?php echo http_build_query( $query_params ); ?>#' + encodeURIComponent(document.location.href),
 
 					// Append the i-frame into the DOM.
 					frame = $('<i' + 'frame " src="' + src + '" width="100%" height="' + frame_height + 'px" scrolling="no" frameborder="0" style="background: transparent; width: 1px; min-width: 100%;"><\/i' + 'frame>')
@@ -114,15 +123,15 @@
 		</script>
 	</div>
 <?php
-	if ( $has_tabs ) {
-		$fs->_add_tabs_after_content();
-	}
+if ( $has_tabs ) {
+	$fs->_add_tabs_after_content();
+}
 
-	$params = array(
+	$params = [
 		'page'           => 'contact',
 		'module_id'      => $fs->get_id(),
 		'module_type'    => $fs->get_module_type(),
 		'module_slug'    => $slug,
 		'module_version' => $fs->get_plugin_version(),
-	);
+	];
 	fs_require_template( 'powered-by.php', $params );

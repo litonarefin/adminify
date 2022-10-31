@@ -2,197 +2,127 @@
 
 namespace WPAdminify\Inc\Modules\LoginCustomizer\Inc\Settings;
 
-use WPAdminify\Inc\Utils;
-
-use WPAdminify\Inc\Modules\LoginCustomizer\Inc\Customize_Model;
-
-if (!defined('ABSPATH')) {
+use  WPAdminify\Inc\Utils ;
+use  WPAdminify\Inc\Modules\LoginCustomizer\Inc\Customize_Model ;
+if ( !defined( 'ABSPATH' ) ) {
     die;
-} // Cannot access directly.
-
+}
+// Cannot access directly.
 class Background_Section extends Customize_Model
 {
-
     public function __construct()
     {
         $this->adminify_background_customizer();
     }
-
+    
     public function get_defaults()
     {
-
         return [
-            'jltwp_adminify_login_bg_video_type'        => '',
-            'jltwp_adminify_login_bg_video_self_hosted' => '',
-            'jltwp_adminify_login_bg_video_youtube'     => '',
-            'jltwp_adminify_login_bg_video_loop'        => true,
-            'jltwp_adminify_login_bg_video_poster'      => '',
-            'jltwp_adminify_login_bg_slideshow'         => '',
-
-            'jltwp_adminify_login_bg_type'      => 'color_image',
-            'jltwp_adminify_login_bg_color_opt' => 'color',
-            'jltwp_adminify_login_bg_color'     => array(
-                'background-color'      => '',
-                'background-position'   => 'center center',
-                'background-repeat'     => 'repeat-x',
-                'background-attachment' => 'fixed',
-                'background-size'       => 'cover',
-            ),
-            'jltwp_adminify_login_gradient_bg' => array(
-                'background-color'              => '',
-                'background-gradient-color'     => '',
-                'background-gradient-direction' => '',
-                'background-position'           => 'center center',
-                'background-repeat'             => 'repeat-x',
-                'background-attachment'         => 'fixed',
-                'background-size'               => 'cover',
-                'background-origin'             => 'border-box',
-                'background-clip'               => 'padding-box',
-                'background-blend-mode'         => 'normal',
-            ),
-            'jltwp_adminify_login_bg_overlay_type' => '',
-            'jltwp_adminify_login_bg_overlay_color' => '',
+            'jltwp_adminify_login_bg_video_type'             => '',
+            'jltwp_adminify_login_bg_video_self_hosted'      => '',
+            'jltwp_adminify_login_bg_video_youtube'          => '',
+            'jltwp_adminify_login_bg_video_loop'             => true,
+            'jltwp_adminify_login_bg_video_poster'           => '',
+            'jltwp_adminify_login_bg_slideshow'              => '',
+            'jltwp_adminify_login_bg_type'                   => 'color_image',
+            'jltwp_adminify_login_bg_color_opt'              => 'color',
+            'jltwp_adminify_login_bg_color'                  => [
+            'background-color'      => '',
+            'background-position'   => 'center center',
+            'background-repeat'     => 'repeat-x',
+            'background-attachment' => 'fixed',
+            'background-size'       => 'cover',
+        ],
+            'jltwp_adminify_login_gradient_bg'               => [
+            'background-color'              => '',
+            'background-gradient-color'     => '',
+            'background-gradient-direction' => '',
+            'background-position'           => 'center center',
+            'background-repeat'             => 'repeat-x',
+            'background-attachment'         => 'fixed',
+            'background-size'               => 'cover',
+            'background-origin'             => 'border-box',
+            'background-clip'               => 'padding-box',
+            'background-blend-mode'         => 'normal',
+        ],
+            'jltwp_adminify_login_bg_overlay_type'           => '',
+            'jltwp_adminify_login_bg_overlay_color'          => '',
             'jltwp_adminify_login_bg_overlay_gradient_color' => '',
-            'jltwp_adminify_login_overlay_opacity' => '',
+            'jltwp_adminify_login_overlay_opacity'           => '',
         ];
     }
-
+    
     /**
      * Background Settings
      */
-    public function login_customizer_bg_settings(&$bg_fields)
+    public function login_customizer_bg_settings( &$bg_fields )
     {
-        $bg_fields[] = array(
+        $bg_fields[] = [
             'id'      => 'jltwp_adminify_login_bg_type',
             'type'    => 'button_set',
-            'options' => array(
-                'color_image' => __('Color/Image', 'adminify'),
-                'video'       => __('Video', 'adminify'),
-                'slideshow'   => __('Slideshow', 'adminify'),
-            ),
-            'default' => $this->get_default_field('jltwp_adminify_login_bg_type'),
-        );
-
-        $bg_fields[] = array(
-            'id'      => 'jltwp_adminify_login_bg_color_opt',
-            'type'    => 'button_set',
-            'options' => array(
-                'color'    => __('Color ', 'adminify'),
-                'gradient' => __('Gradient', 'adminify')
-            ),
-            'default'    => $this->get_default_field('jltwp_adminify_login_bg_color_opt'),
-            'dependency' => array('jltwp_adminify_login_bg_type', '==', 'color_image', true),
-        );
-        $bg_fields[] = array(
+            'options' => [
+            'color_image' => __( 'Color/Image', 'adminify' ),
+            'video'       => __( 'Video', 'adminify' ),
+            'slideshow'   => __( 'Slideshow', 'adminify' ),
+        ],
+            'default' => $this->get_default_field( 'jltwp_adminify_login_bg_type' ),
+        ];
+        $bg_fields[] = [
+            'id'         => 'jltwp_adminify_login_bg_color_opt',
+            'type'       => 'button_set',
+            'options'    => [
+            'color'    => __( 'Color ', 'adminify' ),
+            'gradient' => __( 'Gradient', 'adminify' ),
+        ],
+            'default'    => $this->get_default_field( 'jltwp_adminify_login_bg_color_opt' ),
+            'dependency' => [
+            'jltwp_adminify_login_bg_type',
+            '==',
+            'color_image',
+            true
+        ],
+        ];
+        $bg_fields[] = [
             'id'         => 'jltwp_adminify_login_bg_color',
             'type'       => 'background',
             'title'      => 'Background',
-            'default'    => $this->get_default_field('jltwp_adminify_login_bg_color'),
-            'dependency' => array('jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_color_opt', '==|==', 'color_image|color', true),
-        );
-
-        if (jltwp_adminify()->can_use_premium_code__premium_only()) {
-            $bg_fields[] = array(
-                'id'                    => 'jltwp_adminify_login_gradient_bg',
-                'type'                  => 'background',
-                'title'                 => __('Background', 'adminify'),
-                'background_gradient'   => true,
-                'background_image'      => false,
-                'background_position'   => false,
-                'background_repeat'     => false,
-                'background_attachment' => false,
-                'background_size'       => false,
-                'default'               => $this->get_default_field('jltwp_adminify_login_gradient_bg'),
-                'dependency'            => array('jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_color_opt', '==|==', 'color_image|gradient', true),
-            );
-        } else {
-            $bg_fields[] = array(
-                'type'       => 'notice',
-                'title'      => __('Background', 'adminify'),
-                'style'      => 'warning',
-                'content'    => Utils::adminify_upgrade_pro(),
-                'dependency' => array('jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_color_opt', '==|==', 'color_image|gradient', true),
-            );
-        }
-
-        if (jltwp_adminify()->can_use_premium_code__premium_only()) {
-            $bg_fields[] = array(
-                'id'      => 'jltwp_adminify_login_bg_video_type',
-                'type'    => 'button_set',
-                'options' => array(
-                    'self_hosted' => __('Self Hosted ', 'adminify'),
-                    'youtube'     => __('Youtube', 'adminify'),
-                ),
-                'default'    => $this->get_default_field('jltwp_adminify_login_bg_video_type'),
-                'dependency' => array('jltwp_adminify_login_bg_type', '==', 'video', true),
-            );
-
-            $bg_fields[] = array(
-                'id'         => 'jltwp_adminify_login_bg_video_self_hosted',
-                'type'       => 'media',
-                'title'      => __('Upload Video', 'adminify'),
-                'library'    => 'video',
-                'preview'    => true,
-                'default'    => $this->get_default_field('jltwp_adminify_login_bg_video_self_hosted'),
-                'dependency' => array('jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_video_type', '==|==', 'video|self_hosted', true),
-            );
-            $bg_fields[] = array(
-                'id'         => 'jltwp_adminify_login_bg_video_youtube',
-                'type'       => 'text',
-                'title'      => __('Youtube URL', 'adminify'),
-                'validate'   => 'adminify_validate_url',
-                'default'    => $this->get_default_field('jltwp_adminify_login_bg_video_youtube'),
-                'dependency' => array('jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_video_type', '==|==', 'video|youtube', true),
-            );
-            $bg_fields[] = array(
-                'id'         => 'jltwp_adminify_login_bg_video_loop',
-                'type'       => 'switcher',
-                'title'      => __('Loop Video?', 'adminify'),
-                'text_on'    => 'Yes',
-                'text_off'   => 'No',
-                'default'    => $this->get_default_field('jltwp_adminify_login_bg_video_loop'),
-                'class'      => 'wp-adminify-cs',
-                'dependency' => array('jltwp_adminify_login_bg_type', '==', 'video', true),
-            );
-            $bg_fields[] = array(
-                'id'         => 'jltwp_adminify_login_bg_video_poster',
-                'type'       => 'media',
-                'title'      => __('Poster Image', 'adminify'),
-                'library'    => 'image',
-                'default'    => $this->get_default_field('jltwp_adminify_login_bg_video_poster'),
-                'dependency' => array('jltwp_adminify_login_bg_type', '==', 'video', true),
-            );
-            $bg_fields[] = array(
-                'id'          => 'jltwp_adminify_login_bg_slideshow',
-                'type'        => 'gallery',
-                'title'       => __('Slideshow Images', 'adminify'),
-                'add_title'   => __('Add Slide', 'adminify'),
-                'edit_title'  => __('Edit Slides', 'adminify'),
-                'clear_title' => __('Remove', 'adminify'),
-                'default'     => $this->get_default_field('jltwp_adminify_login_bg_slideshow'),
-                'dependency'  => array('jltwp_adminify_login_bg_type', '==', 'slideshow', true),
-            );
-        } else {
-            $bg_fields[] = array(
-                'type'       => 'notice',
-                'style'      => 'warning',
-                'content'    => Utils::adminify_upgrade_pro(),
-                'dependency' => array('jltwp_adminify_login_bg_type', 'any', 'video,slideshow'),
-            );
-        }
-
-        $bg_fields[] = array(
+            'default'    => $this->get_default_field( 'jltwp_adminify_login_bg_color' ),
+            'dependency' => [
+            'jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_color_opt',
+            '==|==',
+            'color_image|color',
+            true
+        ],
+        ];
+        $bg_fields[] = [
+            'type'       => 'notice',
+            'title'      => __( 'Background', 'adminify' ),
+            'style'      => 'warning',
+            'content'    => Utils::adminify_upgrade_pro(),
+            'dependency' => [
+            'jltwp_adminify_login_bg_type|jltwp_adminify_login_bg_color_opt',
+            '==|==',
+            'color_image|gradient',
+            true
+        ],
+        ];
+        $bg_fields[] = [
+            'type'       => 'notice',
+            'style'      => 'warning',
+            'content'    => Utils::adminify_upgrade_pro(),
+            'dependency' => [ 'jltwp_adminify_login_bg_type', 'any', 'video,slideshow' ],
+        ];
+        $bg_fields[] = [
             'id'      => 'jltwp_adminify_login_bg_overlay_type',
             'type'    => 'button_set',
-            'title'   => __('Overlay', 'adminify'),
-            'options' => array(
-                'color'    => __('Color ', 'adminify'),
-                'gradient' => __('Gradient', 'adminify')
-            ),
-            'default'    => $this->get_default_field('jltwp_adminify_login_bg_overlay_type'),
-        );
-
-        $bg_fields[] = array(
+            'title'   => __( 'Overlay', 'adminify' ),
+            'options' => [
+            'color'    => __( 'Color ', 'adminify' ),
+            'gradient' => __( 'Gradient', 'adminify' ),
+        ],
+            'default' => $this->get_default_field( 'jltwp_adminify_login_bg_overlay_type' ),
+        ];
+        $bg_fields[] = [
             'id'                    => 'jltwp_adminify_login_bg_overlay_color',
             'type'                  => 'background',
             'background_image'      => false,
@@ -200,61 +130,49 @@ class Background_Section extends Customize_Model
             'background_repeat'     => false,
             'background_attachment' => false,
             'background_size'       => false,
-            'default'               => $this->get_default_field('jltwp_adminify_login_bg_overlay_color'),
-            'dependency'            => array('jltwp_adminify_login_bg_overlay_type', '==', 'color', true),
-        );
-
-        if (jltwp_adminify()->can_use_premium_code__premium_only()) {
-            $bg_fields[] = array(
-                'id'                    => 'jltwp_adminify_login_bg_overlay_gradient_color',
-                'type'                  => 'background',
-                'background_gradient'   => true,
-                'background_image'      => false,
-                'background_position'   => false,
-                'background_repeat'     => false,
-                'background_attachment' => false,
-                'background_size'       => false,
-                'default'               => $this->get_default_field('jltwp_adminify_login_bg_overlay_gradient_color'),
-                'dependency'            => array('jltwp_adminify_login_bg_overlay_type', '==', 'gradient', true),
-            );
-        } else {
-            $bg_fields[] = array(
-                'type'       => 'notice',
-                'style'      => 'warning',
-                'content'    => Utils::adminify_upgrade_pro(),
-                'dependency' => array('jltwp_adminify_login_bg_overlay_type', '==', 'gradient'),
-            );
-        }
-
-        $bg_fields[] = array(
-            'id'                    => 'jltwp_adminify_login_overlay_opacity',
-            'type'                  => 'slider',
-            'title'                 => __('Overlay Opacity', 'adminify'),
-            'dependency'            => array('jltwp_adminify_login_bg_overlay_type', '!=', '', true),
-            'default'               => $this->get_default_field('jltwp_adminify_login_overlay_opacity'),
-        );
+            'default'               => $this->get_default_field( 'jltwp_adminify_login_bg_overlay_color' ),
+            'dependency'            => [
+            'jltwp_adminify_login_bg_overlay_type',
+            '==',
+            'color',
+            true
+        ],
+        ];
+        $bg_fields[] = [
+            'type'       => 'notice',
+            'style'      => 'warning',
+            'content'    => Utils::adminify_upgrade_pro(),
+            'dependency' => [ 'jltwp_adminify_login_bg_overlay_type', '==', 'gradient' ],
+        ];
+        $bg_fields[] = [
+            'id'         => 'jltwp_adminify_login_overlay_opacity',
+            'type'       => 'slider',
+            'title'      => __( 'Overlay Opacity', 'adminify' ),
+            'dependency' => [
+            'jltwp_adminify_login_bg_overlay_type',
+            '!=',
+            '',
+            true
+        ],
+            'default'    => $this->get_default_field( 'jltwp_adminify_login_overlay_opacity' ),
+        ];
     }
-
-
+    
     public function adminify_background_customizer()
     {
-        if (!class_exists('ADMINIFY')) {
+        if ( !class_exists( 'ADMINIFY' ) ) {
             return;
         }
-
         $bg_fields = [];
-        $this->login_customizer_bg_settings($bg_fields);
-
+        $this->login_customizer_bg_settings( $bg_fields );
         /**
          * Section: Background Section
          */
-        \ADMINIFY::createSection(
-            $this->prefix,
-            array(
-                'assign' => 'jltwp_adminify_customizer_bg_section',
-                'title'  => __('Background', 'adminify'),
-                'fields' => $bg_fields
-            )
-        );
+        \ADMINIFY::createSection( $this->prefix, [
+            'assign' => 'jltwp_adminify_customizer_bg_section',
+            'title'  => __( 'Background', 'adminify' ),
+            'fields' => $bg_fields,
+        ] );
     }
+
 }

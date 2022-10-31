@@ -2,7 +2,9 @@
 
 namespace WPAdminify\Inc;
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 abstract class Base_Data {
 
@@ -37,7 +39,6 @@ abstract class Base_Data {
 		$data = &$this->data[ $key ];
 
 		$data = $this->merge_properties( $data, $value );
-
 	}
 
 	final public function merge_properties( array $default_props, array $custom_props, array $allowed_props_keys = [] ) {
@@ -71,7 +72,7 @@ abstract class Base_Data {
 	public function has_own_method( $method_name, $base_class_name = null ) {
 		try {
 			$reflection_method = new \ReflectionMethod( $this, $method_name );
-			$declaring_class = $reflection_method->getDeclaringClass();
+			$declaring_class   = $reflection_method->getDeclaringClass();
 		} catch ( \Exception $e ) {
 			return false;
 		}

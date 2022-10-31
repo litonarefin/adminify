@@ -1,9 +1,0 @@
-@import '../variables.scss';
-@import '../mixins.scss';
-
-.settings_page_breeze {
-    .breeze-main {
-        @include roundcheckFill;
-        @include roundradioFill;
-    }
-}

@@ -137,6 +137,7 @@ body.wp-adminify {
   .wp-adminify.has-folder-options #wpbody-content {
     padding-left: 17rem;
   }
+
   .wp-adminify--folder-widget {
     left: 14.75rem;
     width: 310px;
@@ -255,29 +256,36 @@ body.wp-adminify {
   .wp-adminify .adminify-top_bar nav.adminify-top-navbar .navbar-brand .navbar-item img {
     max-width: 130px;
   }
+
   .wp-adminify #adminmenu,
 .wp-adminify #adminmenuback,
 .wp-adminify #adminmenuwrap {
     width: 11rem;
   }
+
   .wp-adminify #adminmenu .wp-submenu {
     left: 11.05rem;
   }
+
   .wp-adminify .wp-adminify--folder-widget {
     left: 10.5rem;
     width: 280px;
   }
+
   .wp-adminify #wpcontent,
 .wp-adminify #wpfooter {
     margin-left: 11rem;
   }
+
   .js.plugins-php .search-box .wp-filter-search,
 .wp-filter .search-form input[type=search] {
     max-width: 200px;
   }
+
   .wp-adminify #wpbody-content .wp-list-table.widefat tr th {
     padding: 15px 5px;
   }
+
   .wp-adminify .wp-adminify-sidebar-generator .adminify-container {
     max-width: 100%;
   }
@@ -384,6 +392,7 @@ body.wp-adminify {
 .wp-adminify button {
     padding: 0 6px;
   }
+
   .js.plugins-php .search-box .wp-filter-search,
 .wp-filter .search-form input[type=search] {
     max-width: 150px;
@@ -675,6 +684,7 @@ body.wp-adminify {
 .wp-adminify input[type=text].small-text {
     padding: 8px 15px;
   }
+
   .auto-fold #wpcontent {
     padding-left: 0;
     position: initial;
@@ -711,6 +721,7 @@ body.wp-adminify {
   html.interface-interface-skeleton__html-container {
     position: static;
   }
+
   .wp-adminify {
     overflow: visible;
   }
@@ -1238,6 +1249,7 @@ body.wp-adminify {
   .wp-adminify.adminify-round-open-menu #adminmenu .wp_adminify_admin-menu li.menu-top a {
     padding-left: 15px;
   }
+
   .js.plugins-php .search-box .wp-filter-search,
 .wp-filter .search-form input[type=search] {
     max-width: inherit;

@@ -33,9 +33,9 @@
 	 * @since 1.2.2
 	 */
 
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'json2' );
@@ -48,33 +48,35 @@
 	 * @var Freemius $fs
 	 */
 	$fs        = freemius( $VARS['id'] );
-	$slug 	   = $fs->get_slug();
+	$slug      = $fs->get_slug();
 	$timestamp = time();
 
-	$context_params = array(
+	$context_params = [
 		'plugin_id'         => $fs->get_id(),
 		'plugin_public_key' => $fs->get_public_key(),
 		'plugin_version'    => $fs->get_plugin_version(),
-	);
+	];
 
 	$bundle_id = $fs->get_bundle_id();
 	if ( ! is_null( $bundle_id ) ) {
-	    $context_params['bundle_id'] = $bundle_id;
-    }
+		$context_params['bundle_id'] = $bundle_id;
+	}
 
 	// Get site context secure params.
 	if ( $fs->is_registered() ) {
-		$context_params = array_merge( $context_params, FS_Security::instance()->get_context_params(
-			$fs->get_site(),
-			$timestamp,
-			'upgrade'
-		) );
+		$context_params = array_merge(
+			$context_params,
+			FS_Security::instance()->get_context_params(
+				$fs->get_site(),
+				$timestamp,
+				'upgrade'
+			)
+		);
 	} else {
 		$context_params['home_url'] = home_url();
 	}
 
-	if ( $fs->is_payments_sandbox() ) // Append plugin secure token for sandbox mode authentication.)
-	{
+	if ( $fs->is_payments_sandbox() ) { // Append plugin secure token for sandbox mode authentication.)
 		$context_params['sandbox'] = FS_Security::instance()->get_secure_token(
 			$fs->get_plugin(),
 			$timestamp,
@@ -82,67 +84,76 @@
 		);
 	}
 
-	$query_params = array_merge( $context_params, $_GET, array(
-		'next'             => $fs->_get_sync_license_url( false, false ),
-		'plugin_version'   => $fs->get_plugin_version(),
-		// Billing cycle.
-		'billing_cycle'    => fs_request_get( 'billing_cycle', WP_FS__PERIOD_ANNUALLY ),
-		'is_network_admin' => fs_is_network_admin() ? 'true' : 'false',
-		'currency'         => $fs->apply_filters( 'default_currency', 'usd' ),
-	) );
+	$query_params = array_merge(
+		$context_params,
+		$_GET,
+		[
+			'next'             => $fs->_get_sync_license_url( false, false ),
+			'plugin_version'   => $fs->get_plugin_version(),
+			// Billing cycle.
+			'billing_cycle'    => fs_request_get( 'billing_cycle', WP_FS__PERIOD_ANNUALLY ),
+			'is_network_admin' => fs_is_network_admin() ? 'true' : 'false',
+			'currency'         => $fs->apply_filters( 'default_currency', 'usd' ),
+		]
+	);
 
-    $use_external_pricing = $fs->should_use_external_pricing();
+	$use_external_pricing = $fs->should_use_external_pricing();
 
-    if ( ! $use_external_pricing ) {
-        $pricing_js_url = fs_asset_url( $fs->get_pricing_js_path() );
-        wp_enqueue_script( 'freemius-pricing', $pricing_js_url );
-    } else {
-        if ( ! $fs->is_registered() ) {
-            $template_data = array(
-                'id' => $fs->get_id(),
-            );
-            fs_require_template( 'forms/trial-start.php', $template_data);
-        }
+	if ( ! $use_external_pricing ) {
+		$pricing_js_url = fs_asset_url( $fs->get_pricing_js_path() );
+		wp_enqueue_script( 'freemius-pricing', $pricing_js_url );
+	} else {
+		if ( ! $fs->is_registered() ) {
+			$template_data = [
+				'id' => $fs->get_id(),
+			];
+			fs_require_template( 'forms/trial-start.php', $template_data );
+		}
 
-        $view_params = array(
-            'id'   => $VARS['id'],
-            'page' => strtolower( $fs->get_text_x_inline( 'Pricing', 'noun', 'pricing' ) ),
-        );
-        fs_require_once_template('secure-https-header.php', $view_params);
-    }
+		$view_params = [
+			'id'   => $VARS['id'],
+			'page' => strtolower( $fs->get_text_x_inline( 'Pricing', 'noun', 'pricing' ) ),
+		];
+		fs_require_once_template( 'secure-https-header.php', $view_params );
+	}
 
 	$has_tabs = $fs->_add_tabs_before_content();
 
 	if ( $has_tabs ) {
 		$query_params['tabs'] = 'true';
 	}
-?>
+	?>
 	<div id="fs_pricing" class="wrap fs-section fs-full-size-wrapper">
-        <?php if ( ! $use_external_pricing ) : ?>
-        <div id="fs_pricing_wrapper" data-public-url="<?php echo trailingslashit( dirname( $pricing_js_url ) ) ?>"></div>
-        <?php
-        $pricing_config = array_merge( array(
-            'contact_url'         => $fs->contact_url(),
-            'is_network_admin'    => fs_is_network_admin(),
-            'is_production'       => ( defined( 'WP_FS__IS_PRODUCTION_MODE' ) ? WP_FS__IS_PRODUCTION_MODE : null ),
-            'menu_slug'           => $fs->get_menu_slug(),
-            'mode'                => 'dashboard',
-            'fs_wp_endpoint_url'  => WP_FS__ADDRESS,
-            'request_handler_url' => admin_url(
-                'admin-ajax.php?' . http_build_query( array(
-                    'module_id' => $fs->get_id(),
-                    'action'    => $fs->get_ajax_action( 'pricing_ajax_action' ),
-                    'security'  => $fs->get_ajax_security( 'pricing_ajax_action' )
-                ) )
-            ),
-            'selector'            => '#fs_pricing_wrapper',
-            'unique_affix'        => $fs->get_unique_affix(),
-        ), $query_params );
+		<?php if ( ! $use_external_pricing ) : ?>
+		<div id="fs_pricing_wrapper" data-public-url="<?php echo trailingslashit( dirname( $pricing_js_url ) ); ?>"></div>
+			<?php
+			$pricing_config = array_merge(
+				[
+					'contact_url'         => $fs->contact_url(),
+					'is_network_admin'    => fs_is_network_admin(),
+					'is_production'       => ( defined( 'WP_FS__IS_PRODUCTION_MODE' ) ? WP_FS__IS_PRODUCTION_MODE : null ),
+					'menu_slug'           => $fs->get_menu_slug(),
+					'mode'                => 'dashboard',
+					'fs_wp_endpoint_url'  => WP_FS__ADDRESS,
+					'request_handler_url' => admin_url(
+						'admin-ajax.php?' . http_build_query(
+							[
+								'module_id' => $fs->get_id(),
+								'action'    => $fs->get_ajax_action( 'pricing_ajax_action' ),
+								'security'  => $fs->get_ajax_security( 'pricing_ajax_action' ),
+							]
+						)
+					),
+					'selector'            => '#fs_pricing_wrapper',
+					'unique_affix'        => $fs->get_unique_affix(),
+				],
+				$query_params
+			);
 
-        wp_add_inline_script( 'freemius-pricing', 'Freemius.pricing.new( ' . json_encode( $pricing_config ) . ' )' );
-        ?>
-        <?php else : ?>
-        <div id="fs_frame"></div>
+			wp_add_inline_script( 'freemius-pricing', 'Freemius.pricing.new( ' . json_encode( $pricing_config ) . ' )' );
+			?>
+		<?php else : ?>
+		<div id="fs_frame"></div>
 		<form action="" method="POST">
 			<input type="hidden" name="user_id"/>
 			<input type="hidden" name="user_email"/>
@@ -158,10 +169,10 @@
 					var
 					// Keep track of the i-frame height.
 					frame_height = 800,
-					base_url     = '<?php echo WP_FS__ADDRESS ?>',
+					base_url     = '<?php echo WP_FS__ADDRESS; ?>',
 					// Pass the parent page URL into the i-frame in a meaningful way (this URL could be
 					// passed via query string or hard coded into the child page, it depends on your needs).
-					src          = base_url + '/pricing/?<?php echo http_build_query( $query_params ) ?>#' + encodeURIComponent(document.location.href),
+					src          = base_url + '/pricing/?<?php echo http_build_query( $query_params ); ?>#' + encodeURIComponent(document.location.href),
 
 					// Append the I-frame into the DOM.
 					frame = $('<i' + 'frame " src="' + src + '" width="100%" height="' + frame_height + 'px" scrolling="no" frameborder="0" style="background: transparent; width: 1px; min-width: 100%;"><\/i' + 'frame>')
@@ -192,18 +203,18 @@
 				});
 			})(jQuery);
 		</script>
-        <?php endif ?>
+		<?php endif ?>
 	</div>
 <?php
-	if ( $has_tabs ) {
-		$fs->_add_tabs_after_content();
-	}
+if ( $has_tabs ) {
+	$fs->_add_tabs_after_content();
+}
 
-	$params = array(
+	$params = [
 		'page'           => 'pricing',
 		'module_id'      => $fs->get_id(),
 		'module_type'    => $fs->get_module_type(),
 		'module_slug'    => $slug,
 		'module_version' => $fs->get_plugin_version(),
-	);
+	];
 	fs_require_template( 'powered-by.php', $params );

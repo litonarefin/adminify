@@ -11,7 +11,7 @@ use WPAdminify\Inc\Base_Model;
  *
  * @author Jewel Theme <support@jeweltheme.com>
  */
-abstract class NotificationBarModel extends Base_Model
-{
-    protected $prefix = '_adminify_notification_bar';
+abstract class NotificationBarModel extends Base_Model {
+
+	protected $prefix = '_adminify_notification_bar';
 }

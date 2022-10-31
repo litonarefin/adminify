@@ -1,0 +1,152 @@
+/**
+ * 10. Helper
+ */
+.adminify-subtitle-text{
+  margin-top: 6px;
+  font-weight: 400;
+  color: #999;
+}
+
+.adminify-desc-text{
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  font-weight: 400;
+  color: #999;
+}
+
+.adminify-error-text{
+  margin-top: 6px;
+  color: #d02c21;
+}
+
+.adminify-before-text{
+  margin-bottom: 6px;
+}
+
+.adminify-after-text{
+  margin-top: 6px;
+}
+
+.adminify-metabox-hide{
+  display: none !important;
+}
+
+.adminify-metabox-show{
+  display: block !important;
+}
+
+.adminify-depend-hidden.adminify-depend-on{
+  display: none;
+}
+
+.adminify-depend-visible.adminify-depend-on{
+  display: block;
+  opacity: 0.75;
+  filter: grayscale(1);
+  user-select: none;
+  border-top: 1px solid #eee;
+
+  .clear:before{
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #eee;
+    opacity: 0.25;
+    z-index: 10;
+  }
+}
+
+.adminify-warning-primary{
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  background: #dc3545 !important;
+
+  &:hover,
+  &:focus{
+    border-color: #bd2130 !important;
+    background: #bd2130 !important;
+  }
+
+  &:focus{
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #bd2130 !important;
+  }
+
+  &:active{
+    border-color: #bd2130 !important;
+    background: #bd2130 !important;
+  }
+}
+
+.adminify-form-result{
+  display: none;
+  float: left;
+  padding: 0 8px;
+  margin-right: 4px;
+  font-size: 11px;
+  line-height: 30px;
+  user-select: none;
+  border-radius: 2px;
+}
+
+.adminify-form-show{
+  display: block;
+}
+
+.adminify-form-success{
+  color: #fff;
+  background-color: #46b450;
+}
+
+.adminify-form-warning{
+  color: #8a6d3b;
+  background-color: #faebcc;
+}
+
+.adminify-label-error{
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 10px;
+  height: 10px;
+  width: 10px;
+  padding: 1px;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  background-color: #e10000;
+  border-radius: 2px;
+}
+
+.adminify-no-option{
+  padding: 30px;
+}
+
+.adminify-input-number{
+  -moz-appearance:textfield;
+}
+
+.adminify-input-number::-webkit-inner-spin-button,
+.adminify-input-number::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.adminify-fa5-shims{
+
+  .adminify{
+
+    .fas,
+    .far,
+    .fab{
+      font-family: "FontAwesome";
+      font-style: normal;
+    }
+  }
+}

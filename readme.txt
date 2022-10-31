@@ -1,5 +1,5 @@
-=== WP Adminify - Customize WordPress Admin Dashboard, Admin Columns, Admin Pages & Change WP-Admin Login | White Label WordPress, Media Library Folders ===
-Contributors: jwthemeltd, litonice13, masteraddons, stalukder03
+=== WP Adminify - Customize WordPress Admin Dashboard, Admin Columns, Admin Pages & Change Login URL | White Label, Media Library Folders ===
+Contributors: jwthemeltd, litonice13, masteraddons, stalukder03, freemius
 Tags: custom dashboard, dashboard, Admin panel, WordPress dashboard, WordPress admin, Dashboard widget, customize dashboard,  Login Customizer, folder, WP Admin, disable comments, admin notice, dashboard menu editor, Hide Admin Bar, notification bar, Dashboard CSS, activity logs, admin pages, menu duplicator, admin column, Ultimate Dash, dashboard widget
 Requires at least: 4.0
 Tested up to: 6.0.3
@@ -325,7 +325,6 @@ Rate us on [WordPress Forum](https://wordpress.org/support/plugin/adminify/revie
 
 
 == Support ==
-[Github Source COde](https://github.com/litonarefin/adminify)
 [Support Forum](https://wpadminify.com/support/)
 [Pre-Sale Questions](https://wpadminify.com/contact/)
 
@@ -383,6 +382,13 @@ We're adding new Features everyday. You'll get regular Updates also !
 Paste on your Local Computer
 
 == Changelog ==
+= 3.0.5 (31-10-2022) =
+* Fixed: Security issues has been fixed
+* Added: Github Source Code added on readme
+
+= 3.0.4 (26-10-2022) =
+* Fixed: Menu Editor 'render_menu_editor_header()' error issue fixed
+
 = 3.0.3 (17-10-2022)=
 * Fixed: Folders Drag and drop issue fixed
 * Fixed: Missing Multisite styles for Network settings issue fixed

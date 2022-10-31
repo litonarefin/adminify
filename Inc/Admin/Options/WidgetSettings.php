@@ -4,37 +4,37 @@ namespace WPAdminify\Inc\Admin\Options;
 
 use WPAdminify\Inc\Admin\AdminSettingsModel;
 
-if (!defined('ABSPATH')) {
-    die;
+if ( ! defined( 'ABSPATH' ) ) {
+	die;
 } // Cannot access directly.
 
-class WidgetSettings extends AdminSettingsModel
-{
-    public $defaults = [];
+class WidgetSettings extends AdminSettingsModel {
 
-    public function __construct()
-    {
-        $this->widget_settings();
-    }
+	public $defaults = [];
 
-    protected function get_defaults()
-    {
-        return $this->defaults;
-    }
+	public function __construct() {
+		$this->widget_settings();
+	}
 
-    public function widget_settings()
-    {
-        if (!class_exists('ADMINIFY')) {
-            return;
-        }
+	protected function get_defaults() {
+		return $this->defaults;
+	}
 
-        \ADMINIFY::createSection($this->prefix, array(
-            'title' => __('Widget Settings', 'adminify'),
-            'id'    => 'widget_settings',
-            'icon'  => 'dashicons dashicons-admin-appearance',
-        ));
+	public function widget_settings() {
+		if ( ! class_exists( 'ADMINIFY' ) ) {
+			return;
+		}
 
-        $this->defaults = array_merge($this->defaults, (new DashboardWidgets())->get_defaults());
-        $this->defaults = array_merge($this->defaults, (new Sidebar_Remove())->get_defaults());
-    }
+		\ADMINIFY::createSection(
+			$this->prefix,
+			[
+				'title' => __( 'Widget Settings', 'adminify' ),
+				'id'    => 'widget_settings',
+				'icon'  => 'dashicons dashicons-admin-appearance',
+			]
+		);
+
+		$this->defaults = array_merge( $this->defaults, ( new DashboardWidgets() )->get_defaults() );
+		$this->defaults = array_merge( $this->defaults, ( new Sidebar_Remove() )->get_defaults() );
+	}
 }

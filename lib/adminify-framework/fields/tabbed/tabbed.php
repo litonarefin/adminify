@@ -1,64 +1,60 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
+
+use WPAdminify\Inc\Utils;
+
 /**
  *
  * Field: tabbed
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! class_exists( 'ADMINIFY_Field_tabbed' ) ) {
-  class ADMINIFY_Field_tabbed extends ADMINIFY_Fields {
+	class ADMINIFY_Field_tabbed extends ADMINIFY_Fields {
 
-    public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
-      parent::__construct( $field, $value, $unique, $where, $parent );
-    }
+		public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
+			parent::__construct( $field, $value, $unique, $where, $parent );
+		}
 
-    public function render() {
+		public function render() {
+			$unallows = [ 'tabbed' ];
 
-      $unallows = array( 'tabbed' );
+			echo Utils::wp_kses_custom($this->field_before());
 
-      echo $this->field_before();
+			echo '<div class="adminify-tabbed-nav" data-depend-id="' . esc_attr( $this->field['id'] ) . '">';
+			foreach ( $this->field['tabs'] as $key => $tab ) {
+				$tabbed_icon   = ( ! empty( $tab['icon'] ) ) ? '<i class="adminify--icon ' . esc_attr( $tab['icon'] ) . '"></i>' : '';
+				$tabbed_active = ( empty( $key ) ) ? 'adminify-tabbed-active' : '';
 
-      echo '<div class="adminify-tabbed-nav" data-depend-id="'. esc_attr( $this->field['id'] ) .'">';
-      foreach ( $this->field['tabs'] as $key => $tab ) {
+				echo '<a href="#" class="' . esc_attr( $tabbed_active ) . '"">' . $tabbed_icon . esc_attr( $tab['title'] ) . '</a>';
+			}
+			echo '</div>';
 
-        $tabbed_icon   = ( ! empty( $tab['icon'] ) ) ? '<i class="adminify--icon '. esc_attr( $tab['icon'] ) .'"></i>' : '';
-        $tabbed_active = ( empty( $key ) ) ? 'adminify-tabbed-active' : '';
+			echo '<div class="adminify-tabbed-contents">';
+			foreach ( $this->field['tabs'] as $key => $tab ) {
+				$tabbed_hidden = ( ! empty( $key ) ) ? ' hidden' : '';
 
-        echo '<a href="#" class="'. esc_attr( $tabbed_active ) .'"">'. $tabbed_icon . esc_attr( $tab['title'] ) .'</a>';
+				echo '<div class="adminify-tabbed-content' . esc_attr( $tabbed_hidden ) . '">';
 
-      }
-      echo '</div>';
+				foreach ( $tab['fields'] as $field ) {
+					if ( in_array( $field['type'], $unallows ) ) {
+						$field['_notice'] = true; }
 
-      echo '<div class="adminify-tabbed-contents">';
-      foreach ( $this->field['tabs'] as $key => $tab ) {
+					$field_id      = ( isset( $field['id'] ) ) ? $field['id'] : '';
+					$field_default = ( isset( $field['default'] ) ) ? $field['default'] : '';
+					$field_value   = ( isset( $this->value[ $field_id ] ) ) ? $this->value[ $field_id ] : $field_default;
+					$unique_id     = ( ! empty( $this->unique ) ) ? $this->unique . '[' . $this->field['id'] . ']' : $this->field['id'];
 
-        $tabbed_hidden = ( ! empty( $key ) ) ? ' hidden' : '';
+					ADMINIFY::field( $field, $field_value, $unique_id, 'field/tabbed' );
+				}
 
-        echo '<div class="adminify-tabbed-content'. esc_attr( $tabbed_hidden ) .'">';
+				echo '</div>';
+			}
+			echo '</div>';
 
-        foreach ( $tab['fields'] as $field ) {
+			echo Utils::wp_kses_custom($this->field_after());
+		}
 
-          if ( in_array( $field['type'], $unallows ) ) { $field['_notice'] = true; }
-
-          $field_id      = ( isset( $field['id'] ) ) ? $field['id'] : '';
-          $field_default = ( isset( $field['default'] ) ) ? $field['default'] : '';
-          $field_value   = ( isset( $this->value[$field_id] ) ) ? $this->value[$field_id] : $field_default;
-          $unique_id     = ( ! empty( $this->unique ) ) ? $this->unique .'['. $this->field['id'] .']' : $this->field['id'];
-
-          ADMINIFY::field( $field, $field_value, $unique_id, 'field/tabbed' );
-
-        }
-
-        echo '</div>';
-
-      }
-      echo '</div>';
-
-      echo $this->field_after();
-
-    }
-
-  }
+	}
 }

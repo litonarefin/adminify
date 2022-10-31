@@ -1,12 +1,14 @@
 <?php
 
-defined('ABSPATH') or die('No Direct Access Sir!');
+defined( 'ABSPATH' ) or die( 'No Direct Access Sir!' );
 
 $slides = (array) $this->get_image_urls_by_ids( $this->options['jltwp_adminify_login_bg_slideshow'] );
 
-if ( empty($slides) ) return;
+if ( empty( $slides ) ) {
+	return;
+}
 
-//Slideshow Effects
+// Slideshow Effects
 // fade,
 // fade2,
 // slideLeft,
@@ -35,14 +37,14 @@ if ( empty($slides) ) return;
 ?>
 
 <script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery(function() {
-            jQuery('body.wp-adminify-login-customizer .login-background').vegas({
-                slides: <?php echo json_encode($slides) ?>,
-                transition: 'fade',
-                delay: 5000,
-                timer: false
-            });
-        });
-    });
+	jQuery(document).ready(function() {
+		jQuery(function() {
+			jQuery('body.wp-adminify-login-customizer .login-background').vegas({
+				slides: <?php echo json_encode( $slides ); ?>,
+				transition: 'fade',
+				delay: 5000,
+				timer: false
+			});
+		});
+	});
 </script>

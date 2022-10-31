@@ -1,0 +1,67 @@
+/**
+ * 04. Widget
+ */
+.adminify-widgets{
+
+  > .adminify-field{
+    position: relative;
+    top: -1px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 12px 15px;
+
+    .adminify-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .adminify-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .adminify-field-text input{
+    width: 100%;
+  }
+
+  .adminify-field-notice .adminify-notice{
+    padding: 15px;
+  }
+}
+
+.control-section{
+
+  .adminify-widgets{
+
+    > .adminify-field{
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 10px 12px;
+    }
+  }
+}
+
+.wp-block{
+
+  .adminify-widgets{
+    font-size: 13px;
+
+    > .adminify-field{
+      margin-left: -10px;
+      margin-right: -10px;
+
+      .button-primary{
+        color: #fff;
+      }
+
+      > .adminify-title{
+
+        > h4{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

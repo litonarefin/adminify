@@ -1,0 +1,185 @@
+/**
+ * 05. Widget
+ */
+.control-section{
+
+  .adminify-field{
+    padding: 0;
+
+    .adminify-title{
+      float: none;
+      width: 100%;
+      margin-bottom: 6px;
+
+      h4{
+        display: block;
+        font-size: 13px;
+        line-height: 1;
+        font-weight: 600;
+        color: inherit;
+      }
+    }
+
+    .adminify-fieldset{
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .adminify-help{
+    top: -5px;
+    right: -5px;
+  }
+
+  .adminify-field-select select{
+    width: 100%;
+  }
+
+  .adminify-field-heading{
+    color: inherit;
+    font-size: 14px;
+    line-height: 1em;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 15px;
+  }
+
+  .adminify-field-subheading{
+    color: inherit;
+    font-size: 11px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px 15px;
+  }
+
+  .adminify-subtitle-text{
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .adminify-field-submessage .adminify-submessage{
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 15px;
+  }
+
+  .adminify-fieldset{
+
+    .adminify-field-submessage .adminify-submessage,
+    .adminify-field-heading,
+    .adminify-field-subheading{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .adminify-field-date,
+  .adminify-field-datetime{
+
+    label{
+      display: block;
+    }
+
+    .adminify--to{
+      margin-top: 4px;
+      margin-left: 0;
+    }
+  }
+
+  .adminify-field-sorter{
+
+    ul li{
+      padding: 5px;
+    }
+
+    .adminify-modules{
+      float: none;
+      width: 100%;
+    }
+
+    .adminify-modules:first-child{
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  .adminify-field-background{
+
+    .adminify--background-attributes{
+      flex-direction: column;
+    }
+  }
+
+  .adminify-field-spacing{
+    input{
+      width: 90px;
+    }
+  }
+
+  .adminify-field-border{
+
+    .adminify--input{
+      flex: 1 50%;
+    }
+
+    input,
+    select{
+      width: 100%;
+    }
+  }
+
+  .adminify-field-spinner{
+    input{
+      width: 50px;
+    }
+  }
+
+  .adminify-field-number{
+
+    .adminify--wrap{
+      width: 100%;
+    }
+  }
+
+  .adminify-field-backup{
+
+    .adminify-export-data{
+      display: none;
+    }
+  }
+
+  .adminify-field-fieldset{
+
+    .adminify-fieldset-content{
+      border-color: #e5e5e5;
+    }
+  }
+
+  .adminify-tabbed-content,
+  .adminify-sortable-content,
+  .adminify-repeater-content,
+  .adminify-fieldset-content,
+  .adminify-cloneable-content,
+  .adminify-accordion-content{
+
+    > .adminify-field{
+      padding: 10px;
+
+      .adminify-title{
+        margin-bottom: 5px;
+      }
+
+      h4{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .adminify-depend-hidden.adminify-depend-on{
+    display: none !important;
+  }
+
+  .adminify-depend-visible.adminify-depend-on{
+    border-top: 0 !important;
+  }
+}

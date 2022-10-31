@@ -1,20 +1,18 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
 /**
  *
  * Email validate
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_validate_email' ) ) {
-  function adminify_validate_email( $value ) {
-
-    if ( ! filter_var( $value, FILTER_VALIDATE_EMAIL ) ) {
-      return esc_html__( 'Please enter a valid email address.', 'adminify' );
-    }
-
-  }
+	function adminify_validate_email( $value ) {
+		if ( ! filter_var( $value, FILTER_VALIDATE_EMAIL ) ) {
+			return esc_html__( 'Please enter a valid email address.', 'adminify' );
+		}
+	}
 }
 
 /**
@@ -23,16 +21,13 @@ if ( ! function_exists( 'adminify_validate_email' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_validate_numeric' ) ) {
-  function adminify_validate_numeric( $value ) {
-
-    if ( ! is_numeric( $value ) ) {
-      return esc_html__( 'Please enter a valid number.', 'adminify' );
-    }
-
-  }
+	function adminify_validate_numeric( $value ) {
+		if ( ! is_numeric( $value ) ) {
+			return esc_html__( 'Please enter a valid number.', 'adminify' );
+		}
+	}
 }
 
 /**
@@ -41,16 +36,13 @@ if ( ! function_exists( 'adminify_validate_numeric' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_validate_required' ) ) {
-  function adminify_validate_required( $value ) {
-
-    if ( empty( $value ) ) {
-      return esc_html__( 'This field is required.', 'adminify' );
-    }
-
-  }
+	function adminify_validate_required( $value ) {
+		if ( empty( $value ) ) {
+			return esc_html__( 'This field is required.', 'adminify' );
+		}
+	}
 }
 
 /**
@@ -59,16 +51,13 @@ if ( ! function_exists( 'adminify_validate_required' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_validate_url' ) ) {
-  function adminify_validate_url( $value ) {
-
-    if ( ! filter_var( $value, FILTER_VALIDATE_URL ) ) {
-      return esc_html__( 'Please enter a valid URL.', 'adminify' );
-    }
-
-  }
+	function adminify_validate_url( $value ) {
+		if ( ! filter_var( $value, FILTER_VALIDATE_URL ) ) {
+			return esc_html__( 'Please enter a valid URL.', 'adminify' );
+		}
+	}
 }
 
 /**
@@ -77,18 +66,15 @@ if ( ! function_exists( 'adminify_validate_url' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_customize_validate_email' ) ) {
-  function adminify_customize_validate_email( $validity, $value, $wp_customize ) {
+	function adminify_customize_validate_email( $validity, $value, $wp_customize ) {
+		if ( ! sanitize_email( $value ) ) {
+			$validity->add( 'required', esc_html__( 'Please enter a valid email address.', 'adminify' ) );
+		}
 
-    if ( ! sanitize_email( $value ) ) {
-      $validity->add( 'required', esc_html__( 'Please enter a valid email address.', 'adminify' ) );
-    }
-
-    return $validity;
-
-  }
+		return $validity;
+	}
 }
 
 /**
@@ -97,18 +83,15 @@ if ( ! function_exists( 'adminify_customize_validate_email' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_customize_validate_numeric' ) ) {
-  function adminify_customize_validate_numeric( $validity, $value, $wp_customize ) {
+	function adminify_customize_validate_numeric( $validity, $value, $wp_customize ) {
+		if ( ! is_numeric( $value ) ) {
+			$validity->add( 'required', esc_html__( 'Please enter a valid number.', 'adminify' ) );
+		}
 
-    if ( ! is_numeric( $value ) ) {
-      $validity->add( 'required', esc_html__( 'Please enter a valid number.', 'adminify' ) );
-    }
-
-    return $validity;
-
-  }
+		return $validity;
+	}
 }
 
 /**
@@ -117,18 +100,15 @@ if ( ! function_exists( 'adminify_customize_validate_numeric' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_customize_validate_required' ) ) {
-  function adminify_customize_validate_required( $validity, $value, $wp_customize ) {
+	function adminify_customize_validate_required( $validity, $value, $wp_customize ) {
+		if ( empty( $value ) ) {
+			$validity->add( 'required', esc_html__( 'This field is required.', 'adminify' ) );
+		}
 
-    if ( empty( $value ) ) {
-      $validity->add( 'required', esc_html__( 'This field is required.', 'adminify' ) );
-    }
-
-    return $validity;
-
-  }
+		return $validity;
+	}
 }
 
 /**
@@ -137,16 +117,13 @@ if ( ! function_exists( 'adminify_customize_validate_required' ) ) {
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! function_exists( 'adminify_customize_validate_url' ) ) {
-  function adminify_customize_validate_url( $validity, $value, $wp_customize ) {
+	function adminify_customize_validate_url( $validity, $value, $wp_customize ) {
+		if ( ! filter_var( $value, FILTER_VALIDATE_URL ) ) {
+			$validity->add( 'required', esc_html__( 'Please enter a valid URL.', 'adminify' ) );
+		}
 
-    if ( ! filter_var( $value, FILTER_VALIDATE_URL ) ) {
-      $validity->add( 'required', esc_html__( 'Please enter a valid URL.', 'adminify' ) );
-    }
-
-    return $validity;
-
-  }
+		return $validity;
+	}
 }

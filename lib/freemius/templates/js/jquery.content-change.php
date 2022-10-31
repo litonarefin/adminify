@@ -5,9 +5,9 @@
 	 * @license     https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License Version 3
 	 * @since       1.2.2.7
 	 */
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 ?>
 <script type="text/javascript">
 	(function ($) {
@@ -44,15 +44,15 @@
 			return elements;
 		};
 
-        setInterval(function() {
-            if ( window.watchContentChange ) {
-                for ( var i in window.watchContentChange ) {
-                    if ( window.watchContentChange[ i ].element.data( 'lastContents' ) !== window.watchContentChange[ i ].element.html() ) {
-                        window.watchContentChange[ i ].callback.apply( undefined, [ false ] );
-                        window.watchContentChange[ i ].element.data( 'lastContents', window.watchContentChange[ i ].element.html() )
-                    }
-                }
-            }
-        }, 500 );
+		setInterval(function() {
+			if ( window.watchContentChange ) {
+				for ( var i in window.watchContentChange ) {
+					if ( window.watchContentChange[ i ].element.data( 'lastContents' ) !== window.watchContentChange[ i ].element.html() ) {
+						window.watchContentChange[ i ].callback.apply( undefined, [ false ] );
+						window.watchContentChange[ i ].element.data( 'lastContents', window.watchContentChange[ i ].element.html() )
+					}
+				}
+			}
+		}, 500 );
 	})(jQuery);
 </script>

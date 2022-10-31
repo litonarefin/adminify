@@ -1,58 +1,51 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
+
+use WPAdminify\Inc\Utils;
+
 /**
  *
  * Field: palette
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! class_exists( 'ADMINIFY_Field_palette' ) ) {
-  class ADMINIFY_Field_palette extends ADMINIFY_Fields {
+	class ADMINIFY_Field_palette extends ADMINIFY_Fields {
 
-    public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
-      parent::__construct( $field, $value, $unique, $where, $parent );
-    }
+		public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
+			parent::__construct( $field, $value, $unique, $where, $parent );
+		}
 
-    public function render() {
+		public function render() {
+			$palette = ( ! empty( $this->field['options'] ) ) ? $this->field['options'] : [];
 
-      $palette = ( ! empty( $this->field['options'] ) ) ? $this->field['options'] : array();
+			echo Utils::wp_kses_custom($this->field_before());
 
-      echo $this->field_before();
+			if ( ! empty( $palette ) ) {
+				echo '<div class="adminify-siblings adminify--palettes">';
 
-      if ( ! empty( $palette ) ) {
+				foreach ( $palette as $key => $colors ) {
+					$active  = ( $key === $this->value ) ? ' adminify--active' : '';
+					$checked = ( $key === $this->value ) ? ' checked' : '';
 
-        echo '<div class="adminify-siblings adminify--palettes">';
+					echo '<div class="adminify--sibling adminify--palette' . esc_attr( $active ) . '">';
 
-        foreach ( $palette as $key => $colors ) {
+					if ( ! empty( $colors ) ) {
+						foreach ( $colors as $color ) {
+							  echo '<span style="background-color: ' . esc_attr( $color ) . ';"></span>';
+						}
+					}
 
-          $active  = ( $key === $this->value ) ? ' adminify--active' : '';
-          $checked = ( $key === $this->value ) ? ' checked' : '';
+					echo '<input type="radio" name="' . esc_attr( $this->field_name() ) . '" value="' . esc_attr( $key ) . '"' . $this->field_attributes() . esc_attr( $checked ) . '/>';
+					echo '</div>';
+				}
 
-          echo '<div class="adminify--sibling adminify--palette'. esc_attr( $active ) .'">';
+				echo '</div>';
+			}
 
-          if ( ! empty( $colors ) ) {
+			echo Utils::wp_kses_custom($this->field_after());
+		}
 
-            foreach ( $colors as $color ) {
-
-              echo '<span style="background-color: '. esc_attr( $color ) .';"></span>';
-
-            }
-
-          }
-
-          echo '<input type="radio" name="'. esc_attr( $this->field_name() ) .'" value="'. esc_attr( $key ) .'"'. $this->field_attributes() . esc_attr( $checked ) .'/>';
-          echo '</div>';
-
-        }
-
-        echo '</div>';
-
-      }
-
-      echo $this->field_after();
-
-    }
-
-  }
+	}
 }

@@ -6,15 +6,15 @@
 	 * @since       1.1.4
 	 */
 
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 	/**
 	 * @var array $VARS
 	 */
-	$fs   = freemius( $VARS['id'] );
+	$fs = freemius( $VARS['id'] );
 ?>
 <div class="fs-plugin-icon">
-	<img src="<?php echo $fs->get_local_icon_url() ?>" width="80" height="80"/>
+	<img src="<?php echo esc_url($fs->get_local_icon_url()); ?>" width="80" height="80"/>
 </div>

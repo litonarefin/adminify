@@ -6,21 +6,22 @@
 	 * @since     2.3.1
 	 */
 
-	if ( ! defined( 'ABSPATH' ) ) {
-		exit;
-	}
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
+use WPAdminify\Inc\Utils;
 	/**
-     * @var array $VARS
-     *
+	 * @var array $VARS
+	 *
 	 * @var Freemius $fs
 	 */
 	$fs                       = freemius( $VARS['id'] );
 	$slug                     = $fs->get_slug();
-    $unique_affix             = $fs->get_unique_affix();
-    $last_license_user_id     = $fs->get_last_license_user_id();
-    $has_last_license_user_id = FS_User::is_valid_id( $last_license_user_id );
-    
+	$unique_affix             = $fs->get_unique_affix();
+	$last_license_user_id     = $fs->get_last_license_user_id();
+	$has_last_license_user_id = FS_User::is_valid_id( $last_license_user_id );
+
 	$message_above_input_field = ( ! $has_last_license_user_id ) ?
 		fs_text_inline( 'Please enter the license key to enable the debug mode:', 'submit-developer-license-key-message', $slug ) :
 		sprintf(
@@ -28,13 +29,13 @@
 			$last_license_user_id
 		);
 
-    $processing_text          = ( fs_esc_js_inline( 'Processing', 'processing', $slug ) . '...' );
-    $submit_button_text       = fs_text_inline( 'Submit', 'submit', $slug );
-    $debug_license_link_text  = fs_esc_html_inline( 'Start Debug', 'start-debug-license', $slug );
-    $license_or_user_key_text = ( ! $has_last_license_user_id ) ?
-        fs_text_inline( 'License key', 'license-key' , $slug ) :
-        fs_text_inline( 'User key', 'user-key' , $slug );
-    $input_html               = "<input class='fs-license-or-user-key' type='password' placeholder='{$license_or_user_key_text}' tabindex='1' />";
+	$processing_text          = ( fs_esc_js_inline( 'Processing', 'processing', $slug ) . '...' );
+	$submit_button_text       = fs_text_inline( 'Submit', 'submit', $slug );
+	$debug_license_link_text  = fs_esc_html_inline( 'Start Debug', 'start-debug-license', $slug );
+	$license_or_user_key_text = ( ! $has_last_license_user_id ) ?
+		fs_text_inline( 'License key', 'license-key', $slug ) :
+		fs_text_inline( 'User key', 'user-key', $slug );
+	$input_html               = "<input class='fs-license-or-user-key' type='password' placeholder='{$license_or_user_key_text}' tabindex='1' />";
 
 	$modal_content_html = <<< HTML
 	<div class="notice notice-error inline license-or-user-key-submission-message"><p></p></div>
@@ -43,43 +44,43 @@
 HTML;
 
 	fs_enqueue_local_style( 'fs_dialog_boxes', '/admin/dialog-boxes.css' );
-?>
+	?>
 <script type="text/javascript">
 ( function( $ ) {
 	$( document ).ready( function() {
-		var modalContentHtml          = <?php echo json_encode( $modal_content_html ) ?>,
+		var modalContentHtml          = <?php echo json_encode( $modal_content_html ); ?>,
 			modalHtml                 =
-				'<div class="fs-modal fs-modal-developer-license-debug-mode fs-modal-developer-license-debug-mode-<?php echo $unique_affix ?>">'
+				'<div class="fs-modal fs-modal-developer-license-debug-mode fs-modal-developer-license-debug-mode-<?php echo esc_js($unique_affix); ?>">'
 				+ '	<div class="fs-modal-dialog">'
 				+ '		<div class="fs-modal-body">'
 				+ '			<div class="fs-modal-panel active">' + modalContentHtml + '</div>'
 				+ '		</div>'
 				+ '		<div class="fs-modal-footer">'
-				+ '			<button class="button button-secondary button-close" tabindex="4"><?php fs_esc_js_echo_inline( 'Cancel', 'cancel', $slug ) ?></button>'
-				+ '			<button class="button button-primary button-submit-license-or-user-key"  tabindex="3"><?php echo esc_js( $submit_button_text ) ?></button>'
+				+ '			<button class="button button-secondary button-close" tabindex="4"><?php fs_esc_js_echo_inline( 'Cancel', 'cancel', $slug ); ?></button>'
+				+ '			<button class="button button-primary button-submit-license-or-user-key"  tabindex="3"><?php echo esc_js( $submit_button_text ); ?></button>'
 				+ '		</div>'
 				+ '	</div>'
 				+ '</div>',
 			$modal                             = $( modalHtml ),
-            $debugLicenseLink                  = $( '.debug-license-trigger' ),
+			$debugLicenseLink                  = $( '.debug-license-trigger' ),
 			$submitKeyButton                   = $modal.find( '.button-submit-license-or-user-key' ),
 			$licenseOrUserKeyInput             = $modal.find( 'input.fs-license-or-user-key' ),
 			$licenseOrUserKeySubmissionMessage = $modal.find( '.license-or-user-key-submission-message' ),
-            isDebugMode                        = <?php echo $fs->is_data_debug_mode() ? 'true' : 'false' ?>;
+			isDebugMode                        = <?php echo esc_js($fs->is_data_debug_mode()) ? 'true' : 'false'; ?>;
 
 		$modal.appendTo( $( 'body' ) );
 
 		function registerEventHandlers() {
-            $debugLicenseLink.click(function (evt) {
-                evt.preventDefault();
+			$debugLicenseLink.click(function (evt) {
+				evt.preventDefault();
 
-                if ( isDebugMode ) {
-                    setDeveloperLicenseDebugMode();
-                    return true;
-                }
+				if ( isDebugMode ) {
+					setDeveloperLicenseDebugMode();
+					return true;
+				}
 
-                showModal( evt );
-            });
+				showModal( evt );
+			});
 
 			$modal.on( 'input propertychange', 'input.fs-license-or-user-key', function () {
 				var licenseOrUserKey = $( this ).val().trim();
@@ -95,12 +96,12 @@ HTML;
 			$modal.on( 'blur', 'input.fs-license-or-user-key', function () {
 				var licenseOrUserKey = $( this ).val().trim();
 
-                /**
-                 * If license or user key is empty, disable the submission button.
-                 */
-                if ( 0 === licenseOrUserKey.length ) {
-                   disableSubmitButton();
-                }
+				/**
+				 * If license or user key is empty, disable the submission button.
+				 */
+				if ( 0 === licenseOrUserKey.length ) {
+				   disableSubmitButton();
+				}
 			});
 
 			$modal.on( 'click', '.button-submit-license-or-user-key', function ( evt ) {
@@ -118,7 +119,7 @@ HTML;
 					return;
 				}
 
-                setDeveloperLicenseDebugMode( licenseOrUserKey );
+				setDeveloperLicenseDebugMode( licenseOrUserKey );
 			});
 
 			// If the user has clicked outside the window, close the modal.
@@ -131,39 +132,39 @@ HTML;
 		registerEventHandlers();
 
 		function setDeveloperLicenseDebugMode( licenseOrUserKey ) {
-            var data = {
-                action             : '<?php echo $fs->get_ajax_action( 'set_data_debug_mode' ) ?>',
-                security           : '<?php echo $fs->get_ajax_security( 'set_data_debug_mode' ) ?>',
-                license_or_user_key: licenseOrUserKey,
-                is_debug_mode      : isDebugMode,
-                module_id          : '<?php echo $fs->get_id() ?>'
-            };
+			var data = {
+				action             : '<?php echo esc_js($fs->get_ajax_action( 'set_data_debug_mode' )); ?>',
+				security           : '<?php echo esc_js($fs->get_ajax_security( 'set_data_debug_mode' )); ?>',
+				license_or_user_key: licenseOrUserKey,
+				is_debug_mode      : isDebugMode,
+				module_id          : '<?php echo esc_js($fs->get_id()); ?>'
+			};
 
-            $.ajax( {
-                url       : ajaxurl,
-                method    : 'POST',
-                data      : data,
-                beforeSend: function () {
-                    $debugLicenseLink.find('span').text( '<?php echo $processing_text ?>' );
-                    $submitKeyButton.text( '<?php echo $processing_text ?>' );
-                },
-                success   : function ( result ) {
-                    if ( result.success ) {
-                        closeModal();
+			$.ajax( {
+				url       : ajaxurl,
+				method    : 'POST',
+				data      : data,
+				beforeSend: function () {
+					$debugLicenseLink.find('span').text( '<?php echo esc_js($processing_text); ?>' );
+					$submitKeyButton.text( '<?php echo esc_js($processing_text); ?>' );
+				},
+				success   : function ( result ) {
+					if ( result.success ) {
+						closeModal();
 
-                        // Reload the "Account" page so that the pricing/upgrade link will be properly hidden/shown.
-                        window.location.reload();
-                    } else {
-                        showError( result.error.message ? result.error.message : result.error );
-                        resetButtons();
-                    }
-                },
-                error     : function () {
-                    showError( <?php echo json_encode( fs_text_inline( 'An unknown error has occurred.', 'unknown-error', $slug ) ) ?> );
-                    resetButtons();
-                }
-            });
-        }
+						// Reload the "Account" page so that the pricing/upgrade link will be properly hidden/shown.
+						window.location.reload();
+					} else {
+						showError( result.error.message ? result.error.message : result.error );
+						resetButtons();
+					}
+				},
+				error     : function () {
+					showError( <?php echo json_encode( fs_text_inline( 'An unknown error has occurred.', 'unknown-error', $slug ) ); ?> );
+					resetButtons();
+				}
+			});
+		}
 
 		function showModal( evt ) {
 			resetModal();
@@ -172,8 +173,8 @@ HTML;
 			$modal.addClass( 'active' );
 			$( 'body' ).addClass( 'has-fs-modal' );
 
-            $licenseOrUserKeyInput.val( '' );
-            $licenseOrUserKeyInput.focus();
+			$licenseOrUserKeyInput.val( '' );
+			$licenseOrUserKeyInput.focus();
 		}
 
 		function closeModal() {
@@ -183,8 +184,8 @@ HTML;
 
 		function resetButtons() {
 			enableSubmitButton();
-			$submitKeyButton.text( <?php echo json_encode( $submit_button_text ) ?> );
-			$debugLicenseLink.find('span').text( <?php echo json_encode( $debug_license_link_text ) ?> );
+			$submitKeyButton.text( <?php echo json_encode( $submit_button_text ); ?> );
+			$debugLicenseLink.find('span').text( <?php echo json_encode( $debug_license_link_text ); ?> );
 		}
 
 		function resetModal() {

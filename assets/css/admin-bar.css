@@ -213,6 +213,7 @@ body.wp-adminify {
 .wp-adminify .adminify-top_bar nav.adminify-top-navbar .adminify-legacy-admin .wp-adminify-top-header--search--form .top-header-search-results {
   top: 54px;
   left: 50%;
+  display: none;
   width: 60vw !important;
   max-height: 74vh;
   overflow-x: hidden;

@@ -1,82 +1,82 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
+
+use WPAdminify\Inc\Utils;
+
 /**
  *
  * Field: link
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! class_exists( 'ADMINIFY_Field_link' ) ) {
-  class ADMINIFY_Field_link extends ADMINIFY_Fields {
+	class ADMINIFY_Field_link extends ADMINIFY_Fields {
 
-    public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
-      parent::__construct( $field, $value, $unique, $where, $parent );
-    }
+		public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
+			parent::__construct( $field, $value, $unique, $where, $parent );
+		}
 
-    public function render() {
+		public function render() {
+			$args = wp_parse_args(
+				$this->field,
+				[
+					'add_title'    => esc_html__( 'Add Link', 'adminify' ),
+					'edit_title'   => esc_html__( 'Edit Link', 'adminify' ),
+					'remove_title' => esc_html__( 'Remove Link', 'adminify' ),
+				]
+			);
 
-      $args = wp_parse_args( $this->field, array(
-        'add_title'    => esc_html__( 'Add Link', 'adminify' ),
-        'edit_title'   => esc_html__( 'Edit Link', 'adminify' ),
-        'remove_title' => esc_html__( 'Remove Link', 'adminify' ),
-      ) );
+			$default_values = [
+				'url'    => '',
+				'text'   => '',
+				'target' => '',
+			];
 
-      $default_values = array(
-        'url'    => '',
-        'text'  => '',
-        'target' => '',
-      );
+			$value = wp_parse_args( $this->value, $default_values );
 
-      $value = wp_parse_args( $this->value, $default_values );
+			$hidden = ( ! empty( $value['url'] ) || ! empty( $value['url'] ) || ! empty( $value['url'] ) ) ? ' hidden' : '';
 
-      $hidden = ( ! empty( $value['url'] ) || ! empty( $value['url'] ) || ! empty( $value['url'] ) ) ? ' hidden' : '';
+			$maybe_hidden = ( empty( $hidden ) ) ? ' hidden' : '';
 
-      $maybe_hidden = ( empty( $hidden ) ) ? ' hidden' : '';
+			echo Utils::wp_kses_custom($this->field_before());
 
-      echo $this->field_before();
+			echo '<textarea readonly="readonly" class="adminify--link hidden"></textarea>';
 
-      echo '<textarea readonly="readonly" class="adminify--link hidden"></textarea>';
+			echo '<div class="' . esc_attr( $maybe_hidden ) . '"><div class="adminify--result">' . sprintf( '{url:"%s", text:"%s", target:"%s"}', $value['url'], $value['text'], $value['target'] ) . '</div></div>';
 
-      echo '<div class="'. esc_attr( $maybe_hidden ) .'"><div class="adminify--result">'. sprintf( '{url:"%s", text:"%s", target:"%s"}', $value['url'], $value['text'], $value['target'] ) .'</div></div>';
+			echo '<input type="hidden" name="' . esc_attr( $this->field_name( '[url]' ) ) . '" value="' . esc_attr( $value['url'] ) . '"' . $this->field_attributes( [ 'class' => 'adminify--url' ] ) . ' />';
+			echo '<input type="hidden" name="' . esc_attr( $this->field_name( '[text]' ) ) . '" value="' . esc_attr( $value['text'] ) . '" class="adminify--text" />';
+			echo '<input type="hidden" name="' . esc_attr( $this->field_name( '[target]' ) ) . '" value="' . esc_attr( $value['target'] ) . '" class="adminify--target" />';
 
-      echo '<input type="hidden" name="'. esc_attr( $this->field_name( '[url]' ) ) .'" value="'. esc_attr( $value['url'] ) .'"'. $this->field_attributes( array( 'class' => 'adminify--url' ) ) .' />';
-      echo '<input type="hidden" name="'. esc_attr( $this->field_name( '[text]' ) ) .'" value="'. esc_attr( $value['text'] ) .'" class="adminify--text" />';
-      echo '<input type="hidden" name="'. esc_attr( $this->field_name( '[target]' ) ) .'" value="'. esc_attr( $value['target'] ) .'" class="adminify--target" />';
+			echo '<a href="#" class="button button-primary adminify--add' . esc_attr( $hidden ) . '">' . $args['add_title'] . '</a> ';
+			echo '<a href="#" class="button adminify--edit' . esc_attr( $maybe_hidden ) . '">' . $args['edit_title'] . '</a> ';
+			echo '<a href="#" class="button adminify-warning-primary adminify--remove' . esc_attr( $maybe_hidden ) . '">' . $args['remove_title'] . '</a>';
 
-      echo '<a href="#" class="button button-primary adminify--add'. esc_attr( $hidden ) .'">'. $args['add_title'] .'</a> ';
-      echo '<a href="#" class="button adminify--edit'. esc_attr( $maybe_hidden ) .'">'. $args['edit_title'] .'</a> ';
-      echo '<a href="#" class="button adminify-warning-primary adminify--remove'. esc_attr( $maybe_hidden ) .'">'. $args['remove_title'] .'</a>';
+			echo Utils::wp_kses_custom($this->field_after());
+		}
 
-      echo $this->field_after();
+		public function enqueue() {
+			if ( ! wp_script_is( 'wplink' ) ) {
+				wp_enqueue_script( 'wplink' );
+			}
 
-    }
+			if ( ! wp_script_is( 'jquery-ui-autocomplete' ) ) {
+				wp_enqueue_script( 'jquery-ui-autocomplete' );
+			}
 
-    public function enqueue() {
+			add_action( 'admin_print_footer_scripts', [ $this, 'add_wp_link_dialog' ] );
+		}
 
-      if ( ! wp_script_is( 'wplink' ) ) {
-        wp_enqueue_script( 'wplink' );
-      }
+		public function add_wp_link_dialog() {
+			if ( ! class_exists( '_WP_Editors' ) ) {
+				require_once ABSPATH . WPINC . '/class-wp-editor.php';
+			}
 
-      if ( ! wp_script_is( 'jquery-ui-autocomplete' ) ) {
-        wp_enqueue_script( 'jquery-ui-autocomplete' );
-      }
+			wp_print_styles( 'editor-buttons' );
 
-      add_action( 'admin_print_footer_scripts', array( $this, 'add_wp_link_dialog' ) );
+			_WP_Editors::wp_link_dialog();
+		}
 
-    }
-
-    public function add_wp_link_dialog() {
-
-      if ( ! class_exists( '_WP_Editors' ) ) {
-        require_once ABSPATH . WPINC .'/class-wp-editor.php';
-      }
-
-      wp_print_styles( 'editor-buttons' );
-
-      _WP_Editors::wp_link_dialog();
-
-    }
-
-  }
+	}
 }

@@ -1,64 +1,63 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; } // Cannot access directly.
+<?php 
+
+use WPAdminify\Inc\Utils;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	die; } // Cannot access directly.
 /**
  *
  * Field: accordion
  *
  * @since 1.0.0
  * @version 1.0.0
- *
  */
 if ( ! class_exists( 'ADMINIFY_Field_accordion' ) ) {
-  class ADMINIFY_Field_accordion extends ADMINIFY_Fields {
+	class ADMINIFY_Field_accordion extends ADMINIFY_Fields {
 
-    public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
-      parent::__construct( $field, $value, $unique, $where, $parent );
-    }
+		public function __construct( $field, $value = '', $unique = '', $where = '', $parent = '' ) {
+			parent::__construct( $field, $value, $unique, $where, $parent );
+		}
 
-    public function render() {
+		public function render() {
+			$unallows = [ 'accordion' ];
 
-      $unallows = array( 'accordion' );
+			echo Utils::wp_kses_custom($this->field_before());
 
-      echo $this->field_before();
+			echo '<div class="adminify-accordion-items" data-depend-id="' . esc_attr( $this->field['id'] ) . '">';
 
-      echo '<div class="adminify-accordion-items" data-depend-id="'. esc_attr( $this->field['id'] ) .'">';
+			foreach ( $this->field['accordions'] as $key => $accordion ) {
+				echo '<div class="adminify-accordion-item">';
 
-      foreach ( $this->field['accordions'] as $key => $accordion ) {
+				$icon = ( ! empty( $accordion['icon'] ) ) ? 'adminify--icon ' . $accordion['icon'] : 'adminify-accordion-icon fas fa-angle-right';
 
-        echo '<div class="adminify-accordion-item">';
+				echo '<h4 class="adminify-accordion-title">';
+				echo '<i class="' . esc_attr( $icon ) . '"></i>';
+				echo esc_html( $accordion['title'] );
+				echo '</h4>';
 
-          $icon = ( ! empty( $accordion['icon'] ) ) ? 'adminify--icon '. $accordion['icon'] : 'adminify-accordion-icon fas fa-angle-right';
+				echo '<div class="adminify-accordion-content">';
 
-          echo '<h4 class="adminify-accordion-title">';
-          echo '<i class="'. esc_attr( $icon ) .'"></i>';
-          echo esc_html( $accordion['title'] );
-          echo '</h4>';
+				foreach ( $accordion['fields'] as $field ) {
+					if ( in_array( $field['type'], $unallows ) ) {
+						$field['_notice'] = true; }
 
-          echo '<div class="adminify-accordion-content">';
+					$field_id      = ( isset( $field['id'] ) ) ? $field['id'] : '';
+					$field_default = ( isset( $field['default'] ) ) ? $field['default'] : '';
+					$field_value   = ( isset( $this->value[ $field_id ] ) ) ? $this->value[ $field_id ] : $field_default;
+					$unique_id     = ( ! empty( $this->unique ) ) ? $this->unique . '[' . $this->field['id'] . ']' : $this->field['id'];
 
-          foreach ( $accordion['fields'] as $field ) {
+					ADMINIFY::field( $field, $field_value, $unique_id, 'field/accordion' );
+				}
 
-            if ( in_array( $field['type'], $unallows ) ) { $field['_notice'] = true; }
+				echo '</div>';
 
-            $field_id      = ( isset( $field['id'] ) ) ? $field['id'] : '';
-            $field_default = ( isset( $field['default'] ) ) ? $field['default'] : '';
-            $field_value   = ( isset( $this->value[$field_id] ) ) ? $this->value[$field_id] : $field_default;
-            $unique_id     = ( ! empty( $this->unique ) ) ? $this->unique .'['. $this->field['id'] .']' : $this->field['id'];
+				echo '</div>';
+			}
 
-            ADMINIFY::field( $field, $field_value, $unique_id, 'field/accordion' );
+			echo '</div>';
 
-          }
+			echo Utils::wp_kses_custom($this->field_after());
+		}
 
-          echo '</div>';
-
-        echo '</div>';
-
-      }
-
-      echo '</div>';
-
-      echo $this->field_after();
-
-    }
-
-  }
+	}
 }
