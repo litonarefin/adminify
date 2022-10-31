@@ -323,6 +323,8 @@ Many more features are coming so things can only get better. Keep up the good wo
 ### Liked WP Adminify Plugins?
 Rate us on [WordPress Forum](https://wordpress.org/support/plugin/adminify/reviews/#new-post) 🙂
 
+== Source Code ==
+[Source Code](https://github.com/litonarefin/adminify)
 
 == Support ==
 [Support Forum](https://wpadminify.com/support/)
